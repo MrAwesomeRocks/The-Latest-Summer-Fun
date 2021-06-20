@@ -43,7 +43,6 @@ craftingTable.addShaped("sandy_waystone", <item:waystones:sandy_waystone>, [
     [<item:minecraft:air>, <item:minecraft:chiseled_sandstone>, <item:minecraft:air>],
     [<item:minecraft:chiseled_sandstone>, <item:minecraft:lodestone>, <item:minecraft:chiseled_sandstone>],
     [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]]);
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -170,7 +169,6 @@ craftingTable.addShaped("blitz_unit", <item:simplyjetpacks:unit_glowstone>, [
 
 craftingTable.addShaped("blizz_unit", <item:simplyjetpacks:unit_cryotheum>, [
     [<item:thermal:blizz_rod>, <item:simplyjetpacks:unit_cryotheum_empty>, <item:thermal:blizz_rod>]]);
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -241,6 +239,7 @@ craftingTable.addShaped("fake_bread", <item:contenttweaker:bread>, [
     [<item:minecraft:wheat>, <tag:items:forge:dusts/wood>, <item:minecraft:wheat>]]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
+
 // Ediolon Ruined a Vanilla Recipe... How?
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 furnace.removeRecipe(<item:eidolon:smooth_stone_bricks>);
@@ -279,6 +278,7 @@ craftingTable.removeRecipe(<item:chiselsandbits:chisel_netherite>);
 smithing.addRecipe("netherite_saw", <item:chiselsandbits:bitsaw_netherite>, <item:minecraft:netherite_ingot>, <item:chiselsandbits:bitsaw_diamond>);
 smithing.addRecipe("netherite_chisel", <item:chiselsandbits:chisel_netherite>, <item:minecraft:netherite_ingot>, <item:chiselsandbits:chisel_diamond>);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // Also changing the Vanilla Jetpacks to be more balanced.
 // ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -479,9 +479,6 @@ craftingTable.addShaped("only_byg_chest", <item:minecraft:chest>, [
     [<tag:items:only_byg_planks>, <tag:items:only_byg_planks>, <tag:items:only_byg_planks>]]);
 
 craftingTable.addShapeless("chest_2_chest", <item:minecraft:chest>, [<tag:items:forge:chests/wooden>]);
-
-
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -493,26 +490,3 @@ craftingTable.addShaped("carapace_to_chitin", <item:druidcraft:chitin>, [
 
 craftingTable.addShapeless("chitin_to_carapace", <item:mysticalworld:carapace> * 4, [<item:druidcraft:chitin>]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-// <item:minecraft:air>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

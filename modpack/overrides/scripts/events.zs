@@ -14,7 +14,6 @@ import crafttweaker.api.server.MCServer;
 
 // Bowls and Bottles
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-
 CTEventManager.register<crafttweaker.api.event.entity.living.MCLivingEntityUseItemFinishEvent>((event) => {
     var player = event.getEntityLiving();
     var result = event.item;
@@ -25,8 +24,7 @@ CTEventManager.register<crafttweaker.api.event.entity.living.MCLivingEntityUseIt
     }
 });
 
-/* 
-
+/*
 // First things first, you should import the CTEventManager, which allows you to register Events.
 import crafttweaker.api.events.CTEventManager;
 // We are also going to import other classes that are needed for this example.
@@ -49,22 +47,5 @@ CTEventManager.register<MCItemTossEvent>((event) => {
         event.entityItem.item = <item:minecraft:diamond>;
     }
 });
-
 */
-
-
-
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-

@@ -4,6 +4,7 @@ import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.util.text.MCStyle;
 
 // Tooltipping
+// addTooltip("Provides 10,000" ~ format.red(" GP") ~ format.gray("."));
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 <item:simplyjetpacks:unit_glowstone>.addTooltip("Temporary Crafting Recipe.");
 <item:simplyjetpacks:unit_cryotheum>.addTooltip("Temporary Crafting Recipe.");
@@ -28,16 +29,4 @@ import crafttweaker.api.util.text.MCStyle;
 
 <item:thermal:sapphire>.addTooltip("It seems full of magical potential.");
 <item:thermal:ruby>.addTooltip("It seems flux-rich.");
-
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-
-// addTooltip("Provides 10,000" ~ format.red(" GP") ~ format.gray("."));
-
-
-
-
-
-
-
-

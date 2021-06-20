@@ -6,6 +6,7 @@ import crafttweaker.api.potion.MCPotionEffectInstance;
 
 
 // Adding the Food Values
+// new MCFood(healing as int, saturation as float) as MCFood
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 <item:contenttweaker:syrup_bottle>.food = new MCFood(1, 0.0);
 <item:contenttweaker:peanut_butter>.food = new MCFood(1, 0.0);
@@ -43,10 +44,4 @@ import crafttweaker.api.potion.MCPotionEffectInstance;
 <item:contenttweaker:sad_pistachio>.food = new MCFood(8, 0.2);
 
 <item:contenttweaker:bread>.food = new MCFood(5, 0.5);
-
-// new MCFood(healing as int, saturation as float) as MCFood
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-

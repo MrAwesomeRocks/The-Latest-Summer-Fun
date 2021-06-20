@@ -67,7 +67,6 @@ by.remove(<item:twilightforest:time_planks>);
 by.remove(<item:twilightforest:trans_planks>);
 by.remove(<item:twilightforest:mine_planks>);
 by.remove(<item:twilightforest:sort_planks>);
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -115,24 +114,4 @@ beacon.add(<block:immersiveengineering:storage_uranium>);
 beacon.add(<block:immersiveengineering:storage_constantan>);
 beacon.add(<block:immersiveengineering:storage_electrum>);
 beacon.add(<block:immersiveengineering:storage_steel>);
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,10 @@
+### PAX ###
+pax
+pax.exe
+libssl*.dll
+libcrypto*.dll
+cacert.pem
+
+### Modpack ###
+.out/
+*.zip

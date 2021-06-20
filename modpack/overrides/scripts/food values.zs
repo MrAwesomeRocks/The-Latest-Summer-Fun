@@ -29,12 +29,15 @@ import crafttweaker.api.potion.MCPotionEffectInstance;
 <item:contenttweaker:sandwich_blt>.food = new MCFood(10, 0.4);
 <item:contenttweaker:stir_fry>.food = new MCFood(10, 0.6);
 
+<item:contenttweaker:marshmallow>.food = new MCFood(1, 0.0);
+<item:contenttweaker:s_more>.food = new MCFood(5, 0.6);
+
 <item:contenttweaker:redstone_espresso>.food = new MCFood(0, 0.0).setCanEatWhenFull(true).addEffect(<effect:minecraft:speed>.newInstance(1200, 1), 1.0).addEffect(<effect:minecraft:haste>.newInstance(1200, 0), 1.0);
 <item:contenttweaker:glowstone_tea>.food = new MCFood(0, 0.0).setCanEatWhenFull(true).addEffect(<effect:minecraft:regeneration>.newInstance(600, 1), 1.0).addEffect(<effect:cofh_core:panacea>.newInstance(600, 0), 1.0);
 <item:contenttweaker:onion_sandwich>.food = new MCFood(20, 0.5).setCanEatWhenFull(true).addEffect(<effect:minecraft:nausea>.newInstance(1200, 0), 1.0).addEffect(<effect:minecraft:slowness>.newInstance(600, 5), 1.0);
 
 <item:contenttweaker:rad_ish>.food = new MCFood(6, 0.3).addEffect(<effect:minecraft:glowing>.newInstance(600, 0), 0.5);
-<item:contenttweaker:astral_root>.food = new MCFood(6, 0.3).addEffect(<effect:minecraft:night_vision>.newInstance(600, 0), 0.5);
+<item:contenttweaker:capricorn>.food = new MCFood(6, 0.3).addEffect(<effect:minecraft:night_vision>.newInstance(600, 0), 0.5);
 
 <item:contenttweaker:bully_peanut>.food = new MCFood(8, 0.2);
 <item:contenttweaker:sad_pistachio>.food = new MCFood(8, 0.2);

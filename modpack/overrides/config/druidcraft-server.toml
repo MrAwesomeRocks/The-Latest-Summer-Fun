@@ -2,7 +2,7 @@
 [oregeneration]
 	#Determines the rarity of amber veins.
 	#Range: 0 ~ 200
-	amber_weight = 2
+	amber_weight = 6
 	#Determines the rarity of rockroot veins.
 	#Range: 0 ~ 200
 	rockroot_weight = 16

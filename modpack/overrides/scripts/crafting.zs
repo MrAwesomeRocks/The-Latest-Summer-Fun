@@ -64,9 +64,9 @@ craftingTable.addShaped("chunk_loader", <item:chickenchunks:chunk_loader>, [
 craftingTable.removeRecipe(<item:clickmachine:auto_clicker>);
 
 craftingTable.addShaped("new_auto_clicker", <item:clickmachine:auto_clicker>, [
-    [<tag:items:forge:gems/cinnabar>, <tag:items:forge:ingots/invar>, <tag:items:forge:gems/cinnabar>],
+    [<item:minecraft:obsidian>, <tag:items:forge:ingots/invar>, <item:minecraft:obsidian>],
     [<tag:items:forge:ingots/invar>, <item:minecraft:dispenser>, <tag:items:forge:ingots/invar>],
-    [<tag:items:forge:gems/cinnabar>, <tag:items:forge:ingots/invar>, <tag:items:forge:gems/cinnabar>]]);
+    [<item:minecraft:obsidian>, <tag:items:forge:ingots/invar>, <item:minecraft:obsidian>]]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -186,6 +186,12 @@ craftingTable.addShaped("pancakes", <item:contenttweaker:pancakes>, [
 
 furnace.addRecipe("popcorn", <item:contenttweaker:popcorn>, <tag:items:forge:crops/corn>, 0.5, 200);
 furnace.addRecipe("onion_rings", <item:contenttweaker:onion_rings>, <tag:items:forge:crops/onion>, 0.5, 200);
+furnace.addRecipe("marshmallow", <item:contenttweaker:marshmallow>, <item:minecraft:sugar>, 0.5, 200);
+
+craftingTable.addShapeless("smore_vanilla", <item:contenttweaker:s_more>, [<tag:items:forge:crops/wheat>, <item:minecraft:cocoa_beans>, <item:contenttweaker:marshmallow>]);
+craftingTable.addShapeless("smore_create", <item:contenttweaker:s_more> * 2, [<tag:items:forge:crops/wheat>, <item:create:bar_of_chocolate>, <item:contenttweaker:marshmallow>]);
+craftingTable.addShapeless("smore_tf", <item:contenttweaker:s_more> * 2, [<item:twilightforest:maze_wafer>, <item:minecraft:cocoa_beans>, <item:contenttweaker:marshmallow>]);
+craftingTable.addShapeless("smore_hybrid", <item:contenttweaker:s_more> * 5, [<item:twilightforest:maze_wafer>, <item:create:bar_of_chocolate>, <item:contenttweaker:marshmallow>]);
 
 craftingTable.addShapeless("sushi_from_cod", <item:contenttweaker:sushi> * 2, [<item:minecraft:cod>, <tag:items:forge:crops/rice>, <item:minecraft:dried_kelp>]);
 craftingTable.addShapeless("sushi_from_salmon", <item:contenttweaker:sushi> * 2, [<item:minecraft:salmon>, <tag:items:forge:crops/rice>, <item:minecraft:dried_kelp>]);
@@ -219,7 +225,7 @@ craftingTable.addShapeless("glowstone_tea", <item:contenttweaker:glowstone_tea>,
 craftingTable.addShapeless("onion_sandwich", <item:contenttweaker:onion_sandwich>, [<item:minecraft:bread>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>]);
 
 craftingTable.addShapeless("rad_ish", <item:contenttweaker:rad_ish>, [<tag:items:forge:crops/radish>, <tag:items:forge:ingots/uranium>]);
-craftingTable.addShapeless("astral_root", <item:contenttweaker:astral_root>, [<tag:items:forge:crops/sadiroot>, <item:astralsorcery:stardust>]);
+craftingTable.addShapeless("capricorn", <item:contenttweaker:capricorn>, [<item:contenttweaker:popcorn>, <item:astralsorcery:stardust>]);
 
 craftingTable.addShapeless("bully_peanut", <item:contenttweaker:bully_peanut>, [<item:thermal:peanut>, <item:minecraft:tnt>]);
 craftingTable.addShapeless("sad_pistachio", <item:contenttweaker:sad_pistachio>, [<item:quark:cactus_paste>, <item:minecraft:ghast_tear>]);
@@ -317,6 +323,104 @@ craftingTable.addShaped("netherite_jetpack", <item:simplyjetpacks:jetpack_vanill
     [<item:simplyjetpacks:thruster_vanilla4>, <item:minecraft:air>, <item:simplyjetpacks:thruster_vanilla4>]]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
+
+// Adding More Fiery Glass Uses
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+craftingTable.addShaped("fiery_ceramic_lantern", <item:druidcraft:ceramic_lantern>, [
+    [<item:minecraft:air>, <item:minecraft:brick>, <item:minecraft:air>],
+    [<item:minecraft:brick>, <item:druidcraft:fiery_glass>, <item:minecraft:brick>],
+    [<item:minecraft:air>, <item:minecraft:brick>, <item:minecraft:air>]]);
+
+craftingTable.addShaped("fiery_growth_lamp", <item:druidcraft:growth_lamp>, [
+    [<item:druidcraft:rockroot>, <item:minecraft:emerald>, <item:druidcraft:rockroot>],
+    [<item:minecraft:emerald>, <item:druidcraft:fiery_glass>, <item:minecraft:emerald>],
+    [<item:druidcraft:rockroot>, <item:minecraft:emerald>, <item:druidcraft:rockroot>]]);
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Refined Pipes
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+craftingTable.removeRecipe(<item:refinedpipes:basic_extractor_attachment>);
+craftingTable.removeRecipe(<item:refinedpipes:improved_extractor_attachment>);
+craftingTable.removeRecipe(<item:refinedpipes:advanced_extractor_attachment>);
+craftingTable.removeRecipe(<item:refinedpipes:elite_extractor_attachment>);
+craftingTable.removeRecipe(<item:refinedpipes:ultimate_extractor_attachment>);
+
+craftingTable.removeRecipe(<item:refinedpipes:basic_energy_pipe>);
+craftingTable.removeRecipe(<item:refinedpipes:improved_energy_pipe>);
+craftingTable.removeRecipe(<item:refinedpipes:advanced_energy_pipe>);
+craftingTable.removeRecipe(<item:refinedpipes:advanced_item_pipe>);
+craftingTable.removeRecipe(<item:refinedpipes:advanced_fluid_pipe>);
+
+craftingTable.addShaped("redone_basic_extractor", <item:refinedpipes:basic_extractor_attachment>, [
+    [<item:minecraft:iron_nugget>, <tag:items:forge:ingots/copper>, <item:minecraft:iron_nugget>],
+    [<item:minecraft:iron_ingot>, <item:minecraft:redstone>, <item:minecraft:iron_ingot>]]);
+
+craftingTable.addShaped("redone_improved_extractor", <item:refinedpipes:improved_extractor_attachment>, [
+    [<item:minecraft:iron_nugget>, <tag:items:forge:ingots/copper>, <item:minecraft:iron_nugget>],
+    [<item:minecraft:gold_ingot>, <item:minecraft:redstone>, <item:minecraft:gold_ingot>]]);
+
+craftingTable.addShaped("redone_advanced_extractor", <item:refinedpipes:advanced_extractor_attachment>, [
+    [<item:minecraft:quartz>, <tag:items:forge:ingots/copper>, <item:minecraft:quartz>],
+    [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:redstone>, <item:appliedenergistics2:certus_quartz_crystal>]]);
+
+craftingTable.addShaped("redone_elite_extractor", <item:refinedpipes:elite_extractor_attachment>, [
+    [<item:minecraft:blaze_rod>, <tag:items:forge:ingots/copper>, <item:minecraft:blaze_rod>],
+    [<item:minecraft:emerald>, <item:minecraft:redstone>, <item:minecraft:emerald>]]);
+
+craftingTable.addShaped("redone_ultimate_extractor", <item:refinedpipes:ultimate_extractor_attachment>, [
+    [<item:minecraft:prismarine_shard>, <tag:items:forge:ingots/copper>, <item:minecraft:prismarine_shard>],
+    [<item:minecraft:popped_chorus_fruit>, <item:minecraft:redstone>, <item:minecraft:popped_chorus_fruit>]]);
+
+
+
+craftingTable.addShaped("redone_basic_energy", <item:refinedpipes:basic_energy_pipe>, [
+    [<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>],
+    [<item:minecraft:glass>, <item:minecraft:redstone>, <item:minecraft:glass>],
+    [<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>]]);
+
+craftingTable.addShaped("redone_improved_energy", <item:refinedpipes:improved_energy_pipe>, [
+    [<item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>],
+    [<item:minecraft:glass>, <item:minecraft:redstone>, <item:minecraft:glass>],
+    [<item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>]]);
+
+craftingTable.addShaped("redone_advanced_energy", <item:refinedpipes:advanced_energy_pipe>, [
+    [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:quartz>, <item:appliedenergistics2:certus_quartz_crystal>],
+    [<item:minecraft:glass>, <item:minecraft:redstone_block>, <item:minecraft:glass>],
+    [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:quartz>, <item:appliedenergistics2:certus_quartz_crystal>]]);
+
+craftingTable.addShaped("redone_advanced_item", <item:refinedpipes:advanced_item_pipe>, [
+    [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:quartz>, <item:appliedenergistics2:certus_quartz_crystal>],
+    [<item:minecraft:glass>, <item:minecraft:glass>, <item:minecraft:glass>],
+    [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:quartz>, <item:appliedenergistics2:certus_quartz_crystal>]]);
+
+craftingTable.addShaped("redone_advanced_fluid", <item:refinedpipes:advanced_fluid_pipe>, [
+    [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:quartz>, <item:appliedenergistics2:certus_quartz_crystal>],
+    [<item:minecraft:slime_ball>, <item:minecraft:glass>, <item:minecraft:slime_ball>],
+    [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:quartz>, <item:appliedenergistics2:certus_quartz_crystal>]]);
+
+
+craftingTable.addShapeless("upgrade_extractor_basic_improved", <item:refinedpipes:improved_extractor_attachment>, [<item:refinedpipes:basic_extractor_attachment>, <item:minecraft:gold_ingot>]);
+craftingTable.addShapeless("upgrade_extractor_improved_advanced", <item:refinedpipes:advanced_extractor_attachment>, [<item:refinedpipes:improved_extractor_attachment>, <item:appliedenergistics2:certus_quartz_crystal>]);
+craftingTable.addShapeless("upgrade_extractor_advanced_elite", <item:refinedpipes:elite_extractor_attachment>, [<item:refinedpipes:advanced_extractor_attachment>, <item:minecraft:emerald>]);
+craftingTable.addShapeless("upgrade_extractor_elite_ultimate", <item:refinedpipes:ultimate_extractor_attachment>, [<item:refinedpipes:elite_extractor_attachment>, <item:minecraft:popped_chorus_fruit>]);
+
+craftingTable.addShapeless("upgrade_item_basic_improved", <item:refinedpipes:improved_item_pipe>, [<item:refinedpipes:basic_item_pipe>, <item:minecraft:gold_ingot>]);
+craftingTable.addShapeless("upgrade_item_improved_advanced", <item:refinedpipes:advanced_item_pipe>, [<item:refinedpipes:improved_item_pipe>, <item:appliedenergistics2:certus_quartz_crystal>]);
+
+craftingTable.addShapeless("upgrade_fluid_basic_improved", <item:refinedpipes:improved_fluid_pipe>, [<item:refinedpipes:basic_fluid_pipe>, <item:minecraft:gold_ingot>]);
+craftingTable.addShapeless("upgrade_fluid_improved_advanced", <item:refinedpipes:advanced_fluid_pipe>, [<item:refinedpipes:improved_fluid_pipe>, <item:appliedenergistics2:certus_quartz_crystal>]);
+craftingTable.addShapeless("upgrade_fluid_advanced_elite", <item:refinedpipes:elite_fluid_pipe>, [<item:refinedpipes:advanced_fluid_pipe>, <item:minecraft:emerald>]);
+craftingTable.addShapeless("upgrade_fluid_elite_ultimate", <item:refinedpipes:ultimate_fluid_pipe>, [<item:refinedpipes:elite_fluid_pipe>, <item:minecraft:popped_chorus_fruit>]);
+
+craftingTable.addShapeless("upgrade_energy_basic_improved", <item:refinedpipes:improved_energy_pipe>, [<item:refinedpipes:basic_energy_pipe>, <item:minecraft:gold_ingot>]);
+craftingTable.addShapeless("upgrade_energy_improved_advanced", <item:refinedpipes:advanced_energy_pipe>, [<item:refinedpipes:improved_energy_pipe>, <item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:redstone>]);
+craftingTable.addShapeless("upgrade_energy_advanced_elite", <item:refinedpipes:elite_energy_pipe>, [<item:refinedpipes:advanced_energy_pipe>, <item:minecraft:emerald>]);
+craftingTable.addShapeless("upgrade_energy_elite_ultimate", <item:refinedpipes:ultimate_energy_pipe>, [<item:refinedpipes:elite_energy_pipe>, <item:minecraft:popped_chorus_fruit>]);
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
 

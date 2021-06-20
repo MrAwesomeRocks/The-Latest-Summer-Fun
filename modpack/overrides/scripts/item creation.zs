@@ -9,9 +9,9 @@ import mods.contenttweaker.item.ItemBuilder;
 
 // Making the Items
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-var dummyItemBuilder = new ItemBuilder();
-dummyItemBuilder.withItemGroup(<itemGroup:misc>);
-dummyItemBuilder.build("mambo_no_5");
+// var dummyItemBuilder = new ItemBuilder();
+// dummyItemBuilder.withItemGroup(<itemGroup:misc>);
+// dummyItemBuilder.build("mambo_no_5");
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 /* 
@@ -44,6 +44,9 @@ foodBuilder.build("sandwich_pbj");
 foodBuilder.build("sandwich_blt");
 foodBuilder.build("stir_fry");
 
+foodBuilder.build("marshmallow");
+foodBuilder.build("s_more");
+
 foodBuilder.build("bread");
 
 var magicFoodBuilder = new ItemBuilder();
@@ -54,7 +57,7 @@ magicFoodBuilder.build("glowstone_tea");
 magicFoodBuilder.build("onion_sandwich");
 
 magicFoodBuilder.build("rad_ish");
-magicFoodBuilder.build("astral_root");
+magicFoodBuilder.build("capricorn");
 
 magicFoodBuilder.build("bully_peanut");
 magicFoodBuilder.build("sad_pistachio");

@@ -20,6 +20,10 @@
 <recipetype:thermal:lapidary_fuel>.addFuel("fluix_fuel", <item:appliedenergistics2:fluix_crystal>, 100000);
 
 <recipetype:thermal:lapidary_fuel>.addFuel("ametrine_fuel", <item:byg:ametrine_gems>, 500000);
+
+<recipetype:thermal:lapidary_fuel>.removeFuel(<item:thermal:ruby>);
+<recipetype:thermal:lapidary_fuel>.addFuel("new_ruby_fuel", <item:thermal:ruby>, 1000000);
+
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

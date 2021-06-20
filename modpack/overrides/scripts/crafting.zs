@@ -5,7 +5,11 @@ import crafttweaker.api.item.IItemStack;
 
 // The Great Removal of 2021
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-
+craftingTable.removeRecipe(<item:ironjetpacks:strap>);
+craftingTable.removeRecipe(<item:ironjetpacks:basic_coil>);
+craftingTable.removeRecipe(<item:ironjetpacks:advanced_coil>);
+craftingTable.removeRecipe(<item:ironjetpacks:elite_coil>);
+craftingTable.removeRecipe(<item:ironjetpacks:ultimate_coil>);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -180,8 +184,11 @@ craftingTable.addShapeless("jelly_from_melon", <item:contenttweaker:jelly>, [<it
 craftingTable.addShapeless("jelly_from_apple", <item:contenttweaker:jelly> * 2, [<item:minecraft:apple>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
 craftingTable.addShapeless("cheese", <item:contenttweaker:cheese>, [<item:minecraft:milk_bucket>]);
 
-craftingTable.addShaped("pancakes", <item:contenttweaker:pancakes>, [
+craftingTable.addShaped("waffles_from_syrup", <item:contenttweaker:pancakes>, [
     [<item:minecraft:air>, <item:contenttweaker:syrup_bottle>, <item:minecraft:air>],
+    [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
+craftingTable.addShaped("waffles_from_honey", <item:contenttweaker:pancakes> * 2, [
+    [<item:minecraft:air>, <item:minecraft:honey_bottle>, <item:minecraft:air>],
     [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
 
 furnace.addRecipe("popcorn", <item:contenttweaker:popcorn>, <tag:items:forge:crops/corn>, 0.5, 200);
@@ -220,7 +227,7 @@ craftingTable.addShapeless("stir_fry", <item:contenttweaker:stir_fry>, [<tag:ite
 craftingTable.addShapeless("sandwich_pbj", <item:contenttweaker:sandwich_pbj>, [<item:minecraft:bread>, <item:contenttweaker:peanut_butter>, <item:contenttweaker:jelly>]);
 craftingTable.addShapeless("sandwich_blt", <item:contenttweaker:sandwich_blt>, [<item:minecraft:bread>, <item:minecraft:cooked_porkchop>, <tag:items:minecraft:leaves>, <tag:items:forge:crops/tomato>]);
 
-craftingTable.addShapeless("redstone_espresso", <item:contenttweaker:redstone_espresso>, [<item:contenttweaker:coffee>, <tag:items:forge:dusts/redstone>, <item:thermal:frost_melon_slice>]);
+craftingTable.addShapeless("redstone_espresso", <item:contenttweaker:redstone_espresso>, [<item:contenttweaker:coffee>, <tag:items:forge:dusts/redstone>, <item:minecraft:sugar>]);
 craftingTable.addShapeless("glowstone_tea", <item:contenttweaker:glowstone_tea>, [<item:contenttweaker:tea>, <tag:items:forge:dusts/glowstone>, <item:thermal:sadiroot>]);
 craftingTable.addShapeless("onion_sandwich", <item:contenttweaker:onion_sandwich>, [<item:minecraft:bread>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>]);
 
@@ -352,49 +359,49 @@ craftingTable.removeRecipe(<item:refinedpipes:advanced_energy_pipe>);
 craftingTable.removeRecipe(<item:refinedpipes:advanced_item_pipe>);
 craftingTable.removeRecipe(<item:refinedpipes:advanced_fluid_pipe>);
 
-craftingTable.addShaped("redone_basic_extractor", <item:refinedpipes:basic_extractor_attachment>, [
+craftingTable.addShaped("redone_basic_extractor", <item:refinedpipes:basic_extractor_attachment> * 2, [
     [<item:minecraft:iron_nugget>, <tag:items:forge:ingots/copper>, <item:minecraft:iron_nugget>],
     [<item:minecraft:iron_ingot>, <item:minecraft:redstone>, <item:minecraft:iron_ingot>]]);
 
-craftingTable.addShaped("redone_improved_extractor", <item:refinedpipes:improved_extractor_attachment>, [
+craftingTable.addShaped("redone_improved_extractor", <item:refinedpipes:improved_extractor_attachment> * 2, [
     [<item:minecraft:iron_nugget>, <tag:items:forge:ingots/copper>, <item:minecraft:iron_nugget>],
     [<item:minecraft:gold_ingot>, <item:minecraft:redstone>, <item:minecraft:gold_ingot>]]);
 
-craftingTable.addShaped("redone_advanced_extractor", <item:refinedpipes:advanced_extractor_attachment>, [
+craftingTable.addShaped("redone_advanced_extractor", <item:refinedpipes:advanced_extractor_attachment> * 2, [
     [<item:minecraft:quartz>, <tag:items:forge:ingots/copper>, <item:minecraft:quartz>],
     [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:redstone>, <item:appliedenergistics2:certus_quartz_crystal>]]);
 
-craftingTable.addShaped("redone_elite_extractor", <item:refinedpipes:elite_extractor_attachment>, [
+craftingTable.addShaped("redone_elite_extractor", <item:refinedpipes:elite_extractor_attachment> * 2, [
     [<item:minecraft:blaze_rod>, <tag:items:forge:ingots/copper>, <item:minecraft:blaze_rod>],
     [<item:minecraft:emerald>, <item:minecraft:redstone>, <item:minecraft:emerald>]]);
 
-craftingTable.addShaped("redone_ultimate_extractor", <item:refinedpipes:ultimate_extractor_attachment>, [
+craftingTable.addShaped("redone_ultimate_extractor", <item:refinedpipes:ultimate_extractor_attachment> * 2, [
     [<item:minecraft:prismarine_shard>, <tag:items:forge:ingots/copper>, <item:minecraft:prismarine_shard>],
     [<item:minecraft:popped_chorus_fruit>, <item:minecraft:redstone>, <item:minecraft:popped_chorus_fruit>]]);
 
 
 
-craftingTable.addShaped("redone_basic_energy", <item:refinedpipes:basic_energy_pipe>, [
+craftingTable.addShaped("redone_basic_energy", <item:refinedpipes:basic_energy_pipe> * 6, [
     [<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>],
     [<item:minecraft:glass>, <item:minecraft:redstone>, <item:minecraft:glass>],
     [<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>]]);
 
-craftingTable.addShaped("redone_improved_energy", <item:refinedpipes:improved_energy_pipe>, [
+craftingTable.addShaped("redone_improved_energy", <item:refinedpipes:improved_energy_pipe> * 6, [
     [<item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>],
     [<item:minecraft:glass>, <item:minecraft:redstone>, <item:minecraft:glass>],
     [<item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>, <item:minecraft:gold_ingot>]]);
 
-craftingTable.addShaped("redone_advanced_energy", <item:refinedpipes:advanced_energy_pipe>, [
+craftingTable.addShaped("redone_advanced_energy", <item:refinedpipes:advanced_energy_pipe> * 6, [
     [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:quartz>, <item:appliedenergistics2:certus_quartz_crystal>],
     [<item:minecraft:glass>, <item:minecraft:redstone_block>, <item:minecraft:glass>],
     [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:quartz>, <item:appliedenergistics2:certus_quartz_crystal>]]);
 
-craftingTable.addShaped("redone_advanced_item", <item:refinedpipes:advanced_item_pipe>, [
+craftingTable.addShaped("redone_advanced_item", <item:refinedpipes:advanced_item_pipe> * 6, [
     [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:quartz>, <item:appliedenergistics2:certus_quartz_crystal>],
     [<item:minecraft:glass>, <item:minecraft:glass>, <item:minecraft:glass>],
     [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:quartz>, <item:appliedenergistics2:certus_quartz_crystal>]]);
 
-craftingTable.addShaped("redone_advanced_fluid", <item:refinedpipes:advanced_fluid_pipe>, [
+craftingTable.addShaped("redone_advanced_fluid", <item:refinedpipes:advanced_fluid_pipe> * 6, [
     [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:quartz>, <item:appliedenergistics2:certus_quartz_crystal>],
     [<item:minecraft:slime_ball>, <item:minecraft:glass>, <item:minecraft:slime_ball>],
     [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:quartz>, <item:appliedenergistics2:certus_quartz_crystal>]]);
@@ -417,10 +424,77 @@ craftingTable.addShapeless("upgrade_energy_basic_improved", <item:refinedpipes:i
 craftingTable.addShapeless("upgrade_energy_improved_advanced", <item:refinedpipes:advanced_energy_pipe>, [<item:refinedpipes:improved_energy_pipe>, <item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:redstone>]);
 craftingTable.addShapeless("upgrade_energy_advanced_elite", <item:refinedpipes:elite_energy_pipe>, [<item:refinedpipes:advanced_energy_pipe>, <item:minecraft:emerald>]);
 craftingTable.addShapeless("upgrade_energy_elite_ultimate", <item:refinedpipes:ultimate_energy_pipe>, [<item:refinedpipes:elite_energy_pipe>, <item:minecraft:popped_chorus_fruit>]);
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Overlap Between Thermal and Quark's Crates
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+craftingTable.removeRecipe(<item:thermal:beetroot_block>);
+craftingTable.removeRecipe(<item:thermal:potato_block>);
+craftingTable.removeRecipe(<item:thermal:carrot_block>);
+craftingTable.removeRecipe(<item:thermal:apple_block>);
+craftingTable.removeRecipe(<item:thermal:bamboo_block>);
+craftingTable.removeRecipe(<item:thermal:sugar_cane_block>);
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Fiery Gear Can be Upgraded to Netherite... Just as a Little Incentive.
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+smithing.addRecipe("netherite_helmet_from_fire", <item:minecraft:netherite_helmet>, <item:twilightforest:fiery_helmet>, <item:minecraft:netherite_ingot>);
+smithing.addRecipe("netherite_chest_from_fire", <item:minecraft:netherite_chestplate>, <item:twilightforest:fiery_chestplate>, <item:minecraft:netherite_ingot>);
+smithing.addRecipe("netherite_leggings_from_fire", <item:minecraft:netherite_leggings>, <item:twilightforest:fiery_leggings>, <item:minecraft:netherite_ingot>);
+smithing.addRecipe("netherite_boots_from_fire", <item:minecraft:netherite_boots>, <item:twilightforest:fiery_boots>, <item:minecraft:netherite_ingot>);
+
+smithing.addRecipe("netherite_sword_from_fire", <item:minecraft:netherite_sword>, <item:twilightforest:fiery_sword>, <item:minecraft:netherite_ingot>);
+smithing.addRecipe("netherite_pickaxe_from_fire", <item:minecraft:netherite_pickaxe>, <item:twilightforest:fiery_pickaxe>, <item:minecraft:netherite_ingot>);
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Fixing IE Slag vs. Thermal Slag Concrete
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+craftingTable.removeByName("immersiveengineering:crafting/concrete2");
+
+craftingTable.addShaped("thermal_ie_oncrete", <item:immersiveengineering:concrete> * 12, [
+    [<item:thermal:slag>, <item:minecraft:clay_ball>, <item:thermal:slag>],
+    [<item:minecraft:gravel>, <item:minecraft:water_bucket>, <item:minecraft:gravel>],
+    [<item:thermal:slag>, <item:minecraft:clay_ball>, <item:thermal:slag>]]);
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Alternate Wood Crafting: Blame Quark.
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+craftingTable.addShaped("only_byg_sign", <item:minecraft:oak_sign> * 3, [
+    [<tag:items:only_byg_planks>, <tag:items:only_byg_planks>, <tag:items:only_byg_planks>],
+    [<tag:items:only_byg_planks>, <tag:items:only_byg_planks>, <tag:items:only_byg_planks>],
+    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]]);
+
+craftingTable.addShaped("non_vanilla_ladder", <item:minecraft:ladder> * 3, [
+    [<item:minecraft:stick>, <item:minecraft:air>, <item:minecraft:stick>],
+    [<item:minecraft:stick>, <item:minecraft:stick>, <item:minecraft:stick>],
+    [<item:minecraft:stick>, <item:minecraft:air>, <item:minecraft:stick>]]);
+
+craftingTable.addShaped("only_byg_chest", <item:minecraft:chest>, [
+    [<tag:items:only_byg_planks>, <tag:items:only_byg_planks>, <tag:items:only_byg_planks>],
+    [<tag:items:only_byg_planks>, <item:minecraft:air>, <tag:items:only_byg_planks>],
+    [<tag:items:only_byg_planks>, <tag:items:only_byg_planks>, <tag:items:only_byg_planks>]]);
+
+craftingTable.addShapeless("chest_2_chest", <item:minecraft:chest>, [<tag:items:forge:chests/wooden>]);
 
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Crafting Carapace into Chitin, because why not...
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+craftingTable.addShaped("carapace_to_chitin", <item:druidcraft:chitin>, [
+    [<item:mysticalworld:carapace>, <item:mysticalworld:carapace>],
+    [<item:mysticalworld:carapace>, <item:mysticalworld:carapace>]]);
+
+craftingTable.addShapeless("chitin_to_carapace", <item:mysticalworld:carapace> * 4, [<item:druidcraft:chitin>]);
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 

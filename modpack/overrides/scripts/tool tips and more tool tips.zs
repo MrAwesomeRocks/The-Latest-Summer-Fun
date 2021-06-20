@@ -24,6 +24,8 @@ import crafttweaker.api.util.text.MCStyle;
 <item:thermal:sapphire_block>.addTooltip("I can't get it to show up in JEI. Consider this an easter-egg?");
 <item:thermal:sapphire>.addTooltip("I can't get it to show up in JEI. Consider this an easter-egg?");
 
+<item:immersiveengineering:slag>.addTooltip("Unobtainable and useless. Use Thermal's Slag instead!");
+
 <item:thermal:sapphire>.addTooltip("It seems full of magical potential.");
 <item:thermal:ruby>.addTooltip("It seems flux-rich.");
 

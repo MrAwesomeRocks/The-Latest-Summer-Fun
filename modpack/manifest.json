@@ -3,7 +3,7 @@
     "version": "1.16.5",
     "modLoaders": [
       {
-        "id": "forge-36.1.0",
+        "id": "forge-36.1.32",
         "primary": true
       }
     ]
@@ -728,6 +728,16 @@
     {
       "projectID": 453925,
       "fileID": 3231567,
+      "required": true
+    },
+    {
+      "projectID": 454372,
+      "fileID": 3357863,
+      "required": true
+    },
+    {
+      "projectID": 465066,
+      "fileID": 3277762,
       "required": true
     },
     {

@@ -1,0 +1,40 @@
+
+#Fans settings
+[general]
+	#Diamond fan range (in blocks)
+	#Range: > 0
+	diamondFanRange = 12
+	#Iron fan speed
+	#Range: 0.0 ~ 1000.0
+	ironFanSpeed = 0.06
+	#Gold fan range (in blocks)
+	#Range: > 0
+	goldFanRange = 10
+	#Configurable fan max range (in blocks)
+	#Range: 1 ~ 15
+	configurableFanMaxRange = 15
+	#Gold fan speed
+	#Range: 0.0 ~ 1000.0
+	goldFanSpeed = 0.1
+	#Configurable fan speed
+	#Range: 0.0 ~ 1000.0
+	configurableFanSpeed = 0.15
+	#Iron fan range (in blocks)
+	#Range: > 0
+	ironFanRange = 8
+	#Diamond fan speed
+	#Range: 0.0 ~ 1000.0
+	diamondFanSpeed = 0.15
+	#Max distance from sticky fan considered as touching fan. Entities within this range aren't pushed.
+	#Range: 0.0 ~ 1000.0
+	stickyRange = 0.1
+	#Emerald fan speed
+	#Range: 0.0 ~ 1000.0
+	emeraldFanSpeed = 0.2
+	#Redstone fan speed
+	#Range: 0.0 ~ 1000.0
+	redstoneFanSpeed = 0.13
+	#Emerald fan range (in blocks)
+	#Range: > 0
+	emeraldFanRange = 16
+

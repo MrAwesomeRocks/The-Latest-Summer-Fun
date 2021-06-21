@@ -506,3 +506,8 @@ VBOs
 waypoints
 waystones
 whitelisted
+hilight
+optifine
+rftoolsutility
+storagescanner
+ubuntu

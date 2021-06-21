@@ -22,16 +22,13 @@
 
 <hr> -->
 
-## :page_with_curl: Table of Contents
-- [:page_with_curl: Table of Contents](#page_with_curl-table-of-contents)
+### :page_with_curl: Table of Contents
 - [:dart: About](#dart-about)
 - [:sparkles: Features](#sparkles-features)
 - [:rocket: Technologies](#rocket-technologies)
 - [:white_check_mark: Requirements](#white_check_mark-requirements)
 - [:checkered_flag: Starting](#checkered_flag-starting)
 - [:memo: License](#memo-license)
-
-<br>
 
 ## :dart: About
 

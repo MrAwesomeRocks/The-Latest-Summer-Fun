@@ -11,8 +11,6 @@
 
   <img alt="Github pull requests" src="https://img.shields.io/github/issues-pr/MrAwesomeRocks/the-latest-summer-fun?style=for-the-badge" />
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/MrAwesomeRocks/the-latest-summer-fun?style=for-the-badge">
-
   <img alt="License" src="https://img.shields.io/github/license/MrAwesomeRocks/the-latest-summer-fun?style=for-the-badge">
 </p>
 

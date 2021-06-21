@@ -34,6 +34,7 @@ jobs:
         experimental_apply_changes_via_bot: 1
         extra_dictionaries:
           cspell:bash/bash-words.txt
+          cspell:java/java.txt
           cspell:companies/companies.txt
           cspell:en_GB/src/wordsEnGb.txt
           cspell:filetypes/filetypes.txt

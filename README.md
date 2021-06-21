@@ -1,5 +1,5 @@
 <div align="center" id="top">
-  <img src="./modpack/icon.png" alt="The Latest Summer Fun" />
+  <img src="./modpack/overrides/icon.png" alt="The Latest Summer Fun" />
 </div>
 
 <h1 align="center">The Latest Summer Fun: Super Special New Edition (Gluten Free)</h1>

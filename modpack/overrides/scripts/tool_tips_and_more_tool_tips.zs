@@ -29,4 +29,13 @@ import crafttweaker.api.util.text.MCStyle;
 
 <item:thermal:sapphire>.addTooltip("It seems full of magical potential.");
 <item:thermal:ruby>.addTooltip("It seems flux-rich.");
+
+<item:upgrade_aquatic:white_jelly_torch>.addTooltip("Obtained by right-clicking a jellyfish with a prismarine rod.");
+<item:upgrade_aquatic:pink_jelly_torch>.addTooltip("Obtained by right-clicking a jellyfish with a prismarine rod.");
+<item:upgrade_aquatic:purple_jelly_torch>.addTooltip("Obtained by right-clicking a jellyfish with a prismarine rod.");
+<item:upgrade_aquatic:blue_jelly_torch>.addTooltip("Obtained by right-clicking a jellyfish with a prismarine rod.");
+<item:upgrade_aquatic:green_jelly_torch>.addTooltip("Obtained by right-clicking a jellyfish with a prismarine rod.");
+<item:upgrade_aquatic:yellow_jelly_torch>.addTooltip("Obtained by right-clicking a jellyfish with a prismarine rod.");
+<item:upgrade_aquatic:orange_jelly_torch>.addTooltip("Obtained by right-clicking a jellyfish with a prismarine rod.");
+<item:upgrade_aquatic:red_jelly_torch>.addTooltip("Obtained by right-clicking a jellyfish with a prismarine rod.");
 // ---------------------------------------------------------------------------------------------------------------------------------------------

@@ -10,6 +10,18 @@ craftingTable.removeRecipe(<item:ironjetpacks:basic_coil>);
 craftingTable.removeRecipe(<item:ironjetpacks:advanced_coil>);
 craftingTable.removeRecipe(<item:ironjetpacks:elite_coil>);
 craftingTable.removeRecipe(<item:ironjetpacks:ultimate_coil>);
+
+craftingTable.removeRecipe(<item:calemiutils:book_stand>);
+craftingTable.removeRecipe(<item:calemiutils:blueprint_filler>);
+craftingTable.removeRecipe(<item:calemiutils:link_book_location>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_wood>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_stone>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_iron>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_gold>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_diamond>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_netherite>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_starlight>);
+craftingTable.removeByName("calemiutils:coins/coin_penny_from_raritanium");
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -178,10 +190,16 @@ craftingTable.addShaped("blizz_unit", <item:simplyjetpacks:unit_cryotheum>, [
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 craftingTable.addShapeless("syrup_from_bucket", <item:contenttweaker:syrup_bottle> * 4, [<item:thermal:syrup_bucket>, <item:minecraft:glass_bottle>, <item:minecraft:glass_bottle>, <item:minecraft:glass_bottle>, <item:minecraft:glass_bottle>]);
 craftingTable.addShapeless("peanut_butter", <item:contenttweaker:peanut_butter>, [<tag:items:forge:crops/peanut>]);
+
 craftingTable.addShapeless("jelly_from_berry", <item:contenttweaker:jelly>, [<item:minecraft:sweet_berries>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
+craftingTable.addShapeless("jelly_from_elderberry", <item:contenttweaker:jelly>, [<item:druidcraft:elderberries>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
+craftingTable.addShapeless("jelly_from_blueberry", <item:contenttweaker:jelly>, [<tag:items:forge:crops/blueberries>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
 craftingTable.addShapeless("jelly_from_strawberry", <item:contenttweaker:jelly>, [<item:thermal:strawberry>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
 craftingTable.addShapeless("jelly_from_melon", <item:contenttweaker:jelly>, [<item:minecraft:melon_slice>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
-craftingTable.addShapeless("jelly_from_apple", <item:contenttweaker:jelly> * 2, [<item:minecraft:apple>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
+craftingTable.addShapeless("jelly_from_apple", <item:contenttweaker:jelly> * 2, [<item:minecraft:apple>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}), <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
+craftingTable.addShapeless("jelly_from_crimson_berries", <item:contenttweaker:jelly> * 2, [<item:byg:crimson_berries>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}), <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
+craftingTable.addShapeless("jelly_from_nightshade_berries", <item:contenttweaker:jelly> * 2, [<item:byg:nightshade_berries>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}), <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
+
 craftingTable.addShapeless("cheese", <item:contenttweaker:cheese>, [<item:minecraft:milk_bucket>]);
 
 craftingTable.addShaped("waffles_from_syrup", <item:contenttweaker:pancakes>, [
@@ -495,6 +513,36 @@ craftingTable.addShapeless("chitin_to_carapace", <item:mysticalworld:carapace> *
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
+// Temporary Jelly Torch Recipe, until Upgrade Aquatic adds Jellyfish.
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+craftingTable.addShapeless("jellytorch_pink", <item:upgrade_aquatic:pink_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:pink_dye>]);
+craftingTable.addShapeless("jellytorch_purple", <item:upgrade_aquatic:purple_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:purple_dye>]);
+craftingTable.addShapeless("jellytorch_blue", <item:upgrade_aquatic:blue_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:blue_dye>]);
+craftingTable.addShapeless("jellytorch_green", <item:upgrade_aquatic:green_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:green_dye>]);
+craftingTable.addShapeless("jellytorch_yellow", <item:upgrade_aquatic:yellow_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:yellow_dye>]);
+craftingTable.addShapeless("jellytorch_orange", <item:upgrade_aquatic:orange_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:orange_dye>]);
+craftingTable.addShapeless("jellytorch_red", <item:upgrade_aquatic:red_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:red_dye>]);
+craftingTable.addShapeless("jellytorch_white", <item:upgrade_aquatic:white_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:white_dye>]);
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Either Blueberry Can be Used for Either Recipe
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+craftingTable.removeRecipe(<item:byg:blueberry_pie>);
+craftingTable.removeRecipe(<item:druidcraft:blueberry_muffin>);
+
+craftingTable.addShapeless("blueberry_pie_redone", <item:byg:blueberry_pie>, [<tag:items:forge:crops/blueberries>, <item:minecraft:sugar>, <item:minecraft:egg>]);
+craftingTable.addShapeless("blueberry_muffin_redone", <item:druidcraft:blueberry_muffin>, [<tag:items:forge:crops/blueberries>, <item:minecraft:sugar>, <item:minecraft:egg>, <item:minecraft:wheat>]);
+
+craftingTable.addShapeless("crimsonberry_dye", <item:minecraft:orange_dye>, [<item:byg:crimson_berries>]);
+craftingTable.addShapeless("sweetberry_dye", <item:minecraft:red_dye>, [<item:minecraft:sweet_berries>]);
+craftingTable.addShapeless("elderberry_dye", <item:minecraft:purple_dye>, [<item:druidcraft:elderberries>]);
+craftingTable.addShapeless("hollyberry_dye", <item:minecraft:red_dye>, [<item:byg:holly_berries>]);
+craftingTable.addShapeless("nightshadeberry_dye", <item:minecraft:yellow_dye>, [<item:byg:nightshade_berries>]);
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
 

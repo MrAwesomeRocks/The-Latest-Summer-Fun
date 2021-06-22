@@ -9,7 +9,7 @@
 		disableWorldGen = false
 		#
 		#Forward caught TileEntityExceptions to the log at debug level.
-		logTeErrors = false
+		logTeErrors = true
 
 		[worldgen.v2.copper_ore]
 			#No comment

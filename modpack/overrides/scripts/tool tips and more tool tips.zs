@@ -30,6 +30,11 @@ import crafttweaker.api.util.text.MCStyle;
 <item:thermal:ruby>.addTooltip("It seems flux-rich.");
 
 
+<item:druidcraft:amber>.addTooltip("Piglins will enjoy this.");
+<item:druidcraft:amber_block>.addTooltip("Piglins will enjoy this.");
+
+
+
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 // addTooltip("Provides 10,000" ~ format.red(" GP") ~ format.gray("."));

@@ -3,7 +3,6 @@
 ## Nino
 
 ### Without Minecraft
-- Add FiraCode NF to RFTools Utility
 
 ### In-Minecraft
 - Add Calemi's utilities (https://canary.discord.com/channels/805225392276897832/805230514042175488/831544433454350358)
@@ -21,6 +20,10 @@
 
 ### Stalled
 - Make the infinity tools cheaper - **NOT POSSIBLE YET**
+- Create-vanilla texture pack - **DISCORD**
+- AE2 crash prevention - **DISCORD**
+- Own particle effects - **DISCORD**
+- Add FiraCode NF to RFTools Utility - **DISCORD**
 
 ## Puncrafter
 - Bowls

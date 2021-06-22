@@ -58,7 +58,7 @@
 
 	[automation.chain_linkage]
 		#Can vehicle-linking chains be used for crafting chain armor?
-		"Crafts Armor" = true
+		"Crafts Armor" = false
 
 	[automation.redstone_circuit]
 		"Enable Inductor" = true
@@ -423,7 +423,7 @@
 		#Allowed values: (0,)
 		"Afk Time" = 2400
 		#Allowed values: (0,1]
-		"Percent Req" = 1.0
+		"Percent Req" = 0.25
 
 	[tweaks.emotes]
 		#The enabled default emotes. Remove from this list to disable them. You can also re-order them, if you feel like it.
@@ -1595,7 +1595,7 @@
 				"Is Blacklist" = false
 
 [client]
-	"Greener Grass" = true
+	"Greener Grass" = false  # if you want neon grass you can re-enable this
 	"Variant Animal Textures" = true
 	"Back Button Keybind" = true
 	"Improved Tooltips" = true

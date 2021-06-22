@@ -16,7 +16,7 @@
 		enableJetpackHud = true
 		#HUD Position
 		#Allowed Values: TOP_LEFT, TOP_CENTER, TOP_RIGHT, LEFT, RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
-		hudTextPosition = "TOP_LEFT"
+		hudTextPosition = "LEFT"  # This is where the ironjetpacks HUD is
 		#HUD Position X Offset
 		#Range: > -2147483648
 		hudXOffset = 0

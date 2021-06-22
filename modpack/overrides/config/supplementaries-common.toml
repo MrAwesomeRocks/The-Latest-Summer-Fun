@@ -60,13 +60,13 @@
 		velocity = 1.5
 
 	[blocks.bellows]
-		#velocity increase uses this equation: 
-		#vel = base_vel*((range-entity_distance)/range) with base_vel = base_velocity_scaling/period 
+		#velocity increase uses this equation:
+		#vel = base_vel*((range-entity_distance)/range) with base_vel = base_velocity_scaling/period
 		#note that the block will push further the faster it's pulsing
 		#Range: 0.0 ~ 64.0
 		base_velocity_scaling = 5.0
-		#bellows pushes air following this equation: 
-		#air=(sin(2PI*ticks/period)<0), with period = base_period-(redstone_power-1)*power_scaling 
+		#bellows pushes air following this equation:
+		#air=(sin(2PI*ticks/period)<0), with period = base_period-(redstone_power-1)*power_scaling
 		#represents base period at 1 power
 		#Range: 1 ~ 512
 		base_period = 78
@@ -82,7 +82,7 @@
 
 	[blocks.safe]
 		#makes safes only breakable by their owner or by a player in creative
-		prevent_breaking = false
+		prevent_breaking = true
 		#make safes simpler so they do not require keys:
 		#they will be bound to the first person that opens one and only that person will be able to interact with them
 		simple_safes = false
@@ -92,7 +92,7 @@
 		allow_any_item = false
 
 	[blocks.jar]
-		#catchable mobs 
+		#catchable mobs
 		#due to a vanilla bug some mobs might not render correctly or at all
 		mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexsmobs:fly", "alexsmobs:hummingbird", "alexsmobs:cockroach", "terraincognita:butterfly", "buzzierbees:honey_slime", "mysticalworld:frog", "mysticalworld:beetle", "mysticalworld:silkworm", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "betteranimalsplus:goose", "endergetic:puff_bug", "betterendforge:end_slime", "betterendforge:dragonfly", "betterendforge:silk_moth", "savageandravage:creepie", "betteranimalsplus:butterfly", "whisperwoods:moth", "fins:river_pebble_snail", "minecraft:fish", "minecraft:tropical_fish", "minecraft:salmon", "minecraft:cod", "minecraft:pufferfish", "minecraft:axolotl", "fins:pea_wee", "fins:wee_wee", "fins:vibra_wee", "fins:blu_wee", "fins:ornate_bugfish", "fins:spindly_gem_crab", "fins:phantom_nudibranch", "fins:high_finned_blue", "fins:teal_arrowfish", "fins:midnight_squid", "fins:banded_redback_shrimp", "fins:flatback_sucker", "fins:swamp_mucker", "upgrade_aquatic:lionfish", "upgrade_aquatic:nautilus", "upgrade_aquatic:pike", "alexsmobs:stradpole", "alexsmobs:blobfish", "unnamedanimalmod:flashlight_fish", "unnamedanimalmod:elephantnose_fish", "unnamedanimalmod:black_diamond_stingray", "unnamedanimalmod:humphead_parrotfish", "unnamedanimalmod:tomato_frog", "unnamedanimalmod:pacman_frog", "bettas:betta_fish", "pogfish:pogfish", "undergarden:gwibling", "environmental:koi", "betterendforge:end_fish", "betteranimalsplus:flying_fish", "betteranimalsplus:nautilus", "betteranimalsplus:eel_freshwater", "betteranimalsplus:eel_saltwater", "betteranimalsplus:lamprey", "betteranimalsplus:piranha", "betteranimalsplus:barracuda", "rediscovered:fish"]
 		#tinted jar catchable mobs
@@ -118,7 +118,7 @@
 		max = 9
 		#Whitelisted mods. All biomes from said mods will be able to spawn fireflies. Use the one above for more control
 		mod_whitelist = []
-		#Spawn weight 
+		#Spawn weight
 		#Set to 0 to disable spawning entirely
 		#Range: 0 ~ 100
 		weight = 3

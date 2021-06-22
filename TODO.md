@@ -15,7 +15,7 @@
 - Check Minimap settings button
 
 ### Discuss
-- Replacement for raratanium
+- Replacement for raratanium ~> copper
 - Better fluids for AE2? config-common L152
 
 ### Stalled
@@ -23,7 +23,6 @@
 - Create-vanilla texture pack - **DISCORD**
 - AE2 crash prevention - **DISCORD**
 - Own particle effects - **DISCORD**
-- Add FiraCode NF to RFTools Utility - **DISCORD**
 
 ## Puncrafter
 - Bowls

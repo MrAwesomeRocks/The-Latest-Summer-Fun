@@ -1,0 +1,9 @@
+{
+  "providers": [
+    {
+      "type": "ttf",
+      "file": "rftoolsutility:firacode_nf.ttf",
+      "size": 20
+    }
+  ]
+}

@@ -8,6 +8,7 @@ import crafttweaker.api.event.entity.living.MCLivingEntityUseItemFinishEvent;
 import crafttweaker.api.commands.custom.MCCommandSource;
 import crafttweaker.api.commands.custom.MCCommandDispatcher;
 import crafttweaker.api.server.MCServer;
+import crafttweaker.api.player.MCPlayerEntity;
 
 // MCCommandDispatcher.execute(input as string, source as MCCommandSource) as int
 
@@ -16,16 +17,30 @@ import crafttweaker.api.server.MCServer;
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 CTEventManager.register<crafttweaker.api.event.entity.living.MCLivingEntityUseItemFinishEvent>((event) => {
-    var player = event.getEntityLiving();
-    var result = event.item;
-    // var server = event.MCServer;
-    if (result.matches(<item:contenttweaker:syrup_bottle>)) {
-        println("Some Event was captured");
-        // server.executeCommand("/say hi", player);
+    if event.getEntityLiving() is MCPlayerEntity {
+
+        // var player as MCPlayerEntity = event.getEntityLiving();
+        var player = event.getEntityLiving();
+
+        var result = event.item;
+        if player.getWorld().isRemote() { return; }
+        if (result.matches(<item:contenttweaker:syrup_bottle>)) {
+            println("A player drank a custom bottled food!");
+            // player.give(<item:minecraft:glass_bottle>);
+            /*
+            if (player.isCreative()) {
+                player.give(<item:minecraft:glass_bottle>);
+            }
+            */
+
+            // server.executeCommand("/say hi", player);
+        }
     }
 });
 
-/* 
+
+
+/*
 
 // First things first, you should import the CTEventManager, which allows you to register Events.
 import crafttweaker.api.events.CTEventManager;

@@ -1,0 +1,163 @@
+{
+  "TestBuyItem": {
+    "index": 0,
+    "stackStr": "minecraft:cobblestone",
+    "stackNBT": "",
+    "amount": 16,
+    "value": 5
+  },
+  "OakLogsForSale": {
+    "index": 1,
+    "stackStr": ":minecraft:oak_log",
+    "stackNBT": "",
+    "amount": 8,
+    "value": 5
+  },
+  "OakSaplingForSale": {
+    "index": 2,
+    "stackStr": ":minecraft:oak_sapling",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 5
+  },
+  "TwilightOakSaplingForSale": {
+    "index": 3,
+    "stackStr": "twilightforest:hollow_oak_sapling",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 1000
+  },
+  "TimeSaplingForSale": {
+    "index": 4,
+    "stackStr": "twilightforest:time_sapling",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 1000
+  },
+  "TransformSaplingForSale": {
+    "index": 5,
+    "stackStr": "twilightforest:transformation_sapling",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 1000
+  },
+  "MiningSaplingForSale": {
+    "index": 6,
+    "stackStr": "twilightforest:mining_sapling",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 1000
+  },
+  "SortingSaplingForSale": {
+    "index": 7,
+    "stackStr": "twilightforest:sorting_sapling",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 1000
+  },
+  "CoalForSale": {
+    "index": 8,
+    "stackStr": "minecraft:coal_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 50
+  },
+  "IronForSale": {
+    "index": 9,
+    "stackStr": "minecraft:iron_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "GoldForSale": {
+    "index": 10,
+    "stackStr": "minecraft:gold_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "DiamondForSale": {
+    "index": 11,
+    "stackStr": "minecraft:diamond_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 200
+  },
+  "LapisForSale": {
+    "index": 12,
+    "stackStr": "minecraft:lapis_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 150
+  },
+  "RedstoneForSale": {
+    "index": 13,
+    "stackStr": "minecraft:redstone_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 150
+  },
+  "EmeraldForSale": {
+    "index": 14,
+    "stackStr": "minecraft:emerald_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 150
+  },
+  "QuartzForSale": {
+    "index": 15,
+    "stackStr": "minecraft:nether_quartz_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "UraniteForSale": {
+    "index": 16,
+    "stackStr": "powah:uraninite_ore_poor",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 150
+  },
+  "LeadForSale": {
+    "index": 17,
+    "stackStr": "eidolon:lead_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "CopperForSale": {
+    "index": 18,
+    "stackStr": "thermal:copper_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "ZincForSale": {
+    "index": 19,
+    "stackStr": "create:zinc_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "QuicksilverForSale": {
+    "index": 20,
+    "stackStr": "mysticalworld:quicksilver_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "AmethystForSale": {
+    "index": 21,
+    "stackStr": "mysticalworld:amethyst_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 200
+  },
+  "DimShardForSale": {
+    "index": 22,
+    "stackStr": "rftoolsbase:dimensionalshard_overworld",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 500
+  }
+}

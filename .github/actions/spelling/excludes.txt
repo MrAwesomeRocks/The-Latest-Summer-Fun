@@ -16,3 +16,6 @@ ignore$
 \.wav$
 ^\.github/
 ^\.vscode/
+\.jar$
+\.zip$
+\.ttf$

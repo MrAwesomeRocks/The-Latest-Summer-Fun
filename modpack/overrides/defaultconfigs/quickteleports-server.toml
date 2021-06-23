@@ -1,0 +1,4 @@
+#Timeout for teleport requests, in seconds.
+#Range: > 0
+teleport_request_timeout = 60
+

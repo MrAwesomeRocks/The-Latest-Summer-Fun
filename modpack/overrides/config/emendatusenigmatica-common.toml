@@ -148,7 +148,7 @@
 		#Range: 0 ~ 64
 		nether_count = 7
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
@@ -473,7 +473,7 @@
 		#Range: 0 ~ 64
 		nether_count = 16
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
@@ -497,7 +497,7 @@
 		#Range: 0 ~ 64
 		overworld_size = 14
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = true
+		generate_in_the_overworld = false
 
 	["Nether Quartz Config"."The End"]
 		#Baseline Y-Level [Default: 80]
@@ -1123,7 +1123,7 @@
 		#Range: 0 ~ 64
 		nether_count = 4
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
@@ -1147,7 +1147,7 @@
 		#Range: 0 ~ 64
 		overworld_size = 8
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = true
+		generate_in_the_overworld = false
 
 	["Cobalt Config"."The End"]
 		#Baseline Y-Level [Default: 52]
@@ -1188,7 +1188,7 @@
 		#Range: 0 ~ 64
 		nether_count = 16
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
@@ -1253,7 +1253,7 @@
 		#Range: 0 ~ 64
 		nether_count = 8
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
@@ -1342,7 +1342,7 @@
 		#Range: 0 ~ 64
 		overworld_size = 9
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = true
+		generate_in_the_overworld = false
 
 	["Fluorite Config"."The End"]
 		#Baseline Y-Level [Default: 36]
@@ -1407,7 +1407,7 @@
 		#Range: 0 ~ 64
 		overworld_size = 18
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = true
+		generate_in_the_overworld = false
 
 	["Bitumen Config"."The End"]
 		#Baseline Y-Level [Default: 120]
@@ -1667,7 +1667,7 @@
 		#Range: 0 ~ 64
 		overworld_size = 5
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = true
+		generate_in_the_overworld = false
 
 	["Potassium Nitrate Config"."The End"]
 		#Baseline Y-Level [Default: 45]
@@ -1732,7 +1732,7 @@
 		#Range: 0 ~ 64
 		overworld_size = 6
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = true
+		generate_in_the_overworld = false
 
 	["Arcane Config"."The End"]
 		#Baseline Y-Level [Default: 53]
@@ -1797,7 +1797,7 @@
 		#Range: 0 ~ 64
 		overworld_size = 2
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = true
+		generate_in_the_overworld = false
 
 	["Dimensional Shard Config"."The End"]
 		#Baseline Y-Level [Default: 30]
@@ -1825,86 +1825,86 @@
 	active = true
 
 ["Stratum Config: minecraft_andesite"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_granite"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_diorite"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_sand"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_gravel"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_netherrack"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_blackstone"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_basalt"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_soul_soil"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_end_stone"]
-	active = false
+	active = true
 
 ["Stratum Config: create_gabbro"]
-	active = false
+	active = true
 
 ["Stratum Config: create_limestone"]
-	active = false
+	active = true
 
 ["Stratum Config: create_scoria"]
-	active = false
+	active = true
 
 ["Stratum Config: create_weathered_limestone"]
-	active = false
+	active = true
 
 ["Stratum Config: quark_jasper"]
-	active = false
+	active = true
 
 ["Stratum Config: quark_marble"]
-	active = false
+	active = true
 
 ["Stratum Config: quark_slate"]
-	active = false
+	active = true
 
 ["Stratum Config: byg_mossy_stone"]
-	active = false
+	active = true
 
 ["Stratum Config: byg_brimstone"]
-	active = false
+	active = true
 
 ["Stratum Config: byg_subzero_ash"]
-	active = false
+	active = true
 
 ["Stratum Config: byg_blue_netherrack"]
-	active = false
+	active = true
 
 ["Stratum Config: byg_nylium_soul_soil"]
-	active = false
+	active = true
 
 ["Stratum Config: byg_ether_stone"]
-	active = false
+	active = true
 
 ["Stratum Config: byg_cryptic_stone"]
-	active = false
+	active = true
 
 ["Stratum Config: betterend_flavolite"]
-	active = false
+	active = true
 
 ["Stratum Config: betterend_sulphuric_rock"]
-	active = false
+	active = true
 
 ["Stratum Config: betterend_violecite"]
-	active = false
+	active = true
 
 ["Stratum Config: astral_marble"]
-	active = false
+	active = true
 

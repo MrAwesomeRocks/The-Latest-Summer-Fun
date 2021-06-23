@@ -871,10 +871,10 @@
 	["Uranium Config".Overworld]
 		#Baseline Y-Level [Default: 12]
 		#Range: 0 ~ 256
-		overworld_base = 12
+		overworld_base = 24
 		#Average Ores per Chunk [Default: 6]
 		#Range: 0 ~ 64
-		overworld_count = 6
+		overworld_count = 12
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
@@ -1121,7 +1121,7 @@
 		nether_base = 62
 		#Average Ores per Chunk [Default: 4]
 		#Range: 0 ~ 64
-		nether_count = 4
+		nether_count = 8
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
 		generate_in_the_nether = true
 		#List of biome IDs in which the ore is not allowed to generate.
@@ -1760,18 +1760,18 @@
 	["Dimensional Shard Config"."The Nether"]
 		#Ore Vein Size [Default: 2]
 		#Range: 0 ~ 64
-		nether_size = 2
+		nether_size = 8
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 10]
 		#Range: 0 ~ 128
-		nether_spread = 10
+		nether_spread = 19
 		#Baseline Y-Level [Default: 40]
 		#Range: 0 ~ 128
-		nether_base = 40
+		nether_base = 21
 		#Average Ores per Chunk [Default: 2]
 		#Range: 0 ~ 64
-		nether_count = 2
+		nether_count = 8
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
 		generate_in_the_nether = false
 		#List of biome IDs in which the ore is not allowed to generate.
@@ -1781,10 +1781,10 @@
 	["Dimensional Shard Config".Overworld]
 		#Baseline Y-Level [Default: 10]
 		#Range: 0 ~ 256
-		overworld_base = 10
+		overworld_base = 41
 		#Average Ores per Chunk [Default: 2]
 		#Range: 0 ~ 64
-		overworld_count = 2
+		overworld_count = 8
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
@@ -1792,20 +1792,20 @@
 		overworld_biome_list_invert = false
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 10]
 		#Range: 0 ~ 256
-		overworld_spread = 10
+		overworld_spread = 39
 		#Configure the ore Vein Size [Default: 2]
 		#Range: 0 ~ 64
-		overworld_size = 2
+		overworld_size = 10
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
 		generate_in_the_overworld = false
 
 	["Dimensional Shard Config"."The End"]
 		#Baseline Y-Level [Default: 30]
 		#Range: 0 ~ 256
-		end_base = 30
+		end_base = 21
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 10]
 		#Range: 0 ~ 256
-		end_spread = 10
+		end_spread = 19
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
 		#List of biome IDs in which the ore is not allowed to generate.
@@ -1818,7 +1818,7 @@
 		end_count = 2
 		#Ore Vein Size [Default: 2]
 		#Range: 0 ~ 64
-		end_size = 2
+		end_size = 5
 
 #World Gen - Ore Generation on Strata Stone Type
 ["Stratum Config: minecraft_stone"]

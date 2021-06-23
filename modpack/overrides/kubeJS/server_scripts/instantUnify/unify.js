@@ -11,6 +11,7 @@ global["UNIFY_ORE_GEN"] = true
 
 // Mod priorities
 global["unifypriorities"] = [
+    "minecraft",
     "emendatusenigmatica",
     "mekanism",
     "thermal",
@@ -36,29 +37,111 @@ var tags = []
     "forge:ores/osmium",
     "forge:ores/sulfur",
 ]*/
+
 // Easier way to add multiple tags (feel free to add empty extra tags, this will ignore them)
+// Adding every possible tag SHOULD work
 var tagGen = [
-    "coal=dusts",
-    "iron=dusts,gears,plates,rods",
-    "gold=dusts,gears,plates,rods",
-    "diamond=dusts,gears,plates",
-    "emerald=dusts,gears",
-    "lapis_lazuli=dusts,gears,plates",
-    "nether_quartz=dusts,gears",
-    "copper=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
-    "tin=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
-    "aluminum=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
-    "lead=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
-    "silver=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
-    "nickel=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
-    "bronze=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods",
-    "steel=storage_blocks,ingots,nuggets,dusts,plates,rods",
-    "platinum=storage_blocks,ingots,nuggets,dusts,ores",
-    "uranium=storage_blocks,ingots,nuggets,dusts,ores",
-    "iridium=storage_blocks,ingots,nuggets,dusts,ores",
-    "zinc=storage_blocks,ingots,nuggets,dusts,ores",
-    "osmium=ingots,ores",
-    "sulfur=dusts,ores"
+    /*
+     * -----VANILLA-----
+     */
+    "coal=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "iron=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "gold=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "diamond=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "emerald=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "lapis_lazuli=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "nether_quartz=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+
+    /*
+     * -----MODDED METALS-----
+     */
+    // Copper
+    "copper=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Aluminum / Aluminium / Bauxite
+    "aluminum=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "aluminium=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "bauxite=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Silver
+    "silver=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Lead
+    "lead=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Nickel
+    "nickel=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Uranium / Yellorium
+    "uranium=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "yellorium=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Osmium
+    "osmium=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Tin
+    "tin=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Zinc
+    "zinc=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Cobalt
+    "cobalt=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Platinum
+    "platinum=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Iridium
+    "iridium=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+
+    /*
+     * -----AE2 GEMS-----
+     */
+    "certus_quartz=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "charged_certus_quartz=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "fluix=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+
+    /*
+     * -----MODDED GEMS-----
+     */
+    // Fluorite
+    "fluorite=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Bitumen
+    "bitumen=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Cinnabar
+    "cinnabar=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Apatite
+    "apatite=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Sulfur
+    "sulfur=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Potassium nitrate / Niter / Saltpeter
+    "potassium_nitrate=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "niter=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "saltpeter=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Mana gem / Arcane
+    "mana=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+
+    /*
+     * -----MODDED ALLOYS-----
+     */
+    // Bronze
+    "bronze=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Brass
+    "brass=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Electrum
+    "electrum=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Constantan
+    "constantan=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Steel
+    "steel=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Invar
+    "invar=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Lumium
+    "lumium=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Signalum
+    "signalum=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Enderium
+    "enderium=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+
+    /*
+     * -----OTHER/MISC-----
+     */
+    // Silicon
+    "silicon=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Coal coke
+    "coke=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    "coal_coke=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+    // Charcoal
+    "charcoal=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
 ]
 for (let line of tagGen) {
     let data = line.split("=")

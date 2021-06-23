@@ -115,3 +115,9 @@ beacon.add(<block:immersiveengineering:storage_constantan>);
 beacon.add(<block:immersiveengineering:storage_electrum>);
 beacon.add(<block:immersiveengineering:storage_steel>);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
+
+// Raritanium is pretty much copper
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+var copper = <tag:items:forge:ingots/copper>;
+copper.add(<item:calemiutils:raritanium>);
+// ---------------------------------------------------------------------------------------------------------------------------------------------

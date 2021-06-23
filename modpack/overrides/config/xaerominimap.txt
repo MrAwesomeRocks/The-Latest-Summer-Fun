@@ -1,7 +1,7 @@
 #CONFIG ONLY OPTIONS
 ignoreUpdate:285
 updateNotification:false
-settingsButton:true
+settingsButton:false
 allowWrongWorldTeleportation:false
 differentiateByServerAddress:true
 debugEntityIcons:false

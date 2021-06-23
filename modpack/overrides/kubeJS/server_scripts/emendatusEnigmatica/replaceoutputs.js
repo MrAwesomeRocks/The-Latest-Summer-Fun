@@ -288,10 +288,12 @@ events.listen('recipes', (event) => {
 	event.replaceOutput({}, 'silents_mechanisms:uranium_ingot', 'emendatusenigmatica:uranium_ingot')
 	event.replaceOutput({}, 'mekanism:ingot_uranium', 'emendatusenigmatica:uranium_ingot')
 	event.replaceOutput({}, 'immersiveengineering:ingot_uranium', 'emendatusenigmatica:uranium_ingot')
+    event.replaceOutput({}, 'bigreactors:yellorium_ingot', 'emendatusenigmatica:uranium_ingot')
 	//Uranium block
 	event.replaceOutput({}, 'silents_mechanisms:uranium_block', 'emendatusenigmatica:uranium_block')
 	event.replaceOutput({}, 'mekanism:block_uranium', 'emendatusenigmatica:uranium_block')
 	event.replaceOutput({}, 'immersiveengineering:storage_uranium', 'emendatusenigmatica:uranium_block')
+    event.replaceOutput({}, 'bigreactors:yellorium_block', 'emendatusenigmatica:uranium_block')
 	//Uranium nugget
 	event.replaceOutput({}, 'silents_mechanisms:uranium_nugget', 'emendatusenigmatica:uranium_nugget')
 	event.replaceOutput({}, 'mekanism:nugget_uranium', 'emendatusenigmatica:uranium_nugget')
@@ -301,6 +303,7 @@ events.listen('recipes', (event) => {
 	event.replaceOutput({}, 'mekanism:dust_uranium', 'emendatusenigmatica:uranium_dust')
 	event.replaceOutput({}, 'immersiveengineering:dust_uranium', 'emendatusenigmatica:uranium_dust')
 	event.replaceOutput({}, 'pedestals:dusturanium', 'emendatusenigmatica:uranium_dust')
+    event.replaceOutput({}, 'bigreactors:yellorium_dust', 'emendatusenigmatica:uranium_dust')
 	//Uranium plate
 	event.replaceOutput({}, 'immersiveengineering:plate_uranium', 'emendatusenigmatica:uranium_plate')
 	//Uranium post

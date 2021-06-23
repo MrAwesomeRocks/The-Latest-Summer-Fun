@@ -50,7 +50,7 @@ events.listen('worldgen.remove', (event) => {
 
 //URANIUM
 	event.removeOres((ores) => {
-		ores.blocks = ['immersiveengineering:ore_uranium', 'mekanism:uranium_ore', 'silents_mechanisms:uranium'];
+		ores.blocks = ['bigreactors:yellorite_ore', 'immersiveengineering:ore_uranium', 'mekanism:uranium_ore', 'silents_mechanisms:uranium'];
 	});
 
 //OSMIUM

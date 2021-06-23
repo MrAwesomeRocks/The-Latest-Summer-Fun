@@ -21,7 +21,7 @@ displayTooLargePackets = true
 		#Enables debug log output for lagging event subscribers, default = false
 		eventDebugOutput = true
 		#Enables event load balancing, this is mostly stuff which is happening outside entityAI/Tile entities on world ticks. default: false
-		eventLoadBalancing = false
+		eventLoadBalancing = true
 
 	# Load balancing is a mechanic which profiles and throttles down lagging entities, tileentities and event subscribers.
 	# It is used to prevent a certain laggy mob or block from lagging out the whole game. Since this is rather invasive and may cause the lagging

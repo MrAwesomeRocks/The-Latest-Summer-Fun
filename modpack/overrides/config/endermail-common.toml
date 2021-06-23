@@ -3,9 +3,9 @@
 	#Determines whether a locker's delivery radius will ignore a package's delivery location's Y-coordinate.
 	lockerDeliveryRadiusIgnoresY = true
 	#Determines whether a locker's location will be hidden to the package sender.
-	hideLockerLocation = false
+	hideLockerLocation = true
 	#Determines whether package deliveries will be logged in the console.
-	logDeliveries = false
+	logDeliveries = true
 	#The list of items that are not allowed to be placed in packages.
 	packageContentsBlacklist = ["endermail:package"]
 	#The maximum distance that packages can be delivered over. Set to -1 for no distance limit.

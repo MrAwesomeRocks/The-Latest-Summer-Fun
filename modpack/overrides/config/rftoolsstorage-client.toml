@@ -8,7 +8,7 @@
 	#Range: > 0
 	groupForeground = 0
 	#If true we automatically set the focus on the search field when opening the GUI for the modular storage. Set to false if you don't want that
-	autofocusSearch = false
+	autofocusSearch = true
 	#If true we clear the search field when opening the GUI for the modular storage. Set to false if you don't want that
 	clearSearchOnOpen = true
 

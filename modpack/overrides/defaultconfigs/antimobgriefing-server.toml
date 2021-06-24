@@ -55,7 +55,7 @@ disable_egg_trampling = false
 
 [wither]
 	#Disable Withers breaking blocks
-	disable_block_damage = true
+	disable_block_damage = false
 
 [snow_golem]
 	#Disable Snow Golems placing snow layers
@@ -67,7 +67,7 @@ disable_egg_trampling = false
 
 [ghast]
 	#Disable Ghast fireball block damage
-	disable_fireball_block_damage = false
+	disable_fireball_block_damage = true
 
 [villager]
 	#Disable Villager crop farming

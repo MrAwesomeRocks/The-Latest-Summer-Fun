@@ -3,7 +3,7 @@ name: Build and Push
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
   workflow_dispatch:
 
 env:
@@ -16,20 +16,43 @@ jobs:
       projectname: ${{ steps.info.outputs.projectname }}
       version: ${{ steps.info.outputs.version }}
       tag: ${{ steps.version.outputs.tag }}
+      release-type: ${{ steps.release-type.outputs.type }}
+      pre-release: ${{ steps.release-type.outputs.pre-release }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Get modpack info
         id: info
         run: |
-            manifestjson=`cat ./modpack/manifest.json`
-            projectname=`echo $(jq -r '.name' <<< "$manifestjson")`
-            echo "::set-output name=projectname::$projectname"
-            version=`echo $(jq -r '.minecraft.version' <<< "$manifestjson")`
-            echo "::set-output name=version::$version"
+          manifestjson=`cat ./modpack/manifest.json`
+          projectname=`echo $(jq -r '.name' <<< "$manifestjson")`
+          echo "::set-output name=projectname::$projectname"
+          version=`echo $(jq -r '.minecraft.version' <<< "$manifestjson")`
+          echo "::set-output name=version::$version"
       - name: Get tag
         id: version
         uses: "WyriHaximus/github-action-get-previous-tag@v1"
+      - name: Get release type
+        id: release-type
+        run: |
+          rel_type="release"
+          prerelease=false
+          case "${{ needs.modpack-info.outputs.tag }}" in
+            *alpha*)
+              rel_type="alpha"
+              prerelease=true
+              ;;
+            *beta*)
+              rel_type="beta"
+              prerelease=true
+              ;;
+            *)
+              rel_type="release"
+              prerelease=false
+              ;;
+          esac
+          echo "::set-output name=type::$rel_type"
+          echo "::set-output name=pre-release::$prerelease"
 
   changelog:
     runs-on: ubuntu-latest
@@ -68,7 +91,7 @@ jobs:
         with:
           name: changelog
       - name: Move changelog
-        run:  mv ./CHANGELOG.md ./modpack/CHANGELOG.md
+        run: mv ./CHANGELOG.md ./modpack/CHANGELOG.md
       - name: Export modpack
         run: |
           sudo chmod +x ./pax
@@ -99,6 +122,7 @@ jobs:
         with:
           body_path: CHANGELOG.md
           files: ${{ needs.modpack-info.outputs.projectname }}-${{ needs.modpack-info.outputs.tag }}.zip
+          prerelease: "${{ needs.modpack-info.outputs.pre-release }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -110,16 +134,6 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: modpack
-      - name: Get release type
-        id: release-type
-        run: |
-          rel_type="release"
-          case "${{ needs.modpack-info.outputs.tag }}" in
-            *alpha*) rel_type="alpha" ;;
-            *beta*) rel_type="beta" ;;
-            *) rel_type="release" ;;
-          esac
-          echo "::set-output name=type::$rel_type"
       - name: Create release
         uses: itsmeow/curseforge-upload@v3
         with:
@@ -130,4 +144,4 @@ jobs:
           changelog: "${{ needs.changelog.outputs.changelog }}"
           changelog_type: markdown
           game_versions: ${{ needs.modpack-info.outputs.version }}
-          release_type: ${{ steps.release-type.outputs.type }}
+          release_type: ${{ needs.modpack-info.outputs.release-type }}

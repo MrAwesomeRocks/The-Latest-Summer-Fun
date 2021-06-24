@@ -22,5 +22,5 @@ Add any other context or screenshots about the feature request here.
 
 Who would you like to work on this issue?
 
-- [ ] Yourself
+- [ ] Yourself (i.e. you send in a PR)
 - [ ] Anyone

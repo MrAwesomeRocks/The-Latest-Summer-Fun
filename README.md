@@ -111,6 +111,8 @@ Please obtain the following before getting started:
 7. Wait for the modpack to download.
 8. Click play!
 
+You can also download the ZIP file from the [latest release](https://github.com/MrAwesomeRocks/the-latest-summer-fun/releases/latest), but that varies by launcher.
+
 ## :memo: License
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.

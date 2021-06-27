@@ -1,10 +1,10 @@
 name: Build and Push
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - "v*"
-  workflow_dispatch:
 
 env:
   PROJECT_ID: "469714"
@@ -37,7 +37,7 @@ jobs:
         run: |
           rel_type="release"
           prerelease=false
-          case "${{ needs.modpack-info.outputs.tag }}" in
+          case "${{ steps.version.outputs.tag }}" in
             *alpha*)
               rel_type="alpha"
               prerelease=true

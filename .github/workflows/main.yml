@@ -103,7 +103,7 @@ jobs:
         id: filename
         run: |
           spaces='${{ needs.modpack-info.outputs.projectname }}-${{ needs.modpack-info.outputs.tag }}'
-          no_spaces=${spaces//[^a-zA-Z0-9.()]/_}
+          no_spaces=${spaces//[^a-zA-Z0-9.()\-]/_}
           echo "::set-output name=spaces::$spaces"
           echo "::set-output name=no_spaces::$no_spaces"
       - name: Rename zip

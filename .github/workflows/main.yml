@@ -77,6 +77,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     needs: [changelog, modpack-info]
+    outputs:
+      filename_spaces: ${{ steps.filename.outputs.spaces }}
+      filename_no_spaces: ${{ steps.filename.outputs.no_spaces }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -96,14 +99,21 @@ jobs:
         run: |
           sudo chmod +x ./pax
           ./pax export
+      - name: Remove spaces from filename
+        id: filename
+        run: |
+          spaces=${{ needs.modpack-info.outputs.projectname }}-${{ needs.modpack-info.outputs.tag }}
+          no_spaces=${spaces//[^a-zA-Z0-9.()]/_}
+          echo "::set-output name=spaces::$spaces"
+          echo "::set-output name=no_spaces::$no_spaces"
       - name: Rename zip
         run: |
-          mv '.out/${{ needs.modpack-info.outputs.projectname }}.zip' '.out/${{ needs.modpack-info.outputs.projectname }}-${{ needs.modpack-info.outputs.tag }}.zip'
+          mv '.out/${{ needs.modpack-info.outputs.projectname }}.zip' '.out/${{ steps.filename.outputs.no_spaces }}.zip'
       - name: Upload zip
         uses: actions/upload-artifact@v2
         with:
           name: modpack
-          path: .out/${{ needs.modpack-info.outputs.projectname }}-${{ needs.modpack-info.outputs.tag }}.zip
+          path: .out/${{ steps.filename.outputs.no_spaces }}.zip
 
   release-github:
     runs-on: ubuntu-latest
@@ -121,7 +131,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           body_path: CHANGELOG.md
-          files: ${{ needs.modpack-info.outputs.projectname }}-${{ needs.modpack-info.outputs.tag }}.zip
+          files: ${{ needs.build.outputs.filename_no_spaces }}.zip
           prerelease: "${{ needs.modpack-info.outputs.pre-release }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -140,7 +150,8 @@ jobs:
           token: ${{ secrets.CF_API_TOKEN }}
           project_id: ${{ env.PROJECT_ID }}
           game_endpoint: minecraft
-          file_path: ${{ needs.modpack-info.outputs.projectname }}-${{ needs.modpack-info.outputs.tag }}.zip
+          file_path: ${{ needs.build.outputs.filename_no_spaces }}.zip
+          display_name: ${{ needs.build.outputs.filename_spaces }}
           changelog: "${{ needs.changelog.outputs.changelog }}"
           changelog_type: markdown
           game_versions: ${{ needs.modpack-info.outputs.version }}

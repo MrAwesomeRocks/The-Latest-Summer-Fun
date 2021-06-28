@@ -98,6 +98,8 @@ jobs:
           cp ./CHANGELOG.md ./modpack/overrides/CHANGELOG.md
           cp ./README.md ./modpack/overrides/README.md
           cp ./LICENSE.md ./modpack/overrides/LICENSE.md
+          cp ./TODO.md ./modpack/overrides/TODO.md
+          cp ./CREDITS.md ./modpack/overrides/CREDITS.md
       - name: Export modpack
         run: |
           sudo chmod +x ./pax

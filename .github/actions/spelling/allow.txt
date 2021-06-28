@@ -584,3 +584,17 @@ thaumatorium
 thaumcraft
 wearablebackpacks
 hitblock
+coshat
+fishies
+griefed
+Lootr
+moddevs
+namegen
+Relogin
+resourcepack
+respawn
+stoneholm
+THEEND
+therium
+villagegen
+wavyness

@@ -1,7 +1,7 @@
 // priority: 100
 /*
- * Texture for item `test` has to be placed in kubejs/assets/kubejs/textures/item/test.png
- * Custom models from Blockbench are placed in kubejs/assets/kubejs/models/item/test.json
+ * Texture for item `test` has to be placed in `kubejs/assets/kubejs/textures/item/test.png`
+ * Custom models from Blockbench are placed in `kubejs/assets/kubejs/models/item/test.json`
  *
  * More details at https://mods.latvian.dev/books/kubejs/page/custom-items
  */

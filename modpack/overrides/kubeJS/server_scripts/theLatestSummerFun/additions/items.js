@@ -188,6 +188,7 @@ onEvent("item.registry", (event) => {
     .create("redstone_espresso")
     .displayName("Redstone Espresso")
     .group("food")
+    .rarity(Rarity.EPIC)
     .food((foodBuilder) => {
       foodBuilder
         .hunger(0)
@@ -201,6 +202,7 @@ onEvent("item.registry", (event) => {
     .create("glowstone_tea")
     .displayName("Luminescent Tea")
     .group("food")
+    .rarity(Rarity.EPIC)
     .food((foodBuilder) => {
       foodBuilder
         .hunger(0)
@@ -214,6 +216,7 @@ onEvent("item.registry", (event) => {
     .create("onion_sandwich")
     .displayName("Onion Singularity Sandwich")
     .group("food")
+    .rarity(Rarity.EPIC)
     .food((foodBuilder) => {
       foodBuilder
         .hunger(20)
@@ -227,6 +230,7 @@ onEvent("item.registry", (event) => {
     .create("rad_ish")
     .displayName("Rad-ish")
     .group("food")
+    .rarity(Rarity.EPIC)
     .food((foodBuilder) => {
       foodBuilder.hunger(6).saturation(0.3).effect("minecraft:glowing", 600, 0, 0.5);
     });
@@ -235,6 +239,7 @@ onEvent("item.registry", (event) => {
     .create("capricorn")
     .displayName("Capricorn")
     .group("food")
+    .rarity(Rarity.EPIC)
     .food((foodBuilder) => {
       foodBuilder.hunger(6).saturation(0.3).effect("minecraft:night_vision", 600, 0, 0.5);
     });
@@ -243,6 +248,7 @@ onEvent("item.registry", (event) => {
     .create("bully_peanut")
     .displayName("Bully Peanut")
     .group("food")
+    .rarity(Rarity.EPIC)
     .food((foodBuilder) => {
       foodBuilder.hunger(8).saturation(0.2);
     });
@@ -251,6 +257,7 @@ onEvent("item.registry", (event) => {
     .create("sad_pistachio")
     .displayName("Sad Pistachio")
     .group("food")
+    .rarity(Rarity.EPIC)
     .food((foodBuilder) => {
       foodBuilder.hunger(8).saturation(0.2);
     });
@@ -259,6 +266,7 @@ onEvent("item.registry", (event) => {
     .create("bread")
     .displayName("Bread")
     .group("food")
+    .rarity(Rarity.EPIC)
     .food((foodBuilder) => {
       foodBuilder.hunger(5).saturation(0.5);
     });

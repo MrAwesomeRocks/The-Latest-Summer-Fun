@@ -93,8 +93,11 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: changelog
-      - name: Move changelog
-        run: mv ./CHANGELOG.md ./modpack/overrides/CHANGELOG.md
+      - name: Copy important files
+        run: |
+          cp ./CHANGELOG.md ./modpack/overrides/CHANGELOG.md
+          cp ./README.md ./modpack/overrides/README.md
+          cp ./LICENSE.md ./modpack/overrides/LICENSE.md
       - name: Export modpack
         run: |
           sudo chmod +x ./pax

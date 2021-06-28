@@ -583,3 +583,4 @@ skyresources
 thaumatorium
 thaumcraft
 wearablebackpacks
+hitblock

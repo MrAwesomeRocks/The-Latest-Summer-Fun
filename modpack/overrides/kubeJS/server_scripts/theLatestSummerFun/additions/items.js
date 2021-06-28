@@ -1,4 +1,265 @@
 /*
-
+ * Texture for item `test` has to be placed in kubejs/assets/kubejs/textures/item/test.png
+ * Custom models from Blockbench are placed in kubejs/assets/kubejs/models/item/test.json
+ *
+ * More details at https://mods.latvian.dev/books/kubejs/page/custom-items
  */
-onEvent("item.registry", (event) => {});
+onEvent("item.registry", (event) => {
+  /*
+   * Regular items
+   */
+  // Bottled Syrup - glass_bottle
+  event
+    .create("syrup_bottle")
+    .displayName("Bottled Syrup")
+    .containerItem("minecraft:glass_bottle")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(1).saturation(0.0);
+    });
+  // Peanut Butter
+  event
+    .create("peanut_butter")
+    .displayName("Peanut Butter")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(1).saturation(0.0);
+    });
+  // Jelly
+  event
+    .create("jelly")
+    .displayName("Jelly")
+    .containerItem("minecraft:glass_bottle")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(1).saturation(0.0);
+    });
+  // Cheese
+  event
+    .create("cheese")
+    .displayName("Cheese")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(1).saturation(0.0);
+    });
+  // Waffle
+  event
+    .create("waffle")
+    .displayName("Waffle")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(6).saturation(0.5);
+    });
+  // Popcorn
+  event
+    .create("popcorn")
+    .displayName("Popcorn")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(4).saturation(0.5);
+    });
+  // Sushi
+  event
+    .create("sushi")
+    .displayName("Sushi")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(4).saturation(0.5);
+    });
+  // Onion Rings
+  event
+    .create("onion_rings")
+    .displayName("Onion Rings")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(2).saturation(0.3);
+    });
+  // Coffee
+  event
+    .create("coffee")
+    .displayName("Coffee")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(0).saturation(0.0).alwaysEdible().effect("minecraft:speed", 600, 0, 1.0);
+    });
+  // Tea
+  event
+    .create("tea")
+    .displayName("Tea")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder
+        .hunger(0)
+        .saturation(0.0)
+        .alwaysEdible()
+        .effect("minecraft:regeneration", 300, 0, 1.0);
+    });
+  // Beer
+  event
+    .create("Beer")
+    .displayName("Beer")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(0).saturation(0.0).alwaysEdible().effect("minecraft:nausea", 100, 0, 1.0);
+    });
+  // Hoppy Beer
+  event
+    .create("hoppy_beer")
+    .displayName("Hoppy Beer")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder
+        .hunger(0)
+        .saturation(0.0)
+        .alwaysEdible()
+        .effect("minecraft:nausea", 100, 0, 1.0)
+        .effect("minecraft:resistance", 300, 1, 1.0);
+    });
+  // Burger
+  event
+    .create("burger")
+    .displayName("Burger")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(12).saturation(0.5);
+    });
+  // Pizza
+  event
+    .create("pizza")
+    .displayName("Pizza")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(6).saturation(0.5);
+    });
+  // Calzone
+  event
+    .create("calzone")
+    .displayName("Calzone")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(6).saturation(0.5);
+    });
+  // Pb&J Sandwich
+  event
+    .create("sandwich_pbj")
+    .displayName("Calzone")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(6).saturation(0.4);
+    });
+  // BLT Sandwich
+  event
+    .create("sandwich_blt")
+    .displayName("BLT Sandwich")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(10).saturation(0.4);
+    });
+  // Stir Fry
+  event
+    .create("stir_fry")
+    .displayName("Stir Fry")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(10).saturation(0.6);
+    });
+  // Marshmallow
+  event
+    .create("marshmallow")
+    .displayName("Marshmallow")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(1).saturation(0.0);
+    });
+  // S'more
+  event
+    .create("s_more")
+    .displayName("S'more")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(5).saturation(0.6);
+    });
+
+  /*
+   *  E P I C  items
+   */
+  // Redstone Espresso
+  event
+    .create("redstone_espresso")
+    .displayName("Redstone Espresso")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder
+        .hunger(0)
+        .saturation(0.0)
+        .alwaysEdible()
+        .effect("minecraft:speed", 1200, 1, 1.0)
+        .effect("minecraft:haste", 1200, 0, 1.0);
+    });
+  // Luminescent Tea
+  event
+    .create("glowstone_tea")
+    .displayName("Luminescent Tea")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder
+        .hunger(0)
+        .saturation(0.0)
+        .alwaysEdible()
+        .effect("minecraft:regeneration", 600, 1, 1.0)
+        .effect("cofh_core:panacea", 600, 0, 1.0);
+    });
+  // Onion Singularity Sandwich
+  event
+    .create("onion_sandwich")
+    .displayName("Onion Singularity Sandwich")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder
+        .hunger(20)
+        .saturation(0.5)
+        .alwaysEdible()
+        .effect("minecraft:nausea", 1200, 0, 1.0)
+        .effect("minecraft:slowness:", 600, 5, 1.0);
+    });
+  // Rad-ish
+  event
+    .create("rad_ish")
+    .displayName("Rad-ish")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(6).saturation(0.3).effect("minecraft:glowing", 600, 0, 0.5);
+    });
+  // Capricorn
+  event
+    .create("capricorn")
+    .displayName("Capricorn")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(6).saturation(0.3).effect("minecraft:night_vision", 600, 0, 0.5);
+    });
+  // Bully Peanut
+  event
+    .create("bully_peanut")
+    .displayName("Bully Peanut")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(8).saturation(0.2);
+    });
+  // Sad Pistachio
+  event
+    .create("sad_pistachio")
+    .displayName("Sad Pistachio")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(8).saturation(0.2);
+    });
+  // Bread
+  event
+    .create("bread")
+    .displayName("Bread")
+    .group("food")
+    .food((foodBuilder) => {
+      foodBuilder.hunger(5).saturation(0.5);
+    });
+});

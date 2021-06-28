@@ -21,24 +21,24 @@ import mods.contenttweaker.item.ItemBuilder;
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 var foodBuilder = new ItemBuilder();
 foodBuilder.withItemGroup(<itemGroup:food>);
-foodBuilder.build("syrup_bottle");
-foodBuilder.build("peanut_butter");
-foodBuilder.build("jelly");
-foodBuilder.build("cheese");
+// foodBuilder.build("syrup_bottle");
+// foodBuilder.build("peanut_butter");
+// foodBuilder.build("jelly");
+// foodBuilder.build("cheese");
 
-foodBuilder.build("pancakes");
-foodBuilder.build("popcorn");
-foodBuilder.build("sushi");
-foodBuilder.build("onion_rings");
+// foodBuilder.build("pancakes");
+// foodBuilder.build("popcorn");
+// foodBuilder.build("sushi");
+// foodBuilder.build("onion_rings");
 
-foodBuilder.build("coffee");
-foodBuilder.build("tea");
-foodBuilder.build("beer");
-foodBuilder.build("hoppy_beer");
+// foodBuilder.build("coffee");
+// foodBuilder.build("tea");
+// foodBuilder.build("beer");
+// foodBuilder.build("hoppy_beer");
 
-foodBuilder.build("burger");
-foodBuilder.build("pizza");
-foodBuilder.build("calzone");
+// foodBuilder.build("burger");
+// foodBuilder.build("pizza");
+// foodBuilder.build("calzone");
 foodBuilder.build("sandwich_pbj");
 foodBuilder.build("sandwich_blt");
 foodBuilder.build("stir_fry");

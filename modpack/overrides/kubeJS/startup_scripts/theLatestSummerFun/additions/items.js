@@ -211,7 +211,8 @@ onEvent("item.registry", (event) => {
         .saturation(0.0)
         .alwaysEdible()
         .effect("minecraft:regeneration", 600, 1, 1.0)
-        .effect("cofh_core:panacea", 600, 0, 1.0);
+        .effect("minecraft:saturation", 600, 1, 1.0);
+      // .effect("cofh_core:panacea", 600, 0, 1.0);  // https://github.com/KubeJS-Mods/KubeJS/issues/151
     });
   // Onion Singularity Sandwich
   event

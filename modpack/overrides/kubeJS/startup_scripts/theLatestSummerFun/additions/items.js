@@ -190,7 +190,7 @@ onEvent("item.registry", (event) => {
     .create("redstone_espresso")
     .displayName("Redstone Espresso")
     .group("food")
-    .rarity(Rarity.EPIC)
+    .rarity(RARITY_EPIC)
     .food((foodBuilder) => {
       foodBuilder
         .hunger(0)
@@ -204,7 +204,7 @@ onEvent("item.registry", (event) => {
     .create("glowstone_tea")
     .displayName("Luminescent Tea")
     .group("food")
-    .rarity(Rarity.EPIC)
+    .rarity(RARITY_EPIC)
     .food((foodBuilder) => {
       foodBuilder
         .hunger(0)
@@ -219,14 +219,14 @@ onEvent("item.registry", (event) => {
     .displayName("Onion Singularity Sandwich")
     .group("food")
     .tooltip("Near-infinite density between two slices of what used to be bread.")
-    .rarity(Rarity.EPIC)
+    .rarity(RARITY_EPIC)
     .food((foodBuilder) => {
       foodBuilder
         .hunger(20)
         .saturation(0.5)
         .alwaysEdible()
         .effect("minecraft:nausea", 1200, 0, 1.0)
-        .effect("minecraft:slowness:", 600, 5, 1.0);
+        .effect("minecraft:slowness", 600, 5, 1.0);
     });
   // Rad-ish
   event
@@ -236,7 +236,7 @@ onEvent("item.registry", (event) => {
     .tooltip(
       "Scientific studies correlating consumption to radiation poisoning have been inconclusive."
     )
-    .rarity(Rarity.EPIC)
+    .rarity(RARITY_EPIC)
     .food((foodBuilder) => {
       foodBuilder.hunger(6).saturation(0.3).effect("minecraft:glowing", 600, 0, 0.5);
     });
@@ -245,7 +245,7 @@ onEvent("item.registry", (event) => {
     .create("capricorn")
     .displayName("Capricorn")
     .group("food")
-    .rarity(Rarity.EPIC)
+    .rarity(RARITY_EPIC)
     .food((foodBuilder) => {
       foodBuilder.hunger(6).saturation(0.3).effect("minecraft:night_vision", 600, 0, 0.5);
     });
@@ -254,7 +254,7 @@ onEvent("item.registry", (event) => {
     .create("bully_peanut")
     .displayName("Bully Peanut")
     .group("food")
-    .rarity(Rarity.EPIC)
+    .rarity(RARITY_EPIC)
     .food((foodBuilder) => {
       foodBuilder.hunger(8).saturation(0.2);
     });
@@ -263,7 +263,7 @@ onEvent("item.registry", (event) => {
     .create("sad_pistachio")
     .displayName("Sad Pistachio")
     .group("food")
-    .rarity(Rarity.EPIC)
+    .rarity(RARITY_EPIC)
     .food((foodBuilder) => {
       foodBuilder.hunger(8).saturation(0.2);
     });
@@ -273,7 +273,7 @@ onEvent("item.registry", (event) => {
     .displayName("Bread")
     .group("food")
     .tooltip("Doesn't seem quite right.")
-    .rarity(Rarity.EPIC)
+    .rarity(RARITY_EPIC)
     .food((foodBuilder) => {
       foodBuilder.hunger(5).saturation(0.5);
     });

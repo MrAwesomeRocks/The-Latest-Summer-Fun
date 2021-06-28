@@ -1,3 +1,4 @@
+// priority: 100
 /*
  * Texture for item `test` has to be placed in kubejs/assets/kubejs/textures/item/test.png
  * Custom models from Blockbench are placed in kubejs/assets/kubejs/models/item/test.json
@@ -152,6 +153,7 @@ onEvent("item.registry", (event) => {
     .create("sandwich_blt")
     .displayName("BLT Sandwich")
     .group("food")
+    .tooltip("What do you mean it isn't 'bacon leaves tomato'?")
     .food((foodBuilder) => {
       foodBuilder.hunger(10).saturation(0.4);
     });
@@ -216,6 +218,7 @@ onEvent("item.registry", (event) => {
     .create("onion_sandwich")
     .displayName("Onion Singularity Sandwich")
     .group("food")
+    .tooltip("Near-infinite density between two slices of what used to be bread.")
     .rarity(Rarity.EPIC)
     .food((foodBuilder) => {
       foodBuilder
@@ -230,6 +233,9 @@ onEvent("item.registry", (event) => {
     .create("rad_ish")
     .displayName("Rad-ish")
     .group("food")
+    .tooltip(
+      "Scientific studies correlating consumption to radiation poisoning have been inconclusive."
+    )
     .rarity(Rarity.EPIC)
     .food((foodBuilder) => {
       foodBuilder.hunger(6).saturation(0.3).effect("minecraft:glowing", 600, 0, 0.5);
@@ -266,6 +272,7 @@ onEvent("item.registry", (event) => {
     .create("bread")
     .displayName("Bread")
     .group("food")
+    .tooltip("Doesn't seem quite right.")
     .rarity(Rarity.EPIC)
     .food((foodBuilder) => {
       foodBuilder.hunger(5).saturation(0.5);

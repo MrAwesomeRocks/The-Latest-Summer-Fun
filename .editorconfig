@@ -11,9 +11,12 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-# JSON, HTML/MD, and YAML standard is 2 spaces
-[*.{json,md,yml,yaml}]
+# JS, JSON, HTML/MD, and YAML standard is 2 spaces
+[*.{js,json,md,yml,yaml}]
 indent_size = 2
+
+[*.js]
+max_line_length = 100
 
 [*.bat]
 end_of_line = crlf

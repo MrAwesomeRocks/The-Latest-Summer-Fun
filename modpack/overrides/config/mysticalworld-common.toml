@@ -449,6 +449,8 @@
 
 #Feature Spawn Configuration
 [feature_spawns]
+	#Whether or not the aubergine loot table is injected into the grass seed table
+	seed_injection = true
 
 	#Charred Tree Generation
 	[feature_spawns.charred_tree]

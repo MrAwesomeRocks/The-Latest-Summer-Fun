@@ -12,7 +12,7 @@
 	# Configure tooltip for max stack size.
 	maxStackSizeTooltipMode = "onShift"
 	# Configure tooltip for tags. E.g. forge:ingot, minecraft:planks
-	tagsTooltipMode = "disabled"
+	tagsTooltipMode = "onShiftAndDebug"
 	# Configure tooltip for durability.
 	durabilityTooltipMode = "disabled"
 	# Configure tooltip for hunger and saturation.

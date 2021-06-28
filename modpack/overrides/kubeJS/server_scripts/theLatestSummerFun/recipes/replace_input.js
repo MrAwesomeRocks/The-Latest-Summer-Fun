@@ -9,5 +9,4 @@ onEvent("recipes", (event) => {
     event.replaceInput({}, "thermal:niter", "#forge:gems/niter");
     event.replaceInput({}, "thermal:bitumen", "#forge:gems/bitumen", true);
     event.replaceInput({}, "thermal:coal_coke", "#forge:gems/coal_coke");
-    event.replaceInput({}, "thermal:slag", "#forge:slag");
 });

@@ -1,9 +1,163 @@
 {
-  "TestBuyItem": {
+  "cobblestone": {
     "index": 0,
     "stackStr": "minecraft:cobblestone",
     "stackNBT": "",
-    "amount": 64,
-    "value": 64
+    "amount": 16,
+    "value": 5
+  },
+  "oak_logs": {
+    "index": 1,
+    "stackStr": "minecraft:oak_log",
+    "stackNBT": "",
+    "amount": 8,
+    "value": 5
+  },
+  "oak_saplings": {
+    "index": 2,
+    "stackStr": "minecraft:oak_sapling",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 5
+  },
+  "twilight_oak_saplings": {
+    "index": 3,
+    "stackStr": "twilightforest:hollow_oak_sapling",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 1000
+  },
+  "time_saplings": {
+    "index": 4,
+    "stackStr": "twilightforest:time_sapling",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 1000
+  },
+  "transform_sapplings": {
+    "index": 5,
+    "stackStr": "twilightforest:transformation_sapling",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 1000
+  },
+  "mining_saplings": {
+    "index": 6,
+    "stackStr": "twilightforest:mining_sapling",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 1000
+  },
+  "sorting_saplings": {
+    "index": 7,
+    "stackStr": "twilightforest:sorting_sapling",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 1000
+  },
+  "coal": {
+    "index": 8,
+    "stackStr": "minecraft:coal_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 50
+  },
+  "iron": {
+    "index": 9,
+    "stackStr": "minecraft:iron_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "gold": {
+    "index": 10,
+    "stackStr": "minecraft:gold_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "diamond": {
+    "index": 11,
+    "stackStr": "minecraft:diamond_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 200
+  },
+  "lapis": {
+    "index": 12,
+    "stackStr": "minecraft:lapis_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 150
+  },
+  "redstone": {
+    "index": 13,
+    "stackStr": "minecraft:redstone_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 150
+  },
+  "emerald": {
+    "index": 14,
+    "stackStr": "minecraft:emerald_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 150
+  },
+  "quartz": {
+    "index": 15,
+    "stackStr": "minecraft:nether_quartz_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "uranite": {
+    "index": 16,
+    "stackStr": "powah:uraninite_ore_poor",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 150
+  },
+  "lead": {
+    "index": 17,
+    "stackStr": "eidolon:lead_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "copper": {
+    "index": 18,
+    "stackStr": "thermal:copper_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "zinc": {
+    "index": 19,
+    "stackStr": "create:zinc_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "quicksilver": {
+    "index": 20,
+    "stackStr": "mysticalworld:quicksilver_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 100
+  },
+  "amethyst": {
+    "index": 21,
+    "stackStr": "mysticalworld:amethyst_ore",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 200
+  },
+  "dim_shard": {
+    "index": 22,
+    "stackStr": "rftoolsbase:dimensionalshard_overworld",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 500
   }
 }

@@ -2,7 +2,7 @@
   "providers": [
     {
       "type": "ttf",
-      "file": "rftoolsutility:firacode_nf.ttf",
+      "file": "rftoolsutility:allura.ttf",
       "size": 20
     }
   ]

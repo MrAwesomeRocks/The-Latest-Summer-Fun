@@ -96,7 +96,7 @@ onEvent("item.registry", (event) => {
     });
   // Beer
   event
-    .create("Beer")
+    .create("beer")
     .displayName("Beer")
     .group("food")
     .food((foodBuilder) => {

@@ -182,12 +182,12 @@ craftingTable.addShapeless("jelly_from_melon", <item:contenttweaker:jelly>, [<it
 craftingTable.addShapeless("jelly_from_apple", <item:contenttweaker:jelly> * 2, [<item:minecraft:apple>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
 craftingTable.addShapeless("cheese", <item:contenttweaker:cheese>, [<item:minecraft:milk_bucket>]);
 
-craftingTable.addShaped("waffles_from_syrup", <item:contenttweaker:pancakes>, [
-    [<item:minecraft:air>, <item:contenttweaker:syrup_bottle>, <item:minecraft:air>],
-    [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
-craftingTable.addShaped("waffles_from_honey", <item:contenttweaker:pancakes> * 2, [
-    [<item:minecraft:air>, <item:minecraft:honey_bottle>, <item:minecraft:air>],
-    [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
+// craftingTable.addShaped("waffles_from_syrup", <item:contenttweaker:pancakes>, [
+//     [<item:minecraft:air>, <item:contenttweaker:syrup_bottle>, <item:minecraft:air>],
+//     [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
+// craftingTable.addShaped("waffles_from_honey", <item:contenttweaker:pancakes> * 2, [
+//     [<item:minecraft:air>, <item:minecraft:honey_bottle>, <item:minecraft:air>],
+//     [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
 
 furnace.addRecipe("popcorn", <item:contenttweaker:popcorn>, <tag:items:forge:crops/corn>, 0.5, 200);
 furnace.addRecipe("onion_rings", <item:contenttweaker:onion_rings>, <tag:items:forge:crops/onion>, 0.5, 200);
@@ -211,14 +211,14 @@ craftingTable.addShapeless("hoppy_beer", <item:contenttweaker:hoppy_beer>, [<ite
 
 craftingTable.addShapeless("burger", <item:contenttweaker:burger>, [<item:minecraft:bread>, <item:minecraft:cooked_beef>, <item:contenttweaker:cheese>, <item:thermal:tomato>]);
 
-craftingTable.addShaped("pizza", <item:contenttweaker:pizza>, [
-    [<item:contenttweaker:cheese>, <tag:items:forge:crops/tomato>, <item:contenttweaker:cheese>],
-    [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
+// craftingTable.addShaped("pizza", <item:contenttweaker:pizza>, [
+//     [<item:contenttweaker:cheese>, <tag:items:forge:crops/tomato>, <item:contenttweaker:cheese>],
+//     [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
 
-craftingTable.addShaped("calzone", <item:contenttweaker:calzone> * 2, [
-    [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>],
-    [<item:contenttweaker:cheese>, <tag:items:forge:crops/tomato>, <item:contenttweaker:cheese>],
-    [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
+// craftingTable.addShaped("calzone", <item:contenttweaker:calzone> * 2, [
+//     [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>],
+//     [<item:contenttweaker:cheese>, <tag:items:forge:crops/tomato>, <item:contenttweaker:cheese>],
+//     [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
 
 craftingTable.addShapeless("stir_fry", <item:contenttweaker:stir_fry>, [<tag:items:forge:crops/bell_pepper>, <tag:items:forge:crops/onion>, <tag:items:forge:crops/spinach>, <item:minecraft:carrot>, <tag:items:forge:crops/rice>, <tag:items:forge:crops/green_bean>, <item:minecraft:bowl>]);
 
@@ -235,8 +235,8 @@ craftingTable.addShapeless("capricorn", <item:contenttweaker:capricorn>, [<item:
 craftingTable.addShapeless("bully_peanut", <item:contenttweaker:bully_peanut>, [<item:thermal:peanut>, <item:minecraft:tnt>]);
 craftingTable.addShapeless("sad_pistachio", <item:contenttweaker:sad_pistachio>, [<item:quark:cactus_paste>, <item:minecraft:ghast_tear>]);
 
-craftingTable.addShaped("fake_bread", <item:contenttweaker:bread>, [
-    [<item:minecraft:wheat>, <tag:items:forge:dusts/wood>, <item:minecraft:wheat>]]);
+// craftingTable.addShaped("fake_bread", <item:contenttweaker:bread>, [
+//     [<item:minecraft:wheat>, <tag:items:forge:dusts/wood>, <item:minecraft:wheat>]]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

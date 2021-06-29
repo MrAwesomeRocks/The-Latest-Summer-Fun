@@ -9,7 +9,7 @@ onEvent("recipes", (event) => {
     "WWW"
   ], {
     S: "kubejs:syrup_bottle",
-    W: "minecraft:wheat",
+    W: "#forge:crops/wheat",
   });
   // prettier-ignore
   event.shaped("2x kubejs:waffle", [
@@ -17,7 +17,7 @@ onEvent("recipes", (event) => {
     "WWW"
   ], {
     S: "minecraft:honey_bottle",
-    W: "minecraft:wheat",
+    W: "#forge:crops/wheat",
   });
   /* Pizza */
   // prettier-ignore
@@ -27,7 +27,7 @@ onEvent("recipes", (event) => {
   ], {
     C: "kubejs:cheese",
     T: "#forge:crops/tomato",
-    W: "minecraft:wheat",
+    W: "#forge:crops/wheat",
   });
   /* Calzone */
   // prettier-ignore
@@ -38,14 +38,14 @@ onEvent("recipes", (event) => {
   ], {
     C: "kubejs:cheese",
     T: "#forge:crops/tomato",
-    W: "minecraft:wheat",
+    W: "#forge:crops/wheat",
   });
   /* Not-bread */
   // prettier-ignore
   event.shaped("kubejs:bread", [
     "WDW"
   ], {
-    W: "minecraft:wheat",
+    W: "#forge:crops/wheat",
     D: "#forge:dusts/wood",
   });
 });

@@ -189,9 +189,9 @@ craftingTable.addShaped("blizz_unit", <item:simplyjetpacks:unit_cryotheum>, [
 //     [<item:minecraft:air>, <item:minecraft:honey_bottle>, <item:minecraft:air>],
 //     [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
 
-furnace.addRecipe("popcorn", <item:contenttweaker:popcorn>, <tag:items:forge:crops/corn>, 0.5, 200);
-furnace.addRecipe("onion_rings", <item:contenttweaker:onion_rings>, <tag:items:forge:crops/onion>, 0.5, 200);
-furnace.addRecipe("marshmallow", <item:contenttweaker:marshmallow>, <item:minecraft:sugar>, 0.5, 200);
+// furnace.addRecipe("popcorn", <item:contenttweaker:popcorn>, <tag:items:forge:crops/corn>, 0.5, 200);
+// furnace.addRecipe("onion_rings", <item:contenttweaker:onion_rings>, <tag:items:forge:crops/onion>, 0.5, 200);
+// furnace.addRecipe("marshmallow", <item:contenttweaker:marshmallow>, <item:minecraft:sugar>, 0.5, 200);
 
 // craftingTable.addShapeless("smore_vanilla", <item:contenttweaker:s_more>, [<tag:items:forge:crops/wheat>, <item:minecraft:cocoa_beans>, <item:contenttweaker:marshmallow>]);
 // craftingTable.addShapeless("smore_create", <item:contenttweaker:s_more> * 2, [<tag:items:forge:crops/wheat>, <item:create:bar_of_chocolate>, <item:contenttweaker:marshmallow>]);

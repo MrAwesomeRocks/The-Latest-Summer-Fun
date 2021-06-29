@@ -131,10 +131,10 @@ furnace.addRecipe("anthracite_furnace", <item:byg:anthracite>, <item:byg:anthrac
 <recipetype:thermal:smelter>.addRecipe("charged_certus_smelter", [<item:appliedenergistics2:charged_certus_quartz_crystal> % 150, <item:thermal:rich_slag> % 15], [<item:appliedenergistics2:charged_quartz_ore>], 2, 3200);
 <recipetype:immersiveengineering:crusher>.addRecipe("charged_certus_crusher", <item:appliedenergistics2:charged_quartz_ore>, 6000, <item:appliedenergistics2:charged_certus_quartz_crystal> * 3, <item:minecraft:cobblestone> % 25);
 
-furnace.addRecipe("dimshard_furnace", <item:rftoolsbase:dimensionalshard>, <tag:items:dimores>, 0.5, 200);
-<recipetype:immersiveengineering:crusher>.addRecipe("dimshard_crusher", <tag:items:dimores>, 6000, <item:rftoolsbase:dimensionalshard> * 2);
-<recipetype:thermal:smelter>.addRecipe("dimshard_smelter", [<item:rftoolsbase:dimensionalshard> % 150, <item:thermal:rich_slag> % 15], [<tag:items:dimores>], 2, 3200);
-<recipetype:create:crushing>.addRecipe("dimshard_crushing", [<item:rftoolsbase:dimensionalshard> * 2 % 100, <item:rftoolsbase:dimensionalshard> % 25, <item:minecraft:cobblestone> % 12], <tag:items:dimores>);
+furnace.addRecipe("dimshard_furnace", <item:rftoolsbase:dimensionalshard>, <tag:items:forge:dimensional_ores>, 0.5, 200);
+<recipetype:immersiveengineering:crusher>.addRecipe("dimshard_crusher", <tag:items:forge:dimensional_ores>, 6000, <item:rftoolsbase:dimensionalshard> * 2);
+<recipetype:thermal:smelter>.addRecipe("dimshard_smelter", [<item:rftoolsbase:dimensionalshard> % 150, <item:thermal:rich_slag> % 15], [<tag:items:forge:dimensional_ores>], 2, 3200);
+<recipetype:create:crushing>.addRecipe("dimshard_crushing", [<item:rftoolsbase:dimensionalshard> * 2 % 100, <item:rftoolsbase:dimensionalshard> % 25, <item:minecraft:cobblestone> % 12], <tag:items:forge:dimensional_ores>);
 
 <recipetype:thermal:pulverizer>.addRecipe("poor_uranite_pulverizer", [<item:powah:uraninite_raw_poor> * 2 % 50, <item:minecraft:gravel> % 20] , <item:powah:uraninite_ore_poor>, 2, 4000);
 <recipetype:immersiveengineering:crusher>.addRecipe("poor_uranite_crusher", <item:powah:uraninite_ore_poor>, 6000, <item:powah:uraninite_raw_poor> * 2);

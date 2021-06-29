@@ -24,7 +24,7 @@ piglin.add(<tag:items:forge:plates/gold>);
 
 // Dimensional Shards get their own forge tag.
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-var dim = <tag:items:dimores>;
+var dim = <tag:items:forge:dimensional_ores>;
 dim.add(<item:rftoolsbase:dimensionalshard_overworld>);
 dim.add(<item:rftoolsbase:dimensionalshard_nether>);
 dim.add(<item:rftoolsbase:dimensionalshard_end>);

@@ -28,6 +28,7 @@ onEvent("item.registry", (event) => {
   event
     .create("peanut_butter")
     .displayName("Peanut Butter")
+    .containerItem("minecraft:glass_bottle")
     .group("food")
     .food((foodBuilder) => {
       foodBuilder.hunger(1).saturation(0.0);
@@ -85,6 +86,7 @@ onEvent("item.registry", (event) => {
   event
     .create("coffee")
     .displayName("Coffee")
+    .containerItem("minecraft:glass_bottle")
     .group("food")
     .food((foodBuilder) => {
       foodBuilder.hunger(0).saturation(0.0).alwaysEdible().effect("minecraft:speed", 600, 0, 1.0);
@@ -93,6 +95,7 @@ onEvent("item.registry", (event) => {
   event
     .create("tea")
     .displayName("Tea")
+    .containerItem("minecraft:glass_bottle")
     .group("food")
     .food((foodBuilder) => {
       foodBuilder
@@ -105,6 +108,7 @@ onEvent("item.registry", (event) => {
   event
     .create("beer")
     .displayName("Beer")
+    .containerItem("minecraft:glass_bottle")
     .group("food")
     .food((foodBuilder) => {
       foodBuilder.hunger(0).saturation(0.0).alwaysEdible().effect("minecraft:nausea", 100, 0, 1.0);
@@ -113,6 +117,7 @@ onEvent("item.registry", (event) => {
   event
     .create("hoppy_beer")
     .displayName("Hoppy Beer")
+    .containerItem("minecraft:glass_bottle")
     .group("food")
     .food((foodBuilder) => {
       foodBuilder
@@ -167,6 +172,7 @@ onEvent("item.registry", (event) => {
   event
     .create("stir_fry")
     .displayName("Stir Fry")
+    .containerItem("minecraft:bowl")
     .group("food")
     .food((foodBuilder) => {
       foodBuilder.hunger(10).saturation(0.6);
@@ -195,6 +201,7 @@ onEvent("item.registry", (event) => {
   event
     .create("redstone_espresso")
     .displayName("Redstone Espresso")
+    .containerItem("minecraft:glass_bottle")
     .group("food")
     .rarity(RARITY_EPIC)
     .food((foodBuilder) => {
@@ -209,6 +216,7 @@ onEvent("item.registry", (event) => {
   event
     .create("glowstone_tea")
     .displayName("Luminescent Tea")
+    .containerItem("minecraft:glass_bottle")
     .group("food")
     .rarity(RARITY_EPIC)
     .food((foodBuilder) => {

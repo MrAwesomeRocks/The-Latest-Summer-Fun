@@ -151,10 +151,10 @@ onEvent("item.registry", (event) => {
     .food((foodBuilder) => {
       foodBuilder.hunger(6).saturation(0.5);
     });
-  // Pb&J Sandwich
+  // PB&J Sandwich
   event
     .create("sandwich_pbj")
-    .displayName("Calzone")
+    .displayName("PB&J Sandwich")
     .group("food")
     .food((foodBuilder) => {
       foodBuilder.hunger(6).saturation(0.4);

@@ -1,3 +1,10 @@
+/*
+ * Shapeless crafting table recipes
+ *
+ * Template: `event.shapeless("MOD:OUTPUT", [inputs])`
+ *
+ * See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
+ */
 onEvent("recipes", (event) => {
   /*
    *  F O O D

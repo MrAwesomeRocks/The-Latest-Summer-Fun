@@ -1,4 +1,11 @@
 // priority: 101
+/*
+ * New tooltips.
+ *
+ * Template: `tooltip.add(item[s], tooltip[s])`
+ *
+ * See https://mods.latvian.dev/books/kubejs/page/itemtooltipeventjs for more details.
+ */
 onEvent("item.tooltip", (tooltip) => {
   // Jetpacks
   tooltip.add(

@@ -3,11 +3,17 @@
  * Texture for item `test` has to be placed in `kubejs/assets/kubejs/textures/item/test.png`
  * Custom models from Blockbench are placed in `kubejs/assets/kubejs/models/item/test.json`
  *
- * More details at https://mods.latvian.dev/books/kubejs/page/custom-items
+ * Template: `event.create("test").displayName("Test Item");`
+ *
+ * More details at https://mods.latvian.dev/books/kubejs/page/custom-items.
  */
 onEvent("item.registry", (event) => {
   /*
    * Regular items
+   *
+   * Hey, can I add bottles and bowls?
+   * Yes but you eat them https://github.com/KubeJS-Mods/KubeJS/issues/98.
+   * YAY! EXTRA FIBER AND SHARPER TEETH.
    */
   // Bottled Syrup - glass_bottle
   event
@@ -212,7 +218,7 @@ onEvent("item.registry", (event) => {
         .alwaysEdible()
         .effect("minecraft:regeneration", 600, 1, 1.0)
         .effect("minecraft:saturation", 600, 1, 1.0);
-      // .effect("cofh_core:panacea", 600, 0, 1.0);  // https://github.com/KubeJS-Mods/KubeJS/issues/151
+      // .effect("cofh_core:panacea", 600, 0, 1.0);  // Potions broken https://github.com/KubeJS-Mods/KubeJS/issues/151
     });
   // Onion Singularity Sandwich
   event

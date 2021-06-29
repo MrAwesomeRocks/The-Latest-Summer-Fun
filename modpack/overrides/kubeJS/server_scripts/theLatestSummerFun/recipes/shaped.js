@@ -1,3 +1,10 @@
+/*
+ * Shaped crafting table recipes
+ *
+ * Template: `event.shaped("MOD:OUTPUT", [inputs on crafting table], {input mapping})`
+ *
+ * See L24 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
+ */
 onEvent("recipes", (event) => {
   /*
    *  F O O D

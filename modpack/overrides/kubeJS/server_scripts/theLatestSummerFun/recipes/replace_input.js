@@ -1,3 +1,10 @@
+/*
+ * Replace recipe inputs
+ *
+ * Template: `event.replaceInput({FILTER}, "MOD:OLD_ITEM", "MOD:NEW_ITEM", boolean exact);`
+ *
+ * See L100 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
+ */
 onEvent("recipes", (event) => {
     // Replace Raritanium with good-old copper
     event.replaceInput({}, "calemiutils:raritanium", "#forge:ingots/copper");

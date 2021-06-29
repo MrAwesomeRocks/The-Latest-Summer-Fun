@@ -490,3 +490,16 @@ craftingTable.addShaped("carapace_to_chitin", <item:druidcraft:chitin>, [
 
 craftingTable.addShapeless("chitin_to_carapace", <item:mysticalworld:carapace> * 4, [<item:druidcraft:chitin>]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
+
+// Temporary Upgrade Aquatic crafting recipes, since jellyfish don't spawn naturally
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+craftingTable.addShapeless("jellytorch_pink", <item:upgrade_aquatic:pink_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:pink_dye>]);
+craftingTable.addShapeless("jellytorch_purple", <item:upgrade_aquatic:purple_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:purple_dye>]);
+craftingTable.addShapeless("jellytorch_blue", <item:upgrade_aquatic:blue_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:blue_dye>]);
+craftingTable.addShapeless("jellytorch_green", <item:upgrade_aquatic:green_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:green_dye>]);
+craftingTable.addShapeless("jellytorch_yellow", <item:upgrade_aquatic:yellow_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:yellow_dye>]);
+craftingTable.addShapeless("jellytorch_orange", <item:upgrade_aquatic:orange_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:orange_dye>]);
+craftingTable.addShapeless("jellytorch_red", <item:upgrade_aquatic:red_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:red_dye>]);
+craftingTable.addShapeless("jellytorch_white", <item:upgrade_aquatic:white_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:jelly_or_jam>, <item:minecraft:white_dye>]);
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+

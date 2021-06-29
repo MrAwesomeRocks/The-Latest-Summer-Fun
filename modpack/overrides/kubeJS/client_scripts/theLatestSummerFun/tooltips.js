@@ -22,8 +22,8 @@ onEvent("item.tooltip", (tooltip) => {
   tooltip.add("immersiveengineering:slag", "Unobtainable and useless. Use Thermal's Slag instead!");
 
   // Jelly torches
-  tooltip.add(
-    /upgrade_aquatic:.+_jelly_torch/,
-    "Obtained by right-clicking a jellyfish with a prismarine rod."
-  );
+  tooltip.add(/upgrade_aquatic:.+_jelly_torch/, [
+    "Obtained by right-clicking a jellyfish with a prismarine rod.",
+    "Temporary recipe added since jellyfish don't sp-awn yet.",
+  ]);
 });

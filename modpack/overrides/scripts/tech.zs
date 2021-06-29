@@ -25,14 +25,6 @@
 <recipetype:thermal:lapidary_fuel>.addFuel("new_ruby_fuel", <item:thermal:ruby>, 1000000);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
-/*
-// Adding Fuels to the Compression Dynamo
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-// <recipetype:thermal:compression_fuel>.addFuel(String name, IFluidStack ingredient, int energy);
-<recipetype:thermal:compression_fuel>.addFuel("beer_fuel", <fluid:minecraft:water> * 100, 1000);
-<recipetype:thermal:compression_fuel>.addFuel("hoppy_beer_fuel", <fluid:minecraft:water> * 100, 2000);
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-*/
 
 // Melting Recipes
 // ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -50,25 +42,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 // <recipetype:thermal:bottler>.addRecipe(String name, IItemStack output, IIngredient ingredient, IFluidStack fluidInput, int energy);
 <recipetype:thermal:bottler>.addRecipe("syrup_bottling_thermal", <item:contenttweaker:syrup_bottle>, <item:minecraft:glass_bottle>, <fluid:thermal:syrup> * 250, 2000);
-/*
-<recipetype:immersiveengineering:bottling_machine>.addRecipe("syrup_bottling_ie", <item:minecraft:glass_bottle>, <fluid:thermal:syrup> * 250, <item:contenttweaker:syrup_bottle>);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-// Squeezing Recipes
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-<recipetype:immersiveengineering:squeezer>.addRecipe("squash_that_beer", <item:contenttweaker:beer>, 2000, <fluid:immersiveengineering:creosote> * 250, <item:minecraft:glass_bottle>);
-<recipetype:immersiveengineering:squeezer>.addRecipe("squash_that_hoppy_beer", <item:contenttweaker:hoppy_beer>, 2000, <fluid:immersiveengineering:creosote> * 250, <item:minecraft:glass_bottle>);
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-// Auto-Potioning Recipes
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-<recipetype:immersiveengineering:mixer>.addRecipe("beer_ie", <tag:fluids:minecraft:water>, [<item:thermal:barley>], 2000, <fluid:immersiveengineering:creosote>, 1000);
-<recipetype:immersiveengineering:mixer>.addRecipe("hoppy_beer_ie_1", <tag:fluids:minecraft:water>, [<item:thermal:barley>, <item:thermal:hops>], 2000, <fluid:immersiveengineering:creosote>, 1000);
-<recipetype:immersiveengineering:mixer>.addRecipe("hoppy_beer_ie_2", <tag:fluids:minecraft:water>, [<item:thermal:hops>], 2000, <fluid:immersiveengineering:creosote>, 1000);
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-*/
 
 
 // Making the IE Brass Recipe Match the Other Ones.

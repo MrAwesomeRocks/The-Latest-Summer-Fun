@@ -12,7 +12,11 @@ onEvent("recipes", (event) => {
   // Syrup
   event.shapeless("4x kubejs:syrup_bottle", ["thermal:syrup_bucket", "4x minecraft:glass_bottle"]);
   // Peanut Butter
-  event.shapeless("kubejs:peanut_butter", ["#forge:crops/peanut", "botania:pestle_and_mortar"]);
+  event.shapeless("kubejs:peanut_butter", [
+    "#forge:crops/peanut",
+    "botania:pestle_and_mortar",
+    "minecraft:glass_bottle",
+  ]);
   // Jelly
   event.shapeless("kubejs:jelly", [
     "minecraft:sweet_berries",
@@ -125,11 +129,11 @@ onEvent("recipes", (event) => {
   // Onion sandwich
   event.shapeless("kubejs:onion_sandwich", ["minecraft:bread", "8x thermal:onion_block"]);
   // Rad-ish
-  event.shapeless("kubejs:rad_ish", "#forge:crops/radish", "#forge:ingots/uranium");
+  event.shapeless("kubejs:rad_ish", ["#forge:crops/radish", "#forge:ingots/uranium"]);
   // Capricorn
-  event.shapeless("kubejs:capricorn", "kubejs:popcorn", "astralsorcery:stardust");
+  event.shapeless("kubejs:capricorn", ["kubejs:popcorn", "astralsorcery:stardust"]);
   // Bully peanut
   event.shapeless("kubejs:bully_peanut", ["#forge:crops/peanut", "minecraft:tnt"]);
   // Sad pistachio
-  event.shapeless("kubejs:sad_pistachio", "quark:cactus_paste", "minecraft:ghast_tear");
+  event.shapeless("kubejs:sad_pistachio", ["quark:cactus_paste", "minecraft:ghast_tear"]);
 });

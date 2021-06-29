@@ -31,6 +31,6 @@ onEvent("item.tooltip", (tooltip) => {
   // Jelly torches
   tooltip.add(/upgrade_aquatic:.+_jelly_torch/, [
     "Obtained by right-clicking a jellyfish with a prismarine rod.",
-    "Temporary recipe added since jellyfish don't sp-awn yet.",
+    "Temporary recipe added since jellyfish don't spawn yet.",
   ]);
 });

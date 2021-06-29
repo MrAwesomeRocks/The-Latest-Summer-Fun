@@ -21,12 +21,12 @@ onEvent("recipes", (event) => {
   event.custom({
     type: "botania:elven_trade",
     ingredients: [Ingredient.of("#forge:gems/sapphire").toJson()],
-    results: [Item.of("botania:life_essence").toResultJson()],
+    output: [Item.of("botania:life_essence").toResultJson()],
   });
   event.custom({
     type: "botania:elven_trade",
     ingredients: [Ingredient.of("#forge:storage_blocks/sapphire").toJson()],
-    results: [Item.of("botania:gaia_ingot").toResultJson()],
+    output: [Item.of("botania:gaia_ingot").toResultJson()],
   });
   /*
    * Hello, brewing?

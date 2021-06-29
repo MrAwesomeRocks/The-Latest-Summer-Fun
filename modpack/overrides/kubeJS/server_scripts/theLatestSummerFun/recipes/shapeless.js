@@ -120,7 +120,7 @@ onEvent("recipes", (event) => {
   event.shapeless("kubejs:glowstone_tea", [
     "kubejs:tea",
     "#forge:dusts/glowstone",
-    "forge:crops/sadiroot",
+    "#forge:crops/sadiroot",
   ]);
   // Onion sandwich
   event.shapeless("kubejs:onion_sandwich", ["minecraft:bread", "8x thermal:onion_block"]);

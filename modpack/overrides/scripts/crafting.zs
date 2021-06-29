@@ -174,69 +174,9 @@ craftingTable.addShaped("blizz_unit", <item:simplyjetpacks:unit_cryotheum>, [
 
 // FOOD!!!!!!!!!!!!!!!
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-// craftingTable.addShapeless("syrup_from_bucket", <item:conte:syrup_bottle> * 4, [<item:thermal:syrup_bucket>, <item:minecraft:glass_bottle>, <item:minecraft:glass_bottle>, <item:minecraft:glass_bottle>, <item:minecraft:glass_bottle>]);
-// craftingTable.addShapeless("peanut_butter", <item:contenttweaker:peanut_butter>, [<tag:items:forge:crops/peanut>]);
-// craftingTable.addShapeless("jelly_from_berry", <item:contenttweaker:jelly>, [<item:minecraft:sweet_berries>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
-// craftingTable.addShapeless("jelly_from_strawberry", <item:contenttweaker:jelly>, [<item:thermal:strawberry>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
-// craftingTable.addShapeless("jelly_from_melon", <item:contenttweaker:jelly>, [<item:minecraft:melon_slice>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
-// craftingTable.addShapeless("jelly_from_apple", <item:contenttweaker:jelly> * 2, [<item:minecraft:apple>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
-// craftingTable.addShapeless("cheese", <item:contenttweaker:cheese>, [<item:minecraft:milk_bucket>]);
-
-// craftingTable.addShaped("waffles_from_syrup", <item:contenttweaker:pancakes>, [
-//     [<item:minecraft:air>, <item:contenttweaker:syrup_bottle>, <item:minecraft:air>],
-//     [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
-// craftingTable.addShaped("waffles_from_honey", <item:contenttweaker:pancakes> * 2, [
-//     [<item:minecraft:air>, <item:minecraft:honey_bottle>, <item:minecraft:air>],
-//     [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
-
-// furnace.addRecipe("popcorn", <item:contenttweaker:popcorn>, <tag:items:forge:crops/corn>, 0.5, 200);
-// furnace.addRecipe("onion_rings", <item:contenttweaker:onion_rings>, <tag:items:forge:crops/onion>, 0.5, 200);
-// furnace.addRecipe("marshmallow", <item:contenttweaker:marshmallow>, <item:minecraft:sugar>, 0.5, 200);
-
-// craftingTable.addShapeless("smore_vanilla", <item:contenttweaker:s_more>, [<tag:items:forge:crops/wheat>, <item:minecraft:cocoa_beans>, <item:contenttweaker:marshmallow>]);
-// craftingTable.addShapeless("smore_create", <item:contenttweaker:s_more> * 2, [<tag:items:forge:crops/wheat>, <item:create:bar_of_chocolate>, <item:contenttweaker:marshmallow>]);
-// craftingTable.addShapeless("smore_tf", <item:contenttweaker:s_more> * 2, [<item:twilightforest:maze_wafer>, <item:minecraft:cocoa_beans>, <item:contenttweaker:marshmallow>]);
-// craftingTable.addShapeless("smore_hybrid", <item:contenttweaker:s_more> * 5, [<item:twilightforest:maze_wafer>, <item:create:bar_of_chocolate>, <item:contenttweaker:marshmallow>]);
-
-// craftingTable.addShapeless("sushi_from_cod", <item:contenttweaker:sushi> * 2, [<item:minecraft:cod>, <tag:items:forge:crops/rice>, <item:minecraft:dried_kelp>]);
-// craftingTable.addShapeless("sushi_from_salmon", <item:contenttweaker:sushi> * 2, [<item:minecraft:salmon>, <tag:items:forge:crops/rice>, <item:minecraft:dried_kelp>]);
-// craftingTable.addShapeless("sushi_from_pufferfish", <item:contenttweaker:sushi>, [<item:minecraft:pufferfish>, <tag:items:forge:crops/rice>, <item:minecraft:dried_kelp>]);
-// craftingTable.addShapeless("sushi_from_tropicalfish", <item:contenttweaker:sushi>, [<item:minecraft:tropical_fish>, <tag:items:forge:crops/rice>, <item:minecraft:dried_kelp>]);
-
-
-brewing.addRecipe(<item:contenttweaker:coffee>, <tag:items:forge:crops/coffee>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
-brewing.addRecipe(<item:contenttweaker:tea>, <tag:items:forge:crops/tea>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
-brewing.addRecipe(<item:contenttweaker:beer>, <tag:items:forge:crops/barley>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
-// craftingTable.addShapeless("hoppy_beer", <item:contenttweaker:hoppy_beer>, [<item:contenttweaker:beer>, <tag:items:forge:crops/hops>]);
-
-// craftingTable.addShapeless("burger", <item:contenttweaker:burger>, [<item:minecraft:bread>, <item:minecraft:cooked_beef>, <item:contenttweaker:cheese>, <item:thermal:tomato>]);
-
-// craftingTable.addShaped("pizza", <item:contenttweaker:pizza>, [
-//     [<item:contenttweaker:cheese>, <tag:items:forge:crops/tomato>, <item:contenttweaker:cheese>],
-//     [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
-
-// craftingTable.addShaped("calzone", <item:contenttweaker:calzone> * 2, [
-//     [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>],
-//     [<item:contenttweaker:cheese>, <tag:items:forge:crops/tomato>, <item:contenttweaker:cheese>],
-//     [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
-
-// craftingTable.addShapeless("stir_fry", <item:contenttweaker:stir_fry>, [<tag:items:forge:crops/bell_pepper>, <tag:items:forge:crops/onion>, <tag:items:forge:crops/spinach>, <item:minecraft:carrot>, <tag:items:forge:crops/rice>, <tag:items:forge:crops/green_bean>, <item:minecraft:bowl>]);
-
-// craftingTable.addShapeless("sandwich_pbj", <item:contenttweaker:sandwich_pbj>, [<item:minecraft:bread>, <item:contenttweaker:peanut_butter>, <item:contenttweaker:jelly>]);
-// craftingTable.addShapeless("sandwich_blt", <item:contenttweaker:sandwich_blt>, [<item:minecraft:bread>, <item:minecraft:cooked_porkchop>, <tag:items:minecraft:leaves>, <tag:items:forge:crops/tomato>]);
-
-// craftingTable.addShapeless("redstone_espresso", <item:contenttweaker:redstone_espresso>, [<item:contenttweaker:coffee>, <tag:items:forge:dusts/redstone>, <item:minecraft:sugar>]);
-// craftingTable.addShapeless("glowstone_tea", <item:contenttweaker:glowstone_tea>, [<item:contenttweaker:tea>, <tag:items:forge:dusts/glowstone>, <item:thermal:sadiroot>]);
-// craftingTable.addShapeless("onion_sandwich", <item:contenttweaker:onion_sandwich>, [<item:minecraft:bread>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>]);
-
-// craftingTable.addShapeless("rad_ish", <item:contenttweaker:rad_ish>, [<tag:items:forge:crops/radish>, <tag:items:forge:ingots/uranium>]);
-// craftingTable.addShapeless("capricorn", <item:contenttweaker:capricorn>, [<item:contenttweaker:popcorn>, <item:astralsorcery:stardust>]);
-
-// craftingTable.addShapeless("bully_peanut", <item:contenttweaker:bully_peanut>, [<item:thermal:peanut>, <item:minecraft:tnt>]);
-// craftingTable.addShapeless("sad_pistachio", <item:contenttweaker:sad_pistachio>, [<item:quark:cactus_paste>, <item:minecraft:ghast_tear>]);
-
-// craftingTable.addShaped("fake_bread", <item:contenttweaker:bread>, [
-//     [<item:minecraft:wheat>, <tag:items:forge:dusts/wood>, <item:minecraft:wheat>]]);
+brewing.addRecipe(<item:kubejs:coffee>, <tag:items:forge:crops/coffee>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
+brewing.addRecipe(<item:kubejs:tea>, <tag:items:forge:crops/tea>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
+brewing.addRecipe(<item:kubejs:beer>, <tag:items:forge:crops/barley>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

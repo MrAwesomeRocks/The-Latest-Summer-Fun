@@ -20,7 +20,7 @@
 		#The percentage of power lost every 16 blocks of distance in copper wire
 		#Range: 0.0 ~ 1.0
 		loss = 0.05
-		#In- and output rates of copper wire connectors. This is independant of the transferrate of the wires.
+		#In- and output rates of copper wire connectors. This is independent of the transferrate of the wires.
 		#Range: > 0
 		wireConnectorInput = 256
 
@@ -34,7 +34,7 @@
 		#The percentage of power lost every 16 blocks of distance in electrum wire
 		#Range: 0.0 ~ 1.0
 		loss = 0.025
-		#In- and output rates of electrum wire connectors. This is independant of the transferrate of the wires.
+		#In- and output rates of electrum wire connectors. This is independent of the transferrate of the wires.
 		#Range: > 0
 		wireConnectorInput = 1024
 
@@ -48,7 +48,7 @@
 		#The percentage of power lost every 16 blocks of distance in hv wire
 		#Range: 0.0 ~ 1.0
 		loss = 0.025
-		#In- and output rates of hv wire connectors. This is independant of the transferrate of the wires.
+		#In- and output rates of hv wire connectors. This is independent of the transferrate of the wires.
 		#Range: > 0
 		wireConnectorInput = 4096
 

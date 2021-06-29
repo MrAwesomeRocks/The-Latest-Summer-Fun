@@ -34,14 +34,14 @@
 
 // Crushing Recipes
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-<recipetype:thermal:pulverizer>.addRecipe("peanut_butter_pulverizer", [<item:contenttweaker:peanut_butter> * 2 % 100] , <item:thermal:peanut>, 0, 2000);
+<recipetype:thermal:pulverizer>.addRecipe("peanut_butter_pulverizer", [<item:kubejs:peanut_butter> * 2 % 100] , <item:thermal:peanut>, 0, 2000);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Encapsuling Recipes
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 // <recipetype:thermal:bottler>.addRecipe(String name, IItemStack output, IIngredient ingredient, IFluidStack fluidInput, int energy);
-<recipetype:thermal:bottler>.addRecipe("syrup_bottling_thermal", <item:contenttweaker:syrup_bottle>, <item:minecraft:glass_bottle>, <fluid:thermal:syrup> * 250, 2000);
+<recipetype:thermal:bottler>.addRecipe("syrup_bottling_thermal", <item:kubejs:syrup_bottle>, <item:minecraft:glass_bottle>, <fluid:thermal:syrup> * 250, 2000);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

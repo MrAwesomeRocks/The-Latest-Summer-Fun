@@ -1,3 +1,4 @@
+// priority: 0
 /*
  * Fires when a player logs onto a server.
  *

@@ -1,4 +1,4 @@
-// priority: 10
+// priority: 50
 // Whether or not to unify items in inventory
 global["INVENTORY_UNIFY"] = true;
 // Whether or not to unify items in world

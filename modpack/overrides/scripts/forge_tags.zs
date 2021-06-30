@@ -70,52 +70,6 @@ by.remove(<item:twilightforest:sort_planks>);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
-// More Blocks are Beacon Bases
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-var beacon = <tag:blocks:minecraft:beacon_base_blocks>;
-
-beacon.add(<block:druidcraft:moonstone_block>);
-
-beacon.add(<block:eidolon:lead_block>);
-beacon.add(<block:eidolon:pewter_block>);
-beacon.add(<block:eidolon:arcane_gold_block>);
-
-beacon.add(<block:powah:energized_steel_block>);
-beacon.add(<block:powah:niotic_crystal_block>);
-beacon.add(<block:powah:spirited_crystal_block>);
-beacon.add(<block:powah:nitro_crystal_block>);
-
-beacon.add(<block:thermal:tin_block>);
-beacon.add(<block:thermal:lead_block>);
-beacon.add(<block:thermal:silver_block>);
-beacon.add(<block:thermal:nickel_block>);
-beacon.add(<block:thermal:bronze_block>);
-beacon.add(<block:thermal:electrum_block>);
-beacon.add(<block:thermal:invar_block>);
-beacon.add(<block:thermal:constantan_block>);
-beacon.add(<block:thermal:signalum_block>);
-beacon.add(<block:thermal:lumium_block>);
-beacon.add(<block:thermal:enderium_block>);
-beacon.add(<block:thermal:cinnabar_block>);
-
-beacon.add(<block:bigreactors:yellorium_block>);
-beacon.add(<block:bigreactors:cyanite_block>);
-
-beacon.add(<block:psi:psimetal_block>);
-beacon.add(<block:psi:psigem_block>);
-beacon.add(<block:psi:ivory_psimetal_block>);
-beacon.add(<block:psi:ebony_psimetal_block>);
-
-beacon.add(<block:immersiveengineering:storage_aluminum>);
-beacon.add(<block:immersiveengineering:storage_lead>);
-beacon.add(<block:immersiveengineering:storage_silver>);
-beacon.add(<block:immersiveengineering:storage_nickel>);
-beacon.add(<block:immersiveengineering:storage_uranium>);
-beacon.add(<block:immersiveengineering:storage_constantan>);
-beacon.add(<block:immersiveengineering:storage_electrum>);
-beacon.add(<block:immersiveengineering:storage_steel>);
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-
 // Raritanium is pretty much copper
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 var copper = <tag:items:forge:ingots/copper>;

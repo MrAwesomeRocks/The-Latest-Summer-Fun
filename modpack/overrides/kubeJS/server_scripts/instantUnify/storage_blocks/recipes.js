@@ -1,4 +1,4 @@
-// priority: 20
+// priority: 200
 /*
  * Bringing back storage blocks from other mods as decoration blocks.
  * These are shapeless crafting table recipes, with a cost of one ingot - one block.

@@ -5,7 +5,8 @@
  *
  * Template:
  *   event.remove(tag, "MOD:storage_block")
- *   event.remove("#forge:storage_blocks", "MOD:storage_block")
+ *   event.remove("forge:storage_blocks", "MOD:storage_block")
+ *   event.add("forge:decoration_blocks", "MOD:storage_block")
  *
  * See https://mods.latvian.dev/books/kubejs/page/tageventjs for more info.
  */
@@ -22,9 +23,9 @@ onEvent("item.tags", (event) => {
 
       for (let s of stacks) {
         if (s.getId() != tagItem) {
-          event.remove("#" + tag, s.getId());
-          event.remove("#forge:storage_blocks", s.getId());
-          event.add("#forge:decoration_blocks", s.getId());
+          event.remove(tag, s.getId());
+          event.remove("forge:storage_blocks", s.getId());
+          event.add("forge:decoration_blocks", s.getId());
         }
       }
     }

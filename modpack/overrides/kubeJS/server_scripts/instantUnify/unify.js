@@ -40,11 +40,9 @@ var tags = [];
 ]*/
 
 // Easier way to add multiple tags (feel free to add empty extra tags, this will ignore them)
-// Adding every possible tag SHOULD work
+// ? Adding every possible tag SHOULD work
 var tagGen = [
-  /*
-   * -----VANILLA-----
-   */
+  // ! VANILLA
   "coal=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
   "iron=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
   "gold=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
@@ -53,9 +51,7 @@ var tagGen = [
   "lapis_lazuli=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
   "nether_quartz=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
 
-  /*
-   * -----MODDED METALS-----
-   */
+  //! MODDED METALS
   // Copper
   "copper=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
   // Aluminum / Aluminium / Bauxite
@@ -84,16 +80,12 @@ var tagGen = [
   // Iridium
   "iridium=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
 
-  /*
-   * -----AE2 GEMS-----
-   */
+  //! AE2 GEMS
   "certus_quartz=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
   "charged_certus_quartz=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
   "fluix=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
 
-  /*
-   * -----MODDED GEMS-----
-   */
+  //! MODDED GEMS
   // Fluorite
   "fluorite=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
   // Bitumen
@@ -111,9 +103,7 @@ var tagGen = [
   // Mana gem / Arcane
   "mana=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
 
-  /*
-   * -----MODDED ALLOYS-----
-   */
+  //! MODDED ALLOYS
   // Bronze
   "bronze=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
   // Brass
@@ -133,9 +123,7 @@ var tagGen = [
   // Enderium
   "enderium=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
 
-  /*
-   * -----OTHER/MISC-----
-   */
+  //! OTHER/MISC
   // Silicon
   "silicon=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
   // Coal coke

@@ -7,7 +7,7 @@
  *   event.remove({input: "MOD:storage_block"})
  *   event.shapeless("MOD:storage_block", ["MOD:ingot"])
  *
- * See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
+ ** See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
   outer: for (let tag of global["unifytags"]) {

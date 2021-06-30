@@ -6,7 +6,7 @@
  * Example: `event.recipes.minecraft.smelting()`
  * Shortcuts available for minecraft recipes.
  *
- * See L36 of  https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
+ ** See L36 of  https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
   /*

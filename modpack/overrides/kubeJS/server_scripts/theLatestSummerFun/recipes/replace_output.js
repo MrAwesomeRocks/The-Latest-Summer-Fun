@@ -3,7 +3,7 @@
  *
  * Template: `event.replaceOutput({FILTER}, "MOD:OLD_ITEM", "MOD:NEW_ITEM", boolean exact);`
  *
- * See L103 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
+ ** See L103 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
   // Thermal outputs

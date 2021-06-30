@@ -7,7 +7,7 @@
  *  - `event.remove(tag, item)`
  *  - `event.removeAll(tag)`
  *
- * See https://mods.latvian.dev/books/kubejs/page/tageventjs for more info.
+ ** See https://mods.latvian.dev/books/kubejs/page/tageventjs for more info.
  */
 onEvent("block.tags", (event) => {
   // Beacon blocks

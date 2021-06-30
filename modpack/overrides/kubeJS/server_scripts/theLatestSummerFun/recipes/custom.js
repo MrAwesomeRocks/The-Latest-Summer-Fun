@@ -14,7 +14,7 @@
  *   // Any other fields available, such as `processingTime`
  * })
  *
- * See L73 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
+ ** See L73 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
   // Botania
@@ -29,8 +29,8 @@ onEvent("recipes", (event) => {
     output: [Item.of("botania:gaia_ingot").toResultJson()],
   });
   /*
-   * Hello, brewing?
-   * Brewing machine BROKEN https://github.com/KubeJS-Mods/KubeJS/issues/68
-   * Understandable have an AMAZING DAY.
+   ? Hello, brewing?
+   ? Brewing machine BROKEN https://github.com/KubeJS-Mods/KubeJS/issues/68
+   ? Understandable have an AMAZING DAY.
    */
 });

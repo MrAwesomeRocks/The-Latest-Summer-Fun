@@ -3,12 +3,10 @@
  *
  * Template: `event.shapeless("MOD:OUTPUT", [inputs])`
  *
- * See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
+ ** See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
-  /*
-   *  F O O D
-   */
+  //! F O O D
   // Syrup
   event.shapeless("4x kubejs:syrup_bottle", ["thermal:syrup_bucket", "4x minecraft:glass_bottle"]);
   // Peanut Butter

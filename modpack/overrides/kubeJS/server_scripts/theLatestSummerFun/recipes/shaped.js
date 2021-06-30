@@ -3,13 +3,11 @@
  *
  * Template: `event.shaped("MOD:OUTPUT", [inputs on crafting table], {input mapping})`
  *
- * See L24 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
+ ** See L24 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
-  /*
-   *  F O O D
-   */
-  /* Waffles */
+  //! F O O D
+  //** Waffles
   // prettier-ignore
   event.shaped("kubejs:waffle", [
     " S ",
@@ -26,7 +24,7 @@ onEvent("recipes", (event) => {
     S: "minecraft:honey_bottle",
     W: "#forge:crops/wheat",
   });
-  /* Pizza */
+  //** Pizza
   // prettier-ignore
   event.shaped("kubejs:pizza", [
     "CTC",
@@ -36,7 +34,7 @@ onEvent("recipes", (event) => {
     T: "#forge:crops/tomato",
     W: "#forge:crops/wheat",
   });
-  /* Calzone */
+  //** Calzone
   // prettier-ignore
   event.shaped("2x kubejs:calzone", [
     "WWW",
@@ -47,7 +45,7 @@ onEvent("recipes", (event) => {
     T: "#forge:crops/tomato",
     W: "#forge:crops/wheat",
   });
-  /* Not-bread */
+  //** Not-bread
   // prettier-ignore
   event.shaped("kubejs:bread", [
     "WDW"

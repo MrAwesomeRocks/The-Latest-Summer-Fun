@@ -2,9 +2,9 @@
 /*
  * Fires when a player logs onto a server.
  *
- * See
- * https://github.com/KubeJS-Mods/KubeJS/blob/main/common/src/main/java/dev/latvian/kubejs/player/PlayerEventJS.java
- * for possible methods.
+ ** See
+ ** https://github.com/KubeJS-Mods/KubeJS/blob/main/common/src/main/java/dev/latvian/kubejs/player/PlayerEventJS.java
+ ** for possible methods.
  */
 onEvent("player.logged_in", (event) => {
   let entity = event.getEntity();

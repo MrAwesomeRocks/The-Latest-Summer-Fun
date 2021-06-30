@@ -16,7 +16,7 @@
 onEvent("block.loot_tables", (event) => {
   //
   //
-  //-----OVERWORLD-----
+  //! OVERWORLD
   //
   //
   //IRON
@@ -44,7 +44,7 @@ onEvent("block.loot_tables", (event) => {
 
   //
   //
-  //-----NETHER ORES-----
+  //! NETHER ORES
   //
   //
   //IRON
@@ -291,7 +291,7 @@ onEvent("block.loot_tables", (event) => {
   });
   //
   //
-  //-----END ORES-----
+  //! END ORES
   //
   //
   //IRON

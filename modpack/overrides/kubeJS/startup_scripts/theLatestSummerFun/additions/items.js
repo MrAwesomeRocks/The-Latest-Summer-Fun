@@ -5,15 +5,15 @@
  *
  * Template: `event.create("test").displayName("Test Item");`
  *
- * More details at https://mods.latvian.dev/books/kubejs/page/custom-items.
+ ** More details at https://mods.latvian.dev/books/kubejs/page/custom-items.
  */
 onEvent("item.registry", (event) => {
   /*
-   * Regular items
+   ! Regular items
    *
-   * Hey, can I add bottles and bowls?
-   * Yes but you eat them https://github.com/KubeJS-Mods/KubeJS/issues/98.
-   * YAY! EXTRA FIBER AND SHARPER TEETH.
+   ? Hey, can I add bottles and bowls?
+   ? Yes but you eat them https://github.com/KubeJS-Mods/KubeJS/issues/98.
+   ? YAY! EXTRA FIBER AND SHARPER TEETH.
    */
   // Bottled Syrup - glass_bottle
   event
@@ -195,7 +195,7 @@ onEvent("item.registry", (event) => {
     });
 
   /*
-   *  E P I C  items
+   !  E P I C  items
    */
   // Redstone Espresso
   event
@@ -226,7 +226,7 @@ onEvent("item.registry", (event) => {
         .alwaysEdible()
         .effect("minecraft:regeneration", 600, 1, 1.0)
         .effect("minecraft:saturation", 600, 1, 1.0);
-      // .effect("cofh_core:panacea", 600, 0, 1.0);  // Potions broken https://github.com/KubeJS-Mods/KubeJS/issues/151
+      // .effect("cofh_core:panacea", 600, 0, 1.0);  //? Potions broken https://github.com/KubeJS-Mods/KubeJS/issues/151
     });
   // Onion Singularity Sandwich
   event

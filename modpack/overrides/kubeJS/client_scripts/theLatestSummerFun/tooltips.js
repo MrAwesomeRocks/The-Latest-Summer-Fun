@@ -7,7 +7,7 @@
  * See https://mods.latvian.dev/books/kubejs/page/itemtooltipeventjs for more details.
  */
 onEvent("item.tooltip", (tooltip) => {
-  // Jetpacks
+  //** Jetpacks
   tooltip.add(
     [
       "simplyjetpacks:unit_glowstone",
@@ -18,17 +18,17 @@ onEvent("item.tooltip", (tooltip) => {
     "Temporary Crafting Recipe."
   );
 
-  // Thermal rubies and sapphires
+  //** Thermal rubies and sapphires
   tooltip.add(/thermal:ruby/, "I can't get it to show up in JEI. Consider this an easter-egg?");
   tooltip.add("thermal:ruby", "It seems flux-rich.");
 
   tooltip.add(/thermal:sapphire/, "I can't get it to show up in JEI. Consider this an easter-egg?");
   tooltip.add("thermal:sapphire", "It seems full of magical potential.");
 
-  // IE Slag
+  //** IE Slag
   tooltip.add("immersiveengineering:slag", "Unobtainable and useless. Use Thermal's Slag instead!");
 
-  // Jelly torches
+  //** Jelly torches
   tooltip.add(/upgrade_aquatic:.+_jelly_torch/, [
     "Obtained by right-clicking a jellyfish with a prismarine rod.",
     "Temporary recipe added since jellyfish don't spawn yet.",

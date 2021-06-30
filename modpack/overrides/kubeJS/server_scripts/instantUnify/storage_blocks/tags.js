@@ -8,7 +8,7 @@
  *   event.remove("forge:storage_blocks", "MOD:storage_block")
  *   event.add("forge:decoration_blocks", "MOD:storage_block")
  *
- * See https://mods.latvian.dev/books/kubejs/page/tageventjs for more info.
+ ** See https://mods.latvian.dev/books/kubejs/page/tageventjs for more info.
  */
 onEvent("item.tags", (event) => {
   outer: for (let tag of global["unifytags"]) {

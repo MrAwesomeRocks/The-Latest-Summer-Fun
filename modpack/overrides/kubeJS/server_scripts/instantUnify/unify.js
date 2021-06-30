@@ -201,7 +201,11 @@ onEvent("player.inventory.changed", (event) => {
     var heldItem = event.getItem();
 
     // Check for every tag in the list
-    for (let tag of global["unifytags"]) {
+    outer: for (let tag of global["unifytags"]) {
+      if (tag.match(/storage_blocks/)) {
+        continue outer;
+      }
+
       let ingr = Ingredient.of("#" + tag);
       if (ingr.test(heldItem)) {
         // If item is in tag, determine if it needs to be changed
@@ -227,8 +231,13 @@ onEvent("entity.spawned", (event) => {
     var entity = event.getEntity();
     if (entity.getType() == "minecraft:item") {
       var gItem = entity.getItem();
+      
       // Check for every tag in the list
-      for (let tag of global["unifytags"]) {
+      outer: for (let tag of global["unifytags"]) {
+        if (tag.match(/storage_blocks/)) {
+          continue outer;
+        }
+
         let ingr = Ingredient.of("#" + tag);
         if (ingr && ingr.test(gItem)) {
           // If item is in tag, determine if it needs to be changed

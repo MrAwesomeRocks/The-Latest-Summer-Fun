@@ -6,9 +6,9 @@ onEvent("jei.hide.items", (event) => {
           continue outer;
         }
 
-        let ingredient = Ingredient.of("#" + tag);
-        if (ingredient) {
-          let stacks = ingredient.getStacks().toArray();
+        let ingr = Ingredient.of("#" + tag);
+        if (ingr) {
+          let stacks = ingr.getStacks().toArray();
           let tItem = global["tagitems"][tag];
           for (let s of stacks) {
             if (s.getId() != tItem) event.hide(s.getId());

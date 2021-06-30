@@ -24,7 +24,7 @@ onEvent("recipes", (event) => {
         if (s.getId() != tagItem) {
           event.remove({ input: s.getId() });
           event.remove({ output: s.getId() });
-          event.add(s.getId(), "#" + tag.replace(/storage_blocks/, "ingots"));
+          event.shapeless(s.getId(), "#" + tag.replace(/storage_blocks/, "ingots"));
         }
       }
     }

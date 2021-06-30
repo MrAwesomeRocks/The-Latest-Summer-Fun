@@ -6,6 +6,4 @@
  *
  * See L11 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
-onEvent("recipes", (event) => {
-  event.remove({ output: "waystones:warp_stone" });
-});
+onEvent("recipes", (event) => {});

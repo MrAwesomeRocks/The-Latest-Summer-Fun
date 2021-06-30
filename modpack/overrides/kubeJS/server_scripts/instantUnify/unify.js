@@ -1,3 +1,4 @@
+// priority: 10
 // Whether or not to unify items in inventory
 global["INVENTORY_UNIFY"] = true;
 // Whether or not to unify items in world
@@ -231,7 +232,7 @@ onEvent("entity.spawned", (event) => {
     var entity = event.getEntity();
     if (entity.getType() == "minecraft:item") {
       var gItem = entity.getItem();
-      
+
       // Check for every tag in the list
       outer: for (let tag of global["unifytags"]) {
         if (tag.match(/storage_blocks/)) {

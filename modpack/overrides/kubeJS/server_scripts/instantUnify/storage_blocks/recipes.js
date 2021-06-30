@@ -1,3 +1,4 @@
+// priority: 40
 /*
  * Bringing back storage blocks from other mods as decoration blocks.
  * These are shapeless crafting table recipes, with a cost of one ingot - one block.
@@ -22,6 +23,7 @@ onEvent("recipes", (event) => {
       for (let s of stacks) {
         if (s.getId() != tagItem) {
           event.remove({ input: s.getId() });
+          event.remove({ output: s.getId() });
           event.add(s.getId(), "#" + tag.replace(/storage_blocks/, "ingots"));
         }
       }

@@ -1,3 +1,4 @@
+// priority: 50
 /*
  * Bringing back storage blocks from other mods as decoration blocks.
  * This involves removing all their tags.

@@ -8,4 +8,23 @@
  *
  * See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
-onEvent("recipes", (event) => {});
+onEvent("recipes", (event) => {
+  outer: for (let tag of global["unifytags"]) {
+    if (!tag.match(/storage_blocks/)) {
+      continue outer;
+    }
+
+    let ingr = Ingredient.of("#" + tag);
+    if (ingr) {
+      let stacks = ingr.getStacks().toArray();
+      let tagItem = global["tagitems"][tag];
+
+      for (let s of stacks) {
+        if (s.getId() != tagItem) {
+          event.remove({ input: s.getId() });
+          event.add(s.getId(), "#" + tag.replace(/storage_blocks/, "ingots"));
+        }
+      }
+    }
+  }
+});

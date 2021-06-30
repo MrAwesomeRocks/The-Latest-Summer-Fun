@@ -18,5 +18,5 @@ onEvent("recipes", (event) => {
   event.replaceInput({}, "thermal:coal_coke", "#forge:gems/coal_coke");
 
   // Waystones
-  event.replaceInput({}, "waystones:warp_stone", "mincraft:lodestone");
+  event.replaceInput({}, Item.of("waystones:warp_stone", { Damage: 0 }), "mincraft:lodestone");
 });

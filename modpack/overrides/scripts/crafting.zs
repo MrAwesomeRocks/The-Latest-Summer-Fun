@@ -23,29 +23,6 @@ craftingTable.addShaped("better_sawdust_flooring", <item:immersiveengineering:sa
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
-// Oh yeah I'm changing waystones baybey!
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.removeRecipe(<item:waystones:waystone>);
-craftingTable.removeRecipe(<item:waystones:sandy_waystone>);
-craftingTable.removeByName("waystones:mossy_waystone");
-
-craftingTable.addShaped("waystone", <item:waystones:waystone>, [
-    [<item:minecraft:air>, <item:minecraft:stone_bricks>, <item:minecraft:air>],
-    [<item:minecraft:stone_bricks>, <item:minecraft:lodestone>, <item:minecraft:stone_bricks>],
-    [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]]);
-
-craftingTable.addShaped("mossy_waystone", <item:waystones:mossy_waystone>, [
-    [<item:minecraft:air>, <item:minecraft:mossy_stone_bricks>, <item:minecraft:air>],
-    [<item:minecraft:mossy_stone_bricks>, <item:minecraft:lodestone>, <item:minecraft:mossy_stone_bricks>],
-    [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]]);
-
-craftingTable.addShaped("sandy_waystone", <item:waystones:sandy_waystone>, [
-    [<item:minecraft:air>, <item:minecraft:chiseled_sandstone>, <item:minecraft:air>],
-    [<item:minecraft:chiseled_sandstone>, <item:minecraft:lodestone>, <item:minecraft:chiseled_sandstone>],
-    [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]]);
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
 // Chicken Chunks Changes
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 craftingTable.removeRecipe(<item:chickenchunks:chunk_loader>);

@@ -1,7 +1,11 @@
 onEvent("jei.hide.items", (event) => {
   if (global["HIDE_UNIFIED_ITEMS"]) {
     try {
-      for (let tag of global["unifytags"]) {
+      outer: for (let tag of global["unifytags"]) {
+        if (tag.match(/storage_blocks/)) {
+          continue outer;
+        }
+
         let ingredient = Ingredient.of("#" + tag);
         if (ingredient) {
           let stacks = ingredient.getStacks().toArray();

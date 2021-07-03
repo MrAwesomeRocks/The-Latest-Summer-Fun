@@ -22,7 +22,16 @@ onEvent("item.registry", (event) => {
     .containerItem("minecraft:glass_bottle")
     .group("food")
     .food((foodBuilder) => {
-      foodBuilder.hunger(1).saturation(0.0);
+      foodBuilder
+        .hunger(1)
+        .saturation(0.0)
+        .eaten((event) => {
+          if (!event.getPlayer().isCreativeMode()) {
+            event.getServer().scheduleInTicks(1, event.getPlayer(), (callback) => {
+              callback.data.giveInHand(Item.of("minecraft:glass_bottle"));
+            });
+          }
+        });
     });
   // Peanut Butter
   event
@@ -31,7 +40,16 @@ onEvent("item.registry", (event) => {
     .containerItem("minecraft:glass_bottle")
     .group("food")
     .food((foodBuilder) => {
-      foodBuilder.hunger(1).saturation(0.0);
+      foodBuilder
+        .hunger(1)
+        .saturation(0.0)
+        .eaten((event) => {
+          if (!event.getPlayer().isCreativeMode()) {
+            event.getServer().scheduleInTicks(1, event.getPlayer(), (callback) => {
+              callback.data.giveInHand(Item.of("minecraft:glass_bottle"));
+            });
+          }
+        });
     });
   // Jelly
   event
@@ -40,7 +58,16 @@ onEvent("item.registry", (event) => {
     .containerItem("minecraft:glass_bottle")
     .group("food")
     .food((foodBuilder) => {
-      foodBuilder.hunger(1).saturation(0.0);
+      foodBuilder
+        .hunger(1)
+        .saturation(0.0)
+        .eaten((event) => {
+          if (!event.getPlayer().isCreativeMode()) {
+            event.getServer().scheduleInTicks(1, event.getPlayer(), (callback) => {
+              callback.data.giveInHand(Item.of("minecraft:glass_bottle"));
+            });
+          }
+        });
     });
   // Cheese
   event
@@ -89,7 +116,18 @@ onEvent("item.registry", (event) => {
     .containerItem("minecraft:glass_bottle")
     .group("food")
     .food((foodBuilder) => {
-      foodBuilder.hunger(0).saturation(0.0).alwaysEdible().effect("minecraft:speed", 600, 0, 1.0);
+      foodBuilder
+        .hunger(0)
+        .saturation(0.0)
+        .alwaysEdible()
+        .effect("minecraft:speed", 600, 0, 1.0)
+        .eaten((event) => {
+          if (!event.getPlayer().isCreativeMode()) {
+            event.getServer().scheduleInTicks(1, event.getPlayer(), (callback) => {
+              callback.data.giveInHand(Item.of("minecraft:glass_bottle"));
+            });
+          }
+        });
     });
   // Tea
   event
@@ -102,7 +140,14 @@ onEvent("item.registry", (event) => {
         .hunger(0)
         .saturation(0.0)
         .alwaysEdible()
-        .effect("minecraft:regeneration", 300, 0, 1.0);
+        .effect("minecraft:regeneration", 300, 0, 1.0)
+        .eaten((event) => {
+          if (!event.getPlayer().isCreativeMode()) {
+            event.getServer().scheduleInTicks(1, event.getPlayer(), (callback) => {
+              callback.data.giveInHand(Item.of("minecraft:glass_bottle"));
+            });
+          }
+        });
     });
   // Beer
   event
@@ -111,7 +156,18 @@ onEvent("item.registry", (event) => {
     .containerItem("minecraft:glass_bottle")
     .group("food")
     .food((foodBuilder) => {
-      foodBuilder.hunger(0).saturation(0.0).alwaysEdible().effect("minecraft:nausea", 100, 0, 1.0);
+      foodBuilder
+        .hunger(0)
+        .saturation(0.0)
+        .alwaysEdible()
+        .effect("minecraft:nausea", 100, 0, 1.0)
+        .eaten((event) => {
+          if (!event.getPlayer().isCreativeMode()) {
+            event.getServer().scheduleInTicks(1, event.getPlayer(), (callback) => {
+              callback.data.giveInHand(Item.of("minecraft:glass_bottle"));
+            });
+          }
+        });
     });
   // Hoppy Beer
   event
@@ -125,7 +181,14 @@ onEvent("item.registry", (event) => {
         .saturation(0.0)
         .alwaysEdible()
         .effect("minecraft:nausea", 100, 0, 1.0)
-        .effect("minecraft:resistance", 300, 1, 1.0);
+        .effect("minecraft:resistance", 300, 1, 1.0)
+        .eaten((event) => {
+          if (!event.getPlayer().isCreativeMode()) {
+            event.getServer().scheduleInTicks(1, event.getPlayer(), (callback) => {
+              callback.data.giveInHand(Item.of("minecraft:glass_bottle"));
+            });
+          }
+        });
     });
   // Burger
   event
@@ -175,7 +238,16 @@ onEvent("item.registry", (event) => {
     .containerItem("minecraft:bowl")
     .group("food")
     .food((foodBuilder) => {
-      foodBuilder.hunger(10).saturation(0.6);
+      foodBuilder
+        .hunger(10)
+        .saturation(0.6)
+        .eaten((event) => {
+          if (!event.getPlayer().isCreativeMode()) {
+            event.getServer().scheduleInTicks(1, event.getPlayer(), (callback) => {
+              callback.data.giveInHand(Item.of("minecraft:bowl"));
+            });
+          }
+        });
     });
   // Marshmallow
   event
@@ -210,7 +282,14 @@ onEvent("item.registry", (event) => {
         .saturation(0.0)
         .alwaysEdible()
         .effect("minecraft:speed", 1200, 1, 1.0)
-        .effect("minecraft:haste", 1200, 0, 1.0);
+        .effect("minecraft:haste", 1200, 0, 1.0)
+        .eaten((event) => {
+          if (!event.getPlayer().isCreativeMode()) {
+            event.getServer().scheduleInTicks(1, event.getPlayer(), (callback) => {
+              callback.data.giveInHand(Item.of("minecraft:glass_bottle"));
+            });
+          }
+        });
     });
   // Luminescent Tea
   event
@@ -225,7 +304,14 @@ onEvent("item.registry", (event) => {
         .saturation(0.0)
         .alwaysEdible()
         .effect("minecraft:regeneration", 600, 1, 1.0)
-        .effect("minecraft:saturation", 600, 1, 1.0);
+        .effect("minecraft:saturation", 600, 1, 1.0)
+        .eaten((event) => {
+          if (!event.getPlayer().isCreativeMode()) {
+            event.getServer().scheduleInTicks(1, event.getPlayer(), (callback) => {
+              callback.data.giveInHand(Item.of("minecraft:glass_bottle"));
+            });
+          }
+        });
       // .effect("cofh_core:panacea", 600, 0, 1.0);  //? Potions broken https://github.com/KubeJS-Mods/KubeJS/issues/151
     });
   // Onion Singularity Sandwich

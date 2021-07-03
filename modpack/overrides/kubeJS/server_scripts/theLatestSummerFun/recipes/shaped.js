@@ -53,4 +53,17 @@ onEvent("recipes", (event) => {
     W: "#forge:crops/wheat",
     D: "#forge:dusts/wood",
   });
+  //** Neapolitan
+  // prettier-ignore
+  event.shaped("kubejs:gamer_neapolitan", [
+    "IPI",
+    "FIS",
+    "IBI"
+  ], {
+    I: "#forge:ices/packed",
+    P: "#forge:crops/potato",
+    F: "#forge:crops/strawberry",
+    S: "minecraft:sugar",
+    B: "minecraft:bowl",
+  });
 });

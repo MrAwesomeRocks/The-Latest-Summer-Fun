@@ -378,4 +378,23 @@ onEvent("item.registry", (event) => {
     .food((foodBuilder) => {
       foodBuilder.hunger(5).saturation(0.5);
     });
+  // Gamer Neapolitan
+  event
+    .create("gamer_neapolitan")
+    .displayName("Gamer Neapolitan")
+    .containerItem("minecraft:bowl")
+    .group("food")
+    .rarity(RARITY_EPIC)
+    .food((foodBuilder) => {
+      foodBuilder
+        .hunger(10)
+        .saturation(0.25)
+        .eaten((event) => {
+          if (!event.getPlayer().isCreativeMode()) {
+            event.getServer().scheduleInTicks(1, event.getPlayer(), (callback) => {
+              callback.data.giveInHand(Item.of("minecraft:bowl"));
+            });
+          }
+        });
+    });
 });

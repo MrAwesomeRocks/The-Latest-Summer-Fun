@@ -23,13 +23,12 @@ onEvent("recipes", (event) => {
       for (let s of stacks) {
         if (s.getId() != tagItem) {
           let blockID = s.getId();
-          let ingotTag = "#" + tag.replace(/storage_blocks/, "ingots");
 
           event.remove({ input: blockID });
           event.remove({ output: blockID });
 
-          event.shapeless(blockID, ingotTag);
-          event.shapeless(ingotTag, blockID);
+          event.shapeless(blockID, tagItem);
+          event.shapeless(tagItem, blockID);
         }
       }
     }

@@ -134,4 +134,11 @@ onEvent("recipes", (event) => {
   event.shapeless("kubejs:bully_peanut", ["#forge:crops/peanut", "minecraft:tnt"]);
   // Sad pistachio
   event.shapeless("kubejs:sad_pistachio", ["quark:cactus_paste", "minecraft:ghast_tear"]);
+  // PB&J Sandwich
+  event.shapeless("kubejs:sandwich_lead_jelly", [
+    "minecraft:bread",
+    "#forge:plates/lead",
+    "kubejs:jelly",
+  ]);
+  event.shapeless("kubejs:sandwich_lead_jelly", ["#forge:plates/lead", "kubejs:sandwich_pbj"]);
 });

@@ -397,4 +397,19 @@ onEvent("item.registry", (event) => {
           }
         });
     });
+  // Pb&J Sandwich
+  event
+    .create("sandwich_lead_jelly")
+    .displayName("Pb&J Sandwich")
+    .group("food")
+    .tooltip("A new twist on an old classic!")
+    .rarity(RARITY_EPIC)
+    .food((foodBuilder) => {
+      foodBuilder
+        .hunger(20)
+        .saturation(0.5)
+        .effect("minecraft:poison", 600, 1, 1.0)
+        .effect("minecraft:resistance", 600, 1, 1.0)
+        .effect("minecraft:nausea", 1200, 0, 0.5);
+    });
 });

@@ -120,21 +120,21 @@
   },
   "lead": {
     "index": 17,
-    "stackStr": "eidolon:lead_ore",
+    "stackStr": "emendatusenigmatica:lead_ore",
     "stackNBT": "",
     "amount": 1,
     "value": 100
   },
   "copper": {
     "index": 18,
-    "stackStr": "thermal:copper_ore",
+    "stackStr": "emendatusenigmatica:copper_ore",
     "stackNBT": "",
     "amount": 1,
     "value": 100
   },
   "zinc": {
     "index": 19,
-    "stackStr": "create:zinc_ore",
+    "stackStr": "emendatusenigmatica:zinc_ore",
     "stackNBT": "",
     "amount": 1,
     "value": 100

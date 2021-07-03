@@ -24,7 +24,6 @@ onEvent("recipes", (event) => {
         if (s.getId() != tagItem) {
           let blockID = s.getId();
 
-          event.remove({ input: blockID });
           event.remove({ output: blockID });
 
           event.shapeless(blockID, tagItem);

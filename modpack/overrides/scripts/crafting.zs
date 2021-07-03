@@ -381,8 +381,8 @@ craftingTable.addShaped("thermal_ie_oncrete", <item:immersiveengineering:concret
 // Alternate Wood Crafting: Blame Quark.
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 craftingTable.addShaped("only_byg_sign", <item:minecraft:oak_sign> * 3, [
-    [<tag:items:only_byg_planks>, <tag:items:only_byg_planks>, <tag:items:only_byg_planks>],
-    [<tag:items:only_byg_planks>, <tag:items:only_byg_planks>, <tag:items:only_byg_planks>],
+    [<tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>],
+    [<tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>],
     [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]]);
 
 craftingTable.addShaped("non_vanilla_ladder", <item:minecraft:ladder> * 3, [
@@ -391,9 +391,9 @@ craftingTable.addShaped("non_vanilla_ladder", <item:minecraft:ladder> * 3, [
     [<item:minecraft:stick>, <item:minecraft:air>, <item:minecraft:stick>]]);
 
 craftingTable.addShaped("only_byg_chest", <item:minecraft:chest>, [
-    [<tag:items:only_byg_planks>, <tag:items:only_byg_planks>, <tag:items:only_byg_planks>],
-    [<tag:items:only_byg_planks>, <item:minecraft:air>, <tag:items:only_byg_planks>],
-    [<tag:items:only_byg_planks>, <tag:items:only_byg_planks>, <tag:items:only_byg_planks>]]);
+    [<tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>],
+    [<tag:items:forge:only_byg_planks>, <item:minecraft:air>, <tag:items:forge:only_byg_planks>],
+    [<tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>]]);
 
 craftingTable.addShapeless("chest_2_chest", <item:minecraft:chest>, [<tag:items:forge:chests/wooden>]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------

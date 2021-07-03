@@ -11,8 +11,7 @@
  */
 onEvent("item.tags", (event) => {
   // Jelly/Jam tags
-  event.add("forge:jelly_or_jam", "kubejs:jelly");
-  event.add("forge:jelly_or_jam", "upgrade_aquatic:mulberry_jam_bottle");
+  event.add("forge:jelly_or_jam", ["kubejs:jelly", "upgrade_aquatic:mulberry_jam_bottle"]);
 
   // Dimensional Shards
   event.add("forge:dimensional_ores", /rftoolsbase:dimensionalshard_/);
@@ -34,6 +33,9 @@ onEvent("item.tags", (event) => {
 
   // Raritanium
   event.add("forge:ingots/copper", "calemiutils:raritanium");
+
+  // Equality for Blueberries
+  event.add("forge:crops/blueberries", "byg:blueberries");
 
   //** Planks
   // Non-vanilla

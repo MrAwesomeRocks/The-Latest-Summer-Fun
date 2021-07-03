@@ -10,6 +10,17 @@ craftingTable.removeRecipe(<item:ironjetpacks:basic_coil>);
 craftingTable.removeRecipe(<item:ironjetpacks:advanced_coil>);
 craftingTable.removeRecipe(<item:ironjetpacks:elite_coil>);
 craftingTable.removeRecipe(<item:ironjetpacks:ultimate_coil>);
+
+craftingTable.removeRecipe(<item:calemiutils:book_stand>);
+craftingTable.removeRecipe(<item:calemiutils:blueprint_filler>);
+craftingTable.removeRecipe(<item:calemiutils:link_book_location>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_wood>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_stone>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_iron>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_gold>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_diamond>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_netherite>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_starlight>);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -420,3 +431,19 @@ craftingTable.addShapeless("jellytorch_red", <item:upgrade_aquatic:red_jelly_tor
 craftingTable.addShapeless("jellytorch_white", <item:upgrade_aquatic:white_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:forge:jelly_or_jam>, <item:minecraft:white_dye>]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
+
+// Either Blueberry Can be Used for Either Recipe
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+craftingTable.removeRecipe(<item:byg:blueberry_pie>);
+craftingTable.removeRecipe(<item:druidcraft:blueberry_muffin>);
+
+craftingTable.addShapeless("blueberry_pie_redone", <item:byg:blueberry_pie>, [<tag:items:forge:crops/blueberries>, <item:minecraft:sugar>, <item:minecraft:egg>]);
+craftingTable.addShapeless("blueberry_muffin_redone", <item:druidcraft:blueberry_muffin>, [<tag:items:forge:crops/blueberries>, <item:minecraft:sugar>, <item:minecraft:egg>, <item:minecraft:wheat>]);
+
+craftingTable.addShapeless("crimsonberry_dye", <item:minecraft:orange_dye>, [<item:byg:crimson_berries>]);
+craftingTable.addShapeless("sweetberry_dye", <item:minecraft:red_dye>, [<item:minecraft:sweet_berries>]);
+craftingTable.addShapeless("elderberry_dye", <item:minecraft:purple_dye>, [<item:druidcraft:elderberries>]);
+craftingTable.addShapeless("hollyberry_dye", <item:minecraft:red_dye>, [<item:byg:holly_berries>]);
+craftingTable.addShapeless("nightshadeberry_dye", <item:minecraft:yellow_dye>, [<item:byg:nightshade_berries>]);
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------

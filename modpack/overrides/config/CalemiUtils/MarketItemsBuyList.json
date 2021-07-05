@@ -9,15 +9,15 @@
   "poor_money_bag": {
     "index": 1,
     "stackStr": "calemiutils:money_bag_cheap",
-    "stackNBT": "60",
-    "amount": 16,
-    "value": 5
+    "stackNBT": "",
+    "amount": 1,
+    "value": 60
   },
   "rich_money_bag": {
     "index": 2,
     "stackStr": "calemiutils:money_bag_rich",
-    "stackNBT": "180",
-    "amount": 16,
-    "value": 5
+    "stackNBT": "",
+    "amount": 1,
+    "value": 180
   }
 }

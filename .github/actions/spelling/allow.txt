@@ -961,3 +961,6 @@ yoffset
 YResolution
 yspacing
 zelda
+pedus
+sheetmetals
+slimeballs

@@ -1,9 +1,9 @@
 {
-  "TestSellItem": {
+  "copper": {
     "index": 0,
-    "stackStr": "minecraft:cobblestone",
+    "stackStr": "emendatusenigmatica:copper_ingot",
     "stackNBT": "",
-    "amount": 64,
-    "value": 63
+    "amount": 1,
+    "value": 1
   }
 }

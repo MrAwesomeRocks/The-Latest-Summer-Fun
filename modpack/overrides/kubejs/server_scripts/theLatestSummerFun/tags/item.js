@@ -1,4 +1,4 @@
-// priority: 75
+// priority: 6000
 /*
  * Add item tags.
  *

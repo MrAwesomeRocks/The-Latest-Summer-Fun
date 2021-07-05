@@ -13,12 +13,12 @@ onEvent("recipes", (event) => {
   const gems = ["diamond", "emerald", "lapis", "quartz"];
 
   for (let gem of gems) {
-    event.recipes.thermal.press(`#forge:gears/${gem}`, [
+    event.recipes.thermal.press(global["tagitems"][`forge:gears/${gem}`], [
       `4x #forge:gems/${gem}`,
       "thermal:press_gear_die",
     ]);
     event.recipes.immersiveengineering.metal_press(
-      `#forge:gears/${gem}`,
+      global["tagitems"][`forge:gears/${gem}`],
       `4x #forge:gems/${gem}`,
       "immersiveengineering:mold_gear"
     );

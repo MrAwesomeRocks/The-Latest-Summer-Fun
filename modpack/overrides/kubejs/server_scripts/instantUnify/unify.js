@@ -48,8 +48,8 @@ var tagGen = [
   "gold=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
   "diamond=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
   "emerald=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
-  "lapis_lazuli=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
-  "nether_quartz=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+  "lapis=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+  "quartz=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
 
   //! MODDED METALS
   // Copper

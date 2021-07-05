@@ -128,5 +128,9 @@
       "strikethrough": false,
       "backgroundColor": "transparent"
     },
+  ],
+  "todo-tree.filtering.excludeGlobs": [
+    "**/node_modules",
+    ".github/**"
   ]
 }

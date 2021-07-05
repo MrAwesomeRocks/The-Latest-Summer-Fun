@@ -964,3 +964,4 @@ zelda
 pedus
 sheetmetals
 slimeballs
+compactcrafting

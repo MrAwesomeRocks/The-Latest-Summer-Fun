@@ -241,7 +241,7 @@
 		#Note that ony the first parameter is required, each of the others others can me removed and will be defaulted to reasonable values
 		#example: ['minecraft:swamp_hut','2','5','7','witch hut map','0x00ff33']
 		custom_adventurer_maps = [[""]]
-		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (choosen from a thought out preset list).
+		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (chosen from a thought out preset list).
 		#Best kept disabled if you are adding custom adventurer maps with its config
 		random_adventurer_maps = true
 		#enables beacons, lodestones, respawn anchors, beds, conduits, portals to be displayed on maps by clicking one of them with a map

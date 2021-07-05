@@ -1,6 +1,17 @@
 {
-  "block.druidcraft.rope":"Wild Rope",
-  "item.druidcraft.hemp":"Wild Hemp",
-  "item.druidcraft.hemp_seeds":"Wild Hemp Seeds",
-  "item.druidcraft.knife":"Flint Knife"
+  "item.druidcraft.hemp": "Wild Hemp",
+  "item.druidcraft.hemp_seeds": "Wild Hemp Seeds",
+  "item.druidcraft.knife": "Flint Knife",
+  "item.druidcraft.heart_of_blaze": "Heart of Blaze",
+  "item.druidcraft.blazing_steel": "Blazing Steel",
+  "item.druidcraft.brightstone": "Brightstone",
+  "item.druidcraft.tempered_fiery_glass": "Tempered Fiery Glass",
+  "item.druidcraft.crushed_fiery_glass": "Crushed Fiery Glass",
+
+  "block.druidcraft.rope": "Wild Rope",
+  "block.druidcraft.debug": "Debug Block",
+  "block.druidcraft.hellkiln_igniter": "Hellkiln Igniter",
+  "block.druidcraft.hellkiln": "Hellkiln",
+  "block.druidcraft.brightstone_ore": "Brightstone Ore",
+  "block.druidcraft.nether_fiery_glass_ore": "Nether Fiery Glass Ore"
 }

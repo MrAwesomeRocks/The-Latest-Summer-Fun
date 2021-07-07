@@ -965,3 +965,6 @@ pedus
 sheetmetals
 slimeballs
 compactcrafting
+resourcepacks
+Retextured
+retextures

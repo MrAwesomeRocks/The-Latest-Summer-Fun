@@ -10,6 +10,17 @@ craftingTable.removeRecipe(<item:ironjetpacks:basic_coil>);
 craftingTable.removeRecipe(<item:ironjetpacks:advanced_coil>);
 craftingTable.removeRecipe(<item:ironjetpacks:elite_coil>);
 craftingTable.removeRecipe(<item:ironjetpacks:ultimate_coil>);
+
+craftingTable.removeRecipe(<item:calemiutils:book_stand>);
+craftingTable.removeRecipe(<item:calemiutils:blueprint_filler>);
+craftingTable.removeRecipe(<item:calemiutils:link_book_location>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_wood>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_stone>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_iron>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_gold>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_diamond>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_netherite>);
+craftingTable.removeRecipe(<item:calemiutils:sledgehammer_starlight>);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -20,30 +31,6 @@ craftingTable.removeRecipe(<item:immersiveengineering:sawdust> * 9);
 
 craftingTable.addShaped("better_sawdust_flooring", <item:immersiveengineering:sawdust> * 3, [
     [<tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>]]);
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-// Oh yeah I'm changing waystones baybey!
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.removeRecipe(<item:waystones:waystone>);
-craftingTable.removeRecipe(<item:waystones:sandy_waystone>);
-craftingTable.removeByName("waystones:mossy_waystone");
-
-craftingTable.addShaped("waystone", <item:waystones:waystone>, [
-    [<item:minecraft:air>, <item:minecraft:stone_bricks>, <item:minecraft:air>],
-    [<item:minecraft:stone_bricks>, <item:minecraft:lodestone>, <item:minecraft:stone_bricks>],
-    [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]]);
-
-craftingTable.addShaped("mossy_waystone", <item:waystones:mossy_waystone>, [
-    [<item:minecraft:air>, <item:minecraft:mossy_stone_bricks>, <item:minecraft:air>],
-    [<item:minecraft:mossy_stone_bricks>, <item:minecraft:lodestone>, <item:minecraft:mossy_stone_bricks>],
-    [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]]);
-
-craftingTable.addShaped("sandy_waystone", <item:waystones:sandy_waystone>, [
-    [<item:minecraft:air>, <item:minecraft:chiseled_sandstone>, <item:minecraft:air>],
-    [<item:minecraft:chiseled_sandstone>, <item:minecraft:lodestone>, <item:minecraft:chiseled_sandstone>],
-    [<item:minecraft:obsidian>, <item:minecraft:obsidian>, <item:minecraft:obsidian>]]);
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -170,76 +157,16 @@ craftingTable.addShaped("blitz_unit", <item:simplyjetpacks:unit_glowstone>, [
 
 craftingTable.addShaped("blizz_unit", <item:simplyjetpacks:unit_cryotheum>, [
     [<item:thermal:blizz_rod>, <item:simplyjetpacks:unit_cryotheum_empty>, <item:thermal:blizz_rod>]]);
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // FOOD!!!!!!!!!!!!!!!
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.addShapeless("syrup_from_bucket", <item:contenttweaker:syrup_bottle> * 4, [<item:thermal:syrup_bucket>, <item:minecraft:glass_bottle>, <item:minecraft:glass_bottle>, <item:minecraft:glass_bottle>, <item:minecraft:glass_bottle>]);
-craftingTable.addShapeless("peanut_butter", <item:contenttweaker:peanut_butter>, [<tag:items:forge:crops/peanut>]);
-craftingTable.addShapeless("jelly_from_berry", <item:contenttweaker:jelly>, [<item:minecraft:sweet_berries>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
-craftingTable.addShapeless("jelly_from_strawberry", <item:contenttweaker:jelly>, [<item:thermal:strawberry>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
-craftingTable.addShapeless("jelly_from_melon", <item:contenttweaker:jelly>, [<item:minecraft:melon_slice>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
-craftingTable.addShapeless("jelly_from_apple", <item:contenttweaker:jelly> * 2, [<item:minecraft:apple>, <item:minecraft:sugar>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string})]);
-craftingTable.addShapeless("cheese", <item:contenttweaker:cheese>, [<item:minecraft:milk_bucket>]);
-
-craftingTable.addShaped("waffles_from_syrup", <item:contenttweaker:pancakes>, [
-    [<item:minecraft:air>, <item:contenttweaker:syrup_bottle>, <item:minecraft:air>],
-    [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
-craftingTable.addShaped("waffles_from_honey", <item:contenttweaker:pancakes> * 2, [
-    [<item:minecraft:air>, <item:minecraft:honey_bottle>, <item:minecraft:air>],
-    [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
-
-furnace.addRecipe("popcorn", <item:contenttweaker:popcorn>, <tag:items:forge:crops/corn>, 0.5, 200);
-furnace.addRecipe("onion_rings", <item:contenttweaker:onion_rings>, <tag:items:forge:crops/onion>, 0.5, 200);
-furnace.addRecipe("marshmallow", <item:contenttweaker:marshmallow>, <item:minecraft:sugar>, 0.5, 200);
-
-craftingTable.addShapeless("smore_vanilla", <item:contenttweaker:s_more>, [<tag:items:forge:crops/wheat>, <item:minecraft:cocoa_beans>, <item:contenttweaker:marshmallow>]);
-craftingTable.addShapeless("smore_create", <item:contenttweaker:s_more> * 2, [<tag:items:forge:crops/wheat>, <item:create:bar_of_chocolate>, <item:contenttweaker:marshmallow>]);
-craftingTable.addShapeless("smore_tf", <item:contenttweaker:s_more> * 2, [<item:twilightforest:maze_wafer>, <item:minecraft:cocoa_beans>, <item:contenttweaker:marshmallow>]);
-craftingTable.addShapeless("smore_hybrid", <item:contenttweaker:s_more> * 5, [<item:twilightforest:maze_wafer>, <item:create:bar_of_chocolate>, <item:contenttweaker:marshmallow>]);
-
-craftingTable.addShapeless("sushi_from_cod", <item:contenttweaker:sushi> * 2, [<item:minecraft:cod>, <tag:items:forge:crops/rice>, <item:minecraft:dried_kelp>]);
-craftingTable.addShapeless("sushi_from_salmon", <item:contenttweaker:sushi> * 2, [<item:minecraft:salmon>, <tag:items:forge:crops/rice>, <item:minecraft:dried_kelp>]);
-craftingTable.addShapeless("sushi_from_pufferfish", <item:contenttweaker:sushi>, [<item:minecraft:pufferfish>, <tag:items:forge:crops/rice>, <item:minecraft:dried_kelp>]);
-craftingTable.addShapeless("sushi_from_tropicalfish", <item:contenttweaker:sushi>, [<item:minecraft:tropical_fish>, <tag:items:forge:crops/rice>, <item:minecraft:dried_kelp>]);
-
-
-brewing.addRecipe(<item:contenttweaker:coffee>, <tag:items:forge:crops/coffee>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
-brewing.addRecipe(<item:contenttweaker:tea>, <tag:items:forge:crops/tea>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
-brewing.addRecipe(<item:contenttweaker:beer>, <tag:items:forge:crops/barley>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
-craftingTable.addShapeless("hoppy_beer", <item:contenttweaker:hoppy_beer>, [<item:contenttweaker:beer>, <tag:items:forge:crops/hops>]);
-
-craftingTable.addShapeless("burger", <item:contenttweaker:burger>, [<item:minecraft:bread>, <item:minecraft:cooked_beef>, <item:contenttweaker:cheese>, <item:thermal:tomato>]);
-
-craftingTable.addShaped("pizza", <item:contenttweaker:pizza>, [
-    [<item:contenttweaker:cheese>, <tag:items:forge:crops/tomato>, <item:contenttweaker:cheese>],
-    [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
-
-craftingTable.addShaped("calzone", <item:contenttweaker:calzone> * 2, [
-    [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>],
-    [<item:contenttweaker:cheese>, <tag:items:forge:crops/tomato>, <item:contenttweaker:cheese>],
-    [<item:minecraft:wheat>, <item:minecraft:wheat>, <item:minecraft:wheat>]]);
-
-craftingTable.addShapeless("stir_fry", <item:contenttweaker:stir_fry>, [<tag:items:forge:crops/bell_pepper>, <tag:items:forge:crops/onion>, <tag:items:forge:crops/spinach>, <item:minecraft:carrot>, <tag:items:forge:crops/rice>, <tag:items:forge:crops/green_bean>, <item:minecraft:bowl>]);
-
-craftingTable.addShapeless("sandwich_pbj", <item:contenttweaker:sandwich_pbj>, [<item:minecraft:bread>, <item:contenttweaker:peanut_butter>, <item:contenttweaker:jelly>]);
-craftingTable.addShapeless("sandwich_blt", <item:contenttweaker:sandwich_blt>, [<item:minecraft:bread>, <item:minecraft:cooked_porkchop>, <tag:items:minecraft:leaves>, <tag:items:forge:crops/tomato>]);
-
-craftingTable.addShapeless("redstone_espresso", <item:contenttweaker:redstone_espresso>, [<item:contenttweaker:coffee>, <tag:items:forge:dusts/redstone>, <item:minecraft:sugar>]);
-craftingTable.addShapeless("glowstone_tea", <item:contenttweaker:glowstone_tea>, [<item:contenttweaker:tea>, <tag:items:forge:dusts/glowstone>, <item:thermal:sadiroot>]);
-craftingTable.addShapeless("onion_sandwich", <item:contenttweaker:onion_sandwich>, [<item:minecraft:bread>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>, <item:thermal:onion_block>]);
-
-craftingTable.addShapeless("rad_ish", <item:contenttweaker:rad_ish>, [<tag:items:forge:crops/radish>, <tag:items:forge:ingots/uranium>]);
-craftingTable.addShapeless("capricorn", <item:contenttweaker:capricorn>, [<item:contenttweaker:popcorn>, <item:astralsorcery:stardust>]);
-
-craftingTable.addShapeless("bully_peanut", <item:contenttweaker:bully_peanut>, [<item:thermal:peanut>, <item:minecraft:tnt>]);
-craftingTable.addShapeless("sad_pistachio", <item:contenttweaker:sad_pistachio>, [<item:quark:cactus_paste>, <item:minecraft:ghast_tear>]);
-
-craftingTable.addShaped("fake_bread", <item:contenttweaker:bread>, [
-    [<item:minecraft:wheat>, <tag:items:forge:dusts/wood>, <item:minecraft:wheat>]]);
+brewing.addRecipe(<item:kubejs:coffee>, <tag:items:forge:crops/coffee>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
+brewing.addRecipe(<item:kubejs:tea>, <tag:items:forge:crops/tea>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
+brewing.addRecipe(<item:kubejs:beer>, <tag:items:forge:crops/barley>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
 // ---------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // Ediolon Ruined a Vanilla Recipe... How?
 // ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -279,6 +206,7 @@ craftingTable.removeRecipe(<item:chiselsandbits:chisel_netherite>);
 smithing.addRecipe("netherite_saw", <item:chiselsandbits:bitsaw_netherite>, <item:minecraft:netherite_ingot>, <item:chiselsandbits:bitsaw_diamond>);
 smithing.addRecipe("netherite_chisel", <item:chiselsandbits:chisel_netherite>, <item:minecraft:netherite_ingot>, <item:chiselsandbits:chisel_diamond>);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // Also changing the Vanilla Jetpacks to be more balanced.
 // ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -464,8 +392,8 @@ craftingTable.addShaped("thermal_ie_oncrete", <item:immersiveengineering:concret
 // Alternate Wood Crafting: Blame Quark.
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 craftingTable.addShaped("only_byg_sign", <item:minecraft:oak_sign> * 3, [
-    [<tag:items:only_byg_planks>, <tag:items:only_byg_planks>, <tag:items:only_byg_planks>],
-    [<tag:items:only_byg_planks>, <tag:items:only_byg_planks>, <tag:items:only_byg_planks>],
+    [<tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>],
+    [<tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>],
     [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]]);
 
 craftingTable.addShaped("non_vanilla_ladder", <item:minecraft:ladder> * 3, [
@@ -474,14 +402,11 @@ craftingTable.addShaped("non_vanilla_ladder", <item:minecraft:ladder> * 3, [
     [<item:minecraft:stick>, <item:minecraft:air>, <item:minecraft:stick>]]);
 
 craftingTable.addShaped("only_byg_chest", <item:minecraft:chest>, [
-    [<tag:items:only_byg_planks>, <tag:items:only_byg_planks>, <tag:items:only_byg_planks>],
-    [<tag:items:only_byg_planks>, <item:minecraft:air>, <tag:items:only_byg_planks>],
-    [<tag:items:only_byg_planks>, <tag:items:only_byg_planks>, <tag:items:only_byg_planks>]]);
+    [<tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>],
+    [<tag:items:forge:only_byg_planks>, <item:minecraft:air>, <tag:items:forge:only_byg_planks>],
+    [<tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>, <tag:items:forge:only_byg_planks>]]);
 
 craftingTable.addShapeless("chest_2_chest", <item:minecraft:chest>, [<tag:items:forge:chests/wooden>]);
-
-
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -494,25 +419,31 @@ craftingTable.addShaped("carapace_to_chitin", <item:druidcraft:chitin>, [
 craftingTable.addShapeless("chitin_to_carapace", <item:mysticalworld:carapace> * 4, [<item:druidcraft:chitin>]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
+// Temporary Upgrade Aquatic crafting recipes, since jellyfish don't spawn naturally
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+craftingTable.addShapeless("jellytorch_pink", <item:upgrade_aquatic:pink_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:forge:jelly_or_jam>, <item:minecraft:pink_dye>]);
+craftingTable.addShapeless("jellytorch_purple", <item:upgrade_aquatic:purple_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:forge:jelly_or_jam>, <item:minecraft:purple_dye>]);
+craftingTable.addShapeless("jellytorch_blue", <item:upgrade_aquatic:blue_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:forge:jelly_or_jam>, <item:minecraft:blue_dye>]);
+craftingTable.addShapeless("jellytorch_green", <item:upgrade_aquatic:green_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:forge:jelly_or_jam>, <item:minecraft:green_dye>]);
+craftingTable.addShapeless("jellytorch_yellow", <item:upgrade_aquatic:yellow_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:forge:jelly_or_jam>, <item:minecraft:yellow_dye>]);
+craftingTable.addShapeless("jellytorch_orange", <item:upgrade_aquatic:orange_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:forge:jelly_or_jam>, <item:minecraft:orange_dye>]);
+craftingTable.addShapeless("jellytorch_red", <item:upgrade_aquatic:red_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:forge:jelly_or_jam>, <item:minecraft:red_dye>]);
+craftingTable.addShapeless("jellytorch_white", <item:upgrade_aquatic:white_jelly_torch> * 4, [<item:upgrade_aquatic:prismarine_rod>, <item:upgrade_aquatic:glowing_ink_sac>, <tag:items:forge:jelly_or_jam>, <item:minecraft:white_dye>]);
+// ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
+// Either Blueberry Can be Used for Either Recipe
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+craftingTable.removeRecipe(<item:byg:blueberry_pie>);
+craftingTable.removeRecipe(<item:druidcraft:blueberry_muffin>);
 
+craftingTable.addShapeless("blueberry_pie_redone", <item:byg:blueberry_pie>, [<tag:items:forge:crops/blueberries>, <item:minecraft:sugar>, <item:minecraft:egg>]);
+craftingTable.addShapeless("blueberry_muffin_redone", <item:druidcraft:blueberry_muffin>, [<tag:items:forge:crops/blueberries>, <item:minecraft:sugar>, <item:minecraft:egg>, <item:minecraft:wheat>]);
 
-// <item:minecraft:air>
+craftingTable.addShapeless("crimsonberry_dye", <item:minecraft:orange_dye>, [<item:byg:crimson_berries>]);
+craftingTable.addShapeless("sweetberry_dye", <item:minecraft:red_dye>, [<item:minecraft:sweet_berries>]);
+craftingTable.addShapeless("elderberry_dye", <item:minecraft:purple_dye>, [<item:druidcraft:elderberries>]);
+craftingTable.addShapeless("hollyberry_dye", <item:minecraft:red_dye>, [<item:byg:holly_berries>]);
+craftingTable.addShapeless("nightshadeberry_dye", <item:minecraft:yellow_dye>, [<item:byg:nightshade_berries>]);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ---------------------------------------------------------------------------------------------------------------------------------------------

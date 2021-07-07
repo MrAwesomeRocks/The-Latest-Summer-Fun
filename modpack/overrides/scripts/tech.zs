@@ -23,17 +23,8 @@
 
 <recipetype:thermal:lapidary_fuel>.removeFuel(<item:thermal:ruby>);
 <recipetype:thermal:lapidary_fuel>.addFuel("new_ruby_fuel", <item:thermal:ruby>, 1000000);
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
-/*
-// Adding Fuels to the Compression Dynamo
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-// <recipetype:thermal:compression_fuel>.addFuel(String name, IFluidStack ingredient, int energy);
-<recipetype:thermal:compression_fuel>.addFuel("beer_fuel", <fluid:minecraft:water> * 100, 1000);
-<recipetype:thermal:compression_fuel>.addFuel("hoppy_beer_fuel", <fluid:minecraft:water> * 100, 2000);
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-*/
 
 // Melting Recipes
 // ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -43,40 +34,15 @@
 
 // Crushing Recipes
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-<recipetype:thermal:pulverizer>.addRecipe("peanut_butter_pulverizer", [<item:contenttweaker:peanut_butter> * 2 % 100] , <item:thermal:peanut>, 0, 2000);
+<recipetype:thermal:pulverizer>.addRecipe("peanut_butter_pulverizer", [<item:kubejs:peanut_butter> * 2 % 100] , <item:thermal:peanut>, 0, 2000);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Encapsuling Recipes
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 // <recipetype:thermal:bottler>.addRecipe(String name, IItemStack output, IIngredient ingredient, IFluidStack fluidInput, int energy);
-<recipetype:thermal:bottler>.addRecipe("syrup_bottling_thermal", <item:contenttweaker:syrup_bottle>, <item:minecraft:glass_bottle>, <fluid:thermal:syrup> * 250, 2000);
-/*
-<recipetype:immersiveengineering:bottling_machine>.addRecipe("syrup_bottling_ie", <item:minecraft:glass_bottle>, <fluid:thermal:syrup> * 250, <item:contenttweaker:syrup_bottle>);
+<recipetype:thermal:bottler>.addRecipe("syrup_bottling_thermal", <item:kubejs:syrup_bottle>, <item:minecraft:glass_bottle>, <fluid:thermal:syrup> * 250, 2000);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-// Squeezing Recipes
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-
-<recipetype:immersiveengineering:squeezer>.addRecipe("squash_that_beer", <item:contenttweaker:beer>, 2000, <fluid:immersiveengineering:creosote> * 250, <item:minecraft:glass_bottle>);
-<recipetype:immersiveengineering:squeezer>.addRecipe("squash_that_hoppy_beer", <item:contenttweaker:hoppy_beer>, 2000, <fluid:immersiveengineering:creosote> * 250, <item:minecraft:glass_bottle>);
-
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-// Auto-Potioning Recipes
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-<recipetype:immersiveengineering:mixer>.addRecipe("beer_ie", <tag:fluids:minecraft:water>, [<item:thermal:barley>], 2000, <fluid:immersiveengineering:creosote>, 1000);
-<recipetype:immersiveengineering:mixer>.addRecipe("hoppy_beer_ie_1", <tag:fluids:minecraft:water>, [<item:thermal:barley>, <item:thermal:hops>], 2000, <fluid:immersiveengineering:creosote>, 1000);
-<recipetype:immersiveengineering:mixer>.addRecipe("hoppy_beer_ie_2", <tag:fluids:minecraft:water>, [<item:thermal:hops>], 2000, <fluid:immersiveengineering:creosote>, 1000);
-
-
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-*/
-//    * beer in fluid transposer (for fuel)
-
-
 
 
 // Making the IE Brass Recipe Match the Other Ones.
@@ -139,10 +105,10 @@ furnace.addRecipe("anthracite_furnace", <item:byg:anthracite>, <item:byg:anthrac
 <recipetype:thermal:smelter>.addRecipe("charged_certus_smelter", [<item:appliedenergistics2:charged_certus_quartz_crystal> % 150, <item:thermal:rich_slag> % 15], [<item:appliedenergistics2:charged_quartz_ore>], 2, 3200);
 <recipetype:immersiveengineering:crusher>.addRecipe("charged_certus_crusher", <item:appliedenergistics2:charged_quartz_ore>, 6000, <item:appliedenergistics2:charged_certus_quartz_crystal> * 3, <item:minecraft:cobblestone> % 25);
 
-furnace.addRecipe("dimshard_furnace", <item:rftoolsbase:dimensionalshard>, <tag:items:dimores>, 0.5, 200);
-<recipetype:immersiveengineering:crusher>.addRecipe("dimshard_crusher", <tag:items:dimores>, 6000, <item:rftoolsbase:dimensionalshard> * 2);
-<recipetype:thermal:smelter>.addRecipe("dimshard_smelter", [<item:rftoolsbase:dimensionalshard> % 150, <item:thermal:rich_slag> % 15], [<tag:items:dimores>], 2, 3200);
-<recipetype:create:crushing>.addRecipe("dimshard_crushing", [<item:rftoolsbase:dimensionalshard> * 2 % 100, <item:rftoolsbase:dimensionalshard> % 25, <item:minecraft:cobblestone> % 12], <tag:items:dimores>);
+furnace.addRecipe("dimshard_furnace", <item:rftoolsbase:dimensionalshard>, <tag:items:forge:dimensional_ores>, 0.5, 200);
+<recipetype:immersiveengineering:crusher>.addRecipe("dimshard_crusher", <tag:items:forge:dimensional_ores>, 6000, <item:rftoolsbase:dimensionalshard> * 2);
+<recipetype:thermal:smelter>.addRecipe("dimshard_smelter", [<item:rftoolsbase:dimensionalshard> % 150, <item:thermal:rich_slag> % 15], [<tag:items:forge:dimensional_ores>], 2, 3200);
+<recipetype:create:crushing>.addRecipe("dimshard_crushing", [<item:rftoolsbase:dimensionalshard> * 2 % 100, <item:rftoolsbase:dimensionalshard> % 25, <item:minecraft:cobblestone> % 12], <tag:items:forge:dimensional_ores>);
 
 <recipetype:thermal:pulverizer>.addRecipe("poor_uranite_pulverizer", [<item:powah:uraninite_raw_poor> * 2 % 50, <item:minecraft:gravel> % 20] , <item:powah:uraninite_ore_poor>, 2, 4000);
 <recipetype:immersiveengineering:crusher>.addRecipe("poor_uranite_crusher", <item:powah:uraninite_ore_poor>, 6000, <item:powah:uraninite_raw_poor> * 2);
@@ -158,7 +124,6 @@ furnace.addRecipe("dimshard_furnace", <item:rftoolsbase:dimensionalshard>, <tag:
 <recipetype:immersiveengineering:crusher>.addRecipe("dense_uranite_crusher", <item:powah:uraninite_ore_dense>, 6000, <item:powah:uraninite_raw_dense> * 2);
 <recipetype:thermal:smelter>.addRecipe("dense_uranite_smelter", [<item:powah:uraninite> * 4 % 150, <item:thermal:rich_slag> % 15], [<item:powah:uraninite_ore_dense>], 2, 3200);
 <recipetype:create:crushing>.addRecipe("dense_uranite_crushing", [<item:powah:uraninite_raw_dense> * 2 % 100, <item:powah:uraninite_raw_dense> % 25, <item:minecraft:cobblestone> % 12], <item:powah:uraninite_ore_dense>);
-
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -169,16 +134,3 @@ furnace.addRecipe("dimshard_furnace", <item:rftoolsbase:dimensionalshard>, <tag:
 <recipetype:create:compacting>.addRecipe("nickel_compression_create", "none", <item:immersiveengineering:ingot_nickel>, [<tag:items:forge:nuggets/nickel> * 9], [], 100);
 <recipetype:create:compacting>.addRecipe("aluminum_compression_create", "none", <item:immersiveengineering:ingot_aluminum>, [<tag:items:forge:nuggets/aluminum> * 9], [], 100);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-

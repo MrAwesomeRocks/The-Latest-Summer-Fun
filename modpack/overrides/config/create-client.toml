@@ -15,7 +15,7 @@
 	overlayOffsetX = 20
 	#
 	#Log a stack-trace when rendering issues happen within a moving contraption.
-	explainRenderErrors = false
+	explainRenderErrors = true
 	#
 	#Use modern OpenGL features to drastically increase performance.
 	experimentalRendering = true

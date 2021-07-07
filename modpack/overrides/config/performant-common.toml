@@ -21,7 +21,7 @@ displayTooLargePackets = true
 		#Enables debug log output for lagging event subscribers, default = false
 		eventDebugOutput = true
 		#Enables event load balancing, this is mostly stuff which is happening outside entityAI/Tile entities on world ticks. default: false
-		eventLoadBalancing = false
+		eventLoadBalancing = true
 
 	# Load balancing is a mechanic which profiles and throttles down lagging entities, tileentities and event subscribers.
 	# It is used to prevent a certain laggy mob or block from lagging out the whole game. Since this is rather invasive and may cause the lagging
@@ -67,9 +67,18 @@ displayTooLargePackets = true
 	adaptiveSpeed = true
 	#Enable faster pathfinding, default = true
 	fastPathFinding = true
+	#Enables dynamic entity rendering, stops non-visible entities from being rendered but can sometimes cause a slight phasing-in delay. Usually a large boost to fps, default = true. Require restart
+	enableDynamicEntityRendering = true
+	#Enables dynamic update distance, it will reduces entity updates when far away from the player, respecting the entities own update range. default = true. Requires restart
+	enableDynamicEntityUpdates = true
+	#Entity dynamic update distance setting, reduces the entities own update range from players at which entities get slowed down, in chunks(16blocks). The higher you set this, the closer to the player entities will get slower updates. Default = 0
+	#Range: 0 ~ 1000
+	entityUpdateDistanceReduction = 0
+	#List of entities excluded from being affected by dynamic entity updates: e.g. format :  ["minecraft:zombie", "minecraft:creeper"]
+	excludedTickDistanceMobs = []
 
 ["Entity AI Settings"]
-	#Sets the tick interval in which non-running AI tasks are rechecked. Vanilla default is 1(starting with 1.13+), this mods suggested default is 4(as it was in 1.12)
+	#Sets the tick interval in which non-running AI tasks are rechecked. Vanilla default is 1(starting with 1.13+), this mods suggested default is 4(as it was in vanilla 1.12)
 	#Range: 1 ~ 500
 	goalselectorrate = 4
 	#Enables a slower updated AI Fox find shelter goal, which causes too much load. default = true
@@ -120,4 +129,7 @@ displayTooLargePackets = true
 	disconnectTimeout = 60
 	#List of mobs disallowed from spawning: e.g. format :  ["minecraft:zombie", "minecraft:creeper"]
 	forbiddenMobs = []
+	#Set the watchdog timeout for the integrated server in miliseconds, -1 Disables it. 1 second = 1000 miliseconds, default = 180000
+	#Range: -1 ~ 500000
+	singlePlayerWatchDogTimeout = 180000
 

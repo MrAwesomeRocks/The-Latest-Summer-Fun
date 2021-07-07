@@ -1,0 +1,23 @@
+{
+  "copper": {
+    "index": 0,
+    "stackStr": "emendatusenigmatica:copper_ingot",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 1
+  },
+  "poor_money_bag": {
+    "index": 1,
+    "stackStr": "calemiutils:money_bag_cheap",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 60
+  },
+  "rich_money_bag": {
+    "index": 2,
+    "stackStr": "calemiutils:money_bag_rich",
+    "stackNBT": "",
+    "amount": 1,
+    "value": 180
+  }
+}

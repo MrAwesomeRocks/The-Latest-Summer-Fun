@@ -4,7 +4,7 @@
 
 	[client.tweaks]
 		#This option will let you climb ladders automatically by just looking upwards, rather than requiring a key to be held down.
-		autoClimbLadder = false
+		autoClimbLadder = true
 		#This option disables the shifting of the inventory to the right when potion effects are active.
 		disablePotionShift = true
 		#This prevents the last torch in the offhand from being placed.
@@ -32,7 +32,7 @@
 
 	[client.customization]
 		#Items that count as torches for the offhand-torch tweak options.
-		torchItems = ["minecraft:torch", "minecraft:soul_torch", "tconstruct:stone_torch"]
+		torchItems = ["minecraft:torch", "minecraft:soul_torch", "tconstruct:stone_torch", "upgrade_aquatic:white_jelly_torch", "upgrade_aquatic:pink_jelly_torch", "upgrade_aquatic:purple_jelly_torch", "upgrade_aquatic:blue_jelly_torch", "upgrade_aquatic:green_jelly_torch", "upgrade_aquatic:yellow_jelly_torch", "upgrade_aquatic:orange_jelly_torch", "upgrade_aquatic:red_jelly_torch"]
 		#Items that are allowed to place torches from the offhand if offhandTorchWithToolOnly is enabled.
 		torchTools = ["minecraft:wooden_pickaxe", "minecraft:stone_pickaxe", "minecraft:iron_pickaxe", "minecraft:golden_pickaxe", "minecraft:diamond_pickaxe", "minecraft:netherite_pickaxe", "tconstruct:pickaxe", "tconstruct:hammer"]
 		#Items that will not prevent offhand-torch placement while in offhand, but do not place torches by themselves

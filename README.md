@@ -110,15 +110,15 @@ Please obtain the following before getting started:
    - In GDLauncher, you'll have to rename the modpack profile, type in something like `The Latest Summer Fun`.
 7. Wait for the modpack to download.
 8. Click play!
-9. (Optional) Once the game loads, you may want to enable the [Updated Engineering](https://www.curseforge.com/minecraft/texture-packs/updated-engineering) resource pack. You can do this in `Options -> Video Settings -> Resource Packs`. Click the little arrow on the `Updated Engineering` pack on the left.
+9. (Optional) Once the game loads, you may want to enable the [Updated Engineering](https://www.curseforge.com/minecraft/texture-packs/updated-engineering), [GUI Retextures](https://www.curseforge.com/minecraft/texture-packs/gui-retextures), or [Retextured EE](./modpack/overrides/resourcepacks/Retextured_EE/) resource packs. You can do this in `Options -> Video Settings -> Resource Packs`. Click the little right arrow on the packs you would like on the left.
 
-You can also download the ZIP file from the [latest release](https://github.com/MrAwesomeRocks/the-latest-summer-fun/releases/latest), but that varies by launcher.
+You can also download the ZIP file from the [latest release](https://github.com/MrAwesomeRocks/the-latest-summer-fun/releases/latest), but setup varies by launcher.
 
 ## :memo: License
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
-Made with :heart: by [Nino Maruszewski](https://github.com/MrAwesomeRocks) and [PunCrafter](https://github.com/puncrafter).
+Made with :heart: by [Nino Maruszewski](https://github.com/MrAwesomeRocks), [PunCrafter](https://github.com/puncrafter), and [Alem Snyder](https://github.com/AlemSnyder).
 
 &#xa0;
 

@@ -131,6 +131,8 @@ var tagGen = [
   "coal_coke=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
   // Charcoal
   "charcoal=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+  // Sawdust
+  "wood=storage_blocks,dusts",
 ];
 for (let line of tagGen) {
   let data = line.split("=");

@@ -37,10 +37,13 @@ onEvent("item.tags", (event) => {
   // Equality for Blueberries
   event.add("forge:crops/blueberries", "byg:blueberries");
 
+  // Sawdust - bit jank but it should work
+  event.add("forge:storage_blocks/wood", "thermal:sawdust_block");
+
   //** Planks
   // Non-vanilla
   event.add("forge:non_vanilla_planks", "#minecraft:planks");
-  event.remove("forge:non_vanilla_planks", /minecraft:.*_planks/);
+  event.remove("forge:non_vanilla_planks", /minecraft:/);
 
   // BYG Planks
   event.add("forge:only_byg_planks", /byg:.*_planks/);

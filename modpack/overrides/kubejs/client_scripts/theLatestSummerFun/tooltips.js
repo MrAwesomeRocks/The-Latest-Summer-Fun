@@ -45,6 +45,6 @@ onEvent("item.tooltip", (tooltip) => {
       "compactmachines:machine_giant",
       "compactmachines:machine_maximum",
     ],
-    "Crafting recipe currently not working :("
+    Text.yellow("Crafting recipe currently not working :(")
   );
 });

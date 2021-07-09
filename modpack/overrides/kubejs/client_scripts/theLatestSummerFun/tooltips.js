@@ -36,4 +36,15 @@ onEvent("item.tooltip", (tooltip) => {
 
   // Amber
   tooltip.add(["druidcraft:amber", "druidcraft:amber_block"], "Piglins will enjoy this.");
+
+  // CM4
+  tooltip.add(
+    [
+      "compactmachines:machine_small",
+      "compactmachines:machine_normal",
+      "compactmachines:machine_giant",
+      "compactmachines:machine_maximum",
+    ],
+    "Crafting recipe currently not working :("
+  );
 });

@@ -28,6 +28,7 @@
 - [:rocket: Technologies](#rocket-technologies)
 - [:white_check_mark: Requirements](#white_check_mark-requirements)
 - [:checkered_flag: Starting](#checkered_flag-starting)
+  - [Server Setup](#server-setup)
 - [:memo: License](#memo-license)
 
 ## :dart: About
@@ -113,6 +114,10 @@ Please obtain the following before getting started:
 9. (Optional) Once the game loads, you may want to enable the [Updated Engineering](https://www.curseforge.com/minecraft/texture-packs/updated-engineering), [GUI Retextures](https://www.curseforge.com/minecraft/texture-packs/gui-retextures), or [Retextured EE](./modpack/overrides/resourcepacks/Retextured_EE/) resource packs. You can do this in `Options -> Video Settings -> Resource Packs`. Click the little right arrow on the packs you would like on the left.
 
 You can also download the ZIP file from the [latest release](https://github.com/MrAwesomeRocks/the-latest-summer-fun/releases/latest), but setup varies by launcher.
+
+### Server Setup
+
+See the [Server Scripts README](./server-scripts/README.md).
 
 ## :memo: License
 

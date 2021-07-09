@@ -9,3 +9,21 @@ cacert.pem
 .out/
 *.zip
 !modpack/overrides/openloader/**/*.zip
+*.jar
+
+### Server Scripts ###
+server-scripts
+!server-scripts/**/README.*
+!server-scripts/server-setup-config-yaml
+!server-scripts/startserver.*
+
+### VSCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/

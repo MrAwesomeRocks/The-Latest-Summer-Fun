@@ -43,13 +43,22 @@ var tags = [];
 // ? Adding every possible tag SHOULD work
 var tagGen = [
   // ! VANILLA
+  // Coal
   "coal=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+  // Iron
   "iron=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+  // Gold
   "gold=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+  // Diamond
   "diamond=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+  // Emerald
   "emerald=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+  // Lapis Lazuli
   "lapis=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+  "lapis_lazuli=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+  // Quartz
   "quartz=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+  "nether_quartz=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
 
   //! MODDED METALS
   // Copper

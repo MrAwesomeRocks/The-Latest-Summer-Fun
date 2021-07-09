@@ -40,10 +40,12 @@ onEvent("item.tags", (event) => {
   // Sawdust - bit jank but it should work
   event.add("forge:storage_blocks/wood", "thermal:sawdust_block");
 
+  // Lapis Lazuli Plate
+  event.add("forge:plates/lapis_lazuli", "emendatusenigmatica:lapis_plate");
+
   //** Planks
   // Non-vanilla
-  event.add("forge:non_vanilla_planks", "#minecraft:planks");
-  event.remove("forge:non_vanilla_planks", /minecraft:/);
+  event.add("forge:non_vanilla_planks", "#minecraft:planks").remove(/minecraft:.*_planks/);
 
   // BYG Planks
   event.add("forge:only_byg_planks", /byg:.*_planks/);

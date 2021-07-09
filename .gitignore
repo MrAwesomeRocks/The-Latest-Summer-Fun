@@ -12,7 +12,8 @@ cacert.pem
 *.jar
 
 ### Server Scripts ###
-server-scripts
+serverscripts/*
+server-scripts/server/*
 !server-scripts/**/README.*
 !server-scripts/server-setup-config-yaml
 !server-scripts/startserver.*

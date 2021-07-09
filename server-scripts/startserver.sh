@@ -1,3 +1,4 @@
+#!/usr/bin/env sh
 DO_RAMDISK=0
 if [[ $(cat server-setup-config.yaml | grep 'ramDisk:' | awk 'BEGIN {FS=":"}{print $2}') =~ "yes" ]]; then
     SAVE_DIR=$(cat server.properties | grep 'level-name' | awk 'BEGIN {FS="="}{print $2}')
@@ -8,7 +9,7 @@ if [[ $(cat server-setup-config.yaml | grep 'ramDisk:' | awk 'BEGIN {FS=":"}{pri
 fi
 	if [ -f serverstarter-2.1.0.jar ]; then
 			echo "Skipping download. Using existing serverstarter-2.1.0.jar"
-         java -d64 -jar serverstarter-2.1.0.jar
+         java -jar serverstarter-2.1.0.jar
                if [[ $DO_RAMDISK -eq 1 ]]; then
                sudo umount $SAVE_DIR
                rm -rf $SAVE_DIR
@@ -32,7 +33,7 @@ fi
 				echo "Neither wget or curl were found on your system. Please install one and try again"
          fi
       fi
-java -d64 -jar serverstarter-2.1.0.jar
+java -jar serverstarter-2.1.0.jar
 if [[ $DO_RAMDISK -eq 1 ]]; then
     sudo umount $SAVE_DIR
     rm -rf $SAVE_DIR

@@ -19,4 +19,7 @@ onEvent("recipes", (event) => {
 
   // Waystones
   event.replaceInput({}, "waystones:warp_stone", "minecraft:lodestone");
+
+  // Fix the kelp
+  event.replaceInput({}, /upgrade_aquatic:.*_kelp$/, "minecraft:kelp");
 });

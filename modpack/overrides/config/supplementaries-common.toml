@@ -55,13 +55,13 @@
 		velocity = 1.5
 
 	[blocks.bellows]
-		#velocity increase uses this equation:
-		#vel = base_vel*((range-entity_distance)/range) with base_vel = base_velocity_scaling/period
+		#velocity increase uses this equation: 
+		#vel = base_vel*((range-entity_distance)/range) with base_vel = base_velocity_scaling/period 
 		#note that the block will push further the faster it's pulsing
 		#Range: 0.0 ~ 64.0
 		base_velocity_scaling = 5.0
-		#bellows pushes air following this equation:
-		#air=(sin(2PI*ticks/period)<0), with period = base_period-(redstone_power-1)*power_scaling
+		#bellows pushes air following this equation: 
+		#air=(sin(2PI*ticks/period)<0), with period = base_period-(redstone_power-1)*power_scaling 
 		#represents base period at 1 power
 		#Range: 1 ~ 512
 		base_period = 78
@@ -131,10 +131,6 @@
 		#Allows two iron gates to be opened simultaneously when on top of the other
 		double_opening = true
 
-	[blocks.timber_frame]
-		#Replace a timber frame with wattle and daub block when daub is placed in it
-		replace_daub = true
-
 #Configure spawning conditions
 [spawns]
 
@@ -149,7 +145,7 @@
 		max = 9
 		#Whitelisted mods. All biomes from said mods will be able to spawn fireflies. Use the one above for more control
 		mod_whitelist = []
-		#Spawn weight
+		#Spawn weight 
 		#Set to 0 to disable spawning entirely
 		#Range: 0 ~ 100
 		weight = 3
@@ -236,12 +232,12 @@
 		# - <max_price> maximum emerald price
 		# - <map_name> map item name
 		# - <map_color> hex color of the map item overlay texture
-		# - <map_marker> id of the map marker to be used (ie: supplementaries:igloo).
+		# - <map_marker> id of the map marker to be used (ie: supplementaries:igloo). 
 		#See texture folder for all the names. Leave empty for default ones
 		#Note that ony the first parameter is required, each of the others others can me removed and will be defaulted to reasonable values
 		#example: ['minecraft:swamp_hut','2','5','7','witch hut map','0x00ff33']
 		custom_adventurer_maps = [[""]]
-		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (chosen from a thought out preset list).
+		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (choosen from a thought out preset list).
 		#Best kept disabled if you are adding custom adventurer maps with its config
 		random_adventurer_maps = true
 		#enables beacons, lodestones, respawn anchors, beds, conduits, portals to be displayed on maps by clicking one of them with a map
@@ -271,4 +267,11 @@
 	[items.rope_arrow]
 		#If you really don't like my ropes you can specify here the block id ofa rope from another mod which will get deployed by rope arrows instead of mine
 		rope_arrow_override = "supplementaries:rope"
+
+	[items.bomb]
+		#Bomb explosion radius (damage depends on this)
+		#Range: 0.1 ~ 10.0
+		explosion_radius = 2.0
+		#Do bombs break blocks like tnt?
+		break_blocks = false
 

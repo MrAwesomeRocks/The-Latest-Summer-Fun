@@ -2,7 +2,7 @@
 ["Add New Version"]
 	#Version Number. VersionNumbers are simple Integers. Use a number larger than the last version.
 	#Range: > 0
-	newVersion = 1
+	newVersion = 0
 	#ModID's of the ServerConfigs that will be deleted when a world with a version lower than this version is loaded the first time. Comma Separated list. (ServerConfig without -server.toml)
 	toDelete = ""
 
@@ -14,5 +14,5 @@
 
 ["Version History"]
 	#Editing these values will not affect any worlds that are already on that version.
-	history = ""
+	history = "1=;"
 

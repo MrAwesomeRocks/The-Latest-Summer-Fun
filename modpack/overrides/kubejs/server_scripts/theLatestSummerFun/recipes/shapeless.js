@@ -6,6 +6,13 @@
  ** See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  // Kelp
+  const kelps = Ingredient.of(/upgrade_aquatic:.*_kelp$/).getStacks().toArray();
+  for (let kelp of kelps) {
+    event.shapeless("minecraft:kelp", kelp.getId());
+    event.shapeless(kelp.getId(), "minecraft:kelp");
+  }
+
   //! F O O D
   // Syrup
   event.shapeless("4x kubejs:syrup_bottle", ["thermal:syrup_bucket", "4x minecraft:glass_bottle"]);

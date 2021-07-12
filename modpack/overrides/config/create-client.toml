@@ -2,7 +2,7 @@
 #
 #Client-only settings - If you're looking for general settings, look inside your worlds serverconfig folder!
 [client]
-	#No comment
+	#
 	#Range: 0.0 ~ 1.0
 	fanParticleDensity = 0.5
 	#
@@ -31,6 +31,30 @@
 	#
 	#Display a tooltip when looking at overstressed components.
 	enableOverstressedTooltip = true
+	#
+	#The maximum amount of blocks for which to try and calculate dynamic contraption lighting. Decrease if large contraption cause too much lag
+	#Range: > 0
+	maximumContraptionLightVolume = 16384
+	#
+	#Choose the menu row that the Create config button appears on in the main menu
+	#Set to 0 to disable the button altogether
+	#Range: 0 ~ 4
+	mainMenuConfigButtonRow = 0
+	#
+	#Offset the Create config button in the main menu by this many pixels on the X axis
+	#The sign (+/-) of this value determines what side of the row the button appears on (right/left)
+	#Range: > -2147483648
+	mainMenuConfigButtonOffsetX = -4
+	#
+	#Choose the menu row that the Create config button appears on in the in-game menu
+	#Set to 0 to disable the button altogether
+	#Range: 0 ~ 5
+	ingameMenuConfigButtonRow = 3
+	#
+	#Offset the Create config button in the in-game menu by this many pixels on the X axis
+	#The sign (+/-) of this value determines what side of the row the button appears on (right/left)
+	#Range: > -2147483648
+	ingameMenuConfigButtonOffsetX = -4
 
 	#
 	#Ponder settings
@@ -51,4 +75,15 @@
 		#Choose 'NONE' to disable the Indicator altogether
 		#Allowed Values: TEXTURE, TRIANGLE, NONE
 		indicatorType = "TEXTURE"
+
+	#
+	#Sound settings
+	[client.sound]
+		#
+		#Make cogs rumble and machines clatter.
+		enableAmbientSounds = true
+		#
+		#Maximum volume modifier of Ambient noise
+		#Range: 0.0 ~ 1.0
+		ambientVolumeCap = 0.10000000149011612
 

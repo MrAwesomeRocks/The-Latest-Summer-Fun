@@ -47,4 +47,7 @@ onEvent("item.tooltip", (tooltip) => {
     ],
     Text.yellow("Crafting recipe currently not working :(")
   );
+
+  // TOP config
+  tooltip.add("theoneprobe:probenote", "Shift-right click to configure The One Probe.");
 });

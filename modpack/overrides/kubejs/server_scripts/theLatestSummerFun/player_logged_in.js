@@ -7,14 +7,22 @@
  ** for possible methods.
  */
 onEvent("player.logged_in", (event) => {
-  let entity = event.getEntity();
-  entity.tell(
+  let player = event.getPlayer();
+  let server = event.getServer();
+
+  // Fix error on first world join in singleplayer
+  if (!server.isDedicated() && !event.hasGameStage("new_world_reload")) {
+    server.runCommand("/reload");
+  }
+
+  // Join message
+  player.tell(
     Text.join(Text.of(" "), [
       Text.of("Welcome to the server!"),
       Text.of("This server has QuickHomes/Spawns/TPA and some Vanilla Tweaks datapacks!"),
     ])
   );
-  entity.tell(
+  player.tell(
     Text.join(Text.of(" "), [
       Text.of("Type in"),
       Text.green("/home"),
@@ -25,7 +33,7 @@ onEvent("player.logged_in", (event) => {
       Text.of("to set your home."),
     ])
   );
-  entity.tell(
+  player.tell(
     Text.join(Text.of(" "), [
       Text.of("Use"),
       Text.green("/trigger"),

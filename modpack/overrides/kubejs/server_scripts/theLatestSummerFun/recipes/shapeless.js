@@ -7,10 +7,18 @@
  */
 onEvent("recipes", (event) => {
   // Kelp
-  const kelps = Ingredient.of(/upgrade_aquatic:.*_kelp$/).getStacks().toArray();
+  const kelps = Ingredient.of(/upgrade_aquatic:.*_kelp$/)
+    .getStacks()
+    .toArray();
   for (let kelp of kelps) {
     event.shapeless("minecraft:kelp", kelp.getId());
     event.shapeless(kelp.getId(), "minecraft:kelp");
+  }
+
+  // Sand
+  const sandColors = ["pink", "purple", "blue"];
+  for (let color of sandColors) {
+    event.shapeless(`byg:${color}_sand`, "#forge:sand/colorless", `#forge:dyes/${color}`);
   }
 
   //! F O O D

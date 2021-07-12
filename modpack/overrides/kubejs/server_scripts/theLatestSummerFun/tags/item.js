@@ -43,6 +43,10 @@ onEvent("item.tags", (event) => {
   // Lapis Lazuli Plate
   event.add("forge:plates/lapis_lazuli", "emendatusenigmatica:lapis_plate");
 
+  // Fluix block
+  event.add("forge:storage_blocks", "appliedenergistics2:fluix_block");
+  event.add("forge:storage_blocks/fluix", "appliedenergistics2:fluix_block");
+
   //** Planks
   // Non-vanilla
   event.add("forge:non_vanilla_planks", "#minecraft:planks").remove(/minecraft:.*_planks/);

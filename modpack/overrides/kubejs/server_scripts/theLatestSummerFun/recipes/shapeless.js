@@ -21,6 +21,10 @@ onEvent("recipes", (event) => {
     event.shapeless(`byg:${color}_sand`, "#forge:sand/colorless", `#forge:dyes/${color}`);
   }
 
+  // Warped coral
+  event.shapeless("byg:warped_coral_block", "4x byg:warped_coral");
+  event.shapeless("byg:warped_coral_block", "4x byg:warped_coral_fan");
+
   //! F O O D
   // Syrup
   event.shapeless("4x kubejs:syrup_bottle", ["thermal:syrup_bucket", "4x minecraft:glass_bottle"]);

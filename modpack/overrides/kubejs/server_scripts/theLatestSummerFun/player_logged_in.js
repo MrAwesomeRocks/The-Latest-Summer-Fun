@@ -13,6 +13,7 @@ onEvent("player.logged_in", (event) => {
   // Fix error on first world join in singleplayer
   if (!server.isDedicated() && !event.hasGameStage("new_world_reload")) {
     server.runCommand("/reload");
+    event.addGameStage("new_world_reload");
   }
 
   // Join message

@@ -581,16 +581,6 @@
       }
     },
     {
-      "projectID": 256717,
-      "fileID": 3348509,
-      "required": true,
-      "__meta": {
-        "name": "Clumps",
-        "explicit": true,
-        "dependencies": []
-      }
-    },
-    {
       "projectID": 261251,
       "fileID": 3101531,
       "required": true,
@@ -997,19 +987,6 @@
         "name": "QuickTeleports",
         "explicit": true,
         "dependencies": []
-      }
-    },
-    {
-      "projectID": 316632,
-      "fileID": 3172192,
-      "required": true,
-      "__meta": {
-        "name": "Waystones2Waypoints",
-        "explicit": true,
-        "dependencies": [
-          263420,
-          245755
-        ]
       }
     },
     {

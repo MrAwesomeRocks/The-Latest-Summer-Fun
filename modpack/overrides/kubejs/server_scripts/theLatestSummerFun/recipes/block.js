@@ -9,6 +9,14 @@
  ** See L36 of  https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Coral growing
+  const corals = Ingredient.of(/^(byg|upgrade_aquatic):(?!dead).+_coral(|_fan|_shower)$/)
+    .getStacks()
+    .toArray();
+  for (let coral of corals) {
+    event.recipes.thermal.insolator(`2x ${coral.getId()}`, coral.getId()).water(750).energy(36000);
+  }
+
   //! Coral Pulverizing
   // Blue corals
   const blueCorals = [

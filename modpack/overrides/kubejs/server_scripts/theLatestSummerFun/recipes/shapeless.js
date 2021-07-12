@@ -18,7 +18,7 @@ onEvent("recipes", (event) => {
   // Sand
   const sandColors = ["pink", "purple", "blue"];
   for (let color of sandColors) {
-    event.shapeless(`byg:${color}_sand`, "#forge:sand/colorless", `#forge:dyes/${color}`);
+    event.shapeless(`byg:${color}_sand`, ["#forge:sand/colorless", `#forge:dyes/${color}`]);
   }
 
   // Warped coral

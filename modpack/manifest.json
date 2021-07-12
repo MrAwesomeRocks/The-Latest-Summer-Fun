@@ -280,7 +280,7 @@
     },
     {
       "projectID": 238086,
-      "fileID": 3364266,
+      "fileID": 3384334,
       "required": true,
       "__meta": {
         "name": "KubeJS (Forge)",
@@ -293,7 +293,7 @@
     },
     {
       "projectID": 238222,
-      "fileID": 3373521,
+      "fileID": 3383214,
       "required": true,
       "__meta": {
         "name": "Just Enough Items (JEI)",
@@ -313,7 +313,7 @@
     },
     {
       "projectID": 239197,
-      "fileID": 3383076,
+      "fileID": 3384667,
       "required": true,
       "__meta": {
         "name": "CraftTweaker",
@@ -350,7 +350,7 @@
     },
     {
       "projectID": 241665,
-      "fileID": 3288535,
+      "fileID": 3385312,
       "required": true,
       "__meta": {
         "name": "Psi",
@@ -624,7 +624,7 @@
     },
     {
       "projectID": 266515,
-      "fileID": 3346370,
+      "fileID": 3386008,
       "required": true,
       "__meta": {
         "name": "Industrial Foregoing",
@@ -1306,7 +1306,7 @@
     },
     {
       "projectID": 354143,
-      "fileID": 3381890,
+      "fileID": 3384678,
       "required": true,
       "__meta": {
         "name": "Performant",
@@ -1480,7 +1480,7 @@
     },
     {
       "projectID": 388908,
-      "fileID": 3310691,
+      "fileID": 3386049,
       "required": true,
       "__meta": {
         "name": "Simple Planes (Forge)",
@@ -1601,7 +1601,7 @@
     },
     {
       "projectID": 410451,
-      "fileID": 3237013,
+      "fileID": 3383182,
       "required": true,
       "__meta": {
         "name": "Updated Engineering",
@@ -1611,7 +1611,7 @@
     },
     {
       "projectID": 412082,
-      "fileID": 3383060,
+      "fileID": 3386210,
       "required": true,
       "__meta": {
         "name": "Supplementaries",
@@ -1663,7 +1663,7 @@
     },
     {
       "projectID": 419699,
-      "fileID": 3375943,
+      "fileID": 3385660,
       "required": true,
       "__meta": {
         "name": "Architectury API (Forge)",
@@ -1719,7 +1719,7 @@
     },
     {
       "projectID": 429235,
-      "fileID": 3272785,
+      "fileID": 3358428,
       "required": true,
       "__meta": {
         "name": "FerriteCore (Forge)",
@@ -1799,7 +1799,7 @@
     },
     {
       "projectID": 439890,
-      "fileID": 3365850,
+      "fileID": 3386307,
       "required": true,
       "__meta": {
         "name": "Create Crafts & Additions",

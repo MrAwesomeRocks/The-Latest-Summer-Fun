@@ -1609,16 +1609,6 @@
       }
     },
     {
-      "projectID": 412189,
-      "fileID": 3370455,
-      "required": true,
-      "__meta": {
-        "name": "GUI Retextures",
-        "explicit": true,
-        "dependencies": []
-      }
-    },
-    {
       "projectID": 416294,
       "fileID": 3354586,
       "required": true,

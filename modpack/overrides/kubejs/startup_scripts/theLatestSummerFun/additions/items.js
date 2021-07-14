@@ -37,19 +37,9 @@ onEvent("item.registry", (event) => {
   event
     .create("peanut_butter")
     .displayName("Peanut Butter")
-    .containerItem("minecraft:glass_bottle")
     .group("food")
     .food((foodBuilder) => {
-      foodBuilder
-        .hunger(1)
-        .saturation(0.0)
-        .eaten((event) => {
-          if (!event.getPlayer().isCreativeMode()) {
-            event.getServer().scheduleInTicks(1, event.getPlayer(), (callback) => {
-              callback.data.giveInHand(Item.of("minecraft:glass_bottle"));
-            });
-          }
-        });
+      foodBuilder.hunger(1).saturation(0.0);
     });
   // Jelly
   event

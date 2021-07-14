@@ -9,6 +9,58 @@
  ** See L36 of  https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Coral growing
+  const corals = Ingredient.of(/^(byg|upgrade_aquatic):(?!dead).+_coral(|_fan|_shower)$/)
+    .getStacks()
+    .toArray();
+  for (let coral of corals) {
+    event.recipes.thermal.insolator(`2x ${coral.getId()}`, coral.getId()).water(750).energy(36000);
+  }
+
+  //! Coral Pulverizing
+  // Blue corals
+  const blueCorals = [
+    "minecraft:tube_coral",
+    "minecraft:tube_coral_fan",
+    "upgrade_aquatic:acan_coral",
+    "upgrade_aquatic:acan_coral_fan",
+    "upgrade_aquatic:petal_coral",
+    "upgrade_aquatic:petal_coral_fan",
+    "upgrade_aquatic:prismarine_coral",
+    "upgrade_aquatic:prismarine_coral_fan",
+    "upgrade_aquatic:prismarine_coral_shower",
+    "byg:warped_coral",
+    "byg:warped_coral_fan",
+  ];
+  for (let coral of blueCorals) {
+    event.recipes.thermal.pulverizer("#forge:sand/blue", coral);
+    event.recipes.immersiveengineering.crusher("#forge:sand/blue", coral);
+    event.recipes.create.crushing("#forge:sand/blue", coral);
+  }
+
+  // Pink corals
+  const pinkCorals = [
+    "minecraft:bubble_coral",
+    "minecraft:brain_coral",
+    "minecraft:bubble_coral_fan",
+    "minecraft:brain_coral_fan",
+    "minecraft:fire_coral",
+    "minecraft:fire_coral_fan",
+  ];
+  for (let coral of pinkCorals) {
+    event.recipes.thermal.pulverizer("#forge:sand/pink", coral);
+    event.recipes.immersiveengineering.crusher("#forge:sand/pink", coral);
+    event.recipes.create.crushing("#forge:sand/pink", coral);
+  }
+
+  // Purple corals
+  const purpleCorals = ["upgrade_aquatic:silk_coral", "upgrade_aquatic:silk_coral_fan"];
+  for (let coral of purpleCorals) {
+    event.recipes.thermal.pulverizer("#forge:sand/purple", coral);
+    event.recipes.immersiveengineering.crusher("#forge:sand/purple", coral);
+    event.recipes.create.crushing("#forge:sand/purple", coral);
+  }
+
   //! Gem -> gear compressing
   const gems = ["diamond", "emerald", "lapis", "quartz"];
 

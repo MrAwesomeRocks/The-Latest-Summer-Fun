@@ -106,7 +106,7 @@
 	cpuUsageType = 0
 	#Which thread's CPU usage should be calculated. (0:client thread only, 1:entire Minecraft process including server threads)
 	#Range: 0 ~ 1
-	cpuUsageThread = 0
+	cpuUsageThread = 1
 	#Reduced fps HUD color
 	hudReductionColor = "00f000"
 

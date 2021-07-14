@@ -37,10 +37,19 @@ onEvent("item.tags", (event) => {
   // Equality for Blueberries
   event.add("forge:crops/blueberries", "byg:blueberries");
 
+  // Sawdust - bit jank but it should work
+  event.add("forge:storage_blocks/wood", "thermal:sawdust_block");
+
+  // Lapis Lazuli Plate
+  event.add("forge:plates/lapis_lazuli", "emendatusenigmatica:lapis_plate");
+
+  // Fluix block
+  event.add("forge:storage_blocks", "appliedenergistics2:fluix_block");
+  event.add("forge:storage_blocks/fluix", "appliedenergistics2:fluix_block");
+
   //** Planks
   // Non-vanilla
-  event.add("forge:non_vanilla_planks", "#minecraft:planks");
-  event.remove("forge:non_vanilla_planks", /minecraft:.*_planks/);
+  event.add("forge:non_vanilla_planks", "#minecraft:planks").remove(/minecraft:.*_planks/);
 
   // BYG Planks
   event.add("forge:only_byg_planks", /byg:.*_planks/);

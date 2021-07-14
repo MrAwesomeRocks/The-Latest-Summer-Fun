@@ -135,7 +135,7 @@
     },
     {
       "projectID": 225643,
-      "fileID": 3367669,
+      "fileID": 3386883,
       "required": true,
       "__meta": {
         "name": "Botania",
@@ -313,7 +313,7 @@
     },
     {
       "projectID": 239197,
-      "fileID": 3384667,
+      "fileID": 3387090,
       "required": true,
       "__meta": {
         "name": "CraftTweaker",
@@ -592,7 +592,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 3375900,
+      "fileID": 3387118,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap",
@@ -614,7 +614,7 @@
     },
     {
       "projectID": 266515,
-      "fileID": 3386008,
+      "fileID": 3387732,
       "required": true,
       "__meta": {
         "name": "Industrial Foregoing",
@@ -1014,7 +1014,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 3375878,
+      "fileID": 3387106,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map",
@@ -1686,7 +1686,7 @@
     },
     {
       "projectID": 421850,
-      "fileID": 3261121,
+      "fileID": 3386962,
       "required": true,
       "__meta": {
         "name": "YUNG's API (Forge)",
@@ -1776,7 +1776,7 @@
     },
     {
       "projectID": 439890,
-      "fileID": 3386307,
+      "fileID": 3387457,
       "required": true,
       "__meta": {
         "name": "Create Crafts & Additions",

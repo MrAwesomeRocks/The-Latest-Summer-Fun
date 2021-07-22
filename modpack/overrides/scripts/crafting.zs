@@ -5,67 +5,67 @@ import crafttweaker.api.item.IItemStack;
 
 // Chicken Chunks Changes
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.removeRecipe(<item:chickenchunks:chunk_loader>);
-craftingTable.removeRecipe(<item:chickenchunks:spot_loader>);
+// craftingTable.removeRecipe(<item:chickenchunks:chunk_loader>);
+// craftingTable.removeRecipe(<item:chickenchunks:spot_loader>);
 
-craftingTable.addShaped("spot_loader", <item:chickenchunks:spot_loader>, [
-    [<item:minecraft:ender_eye>, <tag:items:forge:ingots/gold>, <item:minecraft:ender_eye>],
-    [<tag:items:forge:ingots/gold>, <item:minecraft:crying_obsidian>, <tag:items:forge:ingots/gold>]]);
+// craftingTable.addShaped("spot_loader", <item:chickenchunks:spot_loader>, [
+//     [<item:minecraft:ender_eye>, <tag:items:forge:ingots/gold>, <item:minecraft:ender_eye>],
+//     [<tag:items:forge:ingots/gold>, <item:minecraft:crying_obsidian>, <tag:items:forge:ingots/gold>]]);
 
-craftingTable.addShaped("chunk_loader", <item:chickenchunks:chunk_loader>, [
-    [<item:chickenchunks:spot_loader>, <item:chickenchunks:spot_loader>, <item:chickenchunks:spot_loader>],
-    [<item:chickenchunks:spot_loader>, <tag:items:forge:nether_stars>, <item:chickenchunks:spot_loader>],
-    [<item:chickenchunks:spot_loader>, <item:chickenchunks:spot_loader>, <item:chickenchunks:spot_loader>]]);
+// craftingTable.addShaped("chunk_loader", <item:chickenchunks:chunk_loader>, [
+//     [<item:chickenchunks:spot_loader>, <item:chickenchunks:spot_loader>, <item:chickenchunks:spot_loader>],
+//     [<item:chickenchunks:spot_loader>, <tag:items:forge:nether_stars>, <item:chickenchunks:spot_loader>],
+//     [<item:chickenchunks:spot_loader>, <item:chickenchunks:spot_loader>, <item:chickenchunks:spot_loader>]]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Clicking Machine Recipe Change
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.removeRecipe(<item:clickmachine:auto_clicker>);
+// craftingTable.removeRecipe(<item:clickmachine:auto_clicker>);
 
-craftingTable.addShaped("new_auto_clicker", <item:clickmachine:auto_clicker>, [
-    [<item:minecraft:obsidian>, <tag:items:forge:ingots/invar>, <item:minecraft:obsidian>],
-    [<tag:items:forge:ingots/invar>, <item:minecraft:dispenser>, <tag:items:forge:ingots/invar>],
-    [<item:minecraft:obsidian>, <tag:items:forge:ingots/invar>, <item:minecraft:obsidian>]]);
+// craftingTable.addShaped("new_auto_clicker", <item:clickmachine:auto_clicker>, [
+//     [<item:minecraft:obsidian>, <tag:items:forge:ingots/invar>, <item:minecraft:obsidian>],
+//     [<tag:items:forge:ingots/invar>, <item:minecraft:dispenser>, <tag:items:forge:ingots/invar>],
+//     [<item:minecraft:obsidian>, <tag:items:forge:ingots/invar>, <item:minecraft:obsidian>]]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Complete Rework of Mechworks
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.removeByName("tmechworks:drawbridge");
-craftingTable.removeByName("tmechworks:firestarter");
+// craftingTable.removeByName("tmechworks:firestarter");
+// craftingTable.removeByName("tmechworks:drawbridge");
 
-craftingTable.removeByName("tmechworks:upgrade_blank");
-craftingTable.removeByName("tmechworks:upgrade_speed");
-craftingTable.removeByName("tmechworks:upgrade_drawbridge_distance");
-craftingTable.removeByName("tmechworks:upgrade_drawbridge_advanced");
+// craftingTable.removeByName("tmechworks:upgrade_blank");
+// craftingTable.removeByName("tmechworks:upgrade_speed");
+// craftingTable.removeByName("tmechworks:upgrade_drawbridge_distance");
+// craftingTable.removeByName("tmechworks:upgrade_drawbridge_advanced");
 
-craftingTable.addShaped("new_drawbridge", <item:tmechworks:drawbridge>, [
-    [<tag:items:forge:ingots/gold>, <item:minecraft:dispenser>, <tag:items:forge:ingots/gold>],
-    [<tag:items:forge:ingots/bronze>, <item:minecraft:sticky_piston>, <tag:items:forge:ingots/bronze>],
-    [<tag:items:forge:ingots/gold>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/gold>]]);
+// craftingTable.addShaped("new_drawbridge", <item:tmechworks:drawbridge>, [
+//     [<tag:items:forge:ingots/gold>, <item:minecraft:dispenser>, <tag:items:forge:ingots/gold>],
+//     [<tag:items:forge:ingots/bronze>, <item:minecraft:sticky_piston>, <tag:items:forge:ingots/bronze>],
+//     [<tag:items:forge:ingots/gold>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/gold>]]);
 
-craftingTable.addShaped("new_firestarter", <item:tmechworks:firestarter>.withTag({extinguish: 1 as byte}), [
-    [<tag:items:forge:ingots/gold>, <tag:items:forge:netherrack>, <tag:items:forge:ingots/gold>],
-    [<tag:items:forge:ingots/bronze>, <item:minecraft:flint_and_steel>, <tag:items:forge:ingots/bronze>],
-    [<tag:items:forge:ingots/gold>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/gold>]]);
-
-
-
-craftingTable.addShaped("new_upgrade", <item:tmechworks:upgrade_blank>, [
-    [<tag:items:forge:ingots/gold>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/gold>],
-    [<tag:items:forge:ingots/bronze>, <item:minecraft:air>, <tag:items:forge:ingots/bronze>],
-    [<tag:items:forge:ingots/gold>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/gold>]]);
+// craftingTable.addShaped("new_firestarter", <item:tmechworks:firestarter>.withTag({extinguish: 1 as byte}), [
+//     [<tag:items:forge:ingots/gold>, <tag:items:forge:netherrack>, <tag:items:forge:ingots/gold>],
+//     [<tag:items:forge:ingots/bronze>, <item:minecraft:flint_and_steel>, <tag:items:forge:ingots/bronze>],
+//     [<tag:items:forge:ingots/gold>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/gold>]]);
 
 
-craftingTable.addShapeless("new_upgrade_speed", <item:tmechworks:upgrade_speed>, [<item:tmechworks:upgrade_blank>, <item:minecraft:clock>]);
 
-craftingTable.addShapeless("new_upgrade_distance", <item:tmechworks:upgrade_drawbridge_distance>, [<item:tmechworks:upgrade_blank>, <item:minecraft:piston>]);
+// craftingTable.addShaped("new_upgrade", <item:tmechworks:upgrade_blank>, [
+//     [<tag:items:forge:ingots/gold>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/gold>],
+//     [<tag:items:forge:ingots/bronze>, <item:minecraft:air>, <tag:items:forge:ingots/bronze>],
+//     [<tag:items:forge:ingots/gold>, <tag:items:forge:ingots/bronze>, <tag:items:forge:ingots/gold>]]);
 
-craftingTable.addShaped("new_upgrade_advanced", <item:tmechworks:upgrade_drawbridge_advanced>, [
-    [<tag:items:forge:ingots/cobalt>, <tag:items:forge:ingots/electrum>, <tag:items:forge:ingots/cobalt>],
-    [<tag:items:forge:ingots/electrum>, <item:tmechworks:upgrade_blank>, <tag:items:forge:ingots/electrum>],
-    [<tag:items:forge:ingots/cobalt>, <tag:items:forge:ingots/electrum>, <tag:items:forge:ingots/cobalt>]]);
+
+// craftingTable.addShapeless("new_upgrade_speed", <item:tmechworks:upgrade_speed>, [<item:tmechworks:upgrade_blank>, <item:minecraft:clock>]);
+
+// craftingTable.addShapeless("new_upgrade_distance", <item:tmechworks:upgrade_drawbridge_distance>, [<item:tmechworks:upgrade_blank>, <item:minecraft:piston>]);
+
+// craftingTable.addShaped("new_upgrade_advanced", <item:tmechworks:upgrade_drawbridge_advanced>, [
+//     [<tag:items:forge:ingots/cobalt>, <tag:items:forge:ingots/electrum>, <tag:items:forge:ingots/cobalt>],
+//     [<tag:items:forge:ingots/electrum>, <item:tmechworks:upgrade_blank>, <tag:items:forge:ingots/electrum>],
+//     [<tag:items:forge:ingots/cobalt>, <tag:items:forge:ingots/electrum>, <tag:items:forge:ingots/cobalt>]]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -139,17 +139,17 @@ brewing.addRecipe(<item:kubejs:beer>, <tag:items:forge:crops/barley>, <item:mine
 
 // Nerfing Moonstone by Making it a Smithing Table Recipe, I Also Threw the C&B Netherite Tools in Here Too.
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.removeRecipe(<item:druidcraft:moonstone_helmet>);
-craftingTable.removeRecipe(<item:druidcraft:moonstone_chestplate>);
-craftingTable.removeRecipe(<item:druidcraft:moonstone_leggings>);
-craftingTable.removeRecipe(<item:druidcraft:moonstone_boots>);
+// craftingTable.removeRecipe(<item:druidcraft:moonstone_helmet>);
+// craftingTable.removeRecipe(<item:druidcraft:moonstone_chestplate>);
+// craftingTable.removeRecipe(<item:druidcraft:moonstone_leggings>);
+// craftingTable.removeRecipe(<item:druidcraft:moonstone_boots>);
 
-craftingTable.removeRecipe(<item:druidcraft:moonstone_sword>);
-craftingTable.removeRecipe(<item:druidcraft:moonstone_shovel>);
-craftingTable.removeRecipe(<item:druidcraft:moonstone_pickaxe>);
-craftingTable.removeRecipe(<item:druidcraft:moonstone_axe>);
-craftingTable.removeRecipe(<item:druidcraft:moonstone_hoe>);
-craftingTable.removeRecipe(<item:druidcraft:moonstone_sickle>);
+// craftingTable.removeRecipe(<item:druidcraft:moonstone_sword>);
+// craftingTable.removeRecipe(<item:druidcraft:moonstone_shovel>);
+// craftingTable.removeRecipe(<item:druidcraft:moonstone_pickaxe>);
+// craftingTable.removeRecipe(<item:druidcraft:moonstone_axe>);
+// craftingTable.removeRecipe(<item:druidcraft:moonstone_hoe>);
+// craftingTable.removeRecipe(<item:druidcraft:moonstone_sickle>);
 
 smithing.addRecipe("moonstone_helm", <item:druidcraft:moonstone_helmet>, <item:minecraft:netherite_helmet>, <item:druidcraft:moonstone>);
 smithing.addRecipe("moonstone_chest", <item:druidcraft:moonstone_chestplate>, <item:minecraft:netherite_chestplate>, <item:druidcraft:moonstone>);
@@ -173,15 +173,15 @@ smithing.addRecipe("netherite_chisel", <item:chiselsandbits:chisel_netherite>, <
 
 // Also changing the Vanilla Jetpacks to be more balanced.
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.removeRecipe(<item:simplyjetpacks:thruster_vanilla1>);
-craftingTable.removeRecipe(<item:simplyjetpacks:thruster_vanilla2>);
-craftingTable.removeRecipe(<item:simplyjetpacks:thruster_vanilla3>);
-craftingTable.removeRecipe(<item:simplyjetpacks:thruster_vanilla4>);
+// craftingTable.removeRecipe(<item:simplyjetpacks:thruster_vanilla1>);
+// craftingTable.removeRecipe(<item:simplyjetpacks:thruster_vanilla2>);
+// craftingTable.removeRecipe(<item:simplyjetpacks:thruster_vanilla3>);
+// craftingTable.removeRecipe(<item:simplyjetpacks:thruster_vanilla4>);
 
-craftingTable.removeRecipe(<item:simplyjetpacks:jetpack_vanilla1>);
-craftingTable.removeRecipe(<item:simplyjetpacks:jetpack_vanilla2>);
-craftingTable.removeRecipe(<item:simplyjetpacks:jetpack_vanilla3>);
-craftingTable.removeRecipe(<item:simplyjetpacks:jetpack_vanilla4>);
+// craftingTable.removeRecipe(<item:simplyjetpacks:jetpack_vanilla1>);
+// craftingTable.removeRecipe(<item:simplyjetpacks:jetpack_vanilla2>);
+// craftingTable.removeRecipe(<item:simplyjetpacks:jetpack_vanilla3>);
+// craftingTable.removeRecipe(<item:simplyjetpacks:jetpack_vanilla4>);
 
 craftingTable.addShaped("iron_thruster", <item:simplyjetpacks:thruster_vanilla1>, [
     [<item:minecraft:air>, <item:minecraft:iron_ingot>, <item:minecraft:air>],
@@ -238,17 +238,17 @@ craftingTable.addShaped("fiery_growth_lamp", <item:druidcraft:growth_lamp>, [
 
 // Refined Pipes
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.removeRecipe(<item:refinedpipes:basic_extractor_attachment>);
-craftingTable.removeRecipe(<item:refinedpipes:improved_extractor_attachment>);
-craftingTable.removeRecipe(<item:refinedpipes:advanced_extractor_attachment>);
-craftingTable.removeRecipe(<item:refinedpipes:elite_extractor_attachment>);
-craftingTable.removeRecipe(<item:refinedpipes:ultimate_extractor_attachment>);
+// craftingTable.removeRecipe(<item:refinedpipes:basic_extractor_attachment>);
+// craftingTable.removeRecipe(<item:refinedpipes:improved_extractor_attachment>);
+// craftingTable.removeRecipe(<item:refinedpipes:advanced_extractor_attachment>);
+// craftingTable.removeRecipe(<item:refinedpipes:elite_extractor_attachment>);
+// craftingTable.removeRecipe(<item:refinedpipes:ultimate_extractor_attachment>);
 
-craftingTable.removeRecipe(<item:refinedpipes:basic_energy_pipe>);
-craftingTable.removeRecipe(<item:refinedpipes:improved_energy_pipe>);
-craftingTable.removeRecipe(<item:refinedpipes:advanced_energy_pipe>);
-craftingTable.removeRecipe(<item:refinedpipes:advanced_item_pipe>);
-craftingTable.removeRecipe(<item:refinedpipes:advanced_fluid_pipe>);
+// craftingTable.removeRecipe(<item:refinedpipes:basic_energy_pipe>);
+// craftingTable.removeRecipe(<item:refinedpipes:improved_energy_pipe>);
+// craftingTable.removeRecipe(<item:refinedpipes:advanced_energy_pipe>);
+// craftingTable.removeRecipe(<item:refinedpipes:advanced_item_pipe>);
+// craftingTable.removeRecipe(<item:refinedpipes:advanced_fluid_pipe>);
 
 craftingTable.addShaped("redone_basic_extractor", <item:refinedpipes:basic_extractor_attachment> * 2, [
     [<item:minecraft:iron_nugget>, <tag:items:forge:ingots/copper>, <item:minecraft:iron_nugget>],
@@ -318,21 +318,9 @@ craftingTable.addShapeless("upgrade_energy_elite_ultimate", <item:refinedpipes:u
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
-// Fiery Gear Can be Upgraded to Netherite... Just as a Little Incentive.
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-smithing.addRecipe("netherite_helmet_from_fire", <item:minecraft:netherite_helmet>, <item:twilightforest:fiery_helmet>, <item:minecraft:netherite_ingot>);
-smithing.addRecipe("netherite_chest_from_fire", <item:minecraft:netherite_chestplate>, <item:twilightforest:fiery_chestplate>, <item:minecraft:netherite_ingot>);
-smithing.addRecipe("netherite_leggings_from_fire", <item:minecraft:netherite_leggings>, <item:twilightforest:fiery_leggings>, <item:minecraft:netherite_ingot>);
-smithing.addRecipe("netherite_boots_from_fire", <item:minecraft:netherite_boots>, <item:twilightforest:fiery_boots>, <item:minecraft:netherite_ingot>);
-
-smithing.addRecipe("netherite_sword_from_fire", <item:minecraft:netherite_sword>, <item:twilightforest:fiery_sword>, <item:minecraft:netherite_ingot>);
-smithing.addRecipe("netherite_pickaxe_from_fire", <item:minecraft:netherite_pickaxe>, <item:twilightforest:fiery_pickaxe>, <item:minecraft:netherite_ingot>);
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
 // Fixing IE Slag vs. Thermal Slag Concrete
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.removeByName("immersiveengineering:crafting/concrete2");
+// craftingTable.removeByName("immersiveengineering:crafting/concrete2");
 
 craftingTable.addShaped("thermal_ie_oncrete", <item:immersiveengineering:concrete> * 12, [
     [<item:thermal:slag>, <item:minecraft:clay_ball>, <item:thermal:slag>],
@@ -387,8 +375,8 @@ craftingTable.addShapeless("jellytorch_white", <item:upgrade_aquatic:white_jelly
 
 // Either Blueberry Can be Used for Either Recipe
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.removeRecipe(<item:byg:blueberry_pie>);
-craftingTable.removeRecipe(<item:druidcraft:blueberry_muffin>);
+// craftingTable.removeRecipe(<item:byg:blueberry_pie>);
+// craftingTable.removeRecipe(<item:druidcraft:blueberry_muffin>);
 
 craftingTable.addShapeless("blueberry_pie_redone", <item:byg:blueberry_pie>, [<tag:items:forge:crops/blueberries>, <item:minecraft:sugar>, <item:minecraft:egg>]);
 craftingTable.addShapeless("blueberry_muffin_redone", <item:druidcraft:blueberry_muffin>, [<tag:items:forge:crops/blueberries>, <item:minecraft:sugar>, <item:minecraft:egg>, <item:minecraft:wheat>]);

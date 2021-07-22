@@ -25,6 +25,15 @@ onEvent("recipes", (event) => {
   event.shapeless("byg:warped_coral_block", "4x byg:warped_coral");
   event.shapeless("byg:warped_coral_block", "4x byg:warped_coral_fan");
 
+  //! Rework Mechworks
+  // Speed Upgrade
+  event.shapeless("tmechworks:upgrade_speed", ["tmechworks:upgrade_blank", "minecraft:clock"]);
+  // Distance Upgrade
+  event.shapeless("tmechworks:upgrade_drawbridge_distance", [
+    "tmechworks:upgrade_blank",
+    "minecraft:piston",
+  ]);
+
   //! F O O D
   // Syrup
   event.shapeless("4x kubejs:syrup_bottle", ["thermal:syrup_bucket", "4x minecraft:glass_bottle"]);

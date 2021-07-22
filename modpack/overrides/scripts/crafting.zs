@@ -24,16 +24,6 @@ craftingTable.removeRecipe(<item:calemiutils:sledgehammer_starlight>);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
-// Ok which one of you thought it'd be funny to add a conflicting crafting recipe -_-
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-
-craftingTable.removeRecipe(<item:immersiveengineering:sawdust> * 9);
-
-craftingTable.addShaped("better_sawdust_flooring", <item:immersiveengineering:sawdust> * 3, [
-    [<tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>, <tag:items:forge:dusts/wood>]]);
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
 // Chicken Chunks Changes
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 craftingTable.removeRecipe(<item:chickenchunks:chunk_loader>);
@@ -165,12 +155,6 @@ craftingTable.addShaped("blizz_unit", <item:simplyjetpacks:unit_cryotheum>, [
 brewing.addRecipe(<item:kubejs:coffee>, <tag:items:forge:crops/coffee>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
 brewing.addRecipe(<item:kubejs:tea>, <tag:items:forge:crops/tea>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
 brewing.addRecipe(<item:kubejs:beer>, <tag:items:forge:crops/barley>, <item:minecraft:potion>.withTag({Potion: "minecraft:water" as string}));
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-// Ediolon Ruined a Vanilla Recipe... How?
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-furnace.removeRecipe(<item:eidolon:smooth_stone_bricks>);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -355,17 +339,6 @@ craftingTable.addShapeless("upgrade_energy_elite_ultimate", <item:refinedpipes:u
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
-// Overlap Between Thermal and Quark's Crates
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.removeRecipe(<item:thermal:beetroot_block>);
-craftingTable.removeRecipe(<item:thermal:potato_block>);
-craftingTable.removeRecipe(<item:thermal:carrot_block>);
-craftingTable.removeRecipe(<item:thermal:apple_block>);
-craftingTable.removeRecipe(<item:thermal:bamboo_block>);
-craftingTable.removeRecipe(<item:thermal:sugar_cane_block>);
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
 // Fiery Gear Can be Upgraded to Netherite... Just as a Little Incentive.
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 smithing.addRecipe("netherite_helmet_from_fire", <item:minecraft:netherite_helmet>, <item:twilightforest:fiery_helmet>, <item:minecraft:netherite_ingot>);
@@ -418,6 +391,7 @@ craftingTable.addShaped("carapace_to_chitin", <item:druidcraft:chitin>, [
 
 craftingTable.addShapeless("chitin_to_carapace", <item:mysticalworld:carapace> * 4, [<item:druidcraft:chitin>]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // Temporary Upgrade Aquatic crafting recipes, since jellyfish don't spawn naturally
 // ---------------------------------------------------------------------------------------------------------------------------------------------

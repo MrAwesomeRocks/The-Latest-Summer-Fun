@@ -8,13 +8,6 @@
  */
 onEvent("player.logged_in", (event) => {
   let player = event.getPlayer();
-  let server = event.getServer();
-
-  // Fix error on first world join in singleplayer
-  if (!server.isDedicated() && !event.hasGameStage("new_world_reload")) {
-    server.runCommand("/reload");
-    event.addGameStage("new_world_reload");
-  }
 
   // Join message
   player.tell(

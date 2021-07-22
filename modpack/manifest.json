@@ -59,7 +59,7 @@
     },
     {
       "projectID": 74072,
-      "fileID": 3352983,
+      "fileID": 3389395,
       "required": true,
       "__meta": {
         "name": "Tinkers Construct",
@@ -71,7 +71,7 @@
     },
     {
       "projectID": 74924,
-      "fileID": 3352484,
+      "fileID": 3389377,
       "required": true,
       "__meta": {
         "name": "Mantle",
@@ -280,7 +280,7 @@
     },
     {
       "projectID": 238086,
-      "fileID": 3384334,
+      "fileID": 3397256,
       "required": true,
       "__meta": {
         "name": "KubeJS (Forge)",
@@ -313,7 +313,7 @@
     },
     {
       "projectID": 239197,
-      "fileID": 3387090,
+      "fileID": 3396159,
       "required": true,
       "__meta": {
         "name": "CraftTweaker",
@@ -385,7 +385,7 @@
     },
     {
       "projectID": 243121,
-      "fileID": 3366626,
+      "fileID": 3394265,
       "required": true,
       "__meta": {
         "name": "Quark",
@@ -473,7 +473,7 @@
     },
     {
       "projectID": 248787,
-      "fileID": 3358019,
+      "fileID": 3395800,
       "required": true,
       "__meta": {
         "name": "AppleSkin",
@@ -592,7 +592,7 @@
     },
     {
       "projectID": 263420,
-      "fileID": 3387118,
+      "fileID": 3396274,
       "required": true,
       "__meta": {
         "name": "Xaero's Minimap",
@@ -1014,7 +1014,7 @@
     },
     {
       "projectID": 317780,
-      "fileID": 3387106,
+      "fileID": 3396262,
       "required": true,
       "__meta": {
         "name": "Xaero's World Map",
@@ -1034,7 +1034,7 @@
     },
     {
       "projectID": 320196,
-      "fileID": 3206910,
+      "fileID": 3391177,
       "required": true,
       "__meta": {
         "name": "Calemi's Utilities",
@@ -1283,7 +1283,7 @@
     },
     {
       "projectID": 354143,
-      "fileID": 3384678,
+      "fileID": 3389539,
       "required": true,
       "__meta": {
         "name": "Performant",
@@ -1353,7 +1353,7 @@
     },
     {
       "projectID": 368718,
-      "fileID": 3365625,
+      "fileID": 3393971,
       "required": true,
       "__meta": {
         "name": "JEITweaker",
@@ -1457,7 +1457,7 @@
     },
     {
       "projectID": 388908,
-      "fileID": 3386049,
+      "fileID": 3390560,
       "required": true,
       "__meta": {
         "name": "Simple Planes (Forge)",
@@ -1588,7 +1588,7 @@
     },
     {
       "projectID": 412082,
-      "fileID": 3386210,
+      "fileID": 3392977,
       "required": true,
       "__meta": {
         "name": "Supplementaries",
@@ -1778,7 +1778,7 @@
     },
     {
       "projectID": 440047,
-      "fileID": 3381471,
+      "fileID": 3390792,
       "required": true,
       "__meta": {
         "name": "Customizable Elytra",
@@ -1840,7 +1840,7 @@
     },
     {
       "projectID": 454372,
-      "fileID": 3357863,
+      "fileID": 3390753,
       "required": true,
       "__meta": {
         "name": "SuperMartijn642's Core Lib",
@@ -1880,7 +1880,7 @@
     },
     {
       "projectID": 475117,
-      "fileID": 3323552,
+      "fileID": 3391318,
       "required": true,
       "__meta": {
         "name": "FastSuite",
@@ -1904,7 +1904,7 @@
     },
     {
       "projectID": 486392,
-      "fileID": 3384004,
+      "fileID": 3389159,
       "required": true,
       "__meta": {
         "name": "Flywheel",
@@ -1914,7 +1914,7 @@
     },
     {
       "projectID": 499980,
-      "fileID": 3382409,
+      "fileID": 3392984,
       "required": true,
       "__meta": {
         "name": "Selene",

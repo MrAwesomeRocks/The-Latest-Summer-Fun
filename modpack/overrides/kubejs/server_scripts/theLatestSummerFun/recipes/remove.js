@@ -12,4 +12,23 @@ onEvent("recipes", (event) => {
   for (let sand of sands) {
     event.remove({ output: sand });
   }
+
+  //! Completely remove items
+  const completelyRemove = [
+    // Iron Jetpacks
+    "ironjetpacks:strap",
+    "ironjetpacks:basic_coil",
+    "ironjetpacks:advanced_coil",
+    "ironjetpacks:elite_coil",
+    "ironjetpacks:ultimate_coil",
+    // Calemi's Utilities
+    "calemiutils:book_stand",
+    "calemiutils:blueprint_filler",
+    "calemiutils:link_book_location",
+    /calemiutils:sledgehammer_.*/,
+  ];
+  for (let item of completelyRemove) {
+    event.remove({ output: item });
+    event.remove({ input: item });
+  }
 });

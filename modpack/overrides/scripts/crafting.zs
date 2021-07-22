@@ -3,27 +3,6 @@
 import crafttweaker.api.item.IItemStack;
 
 
-// The Great Removal of 2021
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.removeRecipe(<item:ironjetpacks:strap>);
-craftingTable.removeRecipe(<item:ironjetpacks:basic_coil>);
-craftingTable.removeRecipe(<item:ironjetpacks:advanced_coil>);
-craftingTable.removeRecipe(<item:ironjetpacks:elite_coil>);
-craftingTable.removeRecipe(<item:ironjetpacks:ultimate_coil>);
-
-craftingTable.removeRecipe(<item:calemiutils:book_stand>);
-craftingTable.removeRecipe(<item:calemiutils:blueprint_filler>);
-craftingTable.removeRecipe(<item:calemiutils:link_book_location>);
-craftingTable.removeRecipe(<item:calemiutils:sledgehammer_wood>);
-craftingTable.removeRecipe(<item:calemiutils:sledgehammer_stone>);
-craftingTable.removeRecipe(<item:calemiutils:sledgehammer_iron>);
-craftingTable.removeRecipe(<item:calemiutils:sledgehammer_gold>);
-craftingTable.removeRecipe(<item:calemiutils:sledgehammer_diamond>);
-craftingTable.removeRecipe(<item:calemiutils:sledgehammer_netherite>);
-craftingTable.removeRecipe(<item:calemiutils:sledgehammer_starlight>);
-// ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
 // Chicken Chunks Changes
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 craftingTable.removeRecipe(<item:chickenchunks:chunk_loader>);

@@ -6,7 +6,11 @@
  ** See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
-  // Kelp
+  //! Alternate Wood Crafting: Blame Quark
+  // Modded to vanilla chests
+  event.shapeless("minecraft:chest", "#forge:chests/wooden");
+
+  //! Fix kelp
   const kelps = Ingredient.of(/upgrade_aquatic:.*_kelp$/)
     .getStacks()
     .toArray();
@@ -15,13 +19,13 @@ onEvent("recipes", (event) => {
     event.shapeless(kelp.getId(), "minecraft:kelp");
   }
 
-  // Sand
+  //! Fix colored sand
   const sandColors = ["pink", "purple", "blue"];
   for (let color of sandColors) {
     event.shapeless(`byg:${color}_sand`, ["#forge:sand/colorless", `#forge:dyes/${color}`]);
   }
 
-  // Warped coral
+  //! Fix warped coral
   event.shapeless("byg:warped_coral_block", "4x byg:warped_coral");
   event.shapeless("byg:warped_coral_block", "4x byg:warped_coral_fan");
 

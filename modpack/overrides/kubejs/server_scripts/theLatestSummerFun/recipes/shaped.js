@@ -17,7 +17,35 @@ onEvent("recipes", (event) => {
       L: "#minecraft:logs"
     });
   }
-  
+
+  //! Alternate Wood Crafting: Blame Quark
+  // Signs from non-vanilla woods
+  event.shaped("3x minecraft:oak_sign", [
+    "PPP",
+    "PPP",
+    " S "
+  ], {
+    P: "#forge:only_byg_planks",
+    S: "#forge:rods/wooden"
+  });
+  // Fix the ladder
+  event.shaped("3x minecraft:ladder", [
+    "S S",
+    "SSS",
+    "S S"
+  ], {
+    S: "#forge:rods/wooden"
+  });
+  // Chests with BYG woods
+  event.shaped("minecraft:chest", [
+    "WWW",
+    "W W",
+    "WWW"
+  ], {
+    W: "#forge:only_byg_planks"
+  });
+
+
   //! C O N C R E T E
   event.shaped("12x immersiveengineering:concrete", [
     "SCS",

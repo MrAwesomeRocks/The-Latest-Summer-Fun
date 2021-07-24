@@ -51,7 +51,7 @@ onEvent("item.tags", (event) => {
   event.add("forge:storage_blocks", "appliedenergistics2:fluix_block");
   event.add("forge:storage_blocks/fluix", "appliedenergistics2:fluix_block");
 
-  //** Planks
+  //$ Planks
   // Non-vanilla
   event.add("forge:non_vanilla_planks", "#minecraft:planks").remove(/minecraft:.*_planks/);
 

@@ -6,6 +6,60 @@
  ** See L24 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Refined pipes
+  //$ Extractors
+  // Basic
+  event.shaped("2x refinedpipes:basic_extractor_attachment", [
+    "iCi",
+    "IRI"
+  ], {
+    i: "#forge:nuggets/iron",
+    I: "#forge:ingots/iron",
+    R: "#forge:dusts/redstone",
+    C: "#forge:ingots/copper"
+  });
+  // Improved
+  event.shaped("2x refinedpipes:improved_extractor_attachment", [
+    "iCi",
+    "GRG"
+  ], {
+    i: "#forge:nuggets/iron",
+    G: "#forge:ingots/gold",
+    R: "#forge:dusts/redstone",
+    C: "#forge:ingots/copper"
+  });
+  // Advanced
+  event.shaped("2x refinedpipes:advanced_extractor_attachment", [
+    "QCQ",
+    "ARA"
+  ], {
+    Q: "#forge:gems/quartz",
+    A: "#forge:gems/certus_quartz",
+    R: "#forge:dusts/redstone",
+    C: "#forge:ingots/copper"
+  });
+  // Elite
+  event.shaped("2x refinedpipes:elite_extractor_attachment", [
+    "BCB",
+    "ERE"
+  ], {
+    B: "#forge:rods/blaze",
+    E: "#forge:gems/emerald",
+    R: "#forge:dusts/redstone",
+    C: "#forge:ingots/copper"
+  });
+  // Ultimate
+  event.shaped("2x refinedpipes:ultimate_extractor_attachment", [
+    "PCP",
+    "FRF"
+  ], {
+    P: "#forge:dusts/prismarine",
+    F: "minecraft:popped_chorus_fruit",
+    R: "#forge:dusts/redstone",
+    C: "#forge:ingots/copper"
+  });
+  //$
+
   //! Vanilla recipe improvements
   // Sticks
   const positions = ["L  ", " L ", "  L"];
@@ -89,7 +143,7 @@ onEvent("recipes", (event) => {
   });
 
   //! Vanilla jetpack recipes
-  //** Iron
+  //$ Iron
   // Iron thruster
   event.shaped("simplyjetpacks:thruster_vanilla1", [
     " I ",
@@ -111,7 +165,7 @@ onEvent("recipes", (event) => {
     S: "simplyjetpacks:leather_strap",
     T: "simplyjetpacks:thruster_vanilla1"
   });
-  //** Gold
+  //$ Gold
   // Gold thruster
   event.shaped("simplyjetpacks:thruster_vanilla2", [
     " G ",
@@ -133,7 +187,7 @@ onEvent("recipes", (event) => {
     J: "simplyjetpacks:jetpack_vanilla1",
     T: "simplyjetpacks:thruster_vanilla2"
   });
-  //** Diamond
+  //$ Diamond
   // Diamond thruster
   event.shaped("simplyjetpacks:thruster_vanilla3", [
     " D ",
@@ -155,7 +209,7 @@ onEvent("recipes", (event) => {
     J: "simplyjetpacks:jetpack_vanilla2",
     T: "simplyjetpacks:thruster_vanilla3"
   });
-  //** Netherite
+  //$ Netherite
   // Netherite thruster
   //? See block.js
   // Netherite jetpack
@@ -171,7 +225,7 @@ onEvent("recipes", (event) => {
   });
 
   //! Thermal jetpack recipes
-  //** Crafting components
+  //$ Crafting components
   // Blitz Unit
   event.shaped("simplyjetpacks:unit_glowstone", [
     "RUR"
@@ -186,7 +240,7 @@ onEvent("recipes", (event) => {
     R: "thermal:blizz_rod",
     U: "simplyjetpacks:unit_cryotheum_empty"
   });
-  //** Leadstone
+  //$ Leadstone
   // Leadstone Thruster
   event.shaped("simplyjetpacks:thruster_te1", [
     " L ",
@@ -208,7 +262,7 @@ onEvent("recipes", (event) => {
     T: "simplyjetpacks:thruster_te1",
     C: "thermal:flux_capacitor"
   });
-  //** Hardened
+  //$ Hardened
   // Hardened Thruster
   event.shaped("simplyjetpacks:thruster_te2", [
     " I ",
@@ -231,7 +285,7 @@ onEvent("recipes", (event) => {
     T: "simplyjetpacks:thruster_te2",
     U: "thermal:upgrade_augment_1"
   });
-  //** Reinforced
+  //$ Reinforced
   // Reinforced Thruster
   event.shaped("simplyjetpacks:thruster_te3", [
     " E ",
@@ -254,7 +308,7 @@ onEvent("recipes", (event) => {
     T: "simplyjetpacks:thruster_te3",
     U: "thermal:upgrade_augment_2"
   });
-  //** Resonant
+  //$ Resonant
   // Resonant Thruster
   event.shaped("simplyjetpacks:thruster_te4", [
     " E ",
@@ -277,7 +331,7 @@ onEvent("recipes", (event) => {
     T: "simplyjetpacks:thruster_te4",
     U: "thermal:upgrade_augment_3"
   });
-  //** Fluxed
+  //$ Fluxed
   // Fluxed Thruster
   event.shaped("simplyjetpacks:thruster_te5", [
     " L ",

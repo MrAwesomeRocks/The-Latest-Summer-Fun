@@ -396,14 +396,20 @@
       "backgroundColor": "transparent"
     },
     {
-      "tag": "todo",
-      "color": "#FF8C00",
+      "tag": "**",
+      "color": "#98C379",
       "strikethrough": false,
       "backgroundColor": "transparent"
     },
     {
-      "tag": "**",
-      "color": "#98C379",
+      "tag": "$",
+      "color": "#FFA500",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
       "strikethrough": false,
       "backgroundColor": "transparent"
     },

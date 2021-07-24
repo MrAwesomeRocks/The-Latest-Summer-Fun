@@ -250,25 +250,25 @@ brewing.addRecipe(<item:kubejs:beer>, <tag:items:forge:crops/barley>, <item:mine
 // craftingTable.removeRecipe(<item:refinedpipes:advanced_item_pipe>);
 // craftingTable.removeRecipe(<item:refinedpipes:advanced_fluid_pipe>);
 
-craftingTable.addShaped("redone_basic_extractor", <item:refinedpipes:basic_extractor_attachment> * 2, [
-    [<item:minecraft:iron_nugget>, <tag:items:forge:ingots/copper>, <item:minecraft:iron_nugget>],
-    [<item:minecraft:iron_ingot>, <item:minecraft:redstone>, <item:minecraft:iron_ingot>]]);
+// craftingTable.addShaped("redone_basic_extractor", <item:refinedpipes:basic_extractor_attachment> * 2, [
+//     [<item:minecraft:iron_nugget>, <tag:items:forge:ingots/copper>, <item:minecraft:iron_nugget>],
+//     [<item:minecraft:iron_ingot>, <item:minecraft:redstone>, <item:minecraft:iron_ingot>]]);
 
-craftingTable.addShaped("redone_improved_extractor", <item:refinedpipes:improved_extractor_attachment> * 2, [
-    [<item:minecraft:iron_nugget>, <tag:items:forge:ingots/copper>, <item:minecraft:iron_nugget>],
-    [<item:minecraft:gold_ingot>, <item:minecraft:redstone>, <item:minecraft:gold_ingot>]]);
+// craftingTable.addShaped("redone_improved_extractor", <item:refinedpipes:improved_extractor_attachment> * 2, [
+//     [<item:minecraft:iron_nugget>, <tag:items:forge:ingots/copper>, <item:minecraft:iron_nugget>],
+//     [<item:minecraft:gold_ingot>, <item:minecraft:redstone>, <item:minecraft:gold_ingot>]]);
 
-craftingTable.addShaped("redone_advanced_extractor", <item:refinedpipes:advanced_extractor_attachment> * 2, [
-    [<item:minecraft:quartz>, <tag:items:forge:ingots/copper>, <item:minecraft:quartz>],
-    [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:redstone>, <item:appliedenergistics2:certus_quartz_crystal>]]);
+// craftingTable.addShaped("redone_advanced_extractor", <item:refinedpipes:advanced_extractor_attachment> * 2, [
+//     [<item:minecraft:quartz>, <tag:items:forge:ingots/copper>, <item:minecraft:quartz>],
+//     [<item:appliedenergistics2:certus_quartz_crystal>, <item:minecraft:redstone>, <item:appliedenergistics2:certus_quartz_crystal>]]);
 
-craftingTable.addShaped("redone_elite_extractor", <item:refinedpipes:elite_extractor_attachment> * 2, [
-    [<item:minecraft:blaze_rod>, <tag:items:forge:ingots/copper>, <item:minecraft:blaze_rod>],
-    [<item:minecraft:emerald>, <item:minecraft:redstone>, <item:minecraft:emerald>]]);
+// craftingTable.addShaped("redone_elite_extractor", <item:refinedpipes:elite_extractor_attachment> * 2, [
+//     [<item:minecraft:blaze_rod>, <tag:items:forge:ingots/copper>, <item:minecraft:blaze_rod>],
+//     [<item:minecraft:emerald>, <item:minecraft:redstone>, <item:minecraft:emerald>]]);
 
-craftingTable.addShaped("redone_ultimate_extractor", <item:refinedpipes:ultimate_extractor_attachment> * 2, [
-    [<item:minecraft:prismarine_shard>, <tag:items:forge:ingots/copper>, <item:minecraft:prismarine_shard>],
-    [<item:minecraft:popped_chorus_fruit>, <item:minecraft:redstone>, <item:minecraft:popped_chorus_fruit>]]);
+// craftingTable.addShaped("redone_ultimate_extractor", <item:refinedpipes:ultimate_extractor_attachment> * 2, [
+//     [<item:minecraft:prismarine_shard>, <tag:items:forge:ingots/copper>, <item:minecraft:prismarine_shard>],
+//     [<item:minecraft:popped_chorus_fruit>, <item:minecraft:redstone>, <item:minecraft:popped_chorus_fruit>]]);
 
 
 

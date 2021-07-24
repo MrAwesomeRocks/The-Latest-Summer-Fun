@@ -224,15 +224,15 @@ brewing.addRecipe(<item:kubejs:beer>, <tag:items:forge:crops/barley>, <item:mine
 
 // Adding More Fiery Glass Uses
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.addShaped("fiery_ceramic_lantern", <item:druidcraft:ceramic_lantern>, [
-    [<item:minecraft:air>, <item:minecraft:brick>, <item:minecraft:air>],
-    [<item:minecraft:brick>, <item:druidcraft:fiery_glass>, <item:minecraft:brick>],
-    [<item:minecraft:air>, <item:minecraft:brick>, <item:minecraft:air>]]);
+// craftingTable.addShaped("fiery_ceramic_lantern", <item:druidcraft:ceramic_lantern>, [
+//     [<item:minecraft:air>, <item:minecraft:brick>, <item:minecraft:air>],
+//     [<item:minecraft:brick>, <item:druidcraft:fiery_glass>, <item:minecraft:brick>],
+//     [<item:minecraft:air>, <item:minecraft:brick>, <item:minecraft:air>]]);
 
-craftingTable.addShaped("fiery_growth_lamp", <item:druidcraft:growth_lamp>, [
-    [<item:druidcraft:rockroot>, <item:minecraft:emerald>, <item:druidcraft:rockroot>],
-    [<item:minecraft:emerald>, <item:druidcraft:fiery_glass>, <item:minecraft:emerald>],
-    [<item:druidcraft:rockroot>, <item:minecraft:emerald>, <item:druidcraft:rockroot>]]);
+// craftingTable.addShaped("fiery_growth_lamp", <item:druidcraft:growth_lamp>, [
+//     [<item:druidcraft:rockroot>, <item:minecraft:emerald>, <item:druidcraft:rockroot>],
+//     [<item:minecraft:emerald>, <item:druidcraft:fiery_glass>, <item:minecraft:emerald>],
+//     [<item:druidcraft:rockroot>, <item:minecraft:emerald>, <item:druidcraft:rockroot>]]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

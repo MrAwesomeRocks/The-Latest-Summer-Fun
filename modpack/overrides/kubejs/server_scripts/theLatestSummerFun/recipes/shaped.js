@@ -6,6 +6,18 @@
  ** See L24 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Vanilla recipe improvements
+  // Sticks
+  const positions = ["L  ", " L ", "  L"];
+  for (let pos of positions) {
+    event.shaped("16x minecraft:stick", [
+      pos,
+      pos
+    ], {
+      L: "#minecraft:logs"
+    });
+  }
+  
   //! C O N C R E T E
   event.shaped("12x immersiveengineering:concrete", [
     "SCS",

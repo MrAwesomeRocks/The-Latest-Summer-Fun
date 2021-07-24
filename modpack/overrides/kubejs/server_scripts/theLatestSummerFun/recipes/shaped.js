@@ -17,6 +17,137 @@ onEvent("recipes", (event) => {
     D: "minecraft:dispenser"
   });
 
+  //! SimplyJetpacks recipes
+  //** Crafting components
+  // Blitz Unit
+  event.shaped("simplyjetpacks:unit_glowstone", [
+    "RUR"
+  ], {
+    R: "thermal:blitz_rod",
+    U: "simplyjetpacks:unit_glowstone_empty"
+  });
+  // Blizz Unit
+  event.shaped("simplyjetpacks:unit_glowstone", [
+    "RUR"
+  ], {
+    R: "thermal:blizz_rod",
+    U: "simplyjetpacks:unit_cryotheum_empty"
+  });
+  //** Leadstone
+  // Leadstone Thruster
+  event.shaped("simplyjetpacks:thruster_te1", [
+    " L ",
+    "LDL",
+    "RRR"
+  ], {
+    L: "#forge:ingots/lead",
+    R: "#forge:dusts/redstone",
+    D: "thermal:dynamo_stirling"
+  });
+  // Leadstone Jetpack
+  event.shaped("simplyjetpacks:jetpack_te1", [
+    " L ",
+    "LSL",
+    "TCT"
+  ], {
+    L: "#forge:ingots/lead",
+    S: "simplyjetpacks:leather_strap",
+    T: "simplyjetpacks:thruster_te1",
+    C: "thermal:flux_capacitor"
+  });
+  //** Hardened
+  // Hardened Thruster
+  event.shaped("simplyjetpacks:thruster_te2", [
+    " I ",
+    "IDI",
+    "RCR"
+  ], {
+    I: "#forge:ingots/invar",
+    R: "#forge:dusts/redstone",
+    D: "thermal:dynamo_compression",
+    C: "thermal:rf_coil"
+  });
+  // Hardened Jetpack
+  event.shaped("simplyjetpacks:jetpack_te2", [
+    " I ",
+    "IJI",
+    "TUT"
+  ], {
+    I: "#forge:ingots/invar",
+    J: "simplyjetpacks:jetpack_te1",
+    T: "simplyjetpacks:thruster_te2",
+    U: "thermal:upgrade_augment_1"
+  });
+  //** Reinforced
+  // Reinforced Thruster
+  event.shaped("simplyjetpacks:thruster_te3", [
+    " E ",
+    "EDE",
+    "RCR"
+  ], {
+    E: "#forge:ingots/electrum",
+    R: "thermal:rf_coil",
+    D: "thermal:dynamo_magmatic",
+    C: "#forge:gems/cinnabar"
+  });
+  // Reinforced Jetpack
+  event.shaped("simplyjetpacks:jetpack_te3", [
+    " E ",
+    "EJE",
+    "TUT"
+  ], {
+    E: "#forge:ingots/electrum",
+    J: "simplyjetpacks:jetpack_te2",
+    T: "simplyjetpacks:thruster_te3",
+    U: "thermal:upgrade_augment_2"
+  });
+  //** Resonant
+  // Resonant Thruster
+  event.shaped("simplyjetpacks:thruster_te4", [
+    " E ",
+    "EDE",
+    "CSC"
+  ], {
+    E: "#forge:ingots/enderium",
+    S: "#forge:ingots/signalum",
+    D: "thermal:dynamo_lapidary",
+    C: "#forge:gems/cinnabar"
+  });
+  // Resonant Jetpack
+  event.shaped("simplyjetpacks:jetpack_te4", [
+    " E ",
+    "EJE",
+    "TUT"
+  ], {
+    E: "#forge:ingots/enderium",
+    J: "simplyjetpacks:jetpack_te3",
+    T: "simplyjetpacks:thruster_te4",
+    U: "thermal:upgrade_augment_3"
+  });
+  //** Fluxed
+  // Fluxed Thruster
+  event.shaped("simplyjetpacks:thruster_te5", [
+    " L ",
+    "LDL",
+    "SGS"
+  ], {
+    L: "#forge:plates/lumium",
+    S: "#forge:ingots/signalum",
+    D: "thermal:dynamo_numismatic",
+    G: "simplyjetpacks:unit_glowstone"
+  });
+  // Fluxed Jetpack
+  event.shaped("simplyjetpacks:jetpack_te5", [
+    "LLL",
+    "CJC",
+    "TNT"
+  ], {
+    L: "#forge:plates/lumium",
+    J: "simplyjetpacks:jetpack_te4_armored",
+    T: "simplyjetpacks:thruster_te5",
+    N: "gildedarmor:gilded_netherite_chestplate"
+  });
+
   //! Rework Mechworks
   // Drawbridge
   event.shaped("tmechworks:drawbridge", [

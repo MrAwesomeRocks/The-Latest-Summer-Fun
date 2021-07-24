@@ -71,61 +71,61 @@ import crafttweaker.api.item.IItemStack;
 
 // Adding Simplyjetpacks recipes because the dev won't respond to my github issue. >:-(
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.addShaped("leadstone_thruster", <item:simplyjetpacks:thruster_te1>, [
-    [<item:minecraft:air>, <tag:items:forge:ingots/lead>, <item:minecraft:air>],
-    [<tag:items:forge:ingots/lead>, <item:thermal:dynamo_stirling>, <tag:items:forge:ingots/lead>],
-    [<tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>]]);
+// craftingTable.addShaped("leadstone_thruster", <item:simplyjetpacks:thruster_te1>, [
+//     [<item:minecraft:air>, <tag:items:forge:ingots/lead>, <item:minecraft:air>],
+//     [<tag:items:forge:ingots/lead>, <item:thermal:dynamo_stirling>, <tag:items:forge:ingots/lead>],
+//     [<tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>, <tag:items:forge:dusts/redstone>]]);
 
-craftingTable.addShaped("leadstone_jetpack", <item:simplyjetpacks:jetpack_te1>, [
-    [<item:minecraft:air>, <tag:items:forge:ingots/lead>, <item:minecraft:air>],
-    [<tag:items:forge:ingots/lead>, <item:simplyjetpacks:leather_strap>, <tag:items:forge:ingots/lead>],
-    [<item:simplyjetpacks:thruster_te1>, <item:thermal:flux_capacitor>, <item:simplyjetpacks:thruster_te1>]]);
+// craftingTable.addShaped("leadstone_jetpack", <item:simplyjetpacks:jetpack_te1>, [
+//     [<item:minecraft:air>, <tag:items:forge:ingots/lead>, <item:minecraft:air>],
+//     [<tag:items:forge:ingots/lead>, <item:simplyjetpacks:leather_strap>, <tag:items:forge:ingots/lead>],
+//     [<item:simplyjetpacks:thruster_te1>, <item:thermal:flux_capacitor>, <item:simplyjetpacks:thruster_te1>]]);
 
-craftingTable.addShaped("hardened_thruster", <item:simplyjetpacks:thruster_te2>, [
-    [<item:minecraft:air>, <tag:items:forge:ingots/invar>, <item:minecraft:air>],
-    [<tag:items:forge:ingots/invar>, <item:thermal:dynamo_compression>, <tag:items:forge:ingots/invar>],
-    [<tag:items:forge:dusts/redstone>, <item:thermal:rf_coil>, <tag:items:forge:dusts/redstone>]]);
+// craftingTable.addShaped("hardened_thruster", <item:simplyjetpacks:thruster_te2>, [
+//     [<item:minecraft:air>, <tag:items:forge:ingots/invar>, <item:minecraft:air>],
+//     [<tag:items:forge:ingots/invar>, <item:thermal:dynamo_compression>, <tag:items:forge:ingots/invar>],
+//     [<tag:items:forge:dusts/redstone>, <item:thermal:rf_coil>, <tag:items:forge:dusts/redstone>]]);
 
-craftingTable.addShaped("hardened_jetpack", <item:simplyjetpacks:jetpack_te2>, [
-    [<item:minecraft:air>, <tag:items:forge:ingots/invar>, <item:minecraft:air>],
-    [<tag:items:forge:ingots/invar>, <item:simplyjetpacks:jetpack_te1>, <tag:items:forge:ingots/invar>],
-    [<item:simplyjetpacks:thruster_te2>, <item:thermal:upgrade_augment_1>, <item:simplyjetpacks:thruster_te2>]]);
+// craftingTable.addShaped("hardened_jetpack", <item:simplyjetpacks:jetpack_te2>, [
+//     [<item:minecraft:air>, <tag:items:forge:ingots/invar>, <item:minecraft:air>],
+//     [<tag:items:forge:ingots/invar>, <item:simplyjetpacks:jetpack_te1>, <tag:items:forge:ingots/invar>],
+//     [<item:simplyjetpacks:thruster_te2>, <item:thermal:upgrade_augment_1>, <item:simplyjetpacks:thruster_te2>]]);
 
-craftingTable.addShaped("reinforced_thruster", <item:simplyjetpacks:thruster_te3>, [
-    [<item:minecraft:air>, <tag:items:forge:ingots/electrum>, <item:minecraft:air>],
-    [<tag:items:forge:ingots/electrum>, <item:thermal:dynamo_magmatic>, <tag:items:forge:ingots/electrum>],
-    [<item:thermal:rf_coil>, <tag:items:forge:gems/cinnabar>, <item:thermal:rf_coil>]]);
+// craftingTable.addShaped("reinforced_thruster", <item:simplyjetpacks:thruster_te3>, [
+//     [<item:minecraft:air>, <tag:items:forge:ingots/electrum>, <item:minecraft:air>],
+//     [<tag:items:forge:ingots/electrum>, <item:thermal:dynamo_magmatic>, <tag:items:forge:ingots/electrum>],
+//     [<item:thermal:rf_coil>, <tag:items:forge:gems/cinnabar>, <item:thermal:rf_coil>]]);
 
-craftingTable.addShaped("reinforced_jetpack", <item:simplyjetpacks:jetpack_te3>, [
-    [<item:minecraft:air>, <tag:items:forge:ingots/electrum>, <item:minecraft:air>],
-    [<tag:items:forge:ingots/electrum>, <item:simplyjetpacks:jetpack_te2>, <tag:items:forge:ingots/electrum>],
-    [<item:simplyjetpacks:thruster_te3>, <item:thermal:upgrade_augment_2>, <item:simplyjetpacks:thruster_te3>]]);
+// craftingTable.addShaped("reinforced_jetpack", <item:simplyjetpacks:jetpack_te3>, [
+//     [<item:minecraft:air>, <tag:items:forge:ingots/electrum>, <item:minecraft:air>],
+//     [<tag:items:forge:ingots/electrum>, <item:simplyjetpacks:jetpack_te2>, <tag:items:forge:ingots/electrum>],
+//     [<item:simplyjetpacks:thruster_te3>, <item:thermal:upgrade_augment_2>, <item:simplyjetpacks:thruster_te3>]]);
 
-craftingTable.addShaped("resonant_thruster", <item:simplyjetpacks:thruster_te4>, [
-    [<item:minecraft:air>, <tag:items:forge:ingots/enderium>, <item:minecraft:air>],
-    [<tag:items:forge:ingots/enderium>, <item:thermal:dynamo_lapidary>, <tag:items:forge:ingots/enderium>],
-    [<tag:items:forge:gems/cinnabar>, <tag:items:forge:ingots/signalum>, <tag:items:forge:gems/cinnabar>]]);
+// craftingTable.addShaped("resonant_thruster", <item:simplyjetpacks:thruster_te4>, [
+//     [<item:minecraft:air>, <tag:items:forge:ingots/enderium>, <item:minecraft:air>],
+//     [<tag:items:forge:ingots/enderium>, <item:thermal:dynamo_lapidary>, <tag:items:forge:ingots/enderium>],
+//     [<tag:items:forge:gems/cinnabar>, <tag:items:forge:ingots/signalum>, <tag:items:forge:gems/cinnabar>]]);
 
-craftingTable.addShaped("resonant_jetpack", <item:simplyjetpacks:jetpack_te4>, [
-    [<item:minecraft:air>, <tag:items:forge:ingots/enderium>, <item:minecraft:air>],
-    [<tag:items:forge:ingots/enderium>, <item:simplyjetpacks:jetpack_te3>, <tag:items:forge:ingots/enderium>],
-    [<item:simplyjetpacks:thruster_te4>, <item:thermal:upgrade_augment_3>, <item:simplyjetpacks:thruster_te4>]]);
+// craftingTable.addShaped("resonant_jetpack", <item:simplyjetpacks:jetpack_te4>, [
+//     [<item:minecraft:air>, <tag:items:forge:ingots/enderium>, <item:minecraft:air>],
+//     [<tag:items:forge:ingots/enderium>, <item:simplyjetpacks:jetpack_te3>, <tag:items:forge:ingots/enderium>],
+//     [<item:simplyjetpacks:thruster_te4>, <item:thermal:upgrade_augment_3>, <item:simplyjetpacks:thruster_te4>]]);
 
-craftingTable.addShaped("fluxed_thruster", <item:simplyjetpacks:thruster_te5>, [
-    [<item:minecraft:air>, <tag:items:forge:plates/lumium>, <item:minecraft:air>],
-    [<tag:items:forge:plates/lumium>, <item:thermal:dynamo_numismatic>, <tag:items:forge:plates/lumium>],
-    [<tag:items:forge:ingots/signalum>, <item:simplyjetpacks:unit_glowstone>, <tag:items:forge:ingots/signalum>]]);
+// craftingTable.addShaped("fluxed_thruster", <item:simplyjetpacks:thruster_te5>, [
+//     [<item:minecraft:air>, <tag:items:forge:plates/lumium>, <item:minecraft:air>],
+//     [<tag:items:forge:plates/lumium>, <item:thermal:dynamo_numismatic>, <tag:items:forge:plates/lumium>],
+//     [<tag:items:forge:ingots/signalum>, <item:simplyjetpacks:unit_glowstone>, <tag:items:forge:ingots/signalum>]]);
 
-craftingTable.addShaped("fluxed_jetplate", <item:simplyjetpacks:jetpack_te5>, [
-    [<tag:items:forge:plates/lumium>, <tag:items:forge:plates/lumium>, <tag:items:forge:plates/lumium>],
-    [<item:simplyjetpacks:unit_cryotheum>, <item:simplyjetpacks:jetpack_te4_armored>, <item:simplyjetpacks:unit_cryotheum>],
-    [<item:simplyjetpacks:thruster_te5>, <item:gildedarmor:gilded_netherite_chestplate>, <item:simplyjetpacks:thruster_te5>]]);
+// craftingTable.addShaped("fluxed_jetplate", <item:simplyjetpacks:jetpack_te5>, [
+//     [<tag:items:forge:plates/lumium>, <tag:items:forge:plates/lumium>, <tag:items:forge:plates/lumium>],
+//     [<item:simplyjetpacks:unit_cryotheum>, <item:simplyjetpacks:jetpack_te4_armored>, <item:simplyjetpacks:unit_cryotheum>],
+//     [<item:simplyjetpacks:thruster_te5>, <item:gildedarmor:gilded_netherite_chestplate>, <item:simplyjetpacks:thruster_te5>]]);
 
-craftingTable.addShaped("blitz_unit", <item:simplyjetpacks:unit_glowstone>, [
-    [<item:thermal:blitz_rod>, <item:simplyjetpacks:unit_glowstone_empty>, <item:thermal:blitz_rod>]]);
+// craftingTable.addShaped("blitz_unit", <item:simplyjetpacks:unit_glowstone>, [
+//     [<item:thermal:blitz_rod>, <item:simplyjetpacks:unit_glowstone_empty>, <item:thermal:blitz_rod>]]);
 
-craftingTable.addShaped("blizz_unit", <item:simplyjetpacks:unit_cryotheum>, [
-    [<item:thermal:blizz_rod>, <item:simplyjetpacks:unit_cryotheum_empty>, <item:thermal:blizz_rod>]]);
+// craftingTable.addShaped("blizz_unit", <item:simplyjetpacks:unit_cryotheum>, [
+//     [<item:thermal:blizz_rod>, <item:simplyjetpacks:unit_cryotheum_empty>, <item:thermal:blizz_rod>]]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

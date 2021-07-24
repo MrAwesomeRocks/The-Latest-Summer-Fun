@@ -17,6 +17,29 @@ onEvent("recipes", (event) => {
     event.recipes.thermal.insolator(`2x ${coral.getId()}`, coral.getId()).water(750).energy(36000);
   }
 
+  //! Moonstone
+  const moonstoneItems = [
+    // Armor
+    "helmet",
+    "chestplate",
+    "leggings",
+    "boots",
+    // Tools
+    "sword",
+    "shovel",
+    "pickaxe",
+    "axe",
+    "hoe",
+    "sickle",
+  ];
+  for (let item of moonstoneItems) {
+    event.smithing(
+      `druidcraft:moonstone_${item}`,
+      `minecraft:netherite_${item}`,
+      "druidcraft:moonstone"
+    );
+  }
+
   //! Coral Pulverizing
   // Blue corals
   const blueCorals = [

@@ -151,17 +151,17 @@ brewing.addRecipe(<item:kubejs:beer>, <tag:items:forge:crops/barley>, <item:mine
 // craftingTable.removeRecipe(<item:druidcraft:moonstone_hoe>);
 // craftingTable.removeRecipe(<item:druidcraft:moonstone_sickle>);
 
-smithing.addRecipe("moonstone_helm", <item:druidcraft:moonstone_helmet>, <item:minecraft:netherite_helmet>, <item:druidcraft:moonstone>);
-smithing.addRecipe("moonstone_chest", <item:druidcraft:moonstone_chestplate>, <item:minecraft:netherite_chestplate>, <item:druidcraft:moonstone>);
-smithing.addRecipe("moonstone_legs", <item:druidcraft:moonstone_leggings>, <item:minecraft:netherite_leggings>, <item:druidcraft:moonstone>);
-smithing.addRecipe("moonstone_boots", <item:druidcraft:moonstone_boots>, <item:minecraft:netherite_boots>, <item:druidcraft:moonstone>);
+// smithing.addRecipe("moonstone_helm", <item:druidcraft:moonstone_helmet>, <item:minecraft:netherite_helmet>, <item:druidcraft:moonstone>);
+// smithing.addRecipe("moonstone_chest", <item:druidcraft:moonstone_chestplate>, <item:minecraft:netherite_chestplate>, <item:druidcraft:moonstone>);
+// smithing.addRecipe("moonstone_legs", <item:druidcraft:moonstone_leggings>, <item:minecraft:netherite_leggings>, <item:druidcraft:moonstone>);
+// smithing.addRecipe("moonstone_boots", <item:druidcraft:moonstone_boots>, <item:minecraft:netherite_boots>, <item:druidcraft:moonstone>);
 
-smithing.addRecipe("moonstone_sword", <item:druidcraft:moonstone_sword>, <item:minecraft:diamond_sword>, <item:druidcraft:moonstone>);
-smithing.addRecipe("moonstone_shovel", <item:druidcraft:moonstone_shovel>, <item:minecraft:diamond_shovel>, <item:druidcraft:moonstone>);
-smithing.addRecipe("moonstone_pickaxe", <item:druidcraft:moonstone_pickaxe>, <item:minecraft:diamond_pickaxe>, <item:druidcraft:moonstone>);
-smithing.addRecipe("moonstone_axe", <item:druidcraft:moonstone_axe>, <item:minecraft:diamond_axe>, <item:druidcraft:moonstone>);
-smithing.addRecipe("moonstone_hoe", <item:druidcraft:moonstone_hoe>, <item:minecraft:diamond_hoe>, <item:druidcraft:moonstone>);
-smithing.addRecipe("moonstone_sickle", <item:druidcraft:moonstone_sickle>, <item:druidcraft:diamond_sickle>, <item:druidcraft:moonstone>);
+// smithing.addRecipe("moonstone_sword", <item:druidcraft:moonstone_sword>, <item:minecraft:diamond_sword>, <item:druidcraft:moonstone>);
+// smithing.addRecipe("moonstone_shovel", <item:druidcraft:moonstone_shovel>, <item:minecraft:diamond_shovel>, <item:druidcraft:moonstone>);
+// smithing.addRecipe("moonstone_pickaxe", <item:druidcraft:moonstone_pickaxe>, <item:minecraft:diamond_pickaxe>, <item:druidcraft:moonstone>);
+// smithing.addRecipe("moonstone_axe", <item:druidcraft:moonstone_axe>, <item:minecraft:diamond_axe>, <item:druidcraft:moonstone>);
+// smithing.addRecipe("moonstone_hoe", <item:druidcraft:moonstone_hoe>, <item:minecraft:diamond_hoe>, <item:druidcraft:moonstone>);
+// smithing.addRecipe("moonstone_sickle", <item:druidcraft:moonstone_sickle>, <item:druidcraft:diamond_sickle>, <item:druidcraft:moonstone>);
 
 craftingTable.removeRecipe(<item:chiselsandbits:bitsaw_netherite>);
 craftingTable.removeRecipe(<item:chiselsandbits:chisel_netherite>);

@@ -6,6 +6,26 @@
  ** See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Dye fixes
+  event.shapeless("minecraft:red_dye", "minecraft:sweet_berries");
+  event.shapeless("minecraft:red_dye", "byg:holly_berries");
+  event.shapeless("minecraft:orange_dye", "byg:crimson_berries");
+  event.shapeless("minecraft:yellow_dye", "byg:nightshade_berries");
+  event.shapeless("minecraft:purple_dye", "druidcraft:elderberries");
+
+  //! Either Blueberry Can be Used for Either Recipe
+  event.shapeless("byg:blueberry_pie", [
+    "#forge:crops/blueberries",
+    "minecraft:sugar",
+    "#forge:eggs",
+  ]);
+  event.shapeless("druidcraft:blueberry_muffin", [
+    "#forge:crops/blueberries",
+    "minecraft:sugar",
+    "#forge:eggs",
+    "#forge:crops/wheat",
+  ]);
+
   //! Jelly torches
   const torchColors = ["pink", "purple", "blue", "green", "yellow", "orange", "red", "white"];
   for (let color of torchColors) {
@@ -151,7 +171,7 @@ onEvent("recipes", (event) => {
     "minecraft:bread",
     "kubejs:peanut_butter",
     "kubejs:jelly",
-  ]);                       
+  ]);
   // BLT Sandwich
   event.shapeless("kubejs:sandwich_blt", [
     "minecraft:bread",

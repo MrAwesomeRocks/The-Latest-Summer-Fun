@@ -163,11 +163,11 @@ brewing.addRecipe(<item:kubejs:beer>, <tag:items:forge:crops/barley>, <item:mine
 // smithing.addRecipe("moonstone_hoe", <item:druidcraft:moonstone_hoe>, <item:minecraft:diamond_hoe>, <item:druidcraft:moonstone>);
 // smithing.addRecipe("moonstone_sickle", <item:druidcraft:moonstone_sickle>, <item:druidcraft:diamond_sickle>, <item:druidcraft:moonstone>);
 
-craftingTable.removeRecipe(<item:chiselsandbits:bitsaw_netherite>);
-craftingTable.removeRecipe(<item:chiselsandbits:chisel_netherite>);
+// craftingTable.removeRecipe(<item:chiselsandbits:bitsaw_netherite>);
+// craftingTable.removeRecipe(<item:chiselsandbits:chisel_netherite>);
 
-smithing.addRecipe("netherite_saw", <item:chiselsandbits:bitsaw_netherite>, <item:minecraft:netherite_ingot>, <item:chiselsandbits:bitsaw_diamond>);
-smithing.addRecipe("netherite_chisel", <item:chiselsandbits:chisel_netherite>, <item:minecraft:netherite_ingot>, <item:chiselsandbits:chisel_diamond>);
+// smithing.addRecipe("netherite_saw", <item:chiselsandbits:bitsaw_netherite>, <item:minecraft:netherite_ingot>, <item:chiselsandbits:bitsaw_diamond>);
+// smithing.addRecipe("netherite_chisel", <item:chiselsandbits:chisel_netherite>, <item:minecraft:netherite_ingot>, <item:chiselsandbits:chisel_diamond>);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

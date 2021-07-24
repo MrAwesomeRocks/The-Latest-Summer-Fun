@@ -17,6 +17,19 @@ onEvent("recipes", (event) => {
     event.recipes.thermal.insolator(`2x ${coral.getId()}`, coral.getId()).water(750).energy(36000);
   }
 
+  //! C&B Smiting
+  // Bitsaw
+  event.smiting(
+    "chiselsandbits:bitsaw_netherite",
+    "chiselsandbits:bitsaw_diamond",
+    "minecraft:netherite_ingot"
+  );
+  event.smiting(
+    "chiselsandbits:chisel_netherite",
+    "chiselsandbits:chisel_diamond",
+    "minecraft:netherite_ingot"
+  );
+
   //! Moonstone
   const moonstoneItems = [
     // Armor
@@ -30,7 +43,6 @@ onEvent("recipes", (event) => {
     "pickaxe",
     "axe",
     "hoe",
-    "sickle",
   ];
   for (let item of moonstoneItems) {
     event.smithing(
@@ -39,6 +51,7 @@ onEvent("recipes", (event) => {
       "druidcraft:moonstone"
     );
   }
+  event.smiting("druidcraft:moonstone_sickle", "druidcraft:diamond_sickle", "druidcraft:moonstone");
 
   //! Coral Pulverizing
   // Blue corals

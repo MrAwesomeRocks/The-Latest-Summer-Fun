@@ -55,6 +55,10 @@ onEvent("recipes", (event) => {
     // Blueberries
     "byg:blueberry_pie",
     "druidcraft:blueberry_muffin",
+
+    // Chisels and bits stuff
+    "chiselsandbits:bitsaw_netherite",
+    "chiselsandbits:chisel_netherite"
   ];
   for (let item of removeForRecipe) {
     event.remove({ output: item });

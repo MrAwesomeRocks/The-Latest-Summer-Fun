@@ -322,10 +322,10 @@ craftingTable.addShapeless("upgrade_energy_elite_ultimate", <item:refinedpipes:u
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 // craftingTable.removeByName("immersiveengineering:crafting/concrete2");
 
-craftingTable.addShaped("thermal_ie_oncrete", <item:immersiveengineering:concrete> * 12, [
-    [<item:thermal:slag>, <item:minecraft:clay_ball>, <item:thermal:slag>],
-    [<item:minecraft:gravel>, <item:minecraft:water_bucket>, <item:minecraft:gravel>],
-    [<item:thermal:slag>, <item:minecraft:clay_ball>, <item:thermal:slag>]]);
+// craftingTable.addShaped("thermal_ie_oncrete", <item:immersiveengineering:concrete> * 12, [
+//     [<item:thermal:slag>, <item:minecraft:clay_ball>, <item:thermal:slag>],
+//     [<item:minecraft:gravel>, <item:minecraft:water_bucket>, <item:minecraft:gravel>],
+//     [<item:thermal:slag>, <item:minecraft:clay_ball>, <item:thermal:slag>]]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

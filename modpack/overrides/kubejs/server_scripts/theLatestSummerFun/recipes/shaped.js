@@ -6,13 +6,25 @@
  ** See L24 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! C O N C R E T E
+  event.shaped("12x immersiveengineering:concrete", [
+    "SCS",
+    "GWG",
+    "SCS"
+  ], {
+    S: "#forge:slag",
+    C: "#forge:clay",
+    G: "#forge:gravel",
+    W: "minecraft:water_bucket"
+  });
+
   //! Click machine
   event.shaped("clickmachine:auto_clicker", [
     "OIO",
     "IDI",
     "OIO"
   ], {
-    O: "minecraft:obsidian",
+    O: "#forge:obsidian",
     I: "#forge:ingots/invar",
     D: "minecraft:dispenser"
   });

@@ -10,6 +10,10 @@
  ** See https://mods.latvian.dev/books/kubejs/page/tageventjs for more info.
  */
 onEvent("item.tags", (event) => {
+  // Fix niter
+  event.add("#forge:ores/niter", "emendatusenigmatica:potassium_nitrate_ore");
+  event.add("#forge:ores/saltpeter", "emendatusenigmatica:potassium_nitrate_ore");
+
   // Jelly/Jam tags
   event.add("forge:jelly_or_jam", ["kubejs:jelly", "upgrade_aquatic:mulberry_jam_bottle"]);
 

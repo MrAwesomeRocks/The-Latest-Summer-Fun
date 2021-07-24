@@ -6,6 +6,10 @@
  ** See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Carapace and chitin
+  event.shapeless("druidcraft:chitin", "4x mysticalworld:carapace");
+  event.shapeless("4x mysticalworld:carapace", "druidcraft:chitin");
+
   //! Alternate Wood Crafting: Blame Quark
   // Modded to vanilla chests
   event.shapeless("minecraft:chest", "#forge:chests/wooden");

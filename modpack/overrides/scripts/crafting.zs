@@ -352,11 +352,11 @@ craftingTable.addShapeless("upgrade_energy_elite_ultimate", <item:refinedpipes:u
 
 // Crafting Carapace into Chitin, because why not...
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-craftingTable.addShaped("carapace_to_chitin", <item:druidcraft:chitin>, [
-    [<item:mysticalworld:carapace>, <item:mysticalworld:carapace>],
-    [<item:mysticalworld:carapace>, <item:mysticalworld:carapace>]]);
+// craftingTable.addShaped("carapace_to_chitin", <item:druidcraft:chitin>, [
+//     [<item:mysticalworld:carapace>, <item:mysticalworld:carapace>],
+//     [<item:mysticalworld:carapace>, <item:mysticalworld:carapace>]]);
 
-craftingTable.addShapeless("chitin_to_carapace", <item:mysticalworld:carapace> * 4, [<item:druidcraft:chitin>]);
+// craftingTable.addShapeless("chitin_to_carapace", <item:mysticalworld:carapace> * 4, [<item:druidcraft:chitin>]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

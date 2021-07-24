@@ -183,42 +183,42 @@ brewing.addRecipe(<item:kubejs:beer>, <tag:items:forge:crops/barley>, <item:mine
 // craftingTable.removeRecipe(<item:simplyjetpacks:jetpack_vanilla3>);
 // craftingTable.removeRecipe(<item:simplyjetpacks:jetpack_vanilla4>);
 
-craftingTable.addShaped("iron_thruster", <item:simplyjetpacks:thruster_vanilla1>, [
-    [<item:minecraft:air>, <item:minecraft:iron_ingot>, <item:minecraft:air>],
-    [<item:minecraft:iron_ingot>, <item:minecraft:furnace>, <item:minecraft:iron_ingot>],
-    [<item:minecraft:iron_ingot>, <item:quark:bottled_cloud>, <item:minecraft:iron_ingot>]]);
+// craftingTable.addShaped("iron_thruster", <item:simplyjetpacks:thruster_vanilla1>, [
+//     [<item:minecraft:air>, <item:minecraft:iron_ingot>, <item:minecraft:air>],
+//     [<item:minecraft:iron_ingot>, <item:minecraft:furnace>, <item:minecraft:iron_ingot>],
+//     [<item:minecraft:iron_ingot>, <item:quark:bottled_cloud>, <item:minecraft:iron_ingot>]]);
 
-craftingTable.addShaped("gold_thruster", <item:simplyjetpacks:thruster_vanilla2>, [
-    [<item:minecraft:air>, <item:minecraft:gold_ingot>, <item:minecraft:air>],
-    [<item:minecraft:gold_ingot>, <item:minecraft:furnace>, <item:minecraft:gold_ingot>],
-    [<item:minecraft:gold_ingot>, <item:minecraft:blaze_powder>, <item:minecraft:gold_ingot>]]);
+// craftingTable.addShaped("gold_thruster", <item:simplyjetpacks:thruster_vanilla2>, [
+//     [<item:minecraft:air>, <item:minecraft:gold_ingot>, <item:minecraft:air>],
+//     [<item:minecraft:gold_ingot>, <item:minecraft:furnace>, <item:minecraft:gold_ingot>],
+//     [<item:minecraft:gold_ingot>, <item:minecraft:blaze_powder>, <item:minecraft:gold_ingot>]]);
 
-craftingTable.addShaped("diamond_thruster", <item:simplyjetpacks:thruster_vanilla3>, [
-    [<item:minecraft:air>, <item:minecraft:diamond>, <item:minecraft:air>],
-    [<item:minecraft:diamond>, <item:minecraft:furnace>, <item:minecraft:diamond>],
-    [<item:minecraft:diamond>, <item:quark:soul_bead>, <item:minecraft:diamond>]]);
+// craftingTable.addShaped("diamond_thruster", <item:simplyjetpacks:thruster_vanilla3>, [
+//     [<item:minecraft:air>, <item:minecraft:diamond>, <item:minecraft:air>],
+//     [<item:minecraft:diamond>, <item:minecraft:furnace>, <item:minecraft:diamond>],
+//     [<item:minecraft:diamond>, <item:quark:soul_bead>, <item:minecraft:diamond>]]);
 
-smithing.addRecipe("netherite_thruster", <item:simplyjetpacks:thruster_vanilla4>, <item:simplyjetpacks:thruster_vanilla3>, <item:minecraft:netherite_ingot>);
+// smithing.addRecipe("netherite_thruster", <item:simplyjetpacks:thruster_vanilla4>, <item:simplyjetpacks:thruster_vanilla3>, <item:minecraft:netherite_ingot>);
 
-craftingTable.addShaped("iron_jetpack", <item:simplyjetpacks:jetpack_vanilla1>, [
-    [<item:minecraft:iron_ingot>, <item:thermal:rf_coil>, <item:minecraft:iron_ingot>],
-    [<item:minecraft:iron_ingot>, <item:simplyjetpacks:leather_strap>, <item:minecraft:iron_ingot>],
-    [<item:simplyjetpacks:thruster_vanilla1>, <item:minecraft:air>, <item:simplyjetpacks:thruster_vanilla1>]]);
+// craftingTable.addShaped("iron_jetpack", <item:simplyjetpacks:jetpack_vanilla1>, [
+//     [<item:minecraft:iron_ingot>, <item:thermal:rf_coil>, <item:minecraft:iron_ingot>],
+//     [<item:minecraft:iron_ingot>, <item:simplyjetpacks:leather_strap>, <item:minecraft:iron_ingot>],
+//     [<item:simplyjetpacks:thruster_vanilla1>, <item:minecraft:air>, <item:simplyjetpacks:thruster_vanilla1>]]);
 
-craftingTable.addShaped("gold_jetpack", <item:simplyjetpacks:jetpack_vanilla2>, [
-    [<item:minecraft:gold_ingot>, <item:quark:redstone_inductor>, <item:minecraft:gold_ingot>],
-    [<item:minecraft:gold_ingot>, <item:simplyjetpacks:jetpack_vanilla1>, <item:minecraft:gold_ingot>],
-    [<item:simplyjetpacks:thruster_vanilla2>, <item:minecraft:air>, <item:simplyjetpacks:thruster_vanilla2>]]);
+// craftingTable.addShaped("gold_jetpack", <item:simplyjetpacks:jetpack_vanilla2>, [
+//     [<item:minecraft:gold_ingot>, <item:quark:redstone_inductor>, <item:minecraft:gold_ingot>],
+//     [<item:minecraft:gold_ingot>, <item:simplyjetpacks:jetpack_vanilla1>, <item:minecraft:gold_ingot>],
+//     [<item:simplyjetpacks:thruster_vanilla2>, <item:minecraft:air>, <item:simplyjetpacks:thruster_vanilla2>]]);
 
-craftingTable.addShaped("diamond_jetpack", <item:simplyjetpacks:jetpack_vanilla3>, [
-    [<item:minecraft:diamond>, <item:minecraft:comparator>, <item:minecraft:diamond>],
-    [<item:minecraft:diamond>, <item:simplyjetpacks:jetpack_vanilla2>, <item:minecraft:diamond>],
-    [<item:simplyjetpacks:thruster_vanilla3>, <item:minecraft:air>, <item:simplyjetpacks:thruster_vanilla3>]]);
+// craftingTable.addShaped("diamond_jetpack", <item:simplyjetpacks:jetpack_vanilla3>, [
+//     [<item:minecraft:diamond>, <item:minecraft:comparator>, <item:minecraft:diamond>],
+//     [<item:minecraft:diamond>, <item:simplyjetpacks:jetpack_vanilla2>, <item:minecraft:diamond>],
+//     [<item:simplyjetpacks:thruster_vanilla3>, <item:minecraft:air>, <item:simplyjetpacks:thruster_vanilla3>]]);
 
-craftingTable.addShaped("netherite_jetpack", <item:simplyjetpacks:jetpack_vanilla4>, [
-    [<item:minecraft:netherite_scrap>, <item:minecraft:redstone_block>, <item:minecraft:netherite_scrap>],
-    [<item:minecraft:netherite_scrap>, <item:simplyjetpacks:jetpack_vanilla3>, <item:minecraft:netherite_scrap>],
-    [<item:simplyjetpacks:thruster_vanilla4>, <item:minecraft:air>, <item:simplyjetpacks:thruster_vanilla4>]]);
+// craftingTable.addShaped("netherite_jetpack", <item:simplyjetpacks:jetpack_vanilla4>, [
+//     [<item:minecraft:netherite_scrap>, <item:minecraft:redstone_block>, <item:minecraft:netherite_scrap>],
+//     [<item:minecraft:netherite_scrap>, <item:simplyjetpacks:jetpack_vanilla3>, <item:minecraft:netherite_scrap>],
+//     [<item:simplyjetpacks:thruster_vanilla4>, <item:minecraft:air>, <item:simplyjetpacks:thruster_vanilla4>]]);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

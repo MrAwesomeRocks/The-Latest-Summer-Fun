@@ -9,6 +9,14 @@
  ** See L36 of  https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Vanilla jetpack recipes
+  // Netherite Thruster
+  event.smiting(
+    "simplyjetpacks:thruster_vanilla4",
+    "simplyjetpacks:thruster_vanilla3",
+    "minecraft:netherite_ingot"
+  );
+
   //! Coral growing
   const corals = Ingredient.of(/^(byg|upgrade_aquatic):(?!dead).+_coral(|_fan|_shower)$/)
     .getStacks()

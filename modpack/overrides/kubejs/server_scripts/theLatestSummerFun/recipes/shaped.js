@@ -17,7 +17,89 @@ onEvent("recipes", (event) => {
     D: "minecraft:dispenser"
   });
 
-  //! SimplyJetpacks recipes
+  //! Vanilla jetpack recipes
+  //** Iron
+  // Iron thruster
+  event.shaped("simplyjetpacks:thruster_vanilla1", [
+    " I ",
+    "IFI",
+    "ICI"
+  ], {
+    I: "#forge:ingots/iron",
+    F: "minecraft:furnace",
+    C: "quark:bottled_cloud"
+  });
+  // Iron jetpack
+  event.shaped("simplyjetpacks:jetpack_vanilla1", [
+    "ICI",
+    "ISI",
+    "T T"
+  ], {
+    I: "#forge:ingots/iron",
+    C: "thermal:rf_coil",
+    S: "simplyjetpacks:leather_strap",
+    T: "simplyjetpacks:thruster_vanilla1"
+  });
+  //** Gold
+  // Gold thruster
+  event.shaped("simplyjetpacks:thruster_vanilla2", [
+    " G ",
+    "GFG",
+    "GBG"
+  ], {
+    G: "#forge:ingots/gold",
+    F: "minecraft:furnace",
+    B: "minecraft:blaze_powder"
+  });
+  // Gold jetpack
+  event.shaped("simplyjetpacks:jetpack_vanilla2", [
+    "GIG",
+    "GJG",
+    "T T"
+  ], {
+    G: "#forge:ingots/gold",
+    I: "quark:redstone_inductor",
+    J: "simplyjetpacks:jetpack_vanilla1",
+    T: "simplyjetpacks:thruster_vanilla2"
+  });
+  //** Diamond
+  // Diamond thruster
+  event.shaped("simplyjetpacks:thruster_vanilla3", [
+    " D ",
+    "DFD",
+    "DBD"
+  ], {
+    D: "#forge:gems/diamond",
+    F: "minecraft:furnace",
+    B: "quark:soul_bead"
+  });
+  // Diamond jetpack
+  event.shaped("simplyjetpacks:jetpack_vanilla3", [
+    "DCD",
+    "DJD",
+    "T T"
+  ], {
+    D: "#forge:gems/diamond",
+    C: "minecraft:comparator",
+    J: "simplyjetpacks:jetpack_vanilla2",
+    T: "simplyjetpacks:thruster_vanilla3"
+  });
+  //** Netherite
+  // Netherite thruster
+  //? See block.js
+  // Netherite jetpack
+  event.shaped("simplyjetpacks:jetpack_vanilla4", [
+    "NRN",
+    "NJN",
+    "T T"
+  ], {
+    N: "minecraft:netherite_scrap",
+    R: "#forge:storage_blocks/redstone",
+    J: "simplyjetpacks:jetpack_vanilla3",
+    T: "simplyjetpacks:thruster_vanilla4"
+  });
+
+  //! Thermal jetpack recipes
   //** Crafting components
   // Blitz Unit
   event.shaped("simplyjetpacks:unit_glowstone", [

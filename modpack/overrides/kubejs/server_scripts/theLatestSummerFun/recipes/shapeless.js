@@ -6,6 +6,35 @@
  ** See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Refined Pipes
+  const pipeTypes = ["extractor", "energy", "fluid", "item"];
+  const pipeTiers = ["basic", "improved", "advanced", "elite", "ultimate"];
+  const itemForTier = {
+    improved: "#forge:ingots/gold",
+    advanced: "#forge:gems/certus_quartz",
+    elite: "#forge:gems/emerald",
+    ultimate: "minecraft:popped_chorus_fruit",
+  };
+
+  for (let pipeType of pipeTypes) {
+    for (let i = 1; i < pipeTiers.length; i++) {
+      let oldTier = pipeTiers[i - 1];
+      let newTier = pipeTiers[i];
+
+      if (pipeType === "extractor") {
+        event.shapeless(`refinedpipes:${newTier}_extractor_attachment`, [
+          `refinedpipes:${oldTier}_extractor_attachment`,
+          itemForTier[newTier],
+        ]);
+      } else {
+        event.shapeless(`refinedpipes:${newTier}_${pipeType}_pipe`, [
+          `refinedpipes:${oldTier}_${pipeType}_pipe`,
+          itemForTier[newTier],
+        ]);
+      }
+    }
+  }
+
   //! Dye fixes
   event.shapeless("minecraft:red_dye", "minecraft:sweet_berries");
   event.shapeless("minecraft:red_dye", "byg:holly_berries");

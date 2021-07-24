@@ -7,6 +7,61 @@
  */
 onEvent("recipes", (event) => {
   //! Refined pipes
+  //$ Energy pipes
+  // Basic
+  event.shaped("6x refinedpipes:basic_energy_pipe", [
+    "III",
+    "GRG",
+    "III"
+  ], {
+    I: "#forge:ingots/iron",
+    G: "#forge:glass",
+    R: "#forge:dusts/redstone"
+  });
+  // Improved
+  event.shaped("6x refinedpipes:improved_energy_pipe", [
+    "ggg",
+    "GRG",
+    "ggg"
+  ], {
+    g: "#forge:ingots/gold",
+    G: "#forge:glass",
+    R: "#forge:dusts/redstone"
+  });
+  // Advanced
+  event.shaped("6x refinedpipes:advanced_energy_pipe", [
+    "CQC",
+    "GRG",
+    "CQC"
+  ], {
+    C: "#forge:gems/certus_quartz",
+    Q: "#forge:gems/quartz",
+    G: "#forge:glass",
+    R: "#forge:storage_blocks/redstone"
+  });
+  //$ Item pipes
+  // Advanced
+  event.shaped("6x refinedpipes:advanced_item_pipe", [
+    "CQC",
+    "GGG",
+    "CQC"
+  ], {
+    C: "#forge:gems/certus_quartz",
+    Q: "#forge:gems/quartz",
+    G: "#forge:glass",
+  });
+  //$ Fluid pipes
+  // Advanced
+  event.shaped("6x refinedpipes:advanced_item_pipe", [
+    "CQC",
+    "SGS",
+    "CQC"
+  ], {
+    C: "#forge:gems/certus_quartz",
+    Q: "#forge:gems/quartz",
+    G: "#forge:glass",
+    S: "#forge:slimeballs"
+  });
   //$ Extractors
   // Basic
   event.shaped("2x refinedpipes:basic_extractor_attachment", [
@@ -58,7 +113,6 @@ onEvent("recipes", (event) => {
     R: "#forge:dusts/redstone",
     C: "#forge:ingots/copper"
   });
-  //$
 
   //! Vanilla recipe improvements
   // Sticks

@@ -6,6 +6,17 @@
  ** See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Jelly torches
+  const torchColors = ["pink", "purple", "blue", "green", "yellow", "orange", "red", "white"];
+  for (let color of torchColors) {
+    event.shapeless(`4x upgrade_aquatic:${color}_jelly_torch`, [
+      "upgrade_aquatic:prismarine_rod",
+      "upgrade_aquatic:glowing_ink_sac",
+      "#forge:jelly_or_jam",
+      `#forge:dyes/${color}`,
+    ]);
+  }
+
   //! Carapace and chitin
   event.shapeless("druidcraft:chitin", "4x mysticalworld:carapace");
   event.shapeless("4x mysticalworld:carapace", "druidcraft:chitin");
@@ -140,7 +151,7 @@ onEvent("recipes", (event) => {
     "minecraft:bread",
     "kubejs:peanut_butter",
     "kubejs:jelly",
-  ]);
+  ]);                       
   // BLT Sandwich
   event.shapeless("kubejs:sandwich_blt", [
     "minecraft:bread",

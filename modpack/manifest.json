@@ -260,7 +260,7 @@
     },
     {
       "projectID": 237307,
-      "fileID": 3342430,
+      "fileID": 3398000,
       "required": true,
       "__meta": {
         "name": "Cosmetic Armor Reworked",
@@ -280,7 +280,7 @@
     },
     {
       "projectID": 238086,
-      "fileID": 3397256,
+      "fileID": 3398140,
       "required": true,
       "__meta": {
         "name": "KubeJS (Forge)",
@@ -293,7 +293,7 @@
     },
     {
       "projectID": 238222,
-      "fileID": 3383214,
+      "fileID": 3397912,
       "required": true,
       "__meta": {
         "name": "Just Enough Items (JEI)",
@@ -313,7 +313,7 @@
     },
     {
       "projectID": 239197,
-      "fileID": 3396159,
+      "fileID": 3398636,
       "required": true,
       "__meta": {
         "name": "CraftTweaker",
@@ -375,7 +375,7 @@
     },
     {
       "projectID": 242818,
-      "fileID": 3361747,
+      "fileID": 3398096,
       "required": true,
       "__meta": {
         "name": "CodeChicken Lib 1.8.+",
@@ -614,7 +614,7 @@
     },
     {
       "projectID": 266515,
-      "fileID": 3387732,
+      "fileID": 3399437,
       "required": true,
       "__meta": {
         "name": "Industrial Foregoing",
@@ -1696,7 +1696,7 @@
     },
     {
       "projectID": 429371,
-      "fileID": 3169448,
+      "fileID": 3398164,
       "required": true,
       "__meta": {
         "name": "KubeJS Create",

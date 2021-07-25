@@ -9,9 +9,25 @@
  ** See L36 of  https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Lapidary dynamo fuels
+  event.recipes.thermal.lapidary_fuel("druidcraft:amber").energy(20000);
+  event.recipes.thermal.lapidary_fuel("druidcraft:moonstone").energy(500000);
+  event.recipes.thermal.lapidary_fuel("botania:mana_diamond").energy(650000);
+  event.recipes.thermal.lapidary_fuel("botania:dragonstone").energy(750000);
+  event.recipes.thermal.lapidary_fuel("psi:psigem").energy(600000);
+  event.recipes.thermal.lapidary_fuel("eidolon:shadow_gem").energy(650000);
+  event.recipes.thermal.lapidary_fuel("astralsorcery:aquamarine").energy(40000);
+  event.recipes.thermal.lapidary_fuel("astralsorcery:resonating_gem").energy(50000);
+  event.recipes.thermal.lapidary_fuel("astralsorcery:rock_crystal").energy(125000);
+  event.recipes.thermal.lapidary_fuel("astralsorcery:celestial_crystal").energy(250000);
+  event.recipes.thermal.lapidary_fuel("#forge:gems/certus_quartz").energy(40000);
+  event.recipes.thermal.lapidary_fuel("#forge:gems/fluix").energy(100000);
+  event.recipes.thermal.lapidary_fuel("byg:ametrine_gems").energy(500000);
+  event.recipes.thermal.lapidary_fuel("#forge:gems/ruby").energy(1000000);
+
   //! Vanilla jetpack recipes
   // Netherite Thruster
-  event.smiting(
+  event.smithing(
     "simplyjetpacks:thruster_vanilla4",
     "simplyjetpacks:thruster_vanilla3",
     "minecraft:netherite_ingot"
@@ -59,7 +75,7 @@ onEvent("recipes", (event) => {
       "druidcraft:moonstone"
     );
   }
-  event.smiting("druidcraft:moonstone_sickle", "druidcraft:diamond_sickle", "druidcraft:moonstone");
+  event.smithing("druidcraft:moonstone_sickle", "druidcraft:diamond_sickle", "druidcraft:moonstone");
 
   //! Coral Pulverizing
   // Blue corals

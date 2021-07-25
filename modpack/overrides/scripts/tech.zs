@@ -3,26 +3,25 @@
 
 // Adding Fuels to the Lapidary Dynamo
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-<recipetype:thermal:lapidary_fuel>.addFuel("amber_fuel", <item:druidcraft:amber>, 20000);
-<recipetype:thermal:lapidary_fuel>.addFuel("moonstone_fuel", <item:druidcraft:moonstone>, 500000);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:druidcraft:amber>, 20000);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:druidcraft:moonstone>, 500000);
 
-<recipetype:thermal:lapidary_fuel>.addFuel("mana_diamond_fuel", <item:botania:mana_diamond>, 650000);
-<recipetype:thermal:lapidary_fuel>.addFuel("dragonstone_fuel", <item:botania:dragonstone>, 750000);
-<recipetype:thermal:lapidary_fuel>.addFuel("psigem_fuel", <item:psi:psigem>, 600000);
-<recipetype:thermal:lapidary_fuel>.addFuel("shadow_gem_fuel", <item:eidolon:shadow_gem>, 650000);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:botania:mana_diamond>, 650000);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:botania:dragonstone>, 750000);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:psi:psigem>, 600000);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:eidolon:shadow_gem>, 650000);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:astralsorcery:aquamarine>, 40000);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:astralsorcery:resonating_gem>, 50000);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:astralsorcery:rock_crystal>, 125000);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:astralsorcery:celestial_crystal>, 250000);
 
-<recipetype:thermal:lapidary_fuel>.addFuel("aquamarine_fuel", <item:astralsorcery:aquamarine>, 40000);
-<recipetype:thermal:lapidary_fuel>.addFuel("resonating_gem_fuel", <item:astralsorcery:resonating_gem>, 50000);
-<recipetype:thermal:lapidary_fuel>.addFuel("rock_crystal_fuel", <item:astralsorcery:rock_crystal>, 125000);
-<recipetype:thermal:lapidary_fuel>.addFuel("celestial_crystal_fuel", <item:astralsorcery:celestial_crystal>, 250000);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:appliedenergistics2:certus_quartz_crystal>, 40000);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:appliedenergistics2:fluix_crystal>, 100000);
 
-<recipetype:thermal:lapidary_fuel>.addFuel("certus_fuel", <item:appliedenergistics2:certus_quartz_crystal>, 40000);
-<recipetype:thermal:lapidary_fuel>.addFuel("fluix_fuel", <item:appliedenergistics2:fluix_crystal>, 100000);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:byg:ametrine_gems>, 500000);
 
-<recipetype:thermal:lapidary_fuel>.addFuel("ametrine_fuel", <item:byg:ametrine_gems>, 500000);
-
-<recipetype:thermal:lapidary_fuel>.removeFuel(<item:thermal:ruby>);
-<recipetype:thermal:lapidary_fuel>.addFuel("new_ruby_fuel", <item:thermal:ruby>, 1000000);
+// <recipetype:thermal:lapidary_fuel>.removeFuel(<item:thermal:ruby>);
+// <recipetype:thermal:lapidary_fuel>.addFuel("", <item:thermal:ruby>, 1000000);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

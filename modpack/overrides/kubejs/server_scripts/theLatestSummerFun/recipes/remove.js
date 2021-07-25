@@ -7,7 +7,21 @@
  ** See L11 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
-  //! Remove for new recipe
+  //! Remove dynamo fuels
+  const removeDynamo = [
+    // New ruby fuel
+    {
+      item: "thermal:ruby",
+      dynamos: ["lapidary"],
+    },
+  ];
+  for (let entry of removeDynamo) {
+    for (let dynamo of entry.dynamos) {
+      event.remove({ ingredient: entry.item, type: `thermal:${dynamo}_fuel` });
+    }
+  }
+
+  //! Remove for new recipe - removes ALL crafting recipes
   const removeForRecipe = [
     // Sands
     "byg:pink_sand",
@@ -58,7 +72,7 @@ onEvent("recipes", (event) => {
 
     // Chisels and bits stuff
     "chiselsandbits:bitsaw_netherite",
-    "chiselsandbits:chisel_netherite"
+    "chiselsandbits:chisel_netherite",
   ];
   for (let item of removeForRecipe) {
     event.remove({ output: item });

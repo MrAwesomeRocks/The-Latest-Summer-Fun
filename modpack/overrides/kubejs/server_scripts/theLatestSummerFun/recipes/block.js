@@ -9,6 +9,296 @@
  ** See L36 of  https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Ore processing
+  //$ Default processed ores: doubling + rich slag + gravel + cobblestone
+  const defaultOreProcessing = [
+    //** Druidcraft
+    {
+      input: "druidcraft:rockroot_ore",
+      grinding: {
+        primaryOutput: "druidcraft:rockroot",
+        secondaryOutput: null,
+        mutlipliers: {
+          amount: 2,
+          mainChance: 1,
+        },
+      },
+      smelting: {
+        output: "druidcraft:rockroot",
+        count: 2,
+      },
+    },
+    {
+      input: "druidcraft:amber_ore",
+      grinding: {
+        primaryOutput: "druidcraft:amber",
+        secondaryOutput: null,
+        mutlipliers: {
+          amount: 1,
+          mainChance: 1,
+        },
+      },
+      smelting: {
+        output: "druidcraft:amber",
+        count: 1,
+      },
+    },
+    {
+      input: "druidcraft:moonstone_ore",
+      grinding: {
+        primaryOutput: "druidcraft:moonstone",
+        secondaryOutput: null,
+        mutlipliers: {
+          amount: 1,
+          mainChance: 1,
+        },
+      },
+      smelting: {
+        output: "druidcraft:moonstone",
+        count: 1,
+      },
+    },
+    {
+      input: "druidcraft:fiery_glass_ore",
+      grinding: {
+        primaryOutput: "druidcraft:fiery_glass",
+        secondaryOutput: "#forge:gems/cinnabar",
+        mutlipliers: {
+          amount: 3,
+          mainChance: 1,
+        },
+      },
+      smelting: {
+        output: "druidcraft:fiery_glass",
+        count: 3,
+      },
+    },
+    //** Quark
+    {
+      input: "quark:biotite_ore",
+      grinding: {
+        primaryOutput: "quark:biotite",
+        secondaryOutput: "#forge:end_stones",
+        mutlipliers: {
+          amount: 3,
+          mainChance: 1,
+        },
+      },
+      smelting: {
+        output: "quark:biotite",
+        count: 2,
+      },
+    },
+    //** BYG Ores
+    {
+      input: "byg:pervaded_netherrack",
+      grinding: {
+        primaryOutput: "#forge:dusts/glowstone",
+        secondaryOutput: "#forge:gems/sulfur",
+        mutlipliers: {
+          amount: 3,
+          mainChance: 3,
+        },
+      },
+      smelting: {
+        output: "#forge:dusts/glowstone",
+        count: 3,
+      },
+    },
+    {
+      input: "byg:lignite_ore",
+      grinding: {
+        primaryOutput: "byg:lignite",
+        secondaryOutput: "#forge:gems/sulfur",
+        mutlipliers: {
+          amount: 3,
+          mainChance: 3,
+        },
+      },
+      smelting: {
+        output: "byg:lignite",
+        count: 4,
+      },
+    },
+    {
+      input: "byg:anthracite_ore",
+      grinding: {
+        primaryOutput: "byg:anthracite",
+        secondaryOutput: "#forge:gems/sulfur",
+        mutlipliers: {
+          amount: 1,
+          mainChance: 3,
+        },
+      },
+      smelting: {
+        output: "byg:anthracite",
+        count: 2,
+      },
+    },
+    //** AE2 Ores
+    {
+      input: "#forge:ores/certus_quartz",
+      grinding: {
+        primaryOutput: "#forge:gems/certus_quartz",
+        secondaryOutput: "#forge:dusts/certus_quartz",
+        mutlipliers: {
+          amount: 1,
+          mainChance: 1,
+        },
+      },
+      smelting: {
+        output: "#forge:gems/certus_quartz",
+        count: 1,
+      },
+    },
+    {
+      input: "#forge:ores/charged_certus_quartz",
+      grinding: {
+        primaryOutput: "#forge:gems/charged_certus_quartz",
+        secondaryOutput: "#forge:dusts/certus_quartz",
+        mutlipliers: {
+          amount: 1,
+          mainChance: 1,
+        },
+      },
+      smelting: {
+        output: "#forge:gems/charged_certus_quartz",
+        count: 1,
+      },
+    },
+    //** RFTools DimOres
+    {
+      input: "#forge:dimensional_ores",
+      grinding: {
+        primaryOutput: "rftoolsbase:dimensionalshard",
+        secondaryOutput: "rftoolsbase:dimensionalshard",
+        mutlipliers: {
+          amount: 1,
+          mainChance: 1,
+        },
+      },
+      smelting: {
+        output: "rftoolsbase:dimensionalshard",
+        count: 1,
+      },
+    },
+    //** Powah!
+    {
+      input: "powah:uraninite_ore_poor",
+      grinding: {
+        primaryOutput: "powah:uraninite_raw_poor",
+        secondaryOutput: null,
+        mutlipliers: {
+          amount: 1,
+          mainChance: 1,
+        },
+      },
+      smelting: {
+        output: "powah:uraninite",
+        count: 1,
+      },
+    },
+    {
+      input: "powah:uraninite_ore",
+      grinding: {
+        primaryOutput: "powah:uraninite_raw",
+        secondaryOutput: "powah:uraninite_raw_poor",
+        mutlipliers: {
+          amount: 1,
+          mainChance: 1,
+        },
+      },
+      smelting: {
+        output: "powah:uraninite",
+        count: 2,
+      },
+    },
+    {
+      input: "powah:uraninite_ore_dense",
+      grinding: {
+        primaryOutput: "powah:uraninite_raw_dense",
+        secondaryOutput: "powah:uraninite_raw",
+        mutlipliers: {
+          amount: 1,
+          mainChance: 1,
+        },
+      },
+      smelting: {
+        output: "powah:uraninite",
+        count: 4,
+      },
+    },
+  ];
+  for (let entry of defaultOreProcessing) {
+    //$ Grinding recipes
+    //** Setup
+    let outputAmount = 2 * entry.grinding.mutlipliers.amount;
+    let mainOutputChance = 50 * entry.grinding.mutlipliers.mainChance;
+
+    // 2 of primary at 50% chance, gravel with 20% chance
+    let pulverizerOuptuts = [
+      Item.of(entry.grinding.primaryOutput, outputAmount).withChance(mainOutputChance),
+      Item.of("#forge:gravel").withChance(20),
+    ];
+    // 25% chance of secondary cobblestone output
+    let ieCrusherSecondaries = [{ output: "#forge:cobblestone", chance: 0.25 }];
+    // 2 of primary, one more at 25% chance, and cobblestone at 12% chance
+    let createCrusherOutputs = [
+      Item.of(entry.grinding.primaryOutput, outputAmount),
+      Item.of(entry.grinding.primaryOutput, entry.grinding.mutlipliers.amount).withChance(25),
+      Item.of("#forge:cobblestone").withChance(12),
+    ];
+    if (entry.grinding.secondaryOutput) {
+      // Add secondary output if available
+      pulverizerOuptuts.push(Item.of(entry.grinding.secondaryOutput).withChance(15));
+      ieCrusherSecondaries.push({ output: entry.grinding.secondaryOutput, chance: 0.5 });
+    }
+    //** Register recipes
+    event.recipes.thermal.pulverizer(pulverizerOuptuts, entry.input).energy(4000);
+    event.recipes.immersiveengineering
+      .crusher(
+        Item.of(entry.grinding.primaryOutput, outputAmount),
+        entry.input,
+        ieCrusherSecondaries
+      )
+      .energy(6000);
+    event.recipes.create.crushing(createCrusherOutputs, entry.input);
+
+    //$ Smelting recipes
+    //** Setup
+    // Primary output at 150% chance, rich slag at 15% chance
+    let smelterOutputs = [
+      Item.of(entry.smelting.output, entry.smelting.count).withChance(150),
+      Item.of("thermal:rich_slag").withChance(15),
+    ];
+    //** Register recipes
+    event.recipes.thermal.smelter(smelterOutputs, entry.input).energy(3200);
+  }
+  //$ Other recipes
+  //** Vanilla Smelting
+  // DimShards
+  event
+    .smelting("rftoolsbase:dimensionalshard", "#forge:dimensional_ores")
+    .xp(0.5)
+    .cookingTime(200);
+  // Pendorite
+  event.smelting("byg:pendorite_scraps", "byg:pendorite_ore").xp(0.5).cookingTime(200);
+  // Amertrine
+  event.smelting("byg:ametrine_gems", "byg:ametrine_ore").xp(0.5).cookingTime(200);
+  // Anthracite
+  event.smelting("byg:anthracite", "byg:anthracite_ore").xp(0.5).cookingTime(200);
+  // Lignite
+  event.smelting("byg:lignite", "byg:lignite_ore").xp(0.5).cookingTime(200);
+  //** Create Crushing
+  event.recipes.create.crushing(
+    [
+      Item.of("#forge:dusts/redstone", 8),
+      Item.of("#forge:dusts/redstone", 4).withChance(25),
+      Item.of("byg:cryptic_stone").withChance(12),
+    ],
+    "byg:cryptic_redstone_ore"
+  );
+
   //! Melting Recipes
   event.recipes.thermal.crucible(Fluid.of("thermal:resin", 250), "druidcraft:amber").energy(2000);
 

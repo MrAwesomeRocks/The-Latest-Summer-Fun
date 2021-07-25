@@ -9,6 +9,9 @@
  ** See L36 of  https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Melting Recipes
+  event.recipes.thermal.crucible(Fluid.of("thermal:resin", 250), "druidcraft:amber").energy(2000);
+
   //! Lapidary dynamo fuels
   event.recipes.thermal.lapidary_fuel("druidcraft:amber").energy(20000);
   event.recipes.thermal.lapidary_fuel("druidcraft:moonstone").energy(500000);
@@ -75,7 +78,11 @@ onEvent("recipes", (event) => {
       "druidcraft:moonstone"
     );
   }
-  event.smithing("druidcraft:moonstone_sickle", "druidcraft:diamond_sickle", "druidcraft:moonstone");
+  event.smithing(
+    "druidcraft:moonstone_sickle",
+    "druidcraft:diamond_sickle",
+    "druidcraft:moonstone"
+  );
 
   //! Coral Pulverizing
   // Blue corals

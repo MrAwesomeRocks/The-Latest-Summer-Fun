@@ -27,7 +27,7 @@
 
 // Melting Recipes
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-<recipetype:thermal:crucible>.addRecipe("amber_melting", <fluid:thermal:resin> * 250, <item:druidcraft:amber>, 2000);
+// <recipetype:thermal:crucible>.addRecipe("amber_melting", <fluid:thermal:resin> * 250, <item:druidcraft:amber>, 2000);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

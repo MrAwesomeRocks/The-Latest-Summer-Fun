@@ -11,8 +11,8 @@
  */
 onEvent("item.tags", (event) => {
   // Fix niter
-  event.add("#forge:ores/niter", "emendatusenigmatica:potassium_nitrate_ore");
-  event.add("#forge:ores/saltpeter", "emendatusenigmatica:potassium_nitrate_ore");
+  event.add("forge:ores/niter", "emendatusenigmatica:potassium_nitrate_ore");
+  event.add("forge:ores/saltpeter", "emendatusenigmatica:potassium_nitrate_ore");
 
   // Jelly/Jam tags
   event.add("forge:jelly_or_jam", ["kubejs:jelly", "upgrade_aquatic:mulberry_jam_bottle"]);
@@ -53,7 +53,18 @@ onEvent("item.tags", (event) => {
 
   //$ Planks
   // Non-vanilla
-  event.add("forge:non_vanilla_planks", "#minecraft:planks").remove(/minecraft:.*_planks/);
+  event
+    .add("forge:non_vanilla_planks", "#minecraft:planks")
+    .remove([
+      "minecraft:oak_planks",
+      "minecraft:spruce_planks",
+      "minecraft:birch_planks",
+      "minecraft:jungle_planks",
+      "minecraft:acacia_planks",
+      "minecraft:dark_oak_planks",
+      "minecraft:crimson_planks",
+      "minecraft:warped_planks",
+    ]);
 
   // BYG Planks
   event.add("forge:only_byg_planks", /byg:.*_planks/);

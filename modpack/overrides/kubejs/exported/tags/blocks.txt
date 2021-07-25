@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jun 30, 2021, 11:41:13 AM
+To refresh this file, delete it and run /reload command again! Last updated: Jul 25, 2021, 6:09:57 PM
 
 #byg:pine_logs
 - byg:pine_log
@@ -471,7 +471,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - chisel:sandstone/extra/bevel_creeper
 - chisel:sandstone/extra/glyphs
 - chisel:sandstone/extra/small
-- #forge:sandstone?
+- forge:sandstone?
 
 #chisel:planks/jungle
 - chisel:planks/jungle/large_planks
@@ -717,12 +717,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 
 #forge:storage_blocks/copper
 - tmechworks:copper_block
-- create:copper_block
 - mysticalworld:copper_block
 - thermal:copper_block
 - tconstruct:copper_block
 - immersiveengineering:storage_copper
 - emendatusenigmatica:copper_block
+- create:copper_block
 
 #forge:glass_panes/colorless
 - minecraft:glass_pane
@@ -998,7 +998,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - chisel:metals/aluminum/badgreggy
 - chisel:metals/aluminum/bolted
 - chisel:metals/aluminum/scaffold
-- #forge:storage_blocks/aluminum?
+- forge:storage_blocks/aluminum?
 
 #minecraft:infiniburn_overworld
 - minecraft:netherrack
@@ -1426,6 +1426,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - create:sail_frame
 - #minecraft:fences
 - minecraft:iron_bars
+- minecraft:campfire
+- minecraft:soul_campfire
 
 #chisel:concrete/blue
 - chisel:concrete/blue/cracked
@@ -1478,6 +1480,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - chisel:emerald/masonryemerald
 - chisel:emerald/emeraldcircle
 - chisel:emerald/emeraldprismatic
+- minecraft:beacon_base_blocks?
 
 #forge:wool
 - #forge:wool/white
@@ -1581,7 +1584,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - chisel:marble/twisted
 - chisel:marble/prism
 - chisel:marble/cuts
-- #forge:stone/marble?
+- forge:stone/marble?
 
 #twilightforest:fire_jet_fuel
 - minecraft:lava
@@ -1808,48 +1811,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - botania:mossy_livingrock_bricks_wall
 - eidolon:smooth_stone_bricks_wall
 - druidcraft:dry_mud_brick_wall
-- create:granite_cobblestone_wall
-- create:granite_bricks_wall
-- create:fancy_granite_bricks_wall
-- create:paved_granite_wall
-- create:diorite_cobblestone_wall
-- create:diorite_bricks_wall
-- create:fancy_diorite_bricks_wall
-- create:paved_diorite_wall
-- create:andesite_cobblestone_wall
-- create:andesite_bricks_wall
-- create:fancy_andesite_bricks_wall
-- create:paved_andesite_wall
-- create:limestone_cobblestone_wall
-- create:polished_limestone_wall
-- create:limestone_bricks_wall
-- create:fancy_limestone_bricks_wall
-- create:paved_limestone_wall
-- create:weathered_limestone_cobblestone_wall
-- create:polished_weathered_limestone_wall
-- create:weathered_limestone_bricks_wall
-- create:fancy_weathered_limestone_bricks_wall
-- create:paved_weathered_limestone_wall
-- create:dolomite_cobblestone_wall
-- create:polished_dolomite_wall
-- create:dolomite_bricks_wall
-- create:fancy_dolomite_bricks_wall
-- create:paved_dolomite_wall
-- create:gabbro_cobblestone_wall
-- create:polished_gabbro_wall
-- create:gabbro_bricks_wall
-- create:fancy_gabbro_bricks_wall
-- create:paved_gabbro_wall
-- create:scoria_cobblestone_wall
-- create:polished_scoria_wall
-- create:scoria_bricks_wall
-- create:fancy_scoria_bricks_wall
-- create:paved_scoria_wall
-- create:dark_scoria_cobblestone_wall
-- create:polished_dark_scoria_wall
-- create:dark_scoria_bricks_wall
-- create:fancy_dark_scoria_bricks_wall
-- create:paved_dark_scoria_wall
 - mysticalworld:thatch_wall
 - mysticalworld:red_mushroom_wall
 - mysticalworld:brown_mushroom_wall
@@ -1915,6 +1876,48 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - appliedenergistics2:quartz_wall
 - appliedenergistics2:chiseled_quartz_wall
 - appliedenergistics2:quartz_pillar_wall
+- create:granite_cobblestone_wall
+- create:granite_bricks_wall
+- create:fancy_granite_bricks_wall
+- create:paved_granite_wall
+- create:diorite_cobblestone_wall
+- create:diorite_bricks_wall
+- create:fancy_diorite_bricks_wall
+- create:paved_diorite_wall
+- create:andesite_cobblestone_wall
+- create:andesite_bricks_wall
+- create:fancy_andesite_bricks_wall
+- create:paved_andesite_wall
+- create:limestone_cobblestone_wall
+- create:polished_limestone_wall
+- create:limestone_bricks_wall
+- create:fancy_limestone_bricks_wall
+- create:paved_limestone_wall
+- create:weathered_limestone_cobblestone_wall
+- create:polished_weathered_limestone_wall
+- create:weathered_limestone_bricks_wall
+- create:fancy_weathered_limestone_bricks_wall
+- create:paved_weathered_limestone_wall
+- create:dolomite_cobblestone_wall
+- create:polished_dolomite_wall
+- create:dolomite_bricks_wall
+- create:fancy_dolomite_bricks_wall
+- create:paved_dolomite_wall
+- create:gabbro_cobblestone_wall
+- create:polished_gabbro_wall
+- create:gabbro_bricks_wall
+- create:fancy_gabbro_bricks_wall
+- create:paved_gabbro_wall
+- create:scoria_cobblestone_wall
+- create:polished_scoria_wall
+- create:scoria_bricks_wall
+- create:fancy_scoria_bricks_wall
+- create:paved_scoria_wall
+- create:dark_scoria_cobblestone_wall
+- create:polished_dark_scoria_wall
+- create:dark_scoria_bricks_wall
+- create:fancy_dark_scoria_bricks_wall
+- create:paved_dark_scoria_wall
 - quark:andesite_bricks_wall
 - quark:basalt_bricks_wall
 - quark:basalt_wall
@@ -1924,7 +1927,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:brimstone_wall
 - quark:charred_nether_bricks_wall
 - quark:cobbedstone_wall
+- quark:cobbled_deepslate_wall
 - quark:cobblestone_bricks_wall
+- quark:deepslate_bricks_wall
+- quark:deepslate_tiles_wall
 - quark:diorite_bricks_wall
 - quark:dirt_bricks_wall
 - quark:elder_prismarine_wall
@@ -1942,11 +1948,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:netherrack_bricks_wall
 - quark:permafrost_bricks_wall
 - quark:permafrost_wall
+- quark:polished_deepslate_wall
 - quark:red_sandstone_bricks_wall
 - quark:sandstone_bricks_wall
 - quark:sandy_bricks_wall
 - quark:slate_bricks_wall
 - quark:slate_wall
+- quark:smooth_basalt_wall
 - quark:snow_bricks_wall
 - quark:soul_sandstone_bricks_wall
 - quark:soul_sandstone_wall
@@ -1983,11 +1991,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - #tconstruct:greenheart_logs
 - #tconstruct:skyroot_logs
 - #tconstruct:bloodshroom_logs
-- tconstruct:earth_congealed_slime
-- tconstruct:sky_congealed_slime
-- tconstruct:ichor_congealed_slime
-- tconstruct:ender_congealed_slime
-- tconstruct:blood_congealed_slime
 
 #byg:ground_red_cornflower
 - #forge:dirt
@@ -2074,6 +2077,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 #twilightforest:storage_blocks/fiery
 - twilightforest:fiery_block
 
+#forge:fences/aluminum
+- immersiveengineering:alu_fence
+
 #chisel:wool/light_blue
 - chisel:wool/light_blue/legacy
 - chisel:wool/light_blue/llama
@@ -2106,19 +2112,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - botania:mana_glass
 - botania:bifrost
 - botania:bifrost_perm
-- create:tiled_glass
-- create:framed_glass
-- create:horizontal_framed_glass
-- create:vertical_framed_glass
-- create:oak_window
-- create:spruce_window
-- create:birch_window
-- create:jungle_window
-- create:acacia_window
-- create:dark_oak_window
-- create:crimson_window
-- create:warped_window
-- create:ornate_iron_window
 - tconstruct:clear_glass
 - tconstruct:soul_glass
 - tconstruct:seared_glass
@@ -2138,6 +2131,19 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - tconstruct:green_clear_stained_glass
 - tconstruct:red_clear_stained_glass
 - tconstruct:black_clear_stained_glass
+- create:tiled_glass
+- create:framed_glass
+- create:horizontal_framed_glass
+- create:vertical_framed_glass
+- create:oak_window
+- create:spruce_window
+- create:birch_window
+- create:jungle_window
+- create:acacia_window
+- create:dark_oak_window
+- create:crimson_window
+- create:warped_window
+- create:ornate_iron_window
 - quark:dirty_glass
 - quark:framed_glass
 - quark:black_framed_glass
@@ -2319,9 +2325,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - eidolon:arcane_gold_block
 - #forge:storage_blocks/amber
 - #forge:storage_blocks/moonstone
-- create:copper_block
-- create:zinc_block
-- create:brass_block
 - #forge:storage_blocks/amethyst
 - #forge:storage_blocks/copper
 - #forge:storage_blocks/lead
@@ -2416,6 +2419,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - emendatusenigmatica:signalum_block
 - emendatusenigmatica:lumium_block
 - emendatusenigmatica:enderium_block
+- create:copper_block
+- create:zinc_block
+- create:brass_block
 - #forge:storage_blocks/biotite
 - #forge:storage_blocks/charcoal
 - byg:ametrine_block
@@ -3002,48 +3008,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - druidcraft:darkwood_stairs
 - druidcraft:elder_stairs
 - druidcraft:dry_mud_brick_stairs
-- create:granite_cobblestone_stairs
-- create:granite_bricks_stairs
-- create:fancy_granite_bricks_stairs
-- create:paved_granite_stairs
-- create:diorite_cobblestone_stairs
-- create:diorite_bricks_stairs
-- create:fancy_diorite_bricks_stairs
-- create:paved_diorite_stairs
-- create:andesite_cobblestone_stairs
-- create:andesite_bricks_stairs
-- create:fancy_andesite_bricks_stairs
-- create:paved_andesite_stairs
-- create:limestone_cobblestone_stairs
-- create:polished_limestone_stairs
-- create:limestone_bricks_stairs
-- create:fancy_limestone_bricks_stairs
-- create:paved_limestone_stairs
-- create:weathered_limestone_cobblestone_stairs
-- create:polished_weathered_limestone_stairs
-- create:weathered_limestone_bricks_stairs
-- create:fancy_weathered_limestone_bricks_stairs
-- create:paved_weathered_limestone_stairs
-- create:dolomite_cobblestone_stairs
-- create:polished_dolomite_stairs
-- create:dolomite_bricks_stairs
-- create:fancy_dolomite_bricks_stairs
-- create:paved_dolomite_stairs
-- create:gabbro_cobblestone_stairs
-- create:polished_gabbro_stairs
-- create:gabbro_bricks_stairs
-- create:fancy_gabbro_bricks_stairs
-- create:paved_gabbro_stairs
-- create:scoria_cobblestone_stairs
-- create:polished_scoria_stairs
-- create:scoria_bricks_stairs
-- create:fancy_scoria_bricks_stairs
-- create:paved_scoria_stairs
-- create:dark_scoria_cobblestone_stairs
-- create:polished_dark_scoria_stairs
-- create:dark_scoria_bricks_stairs
-- create:fancy_dark_scoria_bricks_stairs
-- create:paved_dark_scoria_stairs
 - mysticalworld:thatch_stairs
 - mysticalworld:red_mushroom_stairs
 - mysticalworld:brown_mushroom_stairs
@@ -3098,6 +3062,48 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - upgrade_aquatic:prismarine_coralstone_stairs
 - upgrade_aquatic:dead_coralstone_stairs
 - upgrade_aquatic:beachgrass_thatch_stairs
+- create:granite_cobblestone_stairs
+- create:granite_bricks_stairs
+- create:fancy_granite_bricks_stairs
+- create:paved_granite_stairs
+- create:diorite_cobblestone_stairs
+- create:diorite_bricks_stairs
+- create:fancy_diorite_bricks_stairs
+- create:paved_diorite_stairs
+- create:andesite_cobblestone_stairs
+- create:andesite_bricks_stairs
+- create:fancy_andesite_bricks_stairs
+- create:paved_andesite_stairs
+- create:limestone_cobblestone_stairs
+- create:polished_limestone_stairs
+- create:limestone_bricks_stairs
+- create:fancy_limestone_bricks_stairs
+- create:paved_limestone_stairs
+- create:weathered_limestone_cobblestone_stairs
+- create:polished_weathered_limestone_stairs
+- create:weathered_limestone_bricks_stairs
+- create:fancy_weathered_limestone_bricks_stairs
+- create:paved_weathered_limestone_stairs
+- create:dolomite_cobblestone_stairs
+- create:polished_dolomite_stairs
+- create:dolomite_bricks_stairs
+- create:fancy_dolomite_bricks_stairs
+- create:paved_dolomite_stairs
+- create:gabbro_cobblestone_stairs
+- create:polished_gabbro_stairs
+- create:gabbro_bricks_stairs
+- create:fancy_gabbro_bricks_stairs
+- create:paved_gabbro_stairs
+- create:scoria_cobblestone_stairs
+- create:polished_scoria_stairs
+- create:scoria_bricks_stairs
+- create:fancy_scoria_bricks_stairs
+- create:paved_scoria_stairs
+- create:dark_scoria_cobblestone_stairs
+- create:polished_dark_scoria_stairs
+- create:dark_scoria_bricks_stairs
+- create:fancy_dark_scoria_bricks_stairs
+- create:paved_dark_scoria_stairs
 - quark:andesite_bricks_stairs
 - quark:basalt_bricks_stairs
 - quark:basalt_stairs
@@ -3114,10 +3120,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:brown_stained_planks_stairs
 - quark:charred_nether_bricks_stairs
 - quark:cobbedstone_stairs
+- quark:cobbled_deepslate_stairs
 - quark:cobblestone_bricks_stairs
 - quark:cyan_shingles_stairs
 - quark:cyan_stained_planks_stairs
 - quark:dark_elder_prismarine_stairs
+- quark:deepslate_bricks_stairs
+- quark:deepslate_tiles_stairs
 - quark:diorite_bricks_stairs
 - quark:dirt_bricks_stairs
 - quark:duskbound_block_stairs
@@ -3156,6 +3165,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:pink_shingles_stairs
 - quark:pink_stained_planks_stairs
 - quark:polished_basalt_stairs
+- quark:polished_deepslate_stairs
 - quark:polished_jasper_stairs
 - quark:polished_limestone_stairs
 - quark:polished_marble_stairs
@@ -3172,6 +3182,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:shingles_stairs
 - quark:slate_bricks_stairs
 - quark:slate_stairs
+- quark:smooth_basalt_stairs
 - quark:smooth_biotite_stairs
 - quark:smooth_soul_sandstone_stairs
 - quark:snow_bricks_stairs
@@ -3276,7 +3287,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - mysticalworld:charred_log
 - mysticalworld:stripped_charred_wood
 - mysticalworld:stripped_charred_log
-- #tconstruct:bloodshroom_logs
+- #tconstruct:slimy_logs
 - #byg:aspen_logs
 - #byg:baobab_logs
 - #byg:blue_enchanted_logs
@@ -3470,7 +3481,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - chisel:redstone/pillar
 - chisel:redstone/twisted
 - chisel:redstone/prism
-- #forge:storage_blocks/redstone?
+- forge:storage_blocks/redstone?
 
 #quark:wraith_spawnable
 - minecraft:soul_sand
@@ -3758,6 +3769,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:brown_stained_planks_vertical_slab
 - quark:charred_nether_bricks_vertical_slab
 - quark:cobbedstone_vertical_slab
+- quark:cobbled_deepslate_vertical_slab
 - quark:cobblestone_bricks_vertical_slab
 - quark:cobblestone_vertical_slab
 - quark:crimson_vertical_slab
@@ -3769,6 +3781,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:dark_elder_prismarine_vertical_slab
 - quark:dark_oak_vertical_slab
 - quark:dark_prismarine_vertical_slab
+- quark:deepslate_bricks_vertical_slab
+- quark:deepslate_tiles_vertical_slab
 - quark:diorite_bricks_vertical_slab
 - quark:diorite_vertical_slab
 - quark:dirt_bricks_vertical_slab
@@ -3818,6 +3832,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:polished_basalt_vertical_slab
 - quark:polished_blackstone_brick_vertical_slab
 - quark:polished_blackstone_vertical_slab
+- quark:polished_deepslate_vertical_slab
 - quark:polished_diorite_vertical_slab
 - quark:polished_granite_vertical_slab
 - quark:polished_jasper_vertical_slab
@@ -3843,6 +3858,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:shingles_vertical_slab
 - quark:slate_bricks_vertical_slab
 - quark:slate_vertical_slab
+- quark:smooth_basalt_vertical_slab
 - quark:smooth_biotite_vertical_slab
 - quark:smooth_quartz_vertical_slab
 - quark:smooth_red_sandstone_vertical_slab
@@ -3929,9 +3945,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - botania:elementium_block
 - botania:mana_diamond_block
 - botania:dragonstone_block
-- create:copper_block
-- create:zinc_block
-- create:brass_block
 - #forge:storage_blocks/copper
 - #forge:storage_blocks/cobalt
 - #forge:storage_blocks/slimesteel
@@ -3975,6 +3988,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - emendatusenigmatica:signalum_block
 - emendatusenigmatica:lumium_block
 - emendatusenigmatica:enderium_block
+- create:copper_block
+- create:zinc_block
+- create:brass_block
 - quark:golden_apple_crate
 - byg:pendorite_block
 - byg:ametrine_block
@@ -4020,7 +4036,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - chisel:end_stone/prism
 - chisel:end_stone/cuts
 - minecraft:end_stone_bricks
-- #forge:end_stones?
+- forge:end_stones?
 
 #twilightforest:darkwood_logs
 - twilightforest:dark_log
@@ -4061,7 +4077,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - chisel:charcoal/twisted
 - chisel:charcoal/prism
 - chisel:charcoal/cuts
-- #forge:storage_blocks/charcoal?
+- forge:storage_blocks/charcoal?
 
 #minecraft:anvil
 - minecraft:anvil
@@ -4401,7 +4417,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - chisel:metals/bronze/badgreggy
 - chisel:metals/bronze/bolted
 - chisel:metals/bronze/scaffold
-- #forge:storage_blocks/bronze?
+- forge:storage_blocks/bronze?
 
 #chisel:prismarine
 - chisel:prismarine/cracked
@@ -4551,12 +4567,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - minecraft:granite
 - minecraft:diorite
 - minecraft:andesite
+- mysticalworld:soft_stone
 - create:limestone
 - create:weathered_limestone
 - create:dolomite
 - create:gabbro
 - create:natural_scoria
-- mysticalworld:soft_stone
 - quark:jasper
 - quark:limestone
 - quark:marble
@@ -4790,48 +4806,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - druidcraft:darkwood_slab
 - druidcraft:elder_slab
 - druidcraft:dry_mud_brick_slab
-- create:granite_cobblestone_slab
-- create:granite_bricks_slab
-- create:fancy_granite_bricks_slab
-- create:paved_granite_slab
-- create:diorite_cobblestone_slab
-- create:diorite_bricks_slab
-- create:fancy_diorite_bricks_slab
-- create:paved_diorite_slab
-- create:andesite_cobblestone_slab
-- create:andesite_bricks_slab
-- create:fancy_andesite_bricks_slab
-- create:paved_andesite_slab
-- create:limestone_cobblestone_slab
-- create:polished_limestone_slab
-- create:limestone_bricks_slab
-- create:fancy_limestone_bricks_slab
-- create:paved_limestone_slab
-- create:weathered_limestone_cobblestone_slab
-- create:polished_weathered_limestone_slab
-- create:weathered_limestone_bricks_slab
-- create:fancy_weathered_limestone_bricks_slab
-- create:paved_weathered_limestone_slab
-- create:dolomite_cobblestone_slab
-- create:polished_dolomite_slab
-- create:dolomite_bricks_slab
-- create:fancy_dolomite_bricks_slab
-- create:paved_dolomite_slab
-- create:gabbro_cobblestone_slab
-- create:polished_gabbro_slab
-- create:gabbro_bricks_slab
-- create:fancy_gabbro_bricks_slab
-- create:paved_gabbro_slab
-- create:scoria_cobblestone_slab
-- create:polished_scoria_slab
-- create:scoria_bricks_slab
-- create:fancy_scoria_bricks_slab
-- create:paved_scoria_slab
-- create:dark_scoria_cobblestone_slab
-- create:polished_dark_scoria_slab
-- create:dark_scoria_bricks_slab
-- create:fancy_dark_scoria_bricks_slab
-- create:paved_dark_scoria_slab
 - mysticalworld:thatch_slab
 - mysticalworld:red_mushroom_slab
 - mysticalworld:brown_mushroom_slab
@@ -4886,6 +4860,48 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - upgrade_aquatic:prismarine_coralstone_slab
 - upgrade_aquatic:dead_coralstone_slab
 - upgrade_aquatic:beachgrass_thatch_slab
+- create:granite_cobblestone_slab
+- create:granite_bricks_slab
+- create:fancy_granite_bricks_slab
+- create:paved_granite_slab
+- create:diorite_cobblestone_slab
+- create:diorite_bricks_slab
+- create:fancy_diorite_bricks_slab
+- create:paved_diorite_slab
+- create:andesite_cobblestone_slab
+- create:andesite_bricks_slab
+- create:fancy_andesite_bricks_slab
+- create:paved_andesite_slab
+- create:limestone_cobblestone_slab
+- create:polished_limestone_slab
+- create:limestone_bricks_slab
+- create:fancy_limestone_bricks_slab
+- create:paved_limestone_slab
+- create:weathered_limestone_cobblestone_slab
+- create:polished_weathered_limestone_slab
+- create:weathered_limestone_bricks_slab
+- create:fancy_weathered_limestone_bricks_slab
+- create:paved_weathered_limestone_slab
+- create:dolomite_cobblestone_slab
+- create:polished_dolomite_slab
+- create:dolomite_bricks_slab
+- create:fancy_dolomite_bricks_slab
+- create:paved_dolomite_slab
+- create:gabbro_cobblestone_slab
+- create:polished_gabbro_slab
+- create:gabbro_bricks_slab
+- create:fancy_gabbro_bricks_slab
+- create:paved_gabbro_slab
+- create:scoria_cobblestone_slab
+- create:polished_scoria_slab
+- create:scoria_bricks_slab
+- create:fancy_scoria_bricks_slab
+- create:paved_scoria_slab
+- create:dark_scoria_cobblestone_slab
+- create:polished_dark_scoria_slab
+- create:dark_scoria_bricks_slab
+- create:fancy_dark_scoria_bricks_slab
+- create:paved_dark_scoria_slab
 - quark:andesite_bricks_slab
 - quark:basalt_bricks_slab
 - quark:basalt_slab
@@ -4902,11 +4918,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:brown_stained_planks_slab
 - quark:charred_nether_bricks_slab
 - quark:cobbedstone_slab
+- quark:cobbled_deepslate_slab
 - quark:cobblestone_bricks_slab
 - quark:cut_soul_sandstone_slab
 - quark:cyan_shingles_slab
 - quark:cyan_stained_planks_slab
 - quark:dark_elder_prismarine_slab
+- quark:deepslate_bricks_slab
+- quark:deepslate_tiles_slab
 - quark:diorite_bricks_slab
 - quark:dirt_bricks_slab
 - quark:duskbound_block_slab
@@ -4945,6 +4964,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:pink_shingles_slab
 - quark:pink_stained_planks_slab
 - quark:polished_basalt_slab
+- quark:polished_deepslate_slab
 - quark:polished_jasper_slab
 - quark:polished_limestone_slab
 - quark:polished_marble_slab
@@ -4961,6 +4981,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:shingles_slab
 - quark:slate_bricks_slab
 - quark:slate_slab
+- quark:smooth_basalt_slab
 - quark:smooth_biotite_slab
 - quark:smooth_soul_sandstone_slab
 - quark:snow_bricks_slab
@@ -5262,9 +5283,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - minecraft:detector_rail
 - minecraft:activator_rail
 - botania:ghost_rail
-- create:cart_assembler
-- create:reinforced_rail
-- create:controller_rail
 - thermal:crossover_rail
 - thermal:prismarine_rail
 - thermal:prismarine_crossover_rail
@@ -5276,8 +5294,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - thermal:lumium_powered_rail
 - thermal:lumium_activator_rail
 - thermal:lumium_detector_rail
-- tconstruct:wooden_rail
-- tconstruct:wooden_dropper_rail
+- create:cart_assembler
+- create:reinforced_rail
+- create:controller_rail
 
 #forge:wool/lime
 - minecraft:lime_wool
@@ -5421,7 +5440,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - create:pulley_magnet
 - create:furnace_engine
 - create:redstone_link
+- create:peculiar_bell
+- create:haunted_bell
 - #minecraft:doors
+- #minecraft:beds
 - minecraft:flower_pot
 - minecraft:bell
 - minecraft:cocoa
@@ -5510,6 +5532,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - immersiveengineering:sheetmetal_silver
 
 #supplementaries:palisades
+- minecraft:end_rod
 - decorative_blocks:oak_palisade?
 - decorative_blocks:birch_palisade?
 - decorative_blocks:spruce_palisade?
@@ -5645,6 +5668,18 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - minecraft:cyan_wool
 
 #create:non_movable
+- minecraft:obsidian
+- immersiveengineering:connector_lv?
+- immersiveengineering:connector_lv_relay?
+- immersiveengineering:connector_mv?
+- immersiveengineering:connector_mv_relay?
+- immersiveengineering:connector_hv?
+- immersiveengineering:connector_hv_relay?
+- immersiveengineering:connector_bundled?
+- immersiveengineering:connector_structural?
+- immersiveengineering:connector_redstone?
+- immersiveengineering:connector_probe?
+- immersiveengineering:breaker_switch?
 
 #minecraft:soul_fire_base_blocks
 - minecraft:soul_sand
@@ -5885,12 +5920,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:black_quilted_wool
 
 #forge:glass/colorless
+- minecraft:glass
+- tconstruct:clear_glass
 - create:tiled_glass
 - create:framed_glass
 - create:horizontal_framed_glass
 - create:vertical_framed_glass
-- minecraft:glass
-- tconstruct:clear_glass
 
 #twilightforest:ores/knightmetal
 
@@ -5921,7 +5956,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - #forge:dirt
 
 #forge:ores/zinc
-- create:zinc_ore
 - emendatusenigmatica:zinc_ore
 - emendatusenigmatica:zinc_andesite_ore
 - emendatusenigmatica:zinc_granite_ore
@@ -5951,6 +5985,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - emendatusenigmatica:zinc_sulphuric_rock_ore
 - emendatusenigmatica:zinc_violecite_ore
 - emendatusenigmatica:zinc_raw_marble_ore
+- create:zinc_ore
 
 #forge:ores/netherite_scrap
 - minecraft:ancient_debris
@@ -6055,6 +6090,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 #byg:ground_lazarus_bellflower
 - #forge:dirt
 
+#forge:fences/steel
+- immersiveengineering:steel_fence
+
 #forge:storage_blocks/coal_coke
 - thermal:coal_coke_block
 - immersiveengineering:coke
@@ -6094,11 +6132,32 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 #byg:ground_tall_prairie_grass
 - #forge:dirt
 
+#create:wrench_pickup
+- #minecraft:rails
+- #minecraft:buttons
+- #minecraft:pressure_plates
+- minecraft:redstone_wire
+- minecraft:redstone_torch
+- minecraft:repeater
+- minecraft:lever
+- minecraft:comparator
+- minecraft:observer
+- minecraft:redstone_wall_torch
+- minecraft:piston
+- minecraft:sticky_piston
+- minecraft:tripwire
+- minecraft:tripwire_hook
+- minecraft:daylight_detector
+- minecraft:target
+
 #forge:ores/sapphire
 - thermal:sapphire_ore
 
 #forge:ores/lignite
 - byg:lignite_ore
+
+#supplementaries:enchantment_bypass
+- #minecraft:carpets
 
 #botania:corporea_spark_override
 - botania:corporea_block
@@ -6234,6 +6293,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - quark:iron_ladder
 
 #forge:glass_panes
+- #forge:glass_panes/colorless
+- #forge:stained_glass_panes
 - create:tiled_glass_pane
 - create:framed_glass_pane
 - create:horizontal_framed_glass_pane
@@ -6247,8 +6308,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - create:crimson_window_pane
 - create:warped_window_pane
 - create:ornate_iron_window_pane
-- #forge:glass_panes/colorless
-- #forge:stained_glass_panes
 - quark:dirty_glass_pane
 - quark:framed_glass_pane
 - quark:black_framed_glass_pane
@@ -6533,6 +6592,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 
 #supplementaries:pane_connection
 - supplementaries:iron_gate
+- supplementaries:gold_gate
 
 #buildinggadgets:blacklist/destruction
 
@@ -6687,7 +6747,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 
 #forge:ores/copper
 - tmechworks:copper_ore
-- create:copper_ore
 - mysticalworld:copper_ore
 - thermal:copper_ore
 - tconstruct:copper_ore
@@ -6721,6 +6780,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - emendatusenigmatica:copper_sulphuric_rock_ore
 - emendatusenigmatica:copper_violecite_ore
 - emendatusenigmatica:copper_raw_marble_ore
+- create:copper_ore
 
 #chisel:futura
 - chisel:futura/screen_metallic
@@ -6741,6 +6801,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 
 #simpleplanes:plane_materials
 - #minecraft:planks
+- minecraft:oak_wood
+- minecraft:spruce_wood
+- minecraft:birch_wood
+- minecraft:jungle_wood
+- minecraft:acacia_wood
+- minecraft:dark_oak_wood
+- minecraft:crimson_hyphae
+- minecraft:warped_hyphae
+- minecraft:stripped_oak_wood
+- minecraft:stripped_spruce_wood
+- minecraft:stripped_birch_wood
+- minecraft:stripped_jungle_wood
+- minecraft:stripped_acacia_wood
+- minecraft:stripped_dark_oak_wood
+- minecraft:stripped_crimson_hyphae
+- minecraft:stripped_warped_hyphae
 
 #byg:ground_palm_sapling
 - #forge:sand
@@ -7022,7 +7098,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - chisel:limestone/twisted
 - chisel:limestone/prism
 - chisel:limestone/cuts
-- #forge:stone/limestone?
+- forge:stone/limestone?
 
 #byg:ground_purple_orchid
 - #forge:dirt
@@ -7181,6 +7257,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - twilightforest:sort_wall_sign
 - upgrade_aquatic:driftwood_wall_sign
 - upgrade_aquatic:river_wall_sign
+- tconstruct:greenheart_wall_sign
+- tconstruct:skyroot_wall_sign
+- tconstruct:bloodshroom_wall_sign
 
 #tconstruct:seared_tanks
 - tconstruct:seared_fuel_tank
@@ -7525,8 +7604,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - tconstruct:rose_gold_block
 
 #forge:storage_blocks/brass
-- create:brass_block
 - emendatusenigmatica:brass_block
+- create:brass_block
 
 #byg:ground_ether_sapling
 - #forge:dirt
@@ -7610,6 +7689,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 #forge:storage_blocks/fluix
 - emendatusenigmatica:fluix_block
 
+#tconstruct:slimy_tree_trunks
+- #tconstruct:slimy_logs
+- tconstruct:earth_congealed_slime
+- tconstruct:sky_congealed_slime
+- tconstruct:ichor_congealed_slime
+- tconstruct:ender_congealed_slime
+- tconstruct:blood_congealed_slime
+
 #byg:mahogany_logs
 - byg:mahogany_log
 - byg:stripped_mahogany_log
@@ -7659,8 +7746,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - tconstruct:queens_slime_block
 
 #forge:storage_blocks/zinc
-- create:zinc_block
 - emendatusenigmatica:zinc_block
+- create:zinc_block
 
 #forge:sand/red
 - snad:red_snad
@@ -8024,13 +8111,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 
 #supplementaries:rope_support
 - supplementaries:rope
+- supplementaries:cracked_bell
 - minecraft:bell
 - minecraft:grindstone
+- create:peculiar_bell?
+- create:haunted_bell?
 - farmersdelight:rope?
 - inspirations:rope?
 - inspirations:vine?
-- druidcraft:rope?
+- farmersdelight:rope?
 - xercamod:rope?
+- druidcraft:rope?
 
 #tmechworks:firestarter_extinguish_whitelist
 - minecraft:fire
@@ -8187,6 +8278,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - minecraft:yellow_wool
 
 #forge:stone
+- mysticalworld:soft_stone
+- mysticalworld:cracked_stone
+- mysticalworld:blackened_stone
+- minecraft:andesite
+- minecraft:diorite
+- minecraft:granite
+- minecraft:infested_stone
+- minecraft:stone
+- minecraft:polished_andesite
+- minecraft:polished_diorite
+- minecraft:polished_granite
 - create:limestone
 - create:polished_limestone
 - create:weathered_limestone
@@ -8199,17 +8301,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - create:polished_scoria
 - create:dark_scoria
 - create:polished_dark_scoria
-- mysticalworld:soft_stone
-- mysticalworld:cracked_stone
-- mysticalworld:blackened_stone
-- minecraft:andesite
-- minecraft:diorite
-- minecraft:granite
-- minecraft:infested_stone
-- minecraft:stone
-- minecraft:polished_andesite
-- minecraft:polished_diorite
-- minecraft:polished_granite
 - quark:basalt
 - quark:brimstone
 - quark:jasper
@@ -8279,6 +8370,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - twilightforest:sort_sign
 - upgrade_aquatic:driftwood_sign
 - upgrade_aquatic:river_sign
+- tconstruct:greenheart_sign
+- tconstruct:skyroot_sign
+- tconstruct:bloodshroom_sign
 
 #minecraft:infiniburn_end
 - #minecraft:infiniburn_overworld
@@ -8463,6 +8557,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - minecraft:birch_wood
 - minecraft:stripped_birch_log
 - minecraft:stripped_birch_wood
+
+#tconstruct:slimy_planks
+- tconstruct:greenheart_planks
+- tconstruct:skyroot_planks
+- tconstruct:bloodshroom_planks
 
 #byg:ground_rose
 - #forge:dirt
@@ -8699,7 +8798,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - chisel:coal/twisted
 - chisel:coal/prism
 - chisel:coal/cuts
-- #forge:storage_blocks/coal?
+- forge:storage_blocks/coal?
 
 #forge:dirt
 - supplementaries:fodder
@@ -9168,9 +9267,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - mysticalworld:charred_planks
 - upgrade_aquatic:driftwood_planks
 - upgrade_aquatic:river_planks
-- tconstruct:greenheart_planks
-- tconstruct:skyroot_planks
-- tconstruct:bloodshroom_planks
+- #tconstruct:slimy_planks
 - quark:vertical_oak_planks
 - quark:vertical_spruce_planks
 - quark:vertical_birch_planks
@@ -9469,7 +9566,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - minecraft:chiseled_quartz_block
 - minecraft:quartz_pillar
 - minecraft:smooth_quartz
-- #forge:storage_blocks/quartz?
+- forge:storage_blocks/quartz?
 
 #botania:terraformable
 - #forge:stone
@@ -9562,7 +9659,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - chisel:basalt/twisted
 - chisel:basalt/prism
 - chisel:basalt/cuts
-- #forge:stone/basalt?
+- forge:stone/basalt?
 
 #forge:storage_blocks/gold
 - minecraft:gold_block
@@ -9610,8 +9707,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - calemiutils:raritanium_ore
 - #forge:ores/amber
 - #forge:ores/moonstone
-- create:copper_ore
-- create:zinc_ore
 - rftoolsbase:dimensionalshard_end
 - rftoolsbase:dimensionalshard_nether
 - rftoolsbase:dimensionalshard_overworld
@@ -10459,6 +10554,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - emendatusenigmatica:potassium_nitrate_raw_marble_ore
 - emendatusenigmatica:arcane_raw_marble_ore
 - emendatusenigmatica:dimensional_raw_marble_ore
+- create:copper_ore
+- create:zinc_ore
 - #forge:ores/biotite
 - byg:ametrine_ore
 - byg:anthracite_ore
@@ -10635,6 +10732,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - supplementaries:rope
 - supplementaries:sack
 - supplementaries:hanging_flower_pot
+- supplementaries:cracked_bell
+- supplementaries:rope_chandelier?
+- supplementaries:rope_soul_chandelier?
 - farmersdelight:rope?
 - inspirations:rope?
 - inspirations:vine?
@@ -10702,8 +10802,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jun
 - minecraft:furnace
 - minecraft:blast_furnace
 - minecraft:smoker
-- environmental:kiln?
 - charm:kiln?
+- environmental:kiln?
+- atum:kiln?
 
 #forge:terracotta
 - minecraft:white_terracotta

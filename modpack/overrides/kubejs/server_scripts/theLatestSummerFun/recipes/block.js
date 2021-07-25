@@ -243,25 +243,25 @@ onEvent("recipes", (event) => {
     //$ Grinding recipes
     //** Setup
     let outputAmount = 2 * entry.grinding.mutlipliers.amount;
-    let mainOutputChance = 50 * entry.grinding.mutlipliers.mainChance;
+    let mainOutputChance = 0.50 * entry.grinding.mutlipliers.mainChance;
 
     // 2 of primary at 50% chance, gravel with 20% chance
     let pulverizerOuptuts = [
       Item.of(entry.grinding.primaryOutput, outputAmount).withChance(mainOutputChance),
-      Item.of("#forge:gravel").withChance(20),
+      Item.of("#forge:gravel").withChance(0.20),
     ];
     // 25% chance of secondary cobblestone output
-    let ieCrusherSecondaries = [{ output: "#forge:cobblestone", chance: 0.25 }];
+    let ieCrusherSecondaries = [Item.of("#forge:cobblestone").withChance(0.25)];
     // 2 of primary, one more at 25% chance, and cobblestone at 12% chance
     let createCrusherOutputs = [
       Item.of(entry.grinding.primaryOutput, outputAmount),
-      Item.of(entry.grinding.primaryOutput, entry.grinding.mutlipliers.amount).withChance(25),
-      Item.of("#forge:cobblestone").withChance(12),
+      Item.of(entry.grinding.primaryOutput, entry.grinding.mutlipliers.amount).withChance(0.25),
+      Item.of("#forge:cobblestone").withChance(0.12),
     ];
     if (entry.grinding.secondaryOutput) {
       // Add secondary output if available
-      pulverizerOuptuts.push(Item.of(entry.grinding.secondaryOutput).withChance(15));
-      ieCrusherSecondaries.push({ output: entry.grinding.secondaryOutput, chance: 0.5 });
+      pulverizerOuptuts.push(Item.of(entry.grinding.secondaryOutput).withChance(0.15));
+      ieCrusherSecondaries.push(Item.of(entry.grinding.secondaryOutput).withChance(0.5));
     }
     //** Register recipes
     event.recipes.thermal.pulverizer(pulverizerOuptuts, entry.input).energy(4000);
@@ -278,8 +278,8 @@ onEvent("recipes", (event) => {
     //** Setup
     // Primary output at 150% chance, rich slag at 15% chance
     let smelterOutputs = [
-      Item.of(entry.smelting.output, entry.smelting.count).withChance(150),
-      Item.of("thermal:rich_slag").withChance(15),
+      Item.of(entry.smelting.output, entry.smelting.count).withChance(1.50),
+      Item.of("thermal:rich_slag").withChance(0.15),
     ];
     //** Register recipes
     event.recipes.thermal.smelter(smelterOutputs, entry.input).energy(3200);
@@ -303,8 +303,8 @@ onEvent("recipes", (event) => {
   event.recipes.create.crushing(
     [
       Item.of("#forge:dusts/redstone", 8),
-      Item.of("#forge:dusts/redstone", 4).withChance(25),
-      Item.of("byg:cryptic_stone").withChance(12),
+      Item.of("#forge:dusts/redstone", 4).withChance(0.25),
+      Item.of("byg:cryptic_stone").withChance(0.12),
     ],
     "byg:cryptic_redstone_ore"
   );
@@ -344,14 +344,14 @@ onEvent("recipes", (event) => {
     event.recipes.thermal.insolator(`2x ${coral.getId()}`, coral.getId()).water(750).energy(36000);
   }
 
-  //! C&B Smiting
+  //! C&B Smithing
   // Bitsaw
-  event.smiting(
+  event.smithing(
     "chiselsandbits:bitsaw_netherite",
     "chiselsandbits:bitsaw_diamond",
     "minecraft:netherite_ingot"
   );
-  event.smiting(
+  event.smithing(
     "chiselsandbits:chisel_netherite",
     "chiselsandbits:chisel_diamond",
     "minecraft:netherite_ingot"

@@ -1,3 +1,4 @@
+// priority: 0
 /*
  * Shapeless crafting table recipes
  *

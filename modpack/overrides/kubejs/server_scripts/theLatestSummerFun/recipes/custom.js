@@ -1,3 +1,4 @@
+// priority: 0
 /*
  * Custom crafting recipes.
  * These are pretty much JSONs written using JS.

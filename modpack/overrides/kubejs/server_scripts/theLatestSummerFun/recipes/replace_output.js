@@ -1,3 +1,4 @@
+// priority: 0
 /*
  * Replace recipe outputs
  *

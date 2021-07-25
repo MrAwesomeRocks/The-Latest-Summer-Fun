@@ -1,3 +1,4 @@
+// priority: 0
 /*
  * Shaped crafting table recipes
  *

@@ -1,3 +1,4 @@
+// priority: 0
 /*
  * Block crafting recipes (other than crafting table)
  * Most of these come from integration mods.

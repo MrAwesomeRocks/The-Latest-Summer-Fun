@@ -9,6 +9,16 @@
  ** See L36 of  https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Ingot compression
+  const compressingMetals = ["electrum", "constantan", "nickel", "aluminum"];
+
+  for (let metal of compressingMetals) {
+    event.recipes.create
+      .compacting(`#forge:ingots/${metal}`, Item.of(`#forge:ingots/${metal}`, 9))
+      .heatRequirement("none")
+      .processingTime(100);
+  }
+
   //! Ore processing
   //$ Default processed ores: doubling + rich slag + gravel + cobblestone
   const defaultOreProcessing = [

@@ -115,8 +115,8 @@
 
 // Adding Ingot Compression for Create
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-<recipetype:create:compacting>.addRecipe("electrum_compression_create", "none", <item:immersiveengineering:ingot_electrum>, [<tag:items:forge:nuggets/electrum> * 9], [], 100);
-<recipetype:create:compacting>.addRecipe("constantan_compression_create", "none", <item:immersiveengineering:ingot_constantan>, [<tag:items:forge:nuggets/constantan> * 9], [], 100);
-<recipetype:create:compacting>.addRecipe("nickel_compression_create", "none", <item:immersiveengineering:ingot_nickel>, [<tag:items:forge:nuggets/nickel> * 9], [], 100);
-<recipetype:create:compacting>.addRecipe("aluminum_compression_create", "none", <item:immersiveengineering:ingot_aluminum>, [<tag:items:forge:nuggets/aluminum> * 9], [], 100);
+// <recipetype:create:compacting>.addRecipe("electrum_compression_create", "none", <item:immersiveengineering:ingot_electrum>, [<tag:items:forge:nuggets/electrum> * 9], [], 100);
+// <recipetype:create:compacting>.addRecipe("constantan_compression_create", "none", <item:immersiveengineering:ingot_constantan>, [<tag:items:forge:nuggets/constantan> * 9], [], 100);
+// <recipetype:create:compacting>.addRecipe("nickel_compression_create", "none", <item:immersiveengineering:ingot_nickel>, [<tag:items:forge:nuggets/nickel> * 9], [], 100);
+// <recipetype:create:compacting>.addRecipe("aluminum_compression_create", "none", <item:immersiveengineering:ingot_aluminum>, [<tag:items:forge:nuggets/aluminum> * 9], [], 100);
 // ---------------------------------------------------------------------------------------------------------------------------------------------

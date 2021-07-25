@@ -33,11 +33,11 @@
 
 // Making the IE Brass Recipe Match the Other Ones.
 // ---------------------------------------------------------------------------------------------------------------------------------------------
-<recipetype:immersiveengineering:alloy>.removeRecipe(<item:create:brass_ingot> * 4);
-<recipetype:immersiveengineering:alloy>.addRecipe("better_kiln_brass", <tag:items:forge:ingots/copper>, <tag:items:forge:ingots/zinc>, 200, <item:create:brass_ingot> * 2 * 2);
+// <recipetype:immersiveengineering:alloy>.removeRecipe(<item:create:brass_ingot> * 4);
+// <recipetype:immersiveengineering:alloy>.addRecipe("better_kiln_brass", <tag:items:forge:ingots/copper>, <tag:items:forge:ingots/zinc>, 200, <item:create:brass_ingot> * 2 * 2);
 
-<recipetype:immersiveengineering:arc_furnace>.removeRecipe(<item:create:brass_ingot> * 4);
-<recipetype:immersiveengineering:arc_furnace>.addRecipe("better_arc_brass", <tag:items:forge:ingots/copper>, [<tag:items:forge:ingots/zinc>], 100, 51200, [<item:create:brass_ingot> * 2], <item:minecraft:air>);
+// <recipetype:immersiveengineering:arc_furnace>.removeRecipe(<item:create:brass_ingot> * 4);
+// <recipetype:immersiveengineering:arc_furnace>.addRecipe("better_arc_brass", <tag:items:forge:ingots/copper>, [<tag:items:forge:ingots/zinc>], 100, 51200, [<item:create:brass_ingot> * 2], <item:minecraft:air>);
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

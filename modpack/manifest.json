@@ -293,7 +293,7 @@
     },
     {
       "projectID": 238222,
-      "fileID": 3397912,
+      "fileID": 3399829,
       "required": true,
       "__meta": {
         "name": "Just Enough Items (JEI)",
@@ -695,6 +695,16 @@
       "required": true,
       "__meta": {
         "name": "Carry On",
+        "explicit": true,
+        "dependencies": []
+      }
+    },
+    {
+      "projectID": 276951,
+      "fileID": 3359524,
+      "required": true,
+      "__meta": {
+        "name": "Comforts (Forge)",
         "explicit": true,
         "dependencies": []
       }
@@ -1860,7 +1870,7 @@
     },
     {
       "projectID": 459701,
-      "fileID": 3335979,
+      "fileID": 3399554,
       "required": true,
       "__meta": {
         "name": "Catalogue",

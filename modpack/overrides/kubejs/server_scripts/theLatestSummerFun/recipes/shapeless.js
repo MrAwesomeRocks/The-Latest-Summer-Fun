@@ -21,6 +21,11 @@ onEvent("recipes", (event) => {
       let oldTier = pipeTiers[i - 1];
       let newTier = pipeTiers[i];
 
+      // Only three tiers of item pipes
+      if (pipeType === "item" && (newTier === "elite" || newTier === "ultimate")) {
+        continue;
+      }
+
       if (pipeType === "extractor") {
         event.shapeless(`refinedpipes:${newTier}_extractor_attachment`, [
           `refinedpipes:${oldTier}_extractor_attachment`,

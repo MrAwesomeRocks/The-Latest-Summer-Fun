@@ -407,7 +407,8 @@ onEvent("recipes", (event) => {
     L: "#forge:plates/lumium",
     J: "simplyjetpacks:jetpack_te4_armored",
     T: "simplyjetpacks:thruster_te5",
-    N: "gildedarmor:gilded_netherite_chestplate"
+    N: "gildedarmor:gilded_netherite_chestplate",
+    C: "simplyjetpacks:unit_cryotheum"
   });
 
   //! Rework Mechworks

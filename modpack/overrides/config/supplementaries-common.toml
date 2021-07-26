@@ -32,8 +32,8 @@
 		chance = 2
 
 	[blocks.speaker_block]
-		#maximum range
-		#Range: 0 ~ 10000000
+		#Maximum block range
+		#Range: 0 ~ 100000000
 		range = 64
 
 	[blocks.sack]
@@ -204,10 +204,10 @@
 		directional_cake = true
 
 	[tweaks.bells_tweaks]
-		#ring a bell by clicking on a chain that's connected to it
+		#Ring a bell by clicking on a chain that's connected to it
 		chain_ringing = true
-		#max chain length that allows a bell to ring
-		#Range: 0 ~ 1024
+		#Max chain length that allows a bell to ring
+		#Range: 0 ~ 256
 		chain_length = 16
 
 	[tweaks.raked_gravel]
@@ -237,7 +237,7 @@
 		#Note that ony the first parameter is required, each of the others others can me removed and will be defaulted to reasonable values
 		#example: ['minecraft:swamp_hut','2','5','7','witch hut map','0x00ff33']
 		custom_adventurer_maps = [[""]]
-		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (chosen from a thought out preset list).
+		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (choosen from a thought out preset list).
 		#Best kept disabled if you are adding custom adventurer maps with its config
 		random_adventurer_maps = true
 		#enables beacons, lodestones, respawn anchors, beds, conduits, portals to be displayed on maps by clicking one of them with a map
@@ -253,6 +253,10 @@
 		#Amount of rotten flesh needed
 		#Range: 1 ~ 1000
 		rotten_flesh = 64
+
+	[tweaks.enchanting_table]
+		#Allows enchanting table to interact with bokshelf even if they have carpets or other tagged items in the way. You can add more blocks by adding them to 'enchantment_bypass' block tag
+		ignore_carpets = true
 
 [items]
 

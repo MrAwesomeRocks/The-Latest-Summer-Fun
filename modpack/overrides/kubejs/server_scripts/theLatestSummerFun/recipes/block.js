@@ -10,16 +10,6 @@
  ** See L36 of  https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
-  //! Ingot compression
-  const compressingMetals = ["electrum", "constantan", "nickel", "aluminum"];
-
-  for (let metal of compressingMetals) {
-    event.recipes.create
-      .compacting(`#forge:ingots/${metal}`, Item.of(`#forge:ingots/${metal}`, 9))
-      .heatRequirement("none")
-      .processingTime(100);
-  }
-
   //! Ore processing
   //$ Default processed ores: doubling + rich slag + gravel + cobblestone
   const defaultOreProcessing = [
@@ -244,12 +234,12 @@ onEvent("recipes", (event) => {
     //$ Grinding recipes
     //** Setup
     let outputAmount = 2 * entry.grinding.mutlipliers.amount;
-    let mainOutputChance = 0.50 * entry.grinding.mutlipliers.mainChance;
+    let mainOutputChance = 0.5 * entry.grinding.mutlipliers.mainChance;
 
     // 2 of primary at 50% chance, gravel with 20% chance
     let pulverizerOuptuts = [
       Item.of(entry.grinding.primaryOutput, outputAmount).withChance(mainOutputChance),
-      Item.of("#forge:gravel").withChance(0.20),
+      Item.of("#forge:gravel").withChance(0.2),
     ];
     // 25% chance of secondary cobblestone output
     let ieCrusherSecondaries = [Item.of("#forge:cobblestone").withChance(0.25)];
@@ -279,7 +269,7 @@ onEvent("recipes", (event) => {
     //** Setup
     // Primary output at 150% chance, rich slag at 15% chance
     let smelterOutputs = [
-      Item.of(entry.smelting.output, entry.smelting.count).withChance(1.50),
+      Item.of(entry.smelting.output, entry.smelting.count).withChance(1.5),
       Item.of("thermal:rich_slag").withChance(0.15),
     ];
     //** Register recipes
@@ -313,7 +303,8 @@ onEvent("recipes", (event) => {
   //! Melting Recipes
   event.recipes.thermal.crucible(Fluid.of("thermal:resin", 250), "druidcraft:amber").energy(2000);
 
-  //! Lapidary dynamo fuels
+  //! Dynamo fuels
+  //$ Lapidary
   event.recipes.thermal.lapidary_fuel("druidcraft:amber").energy(20000);
   event.recipes.thermal.lapidary_fuel("druidcraft:moonstone").energy(500000);
   event.recipes.thermal.lapidary_fuel("botania:mana_diamond").energy(650000);
@@ -328,6 +319,8 @@ onEvent("recipes", (event) => {
   event.recipes.thermal.lapidary_fuel("#forge:gems/fluix").energy(100000);
   event.recipes.thermal.lapidary_fuel("byg:ametrine_gems").energy(500000);
   event.recipes.thermal.lapidary_fuel("#forge:gems/ruby").energy(1000000);
+  //$ Magmatic
+  event.recipes.thermal.magmatic_fuel(Fluid.of("tconstruct:blazing_blood", 1000)).energy(100000);
 
   //! Vanilla jetpack recipes
   // Netherite Thruster

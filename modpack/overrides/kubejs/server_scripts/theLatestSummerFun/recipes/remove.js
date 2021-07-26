@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 10
 /*
  * Recipe removal
  *
@@ -8,6 +8,27 @@
  ** See L11 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! Remove tech ore processing recipes
+  const removeTechOre = [
+    "byg:pervaded_netherrack",
+    "byg:lignite_ore",
+    "byg:anthracite_ore",
+    "druidcraft:amber",
+    "druidcraft:moonstone",
+    "druidcraft:fiery_glass",
+    "druidcraft:rockroot",
+    "quark:biotite",
+    "#forge:gems/certus_quartz",
+    "#forge:dimensional_ores",
+  ];
+
+  for (let entry of removeTechOre) {
+    event.remove({ result: entry, type: "immersiveengineering:crusher" });
+    event.remove({ results: entry, type: "create:crushing" });
+    event.remove({ result: entry, type: "thermal:pulverizer" });
+    event.remove({ result: entry, type: "thermal:smelter" });
+  }
+
   //! Remove dynamo fuels
   const removeDynamo = [
     // New ruby fuel

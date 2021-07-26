@@ -53,7 +53,7 @@ onEvent("recipes", (event) => {
   });
   //$ Fluid pipes
   // Advanced
-  event.shaped("6x refinedpipes:advanced_item_pipe", [
+  event.shaped("6x refinedpipes:advanced_fluid_pipe", [
     "CQC",
     "SGS",
     "CQC"

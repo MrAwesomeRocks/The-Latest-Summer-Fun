@@ -9,7 +9,7 @@
  *
  ** See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
-const tags = [/storage_blocks/];
+const interchangeRecipeTags = [/storage_blocks/];
 
 onEvent("recipes", (event) => {
   outer: for (let tag of global["unifytags"]) {

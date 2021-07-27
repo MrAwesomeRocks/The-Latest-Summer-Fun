@@ -1,16 +1,22 @@
 
 #Planes settings
 [general]
-	#Version, do not change
-	#Range: > 0
-	Version = 5
-	#easier flight mode, disables the extreme movements
+	#Easier flight mode, disables the extreme movements
 	easyFlight = false
-	#planes crash on bad landings
+	#Planes crash on bad landings
 	planeCrash = true
 	#For controllers, a threshold for the joystick movement of the plane
 	#Range: 0 ~ 90
 	turnThreshold = 20
-	#can players steal planes
+	#Allow stealing planes by players
 	plane_heist = true
+	#Fuel cost of a small plane
+	#Range: > 0
+	plane_fuel_cost = 3
+	#Fuel cost of a large plane
+	#Range: > 0
+	large_plane_fuel_cost = 6
+	#Fuel cost of a helicopter
+	#Range: > 0
+	helicopter_fuel_cost = 6
 

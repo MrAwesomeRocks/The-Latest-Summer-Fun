@@ -294,7 +294,7 @@ onEvent("item.registry", (event) => {
         .saturation(0.0)
         .alwaysEdible()
         .effect("minecraft:regeneration", 600, 1, 1.0)
-        .effect("minecraft:saturation", 600, 1, 1.0)
+        .effect("cofh_core:panacea", 600, 0, 1.0)
         .eaten((event) => {
           if (!event.getPlayer().isCreativeMode()) {
             event.getServer().scheduleInTicks(1, event.getPlayer(), (callback) => {
@@ -302,7 +302,6 @@ onEvent("item.registry", (event) => {
             });
           }
         });
-      // .effect("cofh_core:panacea", 600, 0, 1.0);  //? Potions broken https://github.com/KubeJS-Mods/KubeJS/issues/151
     });
   // Onion Singularity Sandwich
   event

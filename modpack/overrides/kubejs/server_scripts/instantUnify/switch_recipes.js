@@ -1,7 +1,7 @@
 // priority: 200
 /*
- * Bringing back storage blocks from other mods as decoration blocks.
- * These are shapeless crafting table recipes, with a cost of one ingot - one block.
+ * This is for creating crafting recipes between items of a tag.
+ * i.e. Storage blocks
  *
  * Template:
  *   event.remove({input: "MOD:storage_block"})
@@ -9,10 +9,14 @@
  *
  ** See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
+const interchangeRecipeTags = [/storage_blocks/];
+
 onEvent("recipes", (event) => {
   outer: for (let tag of global["unifytags"]) {
-    if (!tag.match(/storage_blocks/)) {
-      continue outer;
+    for (let e of tags) {
+      if (!tag.match(e)) {
+        continue outer;
+      }
     }
 
     let ingr = Ingredient.of("#" + tag);

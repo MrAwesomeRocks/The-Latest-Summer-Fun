@@ -10,6 +10,10 @@
  ** See https://mods.latvian.dev/books/kubejs/page/tageventjs for more info.
  */
 onEvent("item.tags", (event) => {
+  // Fix niter
+  event.add("forge:ores/niter", "emendatusenigmatica:potassium_nitrate_ore");
+  event.add("forge:ores/saltpeter", "emendatusenigmatica:potassium_nitrate_ore");
+
   // Jelly/Jam tags
   event.add("forge:jelly_or_jam", ["kubejs:jelly", "upgrade_aquatic:mulberry_jam_bottle"]);
 
@@ -47,9 +51,39 @@ onEvent("item.tags", (event) => {
   event.add("forge:storage_blocks", "appliedenergistics2:fluix_block");
   event.add("forge:storage_blocks/fluix", "appliedenergistics2:fluix_block");
 
-  //** Planks
+  // Charged Certus Quartz
+  event.add("forge:gems", "appliedenergistics2:charged_certus_quartz_crystal");
+  event.add(
+    "forge:gems/charged_certus_quartz",
+    "appliedenergistics2:charged_certus_quartz_crystal"
+  );
+
+  // Certus Quartz
+  event.add("forge:gems", "appliedenergistics2:certus_quartz_crystal");
+
+  // Silicon
+  event.add("forge:gems", "appliedenergistics2:silicon");
+  event.add("forge:gems/silicon", "appliedenergistics2:silicon");
+  event.add("appliedenergistics2:silicon", "#forge:gems/silicon");
+
+  // Ender dust
+  event.add("forge:dusts/ender", "appliedenergistics2:ender_dust");
+  event.add("forge:dusts/ender_pearl", "emendatusenigmatica:ender_dust");
+
+  //$ Planks
   // Non-vanilla
-  event.add("forge:non_vanilla_planks", "#minecraft:planks").remove(/minecraft:.*_planks/);
+  const vanillaPlanks = [
+    "minecraft:oak_planks",
+    "minecraft:spruce_planks",
+    "minecraft:birch_planks",
+    "minecraft:jungle_planks",
+    "minecraft:acacia_planks",
+    "minecraft:dark_oak_planks",
+    "minecraft:crimson_planks",
+    "minecraft:warped_planks",
+  ];
+  event.add("forge:non_vanilla_planks", "#minecraft:planks");
+  vanillaPlanks.forEach((plank) => event.remove("forge:non_vanilla_planks", plank));
 
   // BYG Planks
   event.add("forge:only_byg_planks", /byg:.*_planks/);

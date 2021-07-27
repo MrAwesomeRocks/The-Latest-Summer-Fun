@@ -24,13 +24,13 @@ events.listen("recipes", (event) => {
   //
   //
 
-  //** COAL
+  //$ COAL
   //Coal dust
   event.replaceOutput({}, "silents_mechanisms:coal_dust", "emendatusenigmatica:coal_dust");
   event.replaceOutput({}, "mekanism:dust_coal", "emendatusenigmatica:coal_dust");
   event.replaceOutput({}, "terraqueous:coal_dust", "emendatusenigmatica:coal_dust");
   //
-  //** IRON
+  //$ IRON
   //Iron dust
   event.replaceOutput({}, "immersiveengineering:dust_iron", "emendatusenigmatica:iron_dust");
   event.replaceOutput({}, "silents_mechanisms:iron_dust", "emendatusenigmatica:iron_dust");
@@ -54,7 +54,7 @@ events.listen("recipes", (event) => {
   event.replaceOutput({}, "buildersaddition:iron_rod", "emendatusenigmatica:iron_rod");
   event.replaceOutput({}, "createaddition:iron_rod", "emendatusenigmatica:iron_rod");
   //
-  //** GOLD
+  //$ GOLD
   //Gold dust
   event.replaceOutput({}, "immersiveengineering:dust_gold", "emendatusenigmatica:gold_dust");
   event.replaceOutput({}, "silents_mechanisms:gold_dust", "emendatusenigmatica:gold_dust");
@@ -75,7 +75,7 @@ events.listen("recipes", (event) => {
   event.replaceOutput({}, "immersiveposts:stick_gold", "emendatusenigmatica:gold_rod");
   event.replaceOutput({}, "createaddition:gold_rod", "emendatusenigmatica:gold_rod");
   //
-  //** DIAMOND
+  //$ DIAMOND
   //Diamond dust
   event.replaceOutput({}, "createaddition:diamond_grit", "emendatusenigmatica:diamond_dust");
   event.replaceOutput({}, "mekanism:dust_diamond", "emendatusenigmatica:diamond_dust");
@@ -85,7 +85,7 @@ events.listen("recipes", (event) => {
   event.replaceOutput({}, "thermal:diamond_gear", "emendatusenigmatica:diamond_gear");
   event.replaceOutput({}, "titanium:diamond_gear", "emendatusenigmatica:diamond_gear");
   //
-  //** EMERALD
+  //$ EMERALD
   //Emerald dust
   event.replaceOutput({}, "mekanism:dust_emerald", "emendatusenigmatica:emerald_dust");
   event.replaceOutput({}, "thermal:emerald_dust", "emendatusenigmatica:emerald_dust");
@@ -93,7 +93,7 @@ events.listen("recipes", (event) => {
   //Emerald gear
   event.replaceOutput({}, "thermal:emerald_gear", "emendatusenigmatica:emerald_gear");
   //
-  //** LAPIS LAZULI
+  //$ LAPIS LAZULI
   //Lapis dust
   event.replaceOutput({}, "thermal:lapis_dust", "emendatusenigmatica:lapis_dust");
   event.replaceOutput({}, "mekanism:dust_lapis_lazuli", "emendatusenigmatica:lapis_dust");
@@ -102,7 +102,7 @@ events.listen("recipes", (event) => {
   //Lapis plate
   event.replaceOutput({}, "create:lapis_sheet", "emendatusenigmatica:lapis_plate");
   //
-  //** NETHER QUARTZ
+  //$ NETHER QUARTZ
   //Nether quartz dust
   event.replaceOutput({}, "mekanism:dust_quartz", "emendatusenigmatica:quartz_dust");
   event.replaceOutput({}, "thermal:quartz_dust", "emendatusenigmatica:quartz_dust");
@@ -119,7 +119,7 @@ events.listen("recipes", (event) => {
   //
   // man have i not been excited to do these
 
-  //** COPPER why the fuck do every mod add copper?
+  //$ COPPER why the fuck do every mod add copper?
   //Copper ingot
   event.replaceOutput({}, "silents_mechanisms:copper_ingot", "emendatusenigmatica:copper_ingot");
   event.replaceOutput({}, "tmechworks:copper_ingot", "emendatusenigmatica:copper_ingot");
@@ -176,7 +176,7 @@ events.listen("recipes", (event) => {
   event.replaceOutput({}, "immersiveposts:stick_copper", "emendatusenigmatica:copper_rod");
   event.replaceOutput({}, "createaddition:copper_rod", "emendatusenigmatica:copper_rod");
   //
-  //** ALUMINUM this one i feared too. aluminum, aluminium, bauxite? wtf?
+  //$ ALUMINUM this one i feared too. aluminum, aluminium, bauxite? wtf?
   //Aluminum ingot
   event.replaceOutput(
     {},
@@ -234,7 +234,7 @@ events.listen("recipes", (event) => {
     "emendatusenigmatica:aluminum_rod"
   );
   //
-  //** SILVER
+  //$ SILVER
   //Silver ingot
   event.replaceOutput({}, "silents_mechanisms:silver_ingot", "emendatusenigmatica:silver_ingot");
   event.replaceOutput({}, "mysticalworld:silver_ingot", "emendatusenigmatica:silver_ingot");
@@ -276,7 +276,7 @@ events.listen("recipes", (event) => {
   //Silver rod
   event.replaceOutput({}, "immersiveposts:stick_silver", "emendatusenigmatica:silver_rod");
   //
-  //** LEAD
+  //$ LEAD
   //Lead ingot
   event.replaceOutput({}, "silents_mechanisms:lead_ingot", "emendatusenigmatica:lead_ingot");
   event.replaceOutput({}, "mekanism:ingot_lead", "emendatusenigmatica:lead_ingot");
@@ -314,7 +314,7 @@ events.listen("recipes", (event) => {
   //Lead rod
   event.replaceOutput({}, "immersiveposts:stick_lead", "emendatusenigmatica:lead_rod");
   //
-  //** NICKEL
+  //$ NICKEL
   //Nickel ingot
   event.replaceOutput({}, "silents_mechanisms:nickel_ingot", "emendatusenigmatica:nickel_ingot");
   event.replaceOutput({}, "thermal:nickel_ingot", "emendatusenigmatica:nickel_ingot");
@@ -347,7 +347,7 @@ events.listen("recipes", (event) => {
   event.replaceOutput({}, "immersiveengineering:plate_nickel", "emendatusenigmatica:nickel_plate");
   //Nickel rod
   event.replaceOutput({}, "immersiveposts:stick_nickel", "emendatusenigmatica:nickel_rod");
-  //** URANIUM
+  //$ URANIUM
   //Uranium ingot (yellorium?)
   event.replaceOutput({}, "silents_mechanisms:uranium_ingot", "emendatusenigmatica:uranium_ingot");
   event.replaceOutput({}, "mekanism:ingot_uranium", "emendatusenigmatica:uranium_ingot");
@@ -393,7 +393,7 @@ events.listen("recipes", (event) => {
   //Uranium post
   event.replaceOutput({}, "immersiveposts:stick_uranium", "emendatusenigmatica:uranium_rod");
   //
-  //** OSMIUM
+  //$ OSMIUM
   //Osmium ingot
   event.replaceOutput({}, "mekanism:ingot_osmium", "emendatusenigmatica:osmium_ingot");
   //Osmium block
@@ -404,7 +404,7 @@ events.listen("recipes", (event) => {
   event.replaceOutput({}, "mekanism:dust_osmium", "emendatusenigmatica:osmium_dust");
   event.replaceOutput({}, "pedestals:dustosmium", "emendatusenigmatica:osmium_dust");
   //
-  //** TIN
+  //$ TIN
   //Tin ingot
   event.replaceOutput({}, "silents_mechanisms:tin_ingot", "emendatusenigmatica:tin_ingot");
   event.replaceOutput({}, "mekanism:ingot_tin", "emendatusenigmatica:tin_ingot");
@@ -431,7 +431,7 @@ events.listen("recipes", (event) => {
   //Tin plate
   event.replaceOutput({}, "thermal:tin_plate", "emendatusenigmatica:tin_plate");
   //
-  //** ZINC
+  //$ ZINC
   //Zinc ingot
   event.replaceOutput({}, "silents_mechanisms:zinc_ingot", "emendatusenigmatica:zinc_ingot");
   event.replaceOutput({}, "create:zinc_ingot", "emendatusenigmatica:zinc_ingot");
@@ -446,7 +446,7 @@ events.listen("recipes", (event) => {
   //Zinc plate
   event.replaceOutput({}, "createaddition:zinc_sheet", "emendatusenigmatica:zinc_plate");
   //
-  //** COBALT
+  //$ COBALT
   //Cobalt ingot
   event.replaceOutput({}, "tconstruct:cobalt_ingot", "emendatusenigmatica:cobalt_ingot");
   //Cobalt block
@@ -459,55 +459,55 @@ events.listen("recipes", (event) => {
   //
   //
 
-  //** CERTUS QUARTZ
+  // //$ CERTUS QUARTZ
   //Certus quartz crystal
   event.replaceOutput(
     {},
-    "appliedenergistics2:certus_quartz_crystal",
-    "emendatusenigmatica:certus_quartz_gem"
+    "emendatusenigmatica:certus_quartz_gem",
+    "appliedenergistics2:certus_quartz_crystal"
   );
   //Certus quartz dust
   event.replaceOutput(
     {},
-    "appliedenergistics2:certus_quartz_dust",
-    "emendatusenigmatica:certus_quartz_dust"
+    "emendatusenigmatica:certus_quartz_dust",
+    "appliedenergistics2:certus_quartz_dust"
   );
   //
-  //** CHARGED CERTUS QUARTZ
+  //$ CHARGED CERTUS QUARTZ
   //Charged certus quartz crystal
   event.replaceOutput(
     {},
-    "appliedenergistics2:charged_certus_quartz_crystal",
-    "emendatusenigmatica:charged_certus_quartz_gem"
+    "emendatusenigmatica:charged_certus_quartz_gem",
+    "appliedenergistics2:charged_certus_quartz_crystal"
   );
   //
-  //** FLUIX CRYSTAL
+  //$ FLUIX CRYSTAL
   //Fluix crystal
-  event.replaceOutput({}, "appliedenergistics2:fluix_crystal", "emendatusenigmatica:fluix_gem");
+  event.replaceOutput({}, "emendatusenigmatica:fluix_gem", "appliedenergistics2:fluix_crystal");
   //Fluix crystal dust
-  event.replaceOutput({}, "appliedenergistics2:fluix_dust", "emendatusenigmatica:fluix_dust");
+  event.replaceOutput({}, "emendatusenigmatica:fluix_dust", "appliedenergistics2:fluix_dust");
   //Fluix block
-  event.replaceOutput({}, "appliedenergistics2:fluix_block", "emendatusenigmatica:fluix_block");
+  event.replaceOutput({}, "emendatusenigmatica:fluix_block", "appliedenergistics2:fluix_block");
   //
   //
   //! MODDED GEMS
   //
   //  - For some reason, these are not working currently. Will have to look into that.
 
-  //** FLUORITE
+  //$ FLUORITE
   //Fluorite crystal
   event.replaceOutput({}, "mekanism:fluorite_gem", "emendatusenigmatica:fluorite_gem");
   //Fluorite dust
   event.replaceOutput({}, "mekanism:dust_fuorite", "emendatusenigmatica:fluorite_dust");
   //
-  //** BITUMEN
+  //$ BITUMEN
   //Bitumen gem
   event.replaceOutput({}, "immersivepetroleum:bitumen", "emendatusenigmatica:bitumen_gem");
   event.replaceOutput({}, "thermal:bitumen", "emendatusenigmatica:bitumen_gem");
   //Bitumen block
   event.replaceOutput({}, "thermal:bitumen_block", "emendatusenigmatica:bitumen_block");
   //
-  //** CINNABAR
+  //$ CINNABAR
   //Cinnabar gem
   event.replaceOutput({}, "thermal:cinnabar", "emendatusenigmatica:cinnabar_gem");
   //Cinnabar block
@@ -515,7 +515,7 @@ events.listen("recipes", (event) => {
   //Cinnabar dust
   event.replaceOutput({}, "thermal:cinnabar_dust", "emendatusenigmatica:cinnabar_dust");
   //
-  //** APATITE
+  //$ APATITE
   //Apatite gem
   event.replaceOutput({}, "thermal:apatite", "emendatusenigmatica:apatite_gem");
   //Apatite block
@@ -523,7 +523,7 @@ events.listen("recipes", (event) => {
   //Apatite dust
   event.replaceOutput({}, "thermal:apatite_dust", "emendatusenigmatica:apatite_dust");
   //
-  //** SULFUR
+  //$ SULFUR
   //Sulfur gem
   event.replaceOutput({}, "thermal:sulfur", "emendatusenigmatica:sulfur_gem");
   //Sulfur block
@@ -533,19 +533,19 @@ events.listen("recipes", (event) => {
   event.replaceOutput({}, "immersiveengineering:dust_sulfur", "emendatusenigmatica:sulfur_dust");
   event.replaceOutput({}, "mekanism:dust_sulfur", "emendatusenigmatica:sulfur_dust");
   event.replaceOutput({}, "eidolon:sulfur", "emendatusenigmatica:sulfur_dust");
-  //** POTASSIUM NITRATE / NITER / SALTPETER
+  //$ POTASSIUM NITRATE / NITER / SALTPETER
   //Potassium nitrate gem
   event.replaceOutput({}, "thermal:niter", "emendatusenigmatica:potassium_nitrate_gem");
   //Potassium nitrate block
   event.replaceOutput({}, "thermal:niter_block", "emendatusenigmatica:potassium_nitrate_block");
   //Potassium nitrate dust
   event.replaceOutput({}, "thermal:niter_dust", "emendatusenigmatica:potassium_nitrate_dust");
-  //** MANA GEM/ARCANE
+  //$ MANA GEM/ARCANE
   //Mana gem
   event.replaceOutput({}, "ars_nouveau:mana_gem", "emendatusenigmatica:arcane_gem");
   //Mana block
   event.replaceOutput({}, "ars_nouveau:mana_gem_block", "emendatusenigmatica:arcane_block");
-  //** DIMENSIONAL SHARD
+  //$ DIMENSIONAL SHARD
   //do we even have this?
 
   //
@@ -554,7 +554,7 @@ events.listen("recipes", (event) => {
   //
   //
 
-  //** BRONZE
+  //$ BRONZE
   //Bronze ingot
   event.replaceOutput({}, "silents_mechanisms:bronze_ingot", "emendatusenigmatica:bronze_ingot");
   event.replaceOutput({}, "mekanism:ingot_bronze", "emendatusenigmatica:bronze_ingot");
@@ -575,7 +575,7 @@ events.listen("recipes", (event) => {
   //Bronze plate
   event.replaceOutput({}, "thermal:bronze_plate", "emendatusenigmatica:bronze_plate");
   //
-  //** BRASS
+  //$ BRASS
   //Brass ingot
   event.replaceOutput({}, "silents_mechanisms:brass_ingot", "emendatusenigmatica:brass_ingot");
   event.replaceOutput({}, "create:brass_ingot", "emendatusenigmatica:brass_ingot");
@@ -592,7 +592,7 @@ events.listen("recipes", (event) => {
   //Brass rod
   event.replaceOutput({}, "createaddition:brass_rod", "emendatusenigmatica:brass_rod");
   //
-  //** ELECTRUM
+  //$ ELECTRUM
   //Electrum ingot
   event.replaceOutput(
     {},
@@ -648,7 +648,7 @@ events.listen("recipes", (event) => {
   //Electrum rod
   event.replaceOutput({}, "immersiveposts:stick_electrum", "emendatusenigmatica:electrum_rod");
   //
-  //** CONSTANTAN
+  //$ CONSTANTAN
   //Constantan ingot
   event.replaceOutput({}, "thermal:constantan_ingot", "emendatusenigmatica:constantan_ingot");
   event.replaceOutput(
@@ -688,7 +688,7 @@ events.listen("recipes", (event) => {
   //Constantan rod
   event.replaceOutput({}, "immersiveposts:stick_constantan", "emendatusenigmatica:constantan_rod");
   //
-  //** STEEL
+  //$ STEEL
   //Steel ingot
   event.replaceOutput({}, "silents_mechanisms:steel_ingot", "emendatusenigmatica:steel_ingot");
   event.replaceOutput({}, "mekanism:ingot_steel", "emendatusenigmatica:steel_ingot");
@@ -713,7 +713,7 @@ events.listen("recipes", (event) => {
   //Steel rod
   event.replaceOutput({}, "immersiveengineering:stick_steel", "emendatusenigmatica:steel_rod");
   //
-  //** INVAR
+  //$ INVAR
   //Invar ingot
   event.replaceOutput({}, "silents_mechanisms:invar_ingot", "emendatusenigmatica:invar_ingot");
   event.replaceOutput({}, "thermal:invar_ingot", "emendatusenigmatica:invar_ingot");
@@ -730,7 +730,7 @@ events.listen("recipes", (event) => {
   //Invar plate
   event.replaceOutput({}, "thermal:invar_plate", "emendatusenigmatica:invar_plate");
   //
-  //** LUMIUM
+  //$ LUMIUM
   //Lumium ingot
   event.replaceOutput({}, "silents_mechanisms:lumium_ingot", "emendatusenigmatica:lumium_ingot");
   event.replaceOutput({}, "thermal:lumium_ingot", "emendatusenigmatica:lumium_ingot");
@@ -747,7 +747,7 @@ events.listen("recipes", (event) => {
   //Lumium plate
   event.replaceOutput({}, "thermal:lumium_plate", "emendatusenigmatica:lumium_plate");
   //
-  //** SIGNALUM
+  //$ SIGNALUM
   //Signalum ingot
   event.replaceOutput(
     {},
@@ -776,7 +776,7 @@ events.listen("recipes", (event) => {
   //Signalum plate
   event.replaceOutput({}, "thermal:signalum_plate", "emendatusenigmatica:signalum_plate");
   //
-  //** ENDERIUM
+  //$ ENDERIUM
   //Enderium ingot
   event.replaceOutput(
     {},
@@ -810,12 +810,12 @@ events.listen("recipes", (event) => {
   //
   //
 
-  //** SILICON - this i will have to re-tag in another script.
+  //$ SILICON - this i will have to re-tag in another script.
   //Silicon gem
   event.replaceOutput({}, "tinyredstone:silicon", "emendatusenigmatica:silicon_gem");
   event.replaceOutput({}, "appliedenergistics2:silicon", "emendatusenigmatica:silicon_gem"); // REMEMBER
   //
-  //** COAL COKE
+  //$ COAL COKE
   //Coal coke gem
   event.replaceOutput({}, "immersiveengineering:coal_coke", "emendatusenigmatica:coke_gem");
   event.replaceOutput({}, "thermal:coal_coke", "emendatusenigmatica:coke_gem");
@@ -825,7 +825,7 @@ events.listen("recipes", (event) => {
   //Coal coke dust
   event.replaceOutput({}, "immersiveengineering:dust_coke", "emendatusenigmatica:coke_dust");
   //
-  //** CHARCOAL
+  //$ CHARCOAL
   //Charcoal dust
   event.replaceOutput({}, "mekanism:dust_charcoal", "emendatusenigmatica:charcoal_dust");
   event.replaceOutput(

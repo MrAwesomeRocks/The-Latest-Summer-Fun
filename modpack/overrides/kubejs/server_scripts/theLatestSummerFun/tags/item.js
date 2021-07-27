@@ -51,6 +51,21 @@ onEvent("item.tags", (event) => {
   event.add("forge:storage_blocks", "appliedenergistics2:fluix_block");
   event.add("forge:storage_blocks/fluix", "appliedenergistics2:fluix_block");
 
+  // Charged Certus Quartz
+  event.add("forge:gems", "appliedenergistics2:charged_certus_quartz_crystal");
+  event.add(
+    "forge:gems/charged_certus_quartz",
+    "appliedenergistics2:charged_certus_quartz_crystal"
+  );
+
+  // Certus Quartz
+  event.add("forge:gems", "appliedenergistics2:certus_quartz_crystal");
+
+  // Silicon
+  event.add("forge:gems", "appliedenergistics2:silicon");
+  event.add("forge:gems/silicon", "appliedenergistics2:silicon");
+  event.add("appliedenergistics2:silicon", "#forge:gems/silicon");
+
   //$ Planks
   // Non-vanilla
   event

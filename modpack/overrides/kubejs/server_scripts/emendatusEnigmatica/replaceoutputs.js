@@ -459,35 +459,35 @@ events.listen("recipes", (event) => {
   //
   //
 
-  //$ CERTUS QUARTZ
+  // //$ CERTUS QUARTZ
   //Certus quartz crystal
   event.replaceOutput(
     {},
-    "appliedenergistics2:certus_quartz_crystal",
-    "emendatusenigmatica:certus_quartz_gem"
+    "emendatusenigmatica:certus_quartz_gem",
+    "appliedenergistics2:certus_quartz_crystal"
   );
   //Certus quartz dust
   event.replaceOutput(
     {},
-    "appliedenergistics2:certus_quartz_dust",
-    "emendatusenigmatica:certus_quartz_dust"
+    "emendatusenigmatica:certus_quartz_dust",
+    "appliedenergistics2:certus_quartz_dust"
   );
   //
   //$ CHARGED CERTUS QUARTZ
   //Charged certus quartz crystal
   event.replaceOutput(
     {},
-    "appliedenergistics2:charged_certus_quartz_crystal",
-    "emendatusenigmatica:charged_certus_quartz_gem"
+    "emendatusenigmatica:charged_certus_quartz_gem",
+    "appliedenergistics2:charged_certus_quartz_crystal"
   );
   //
   //$ FLUIX CRYSTAL
   //Fluix crystal
-  event.replaceOutput({}, "appliedenergistics2:fluix_crystal", "emendatusenigmatica:fluix_gem");
+  event.replaceOutput({}, "emendatusenigmatica:fluix_gem", "appliedenergistics2:fluix_crystal");
   //Fluix crystal dust
-  event.replaceOutput({}, "appliedenergistics2:fluix_dust", "emendatusenigmatica:fluix_dust");
+  event.replaceOutput({}, "emendatusenigmatica:fluix_dust", "appliedenergistics2:fluix_dust");
   //Fluix block
-  event.replaceOutput({}, "appliedenergistics2:fluix_block", "emendatusenigmatica:fluix_block");
+  event.replaceOutput({}, "emendatusenigmatica:fluix_block", "appliedenergistics2:fluix_block");
   //
   //
   //! MODDED GEMS

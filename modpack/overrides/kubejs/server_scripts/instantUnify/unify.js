@@ -13,13 +13,12 @@ global["UNIFY_ORE_GEN"] = true;
 // Mod priorities
 global["unifypriorities"] = [
   "minecraft",
-  'appliedenergistics2',
   "emendatusenigmatica",
-  "mekanism",
   "thermal",
   "silents_mechanisms",
   "silentgems",
   "chemlib",
+  "mekanism",
 ];
 
 // Add oredictionary tags here to unify (or use javascript to generate it!)
@@ -39,6 +38,12 @@ var tags = [];
     "forge:ores/osmium",
     "forge:ores/sulfur",
 ]*/
+
+// Regex of items to not unify
+global["UNIFY_SKIP"] = [
+  { filter: /storage_blocks/, mods: "*" },
+  { filter: "forge:gems/certus_quartz", mods: ["appliedenergistics2"] },
+];
 
 // Easier way to add multiple tags (feel free to add empty extra tags, this will ignore them)
 // ? Adding every possible tag SHOULD work
@@ -159,11 +164,23 @@ onEvent("recipes", (event) => {
     let ingr = Ingredient.of("#" + tag);
     if (ingr) {
       let stacks = ingr.getStacks().toArray();
-      for (let mod of global["unifypriorities"]) {
+
+      if (tag.match(/(certus_quartz|charged_certus_quartz|fluix)/)) {
+        // These need to be done on their own
+        let mod = "appliedenergistics2";
         for (let stack of stacks) {
           if (stack.getMod() == mod) {
             tagitems[tag] = stack.getId();
             continue tagLoop;
+          }
+        }
+      } else {
+        for (let mod of global["unifypriorities"]) {
+          for (let stack of stacks) {
+            if (stack.getMod() == mod) {
+              tagitems[tag] = stack.getId();
+              continue tagLoop;
+            }
           }
         }
       }
@@ -203,8 +220,15 @@ onEvent("player.inventory.changed", (event) => {
 
     // Check for every tag in the list
     outer: for (let tag of global["unifytags"]) {
-      if (tag.match(/storage_blocks/)) {
-        continue outer;
+      // Check if item should be unified
+      for (let e of global["UNIFY_SKIP"]) {
+        // Check if item's mod is one that shouldn't be unified
+        if (e.mods === "*" || e.mods.indexOf(heldItem.getMod()) != -1) {
+          // Check if current tag is one that shouldn't be unified
+          if (tag.match(e.filter)) {
+            continue outer;
+          }
+        }
       }
 
       let ingr = Ingredient.of("#" + tag);
@@ -235,9 +259,16 @@ onEvent("entity.spawned", (event) => {
 
       // Check for every tag in the list
       outer: for (let tag of global["unifytags"]) {
-        if (tag.match(/storage_blocks/)) {
-          continue outer;
+      // Check if item should be unified
+      for (let e of global["UNIFY_SKIP"]) {
+        // Check if item's mod is one that shouldn't be unified
+        if (e.mods === "*" || e.mods.indexOf(gItem.getMod()) != -1) {
+          // Check if current tag is one that shouldn't be unified
+          if (tag.match(e.filter)) {
+            continue outer;
+          }
         }
+      }
 
         let ingr = Ingredient.of("#" + tag);
         if (ingr && ingr.test(gItem)) {

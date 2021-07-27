@@ -8,9 +8,17 @@
  ** See L11 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
-  //! AE2 Create Mixing
+  //! AE2 Fixes
+  // Create fluix mixing
   event.remove({ id: "create:compat/ae2/mixing/fluix_crystal" });
-  
+  // Dust
+  event.remove({ id: "create:compat/ae2/milling/fluix_crystal" });
+  event.remove({ id: "create:compat/ae2/milling/certus_quartz" });
+  event.remove({ id: "create:compat/ae2/milling/nether_quartz" });
+  event.remove({ id: "create:compat/ae2/milling/ender_pearl" });
+  event.remove({ id: "create:compat/ae2/milling/iron" });
+  event.remove({ id: "create:compat/ae2/milling/gold" });
+
   //! Remove tech ore processing recipes
   const removeTechOre = [
     "byg:pervaded_netherrack",

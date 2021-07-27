@@ -10,15 +10,33 @@
  ** See L36 of  https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
-  //! AE2 fix
+  //! Pulverizing and miling for all dusts
+  for (let tag of global["unifytags"]) {
+    if (!tag.match(/(gems|ingots)/)) {
+      continue;
+    }
+
+    let tagItem = global["tagitems"][tag];
+    let dustItem = global["tagitems"][tag.replace(/gems|ingots/, "dusts")];
+
+    if (tagItem && dustItem) {
+      event.recipes.thermal.pulverizer(dustItem, tagItem).energy(2000);
+      event.recipes.immersiveengineering.crusher(dustItem, tagItem).energy(3000);
+      event.recipes.create.milling(dustItem, tagItem);
+    }
+  }
+
+  //! AE2 fixes
+  // Fluix mixing
   event.recipes.create.mixing("2x #forge:gems/fluix", [
     "#forge:dusts/redstone",
     Fluid.of("minecraft:water", 250),
     "#forge:gems/charged_certus_quartz",
     "#forge:gems/quartz",
   ]);
+  // Certus to nether quartz
   event
-    .smelting("emendatusenigmatica:quartz_dust", "#forge:dusts/certus_quartz")
+    .smelting(global["tagitems"]["forge:dusts/quartz"], "#forge:dusts/certus_quartz")
     .xp(1)
     .cookingTime(300);
 

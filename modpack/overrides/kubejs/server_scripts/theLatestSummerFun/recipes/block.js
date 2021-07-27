@@ -17,7 +17,10 @@ onEvent("recipes", (event) => {
     "#forge:gems/charged_certus_quartz",
     "#forge:gems/quartz",
   ]);
-  event.smelting("#forge:dusts/quartz", "#forge:dusts/certus_quartz").xp(1).cookingTime(300);
+  event
+    .smelting("emendatusenigmatica:quartz_dust", "#forge:dusts/certus_quartz")
+    .xp(1)
+    .cookingTime(300);
 
   //! Ore processing
   //$ Default processed ores: doubling + rich slag + gravel + cobblestone

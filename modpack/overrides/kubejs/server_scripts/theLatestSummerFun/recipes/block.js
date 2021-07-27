@@ -10,7 +10,7 @@
  ** See L36 of  https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
-  //! Pulverizing and miling for all dusts
+  //! Pulverizing and milling for all dusts
   for (let tag of global["unifytags"]) {
     if (!tag.match(/(gems|ingots)/)) {
       continue;
@@ -64,7 +64,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "druidcraft:rockroot",
         secondaryOutput: null,
-        mutlipliers: {
+        multipliers: {
           amount: 2,
           mainChance: 1,
         },
@@ -79,7 +79,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "druidcraft:amber",
         secondaryOutput: null,
-        mutlipliers: {
+        multipliers: {
           amount: 1,
           mainChance: 1,
         },
@@ -94,7 +94,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "druidcraft:moonstone",
         secondaryOutput: null,
-        mutlipliers: {
+        multipliers: {
           amount: 1,
           mainChance: 1,
         },
@@ -109,7 +109,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "druidcraft:fiery_glass",
         secondaryOutput: "#forge:gems/cinnabar",
-        mutlipliers: {
+        multipliers: {
           amount: 3,
           mainChance: 1,
         },
@@ -125,7 +125,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "quark:biotite",
         secondaryOutput: "#forge:end_stones",
-        mutlipliers: {
+        multipliers: {
           amount: 3,
           mainChance: 1,
         },
@@ -141,7 +141,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "#forge:dusts/glowstone",
         secondaryOutput: "#forge:gems/sulfur",
-        mutlipliers: {
+        multipliers: {
           amount: 3,
           mainChance: 3,
         },
@@ -156,7 +156,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "byg:lignite",
         secondaryOutput: "#forge:gems/sulfur",
-        mutlipliers: {
+        multipliers: {
           amount: 3,
           mainChance: 3,
         },
@@ -171,7 +171,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "byg:anthracite",
         secondaryOutput: "#forge:gems/sulfur",
-        mutlipliers: {
+        multipliers: {
           amount: 1,
           mainChance: 3,
         },
@@ -187,7 +187,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "#forge:gems/certus_quartz",
         secondaryOutput: "#forge:dusts/certus_quartz",
-        mutlipliers: {
+        multipliers: {
           amount: 1,
           mainChance: 1,
         },
@@ -202,7 +202,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "#forge:gems/charged_certus_quartz",
         secondaryOutput: "#forge:dusts/certus_quartz",
-        mutlipliers: {
+        multipliers: {
           amount: 1,
           mainChance: 1,
         },
@@ -218,7 +218,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "rftoolsbase:dimensionalshard",
         secondaryOutput: "rftoolsbase:dimensionalshard",
-        mutlipliers: {
+        multipliers: {
           amount: 1,
           mainChance: 1,
         },
@@ -234,7 +234,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "powah:uraninite_raw_poor",
         secondaryOutput: null,
-        mutlipliers: {
+        multipliers: {
           amount: 1,
           mainChance: 1,
         },
@@ -249,7 +249,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "powah:uraninite_raw",
         secondaryOutput: "powah:uraninite_raw_poor",
-        mutlipliers: {
+        multipliers: {
           amount: 1,
           mainChance: 1,
         },
@@ -264,7 +264,7 @@ onEvent("recipes", (event) => {
       grinding: {
         primaryOutput: "powah:uraninite_raw_dense",
         secondaryOutput: "powah:uraninite_raw",
-        mutlipliers: {
+        multipliers: {
           amount: 1,
           mainChance: 1,
         },
@@ -278,11 +278,11 @@ onEvent("recipes", (event) => {
   for (let entry of defaultOreProcessing) {
     //$ Grinding recipes
     //** Setup
-    let outputAmount = 2 * entry.grinding.mutlipliers.amount;
-    let mainOutputChance = 0.5 * entry.grinding.mutlipliers.mainChance;
+    let outputAmount = 2 * entry.grinding.multipliers.amount;
+    let mainOutputChance = 0.5 * entry.grinding.multipliers.mainChance;
 
     // 2 of primary at 50% chance, gravel with 20% chance
-    let pulverizerOuptuts = [
+    let pulverizerOutputs = [
       Item.of(entry.grinding.primaryOutput, outputAmount).withChance(mainOutputChance),
       Item.of("#forge:gravel").withChance(0.2),
     ];
@@ -291,16 +291,16 @@ onEvent("recipes", (event) => {
     // 2 of primary, one more at 25% chance, and cobblestone at 12% chance
     let createCrusherOutputs = [
       Item.of(entry.grinding.primaryOutput, outputAmount),
-      Item.of(entry.grinding.primaryOutput, entry.grinding.mutlipliers.amount).withChance(0.25),
+      Item.of(entry.grinding.primaryOutput, entry.grinding.multipliers.amount).withChance(0.25),
       Item.of("#forge:cobblestone").withChance(0.12),
     ];
     if (entry.grinding.secondaryOutput) {
       // Add secondary output if available
-      pulverizerOuptuts.push(Item.of(entry.grinding.secondaryOutput).withChance(0.15));
+      pulverizerOutputs.push(Item.of(entry.grinding.secondaryOutput).withChance(0.15));
       ieCrusherSecondaries.push(Item.of(entry.grinding.secondaryOutput).withChance(0.5));
     }
     //** Register recipes
-    event.recipes.thermal.pulverizer(pulverizerOuptuts, entry.input).energy(4000);
+    event.recipes.thermal.pulverizer(pulverizerOutputs, entry.input).energy(4000);
     event.recipes.immersiveengineering
       .crusher(
         Item.of(entry.grinding.primaryOutput, outputAmount),

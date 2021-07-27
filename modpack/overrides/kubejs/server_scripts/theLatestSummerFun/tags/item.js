@@ -67,23 +67,23 @@ onEvent("item.tags", (event) => {
   event.add("appliedenergistics2:silicon", "#forge:gems/silicon");
 
   // Ender dust
-  event.add("forge:dusts", 'appliedenergistics2:ender_dust')
-  event.add("forge:dusts/ender", 'appliedenergistics2:ender_dust')
+  event.add("forge:dusts", "appliedenergistics2:ender_dust");
+  event.add("forge:dusts/ender", "appliedenergistics2:ender_dust");
 
   //$ Planks
   // Non-vanilla
-  event
-    .add("forge:non_vanilla_planks", "#minecraft:planks")
-    .remove([
-      "minecraft:oak_planks",
-      "minecraft:spruce_planks",
-      "minecraft:birch_planks",
-      "minecraft:jungle_planks",
-      "minecraft:acacia_planks",
-      "minecraft:dark_oak_planks",
-      "minecraft:crimson_planks",
-      "minecraft:warped_planks",
-    ]);
+  const vanillaPlanks = [
+    "minecraft:oak_planks",
+    "minecraft:spruce_planks",
+    "minecraft:birch_planks",
+    "minecraft:jungle_planks",
+    "minecraft:acacia_planks",
+    "minecraft:dark_oak_planks",
+    "minecraft:crimson_planks",
+    "minecraft:warped_planks",
+  ];
+  event.add("forge:non_vanilla_planks", "#minecraft:planks");
+  vanillaPlanks.forEach((plank) => event.remove("forge:non_vanilla_planks", plank));
 
   // BYG Planks
   event.add("forge:only_byg_planks", /byg:.*_planks/);

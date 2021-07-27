@@ -25,6 +25,21 @@ onEvent("recipes", (event) => {
       event.recipes.create.milling(dustItem, tagItem);
     }
   }
+  // Sky stone dust
+  event.recipes.thermal
+    .pulverizer("appliedenergistics2:sky_dust", "appliedenergistics2:sky_stone_block")
+    .energy(2000);
+  event.recipes.immersiveengineering
+    .crusher("appliedenergistics2:sky_dust", "appliedenergistics2:sky_stone_block")
+    .energy(3000);
+  // Ender dust
+  event.recipes.thermal
+    .pulverizer("emendatusenigmatica:ender_dust", "#forge:ender_pearls")
+    .energy(2000);
+  event.recipes.immersiveengineering
+    .crusher("emendatusenigmatica:ender_dust", "#forge:ender_pearls")
+    .energy(3000);
+  event.recipes.create.milling("emendatusenigmatica:ender_dust", "#forge:ender_pearls");
 
   //! AE2 fixes
   // Fluix mixing

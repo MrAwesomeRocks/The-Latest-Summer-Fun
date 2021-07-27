@@ -223,7 +223,7 @@ onEvent("player.inventory.changed", (event) => {
       // Check if item should be unified
       for (let e of global["UNIFY_SKIP"]) {
         // Check if item's mod is one that shouldn't be unified
-        if (e.mods === "*" || e.mods.indexOf(heldItem.getMod()) != -1) {
+        if (e.mods === "*" || e.mods.indexOf(heldItem.getMod()) == -1) {
           // Check if current tag is one that shouldn't be unified
           if (tag.match(e.filter)) {
             continue outer;
@@ -262,7 +262,7 @@ onEvent("entity.spawned", (event) => {
       // Check if item should be unified
       for (let e of global["UNIFY_SKIP"]) {
         // Check if item's mod is one that shouldn't be unified
-        if (e.mods === "*" || e.mods.indexOf(gItem.getMod()) != -1) {
+        if (e.mods === "*" || e.mods.indexOf(gItem.getMod()) == -1) {
           // Check if current tag is one that shouldn't be unified
           if (tag.match(e.filter)) {
             continue outer;

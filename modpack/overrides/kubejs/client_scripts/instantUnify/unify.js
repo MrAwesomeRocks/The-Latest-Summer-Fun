@@ -10,7 +10,7 @@ onEvent("jei.hide.items", (event) => {
             // Check if item should be unified
             for (let e of global["UNIFY_SKIP"]) {
               // Check if item's mod is one that shouldn't be unified
-              if (e.mods === "*" || e.mods.indexOf(s.getMod()) != -1) {
+              if (e.mods === "*" || e.mods.indexOf(s.getMod()) == -1) {
                 // Check if current tag is one that shouldn't be unified
                 if (tag.match(e.filter)) {
                   continue outer;

@@ -10,6 +10,14 @@
  ** See L36 of  https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! AE2 fix
+  event.recipes.create.mixing("2x #forge:gems/fluix", [
+    "#forge:dusts/redstone",
+    Fluid.of("minecraft:water", 250),
+    "#forge:gems/charged_certus_quartz",
+    "#forge:gems/quartz",
+  ]);
+
   //! Ore processing
   //$ Default processed ores: doubling + rich slag + gravel + cobblestone
   const defaultOreProcessing = [

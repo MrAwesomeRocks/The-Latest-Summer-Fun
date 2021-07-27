@@ -8,6 +8,9 @@
  ** See L11 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! AE2 Create Mixing
+  event.remove({ id: "create:compat/ae2/mixing/fluix_crystal" });
+  
   //! Remove tech ore processing recipes
   const removeTechOre = [
     "byg:pervaded_netherrack",

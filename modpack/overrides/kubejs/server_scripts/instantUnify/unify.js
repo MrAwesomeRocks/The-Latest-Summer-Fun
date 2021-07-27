@@ -146,6 +146,9 @@ var tagGen = [
   "coal_coke=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
   // Charcoal
   "charcoal=storage_blocks,ingots,nuggets,dusts,ores,gears,plates,rods,gems",
+  // Ender Pearl Dust
+  "ender=dusts",
+  "ender_pearl=dusts",
   // Sawdust
   "wood=storage_blocks,dusts",
 ];
@@ -259,16 +262,16 @@ onEvent("entity.spawned", (event) => {
 
       // Check for every tag in the list
       outer: for (let tag of global["unifytags"]) {
-      // Check if item should be unified
-      for (let e of global["UNIFY_SKIP"]) {
-        // Check if item's mod is one that shouldn't be unified
-        if (e.mods === "*" || e.mods.indexOf(gItem.getMod()) == -1) {
-          // Check if current tag is one that shouldn't be unified
-          if (tag.match(e.filter)) {
-            continue outer;
+        // Check if item should be unified
+        for (let e of global["UNIFY_SKIP"]) {
+          // Check if item's mod is one that shouldn't be unified
+          if (e.mods === "*" || e.mods.indexOf(gItem.getMod()) == -1) {
+            // Check if current tag is one that shouldn't be unified
+            if (tag.match(e.filter)) {
+              continue outer;
+            }
           }
         }
-      }
 
         let ingr = Ingredient.of("#" + tag);
         if (ingr && ingr.test(gItem)) {

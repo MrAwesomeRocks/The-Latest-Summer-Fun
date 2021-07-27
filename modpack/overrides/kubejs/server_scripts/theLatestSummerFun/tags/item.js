@@ -67,8 +67,8 @@ onEvent("item.tags", (event) => {
   event.add("appliedenergistics2:silicon", "#forge:gems/silicon");
 
   // Ender dust
-  event.add("forge:dusts", "appliedenergistics2:ender_dust");
   event.add("forge:dusts/ender", "appliedenergistics2:ender_dust");
+  event.add("forge:dusts/ender_pearl", "emendatusenigmatica:ender_dust");
 
   //$ Planks
   // Non-vanilla

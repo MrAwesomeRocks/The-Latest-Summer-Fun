@@ -7,6 +7,14 @@
  ** See L34 of https://mods.latvian.dev/books/kubejs/page/recipeeventjs for more details.
  */
 onEvent("recipes", (event) => {
+  //! AE2 pure certus fix
+  event.shapeless(
+    "#forge:gems/certus_quartz",
+    "2x appliedenergistics2:purified_certus_quartz_crystal"
+  );
+  event.shapeless("#forge:gems/quartz", "2x appliedenergistics2:purified_nether_quartz_crystal");
+  event.shapeless("#forge:gems/fluix", "2x appliedenergistics2:purified_fluix_crystal");
+
   //! Refined Pipes
   const pipeTypes = ["extractor", "energy", "fluid", "item"];
   const pipeTiers = ["basic", "improved", "advanced", "elite", "ultimate"];
